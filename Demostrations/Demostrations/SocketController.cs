@@ -9,7 +9,7 @@ namespace Demostrations
 {
     public class SocketController : IDisposable
     {
-        public const int Compacity = 1024;
+        public const int Compacity = 256;
 
         private Server _server;
         public void StartServer(IRequestProcess process, int port)

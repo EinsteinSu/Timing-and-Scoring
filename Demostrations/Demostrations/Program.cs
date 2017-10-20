@@ -82,15 +82,25 @@ namespace Demostrations
         {
             public void Process(TcpClient client, NetworkStream stream, byte[] bytesReceived)
             {
-                var message = Encoding.Unicode.GetString(bytesReceived, 0, bytesReceived.Length);
-                var data = JsonConvert.DeserializeObject<TestData>(message);
-                StringBuilder sb = new StringBuilder();
-                sb.AppendLine($"Name: {data.Name}");
-                foreach (var dataOrder in data.Orders)
+                string response;
+                try
                 {
-                    sb.AppendLine($"\t {dataOrder}");
+                    var message = Encoding.Unicode.GetString(bytesReceived, 0, bytesReceived.Length);
+                    var data = JsonConvert.DeserializeObject<TestData>(message);
+                    StringBuilder sb = new StringBuilder();
+                    sb.AppendLine($"Name: {data.Name}");
+                    foreach (var dataOrder in data.Orders)
+                    {
+                        sb.AppendLine($"\t {dataOrder}");
+                    }
+                    response = sb.ToString();
                 }
-                var bytesSent = Encoding.Unicode.GetBytes(sb.ToString());
+                catch (Exception e)
+                {
+                    response = "error";
+                }
+
+                var bytesSent = Encoding.Unicode.GetBytes(response);
                 stream.Write(bytesSent, 0, bytesSent.Length);
             }
         }
