@@ -1,0 +1,8 @@
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Demostrations.exe.config
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Demostrations.exe
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Demostrations.pdb
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.csprojResolveAssemblyReference.cache
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.exe
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.pdb
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Newtonsoft.Json.dll
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Newtonsoft.Json.xml
