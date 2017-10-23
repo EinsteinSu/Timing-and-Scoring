@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MAJORIPADDRESS>192.168.1.102</MAJORIPADDRESS>
+  <DISPLAYIPADDRESS>192.168.1.101</DISPLAYIPADDRESS>
+  <MAJORPORT>1234</MAJORPORT>
+  <DISPLAYPORT>1234</DISPLAYPORT>
+  <TOTALTIMEPORT>3</TOTALTIMEPORT>
+  <SECONDSTIMEPORT>4</SECONDSTIMEPORT>
+</Settings>

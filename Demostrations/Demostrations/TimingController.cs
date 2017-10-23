@@ -9,7 +9,6 @@ namespace Demostrations
     {
         protected TimeSpan Time;
         protected Task TimingTask;
-        protected Timer Timer = new Timer { Interval = 100 };
         private long _initializeSeconds;
         readonly ManualResetEvent _resetEvent = new ManualResetEvent(false);
         protected CancellationTokenSource TokenSource = new CancellationTokenSource();

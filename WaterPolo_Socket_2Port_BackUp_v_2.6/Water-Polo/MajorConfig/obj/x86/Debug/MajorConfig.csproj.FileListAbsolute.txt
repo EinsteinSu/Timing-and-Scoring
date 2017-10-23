@@ -1,0 +1,8 @@
+D:\大运会\T&S\Water-Polo\MajorConfig\bin\Debug\MajorConfig.exe
+D:\大运会\T&S\Water-Polo\MajorConfig\bin\Debug\MajorConfig.pdb
+D:\大运会\T&S\Water-Polo\MajorConfig\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\T&S\Water-Polo\MajorConfig\obj\x86\Debug\MajorConfig.Properties.Resources.resources
+D:\大运会\T&S\Water-Polo\MajorConfig\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\T&S\Water-Polo\MajorConfig\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\T&S\Water-Polo\MajorConfig\obj\x86\Debug\MajorConfig.exe
+D:\大运会\T&S\Water-Polo\MajorConfig\obj\x86\Debug\MajorConfig.pdb

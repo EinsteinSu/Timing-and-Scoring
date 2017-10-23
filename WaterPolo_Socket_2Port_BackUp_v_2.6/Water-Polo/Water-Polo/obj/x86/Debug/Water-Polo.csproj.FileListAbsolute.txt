@@ -1,0 +1,8 @@
+D:\大运会\T&S\Water-Polo\Water-Polo\bin\Debug\Water-Polo.exe
+D:\大运会\T&S\Water-Polo\Water-Polo\bin\Debug\Water-Polo.pdb
+D:\大运会\T&S\Water-Polo\Water-Polo\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\T&S\Water-Polo\Water-Polo\obj\x86\Debug\Water_Polo.Properties.Resources.resources
+D:\大运会\T&S\Water-Polo\Water-Polo\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\T&S\Water-Polo\Water-Polo\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\T&S\Water-Polo\Water-Polo\obj\x86\Debug\Water-Polo.exe
+D:\大运会\T&S\Water-Polo\Water-Polo\obj\x86\Debug\Water-Polo.pdb

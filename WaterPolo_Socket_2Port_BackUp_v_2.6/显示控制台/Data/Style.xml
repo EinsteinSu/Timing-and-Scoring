@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <BIBNUMBERFont>Franklin Gothic Demi, 26.25pt, style=Bold</BIBNUMBERFont>
+  <NAMEFont>Comic Sans MS, 24pt, style=Bold</NAMEFont>
+  <FOULSFont>宋体, 18pt, style=Bold</FOULSFont>
+  <SERIOUSFont>宋体, 18pt, style=Bold</SERIOUSFont>
+  <SECONDSFont>Comic Sans MS, 26.25pt, style=Bold</SECONDSFont>
+  <BIBNUMBERCOLOR>Yellow</BIBNUMBERCOLOR>
+  <NAMECOLOR>Yellow</NAMECOLOR>
+  <FOULSCOLOR>255, 255, 128</FOULSCOLOR>
+  <SERIOUSCOLOR>Red</SERIOUSCOLOR>
+  <SECONDSCOLOR>Red</SECONDSCOLOR>
+</StyleSettings>
