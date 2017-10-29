@@ -1,0 +1,134 @@
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.Properties.Resources.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\SystemManager.dll.config
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\SystemManager.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\SystemManager.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ApplicationCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ApplicationControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ClientCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ClientControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\RemoteCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ApplicationCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ApplicationControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ClientCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\ClientControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\bin\Debug\RemoteCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.Options.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.dll.licenses
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.FunctionImageManager.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.FunctionManager.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.RoleManager.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.UserManager.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\SystemManager\obj\x86\Debug\SystemManager.PasswordChange.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\SystemManager.dll.config
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\SystemManager.dll
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\SystemManager.pdb
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ApplicationCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ApplicationControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ClientCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ClientControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\RemoteCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ApplicationCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ApplicationControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ClientCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\ClientControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\bin\Debug\RemoteCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.FunctionImageManager.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.FunctionManager.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.Options.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.PasswordChange.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.RoleManager.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.UserManager.resources
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.dll.licenses
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.dll
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.pdb
+D:\田径项目\New Athletics\Program\Athletics\SystemManager\obj\x86\Debug\SystemManager.AboutBox1.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.dll.config
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\RemoteCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\RemoteCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.AboutBox1.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.FunctionImageManager.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.FunctionManager.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.Options.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.PasswordChange.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.RoleManager.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.UserManager.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.dll.licenses
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.dll.config
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\RemoteCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\ClientControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\bin\Debug\RemoteCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.AboutBox1.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.FunctionImageManager.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.FunctionManager.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.Options.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.PasswordChange.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.RoleManager.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.UserManager.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.dll.licenses
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.pdb
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.dll.config
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.dll
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\SystemManager.pdb
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ClientCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ClientControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\RemoteCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ApplicationControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ClientCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\ClientControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SystemManager\bin\Debug\RemoteCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.AboutBox1.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.FunctionImageManager.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.FunctionManager.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.Options.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.PasswordChange.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.RoleManager.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.UserManager.resources
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.dll.licenses
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.dll
+D:\大运会\后台\Program\GeneralMatch\SystemManager\obj\x86\Debug\SystemManager.pdb

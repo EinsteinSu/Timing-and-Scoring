@@ -1,0 +1,54 @@
+D:\通用赛事后台管理\GeneralMatch\Service\General Match Service.exe.config
+D:\通用赛事后台管理\GeneralMatch\Service\General Match Service.exe
+D:\通用赛事后台管理\GeneralMatch\Service\General Match Service.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.InfomationControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.PortSettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GeneralMatchService.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ToolsControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SqlSettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe.licenses
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Service\General Match Service.exe.config
+D:\体育赛事通用后台管理\GeneralMatch\Service\General Match Service.exe
+D:\体育赛事通用后台管理\GeneralMatch\Service\General Match Service.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.InfomationControl.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.PortSettingControl.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GeneralMatchService.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SettingControl.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ToolsControl.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SqlSettingControl.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe.licenses
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.pdb
+D:\大运会\后台\Service\General Match Service.exe.config
+D:\大运会\后台\Service\General Match Service.exe
+D:\大运会\后台\Service\General Match Service.pdb
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.InfomationControl.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.PortSettingControl.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GeneralMatchService.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SettingControl.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ToolsControl.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SqlSettingControl.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe.licenses
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe
+D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.pdb

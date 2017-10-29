@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<Connections>
+  <Connection>
+    <Name>.</Name>
+    <ConnectionString>Provider=SQLNCLI.1;Integrated Security=SSPI;Persist Security Info=False;Data Source=.</ConnectionString>
+  </Connection>
+  <Connection>
+    <Name>..Athletics</Name>
+    <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Athletics;Data Source=.</ConnectionString>
+  </Connection>
+  <Connection>
+    <Name>..Athletics</Name>
+    <ConnectionString>Provider=SQLNCLI.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Athletics;Data Source=.</ConnectionString>
+  </Connection>
+</Connections>

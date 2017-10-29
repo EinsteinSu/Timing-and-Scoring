@@ -1,0 +1,122 @@
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ClientControlCommon.dll.config
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ClientControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ClientControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ApplicationCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ApplicationControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ClientCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\RemoteCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ApplicationCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ApplicationControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\ClientCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\bin\Debug\RemoteCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.Properties.Resources.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.LoginViewForm.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastMenumForm.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastmenumLabel.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FunctionAttribute.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ClientControlCommon\obj\x86\Debug\ClientControlCommon.BroadcastForm.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ClientControlCommon.dll.config
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ClientControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ClientControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ApplicationCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ApplicationControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ClientCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\RemoteCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ApplicationCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ApplicationControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\ClientCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\bin\Debug\RemoteCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.BroadcastForm.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastMenumForm.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastmenumLabel.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FunctionAttribute.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.LoginViewForm.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.DateSelector.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.TempClipbord.resources
+D:\田径项目\New Athletics\Program\Athletics\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll.licenses
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.dll.config
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\RemoteCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\RemoteCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.BroadcastForm.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.DateSelector.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastMenumForm.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastmenumLabel.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FunctionAttribute.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.LoginViewForm.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.TempClipbord.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll.licenses
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.dll.config
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\RemoteCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\bin\Debug\RemoteCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.BroadcastForm.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.DateSelector.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastMenumForm.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastmenumLabel.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FunctionAttribute.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.LoginViewForm.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.TempClipbord.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll.licenses
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.dll.config
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\RemoteCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ApplicationControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\ClientCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\bin\Debug\RemoteCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.BroadcastForm.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.DateSelector.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastMenumForm.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FastmenumLabel.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.FunctionAttribute.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.LoginViewForm.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.TempClipbord.resources
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll.licenses
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ClientControlCommon\obj\x86\Debug\ClientControlCommon.pdb

@@ -1,0 +1,41 @@
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ApplicationClient.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ApplicationClient.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ApplicationCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ApplicationControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ClientCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ClientControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\RemoteCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\SystemManager.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ApplicationCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ApplicationControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ClientCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ClientControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\RemoteCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\SystemManager.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ApplicationClient.Properties.Resources.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ApplicationClient.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ApplicationClient.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ApplicationClient.Login.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ApplicationClient.Settings.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ApplicationClient.exe.licenses
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\bin\Debug\ApplicationClient.exe.config
+D:\MyDocument\Projects\vs2010\MyCommon\Client\ApplicationClient.exe.config
+D:\MyDocument\Projects\vs2010\MyCommon\Client\ApplicationClient.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Client\ApplicationClient.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationClient\obj\x86\Debug\ApplicationClient.HomePage.resources
+D:\田径项目\New Athletics\Client\ApplicationClient.exe.config
+D:\田径项目\New Athletics\Client\ApplicationClient.exe
+D:\田径项目\New Athletics\Client\ApplicationClient.pdb
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ApplicationClient.HomePage.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ApplicationClient.Login.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ApplicationClient.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ApplicationClient.Settings.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ApplicationClient.exe.licenses
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ApplicationClient.exe
+D:\田径项目\New Athletics\Program\Athletics\ApplicationClient\obj\x86\Debug\ApplicationClient.pdb

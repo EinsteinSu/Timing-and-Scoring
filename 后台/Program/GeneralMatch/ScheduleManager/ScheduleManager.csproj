@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0BA8DF4-873C-4053-8E7C-E58FF9DE7731}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScheduleManager</RootNamespace>
+    <AssemblyName>ScheduleManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAthletics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAthletics.Designer.cs">
+      <DependentUpon>AddAthletics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AreaManager.Designer.cs">
+      <DependentUpon>AreaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GymnasiumManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GymnasiumManager.Designer.cs">
+      <DependentUpon>GymnasiumManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SingleSchedule.Designer.cs">
+      <DependentUpon>SingleSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleView.Designer.cs">
+      <DependentUpon>ScheduleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeamSchedule.Designer.cs">
+      <DependentUpon>TeamSchedule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAthletics.resx">
+      <DependentUpon>AddAthletics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaManager.resx">
+      <DependentUpon>AreaManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GymnasiumManager.resx">
+      <DependentUpon>GymnasiumManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SingleSchedule.resx">
+      <DependentUpon>SingleSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleView.resx">
+      <DependentUpon>ScheduleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamSchedule.resx">
+      <DependentUpon>TeamSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationCommon\ApplicationCommon.csproj">
+      <Project>{5CBA2E47-A13F-4B65-98B5-837B556D7159}</Project>
+      <Name>ApplicationCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApplicationControlCommon\ApplicationControlCommon.csproj">
+      <Project>{B82584B0-5485-47E0-A6AB-6BB12F250791}</Project>
+      <Name>ApplicationControlCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClientCommon\ClientCommon.csproj">
+      <Project>{C133B419-46EB-444F-A465-76E391017728}</Project>
+      <Name>ClientCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClientControlCommon\ClientControlCommon.csproj">
+      <Project>{CBBF26F9-17C0-493A-AEDC-1E10382B8E8D}</Project>
+      <Name>ClientControlCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistent\Persistent.csproj">
+      <Project>{C91EE197-78A2-4F70-9B2F-E05445BD56E3}</Project>
+      <Name>Persistent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RemoteCommon\RemoteCommon.csproj">
+      <Project>{06DA5A87-0889-41A2-A6E7-2E13ABCF393B}</Project>
+      <Name>RemoteCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SubStance\SubStance.csproj">
+      <Project>{C30B6555-F931-40F0-9494-58B957A54D65}</Project>
+      <Name>SubStance</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

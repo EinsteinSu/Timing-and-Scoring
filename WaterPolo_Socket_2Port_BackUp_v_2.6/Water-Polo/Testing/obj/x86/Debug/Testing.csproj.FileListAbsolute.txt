@@ -93,3 +93,13 @@ D:\大运会\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debu
 D:\大运会\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\大运会\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.exe
 D:\大运会\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\时间测试\Testing.exe.config
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\时间测试\Testing.exe
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\时间测试\Testing.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.csprojResolveAssemblyReference.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.Form1.resources
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.Properties.Resources.resources
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.csproj.GenerateResource.Cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.csproj.CoreCompileInputs.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.exe
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.pdb

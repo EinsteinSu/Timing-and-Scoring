@@ -1,0 +1,43 @@
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\bin\Debug\ApplicationService.exe.config
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\bin\Debug\ApplicationService.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\bin\Debug\ApplicationService.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.Properties.Resources.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\bin\Debug\ApplicationCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\bin\Debug\ApplicationControlCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\bin\Debug\ApplicationCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\bin\Debug\ApplicationControlCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.InfomationControl.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.SettingControl.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.ToolsControl.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.exe.licenses
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.PortSettingControl.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Service\ApplicationService.exe.config
+D:\MyDocument\Projects\vs2010\MyCommon\Service\ApplicationService.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Service\ApplicationService.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.SqlSettingControl.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
+D:\田径项目\New Athletics\Service\ApplicationService.exe.config
+D:\田径项目\New Athletics\Service\ApplicationService.exe
+D:\田径项目\New Athletics\Service\ApplicationService.pdb
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.InfomationControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.PortSettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.SettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.ToolsControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.SqlSettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.exe.licenses
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.exe
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.pdb

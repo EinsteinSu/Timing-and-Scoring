@@ -1,0 +1,46 @@
+D:\通用赛事后台管理\GeneralMatch\Client\General Match Client.exe.config
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.HomePage.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.Login.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GeneralMatchClient.PrintRibbonControllerResources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GeneralMatchClient.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.Settings.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GeneralMatchClient.XRDesignRibbonControllerResources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.exe.licenses
+D:\通用赛事后台管理\GeneralMatch\Client\General Match Client.exe
+D:\通用赛事后台管理\GeneralMatch\Client\General Match Client.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.exe
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Client\General Match Client.exe.config
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.exe
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.HomePage.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.Login.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GeneralMatchClient.PrintRibbonControllerResources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GeneralMatchClient.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.Settings.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GeneralMatchClient.XRDesignRibbonControllerResources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.exe.licenses
+D:\体育赛事通用后台管理\GeneralMatch\Client\General Match Client.exe
+D:\体育赛事通用后台管理\GeneralMatch\Client\General Match Client.pdb
+D:\大运会\后台\Client\WaterPolo Client.exe.config
+D:\大运会\后台\Client\WaterPolo Client.exe
+D:\大运会\后台\Client\WaterPolo Client.pdb
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.HomePage.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.Login.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GeneralMatchClient.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.Settings.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.exe.licenses
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.exe
+D:\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.pdb
+D:\Work\体电所\大运会\后台\Client\WaterPolo Client.exe.config
+D:\Work\体电所\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.exe
+D:\Work\体电所\大运会\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.pdb

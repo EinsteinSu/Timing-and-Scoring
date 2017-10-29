@@ -1,0 +1,3 @@
+Error:2010/10/29 10:06:26  Sql 第1行数据错误，未能保存。错误原因：列名 'GROUPITEMGUID' 无效。
+列名 'ITEMGUID' 无效。第2行数据错误，未能保存。错误原因：列名 'GROUPITEMGUID' 无效。
+列名 'ITEMGUID' 无效。

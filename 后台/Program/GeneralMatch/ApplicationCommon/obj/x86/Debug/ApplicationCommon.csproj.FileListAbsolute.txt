@@ -1,0 +1,54 @@
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\bin\Debug\ApplicationCommon.dll.config
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\bin\Debug\ApplicationCommon.dll
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\bin\Debug\ApplicationCommon.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\obj\x86\Debug\ApplicationCommon.dll
+c:\users\administrator\documents\visual studio 2010\Projects\MyCommon\ApplicationCommon\obj\x86\Debug\ApplicationCommon.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MyCommon\ApplicationCommon\obj\x86\Debug\ApplicationCommon.Properties.Resources.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\bin\Debug\ApplicationCommon.dll.config
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\bin\Debug\ApplicationCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\bin\Debug\ApplicationCommon.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\obj\x86\Debug\ApplicationCommon.Properties.Resources.resources
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\obj\x86\Debug\ApplicationCommon.dll
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\ApplicationCommon\obj\x86\Debug\ApplicationCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\bin\Debug\ApplicationCommon.dll.config
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\bin\Debug\ApplicationCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\bin\Debug\ApplicationCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\obj\x86\Debug\ApplicationCommon.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\obj\x86\Debug\ApplicationCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\ApplicationCommon\obj\x86\Debug\ApplicationCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.dll.config
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.dll.config
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.dll.config
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\bin\Debug\ApplicationCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.dll
+D:\大运会\后台\Program\GeneralMatch\ApplicationCommon\obj\x86\Debug\ApplicationCommon.pdb

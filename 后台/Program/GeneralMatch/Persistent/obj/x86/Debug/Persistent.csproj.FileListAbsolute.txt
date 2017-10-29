@@ -1,0 +1,80 @@
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\Persistent.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\Persistent.pdb
+D:\田径项目\New Athletics\Program\Athletics\Persistent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\Persistent\obj\x86\Debug\Persistent.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\Persistent\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\Persistent\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\Persistent\obj\x86\Debug\Persistent.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\obj\x86\Debug\Persistent.pdb
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ApplicationCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ApplicationControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ClientCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ClientControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\RemoteCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\SubStance.dll
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ApplicationCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ApplicationControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ClientCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\ClientControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\RemoteCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\Persistent\bin\Debug\SubStance.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\Persistent.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\Persistent.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\RemoteCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\SubStance.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\RemoteCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\SubStance.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\Persistent.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\Persistent.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\RemoteCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\SubStance.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ApplicationControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\ClientControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\RemoteCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\bin\Debug\SubStance.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\Persistent.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\Persistent.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ApplicationCommon.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ApplicationControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ClientCommon.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ClientControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\RemoteCommon.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\SubStance.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ApplicationCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ApplicationControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ClientCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\ClientControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\RemoteCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\bin\Debug\SubStance.pdb
+D:\大运会\后台\Program\GeneralMatch\Persistent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\Persistent\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\Persistent\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.dll
+D:\大运会\后台\Program\GeneralMatch\Persistent\obj\x86\Debug\Persistent.pdb

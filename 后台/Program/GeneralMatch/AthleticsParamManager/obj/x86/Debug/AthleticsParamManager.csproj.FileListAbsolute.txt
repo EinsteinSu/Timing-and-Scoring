@@ -1,0 +1,123 @@
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll.config
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\AthleticsParamManager.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ApplicationCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ApplicationControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ClientCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ClientControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\RemoteCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ApplicationCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ApplicationControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ClientCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\ClientControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\RemoteCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.SportsItemManager.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll.licenses
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\Persistent.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\SubStance.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\Persistent.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\SubStance.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ParamsManager.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.SportsItemSubSelect.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.GameRecord.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.TeamsManager.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ScoringManager.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.AllRoundSelector.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.EntryFormAdd.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.CameraToPhoto.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.EnrollManager.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\AthleticsSettings.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\AthleticsSettings.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\AthleticsCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\bin\Debug\AthleticsCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ParamSettings.resources
+D:\田径项目\New Athletics\Program\Athletics\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.TargetManager.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.CameraToPhoto.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.TeamsManager.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ParamsManager.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll.licenses
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll.config
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\Persistent.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\RemoteCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\SubStance.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\Persistent.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\RemoteCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\SubStance.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll.config
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\Persistent.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\RemoteCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\SubStance.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\Persistent.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\RemoteCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\bin\Debug\SubStance.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.CameraToPhoto.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.TeamsManager.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ParamsManager.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll.licenses
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ScheduleView.resources
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll.config
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\AthleticsParamManager.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationCommon.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientCommon.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\Persistent.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\RemoteCommon.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\SubStance.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ApplicationControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\ClientControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\Persistent.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\RemoteCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\bin\Debug\SubStance.pdb
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.CameraToPhoto.resources
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ScheduleView.resources
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.TeamsManager.resources
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.ParamsManager.resources
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll.licenses
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.dll
+D:\大运会\后台\Program\GeneralMatch\AthleticsParamManager\obj\x86\Debug\AthleticsParamManager.pdb

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFastMenum xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FastMenum>
+    <USERGUID>bff497c2-48f4-494d-a7cb-ecb51dd0619f</USERGUID>
+    <FUNCTIONGUID>12aa6733-e5c0-4f48-8b0e-57f7ade4f498</FUNCTIONGUID>
+  </FastMenum>
+  <FastMenum>
+    <USERGUID>bff497c2-48f4-494d-a7cb-ecb51dd0619f</USERGUID>
+    <FUNCTIONGUID>5d84b979-829f-48b5-a967-dca703e66a12</FUNCTIONGUID>
+  </FastMenum>
+</ArrayOfFastMenum>

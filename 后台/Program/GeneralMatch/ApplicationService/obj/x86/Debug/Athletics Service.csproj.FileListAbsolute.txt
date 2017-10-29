@@ -1,0 +1,36 @@
+D:\田径项目\New Athletics\Service\Athletics Service.exe.config
+D:\田径项目\New Athletics\Service\Athletics Service.exe
+D:\田径项目\New Athletics\Service\Athletics Service.pdb
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.InfomationControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.PortSettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.SettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.ToolsControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.SqlSettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\Athletics Service.exe.licenses
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\Athletics Service.exe
+D:\田径项目\New Athletics\Program\Athletics\ApplicationService\obj\x86\Debug\Athletics Service.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.InfomationControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.PortSettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ToolsControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.SqlSettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\Athletics Service.exe.licenses
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\Athletics Service.exe
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\ApplicationService\obj\x86\Debug\Athletics Service.pdb
+D:\通用赛事后台管理\GeneralMatch\Service\Athletics Service.exe.config
+D:\通用赛事后台管理\GeneralMatch\Service\Athletics Service.exe
+D:\通用赛事后台管理\GeneralMatch\Service\Athletics Service.pdb

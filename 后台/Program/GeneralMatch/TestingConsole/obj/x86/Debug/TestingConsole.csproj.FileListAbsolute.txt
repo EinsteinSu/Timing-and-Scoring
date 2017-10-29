@@ -1,0 +1,30 @@
+D:\MyDocument\Projects\vs2010\MyCommon\Testing Console\TestingConsole.exe.config
+D:\MyDocument\Projects\vs2010\MyCommon\Testing Console\TestingConsole.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Testing Console\TestingConsole.pdb
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\TestingConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\TestingConsole\obj\x86\Debug\TestingConsole.exe
+D:\MyDocument\Projects\vs2010\MyCommon\Program\MyCommon\TestingConsole\obj\x86\Debug\TestingConsole.pdb
+D:\田径项目\New Athletics\Testing Console\TestingConsole.exe.config
+D:\田径项目\New Athletics\Testing Console\TestingConsole.exe
+D:\田径项目\New Athletics\Testing Console\TestingConsole.pdb
+D:\田径项目\New Athletics\Program\Athletics\TestingConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\TestingConsole\obj\x86\Debug\TestingConsole.exe
+D:\田径项目\New Athletics\Program\Athletics\TestingConsole\obj\x86\Debug\TestingConsole.pdb
+D:\通用赛事后台管理\GeneralMatch\Testing Console\TestingConsole.exe.config
+D:\通用赛事后台管理\GeneralMatch\Testing Console\TestingConsole.exe
+D:\通用赛事后台管理\GeneralMatch\Testing Console\TestingConsole.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\TestingConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.exe
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Testing Console\TestingConsole.exe.config
+D:\体育赛事通用后台管理\GeneralMatch\Testing Console\TestingConsole.exe
+D:\体育赛事通用后台管理\GeneralMatch\Testing Console\TestingConsole.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\TestingConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.exe
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.pdb
+D:\大运会\后台\Testing Console\TestingConsole.exe.config
+D:\大运会\后台\Testing Console\TestingConsole.exe
+D:\大运会\后台\Testing Console\TestingConsole.pdb
+D:\大运会\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.exe
+D:\大运会\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.pdb

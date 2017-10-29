@@ -1,0 +1,76 @@
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\SubStance.dll.config
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\SubStance.dll
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\SubStance.pdb
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ApplicationCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ApplicationControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ClientCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ClientControlCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\RemoteCommon.dll
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ApplicationCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ApplicationControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ClientCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\ClientControlCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SubStance\bin\Debug\RemoteCommon.pdb
+D:\田径项目\New Athletics\Program\Athletics\SubStance\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\田径项目\New Athletics\Program\Athletics\SubStance\obj\x86\Debug\SubStance.Properties.Resources.resources
+D:\田径项目\New Athletics\Program\Athletics\SubStance\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\SubStance\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\田径项目\New Athletics\Program\Athletics\SubStance\obj\x86\Debug\SubStance.dll
+D:\田径项目\New Athletics\Program\Athletics\SubStance\obj\x86\Debug\SubStance.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\SubStance.dll.config
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\SubStance.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\SubStance.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientControlCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\RemoteCommon.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientControlCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\RemoteCommon.pdb
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.Properties.Resources.resources
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.dll
+D:\通用赛事后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\SubStance.dll.config
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\SubStance.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\SubStance.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientControlCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\RemoteCommon.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ApplicationControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\ClientControlCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\bin\Debug\RemoteCommon.pdb
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.Properties.Resources.resources
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.dll
+D:\体育赛事通用后台管理\GeneralMatch\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.pdb
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\SubStance.dll.config
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\SubStance.dll
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\SubStance.pdb
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ApplicationCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ApplicationControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ClientCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ClientControlCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\RemoteCommon.dll
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ApplicationCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ApplicationControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ClientCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\ClientControlCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SubStance\bin\Debug\RemoteCommon.pdb
+D:\大运会\后台\Program\GeneralMatch\SubStance\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\大运会\后台\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.Properties.Resources.resources
+D:\大运会\后台\Program\GeneralMatch\SubStance\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\大运会\后台\Program\GeneralMatch\SubStance\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\大运会\后台\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.dll
+D:\大运会\后台\Program\GeneralMatch\SubStance\obj\x86\Debug\SubStance.pdb

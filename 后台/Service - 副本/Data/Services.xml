@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Service>
+    <SERVICENAME>SqlService</SERVICENAME>
+    <SERVICEDES>提供SQL Server 基本服务。</SERVICEDES>
+    <BSERVICE>true</BSERVICE>
+    <DLL>RemoteCommon.dll</DLL>
+    <MODLE>RemoteCommon.SqlManager</MODLE>
+    <BSTART>true</BSTART>
+  </Service>
+  <Service>
+    <SERVICENAME>DatabaseBackup</SERVICENAME>
+    <SERVICEDES>提供数据库备份服务。</SERVICEDES>
+    <BSERVICE>true</BSERVICE>
+    <DLL>RemoteCommon.dll</DLL>
+    <MODLE>RemoteCommon.DatabaseBackup</MODLE>
+    <BSTART>true</BSTART>
+  </Service>
+  <Service>
+    <SERVICENAME>SqlOptimize</SERVICENAME>
+    <SERVICEDES>提供数据库优化访问服务。</SERVICEDES>
+    <BSERVICE>true</BSERVICE>
+    <DLL>RemoteCommon.dll</DLL>
+    <MODLE>RemoteCommon.SqlOptimize</MODLE>
+    <BSTART>true</BSTART>
+  </Service>
+  <Service>
+    <SERVICENAME>SystemUpdate</SERVICENAME>
+    <SERVICEDES>提供系统升级服务。</SERVICEDES>
+    <BSERVICE>true</BSERVICE>
+    <DLL>RemoteCommon.dll</DLL>
+    <MODLE>RemoteCommon.SystemUpdate</MODLE>
+    <BSTART>true</BSTART>
+  </Service>
+  <Service>
+    <SERVICENAME>DataUpload</SERVICENAME>
+    <SERVICEDES>数据传送服务。</SERVICEDES>
+    <BSERVICE>true</BSERVICE>
+    <DLL>RemoteCommon.dll</DLL>
+    <MODLE>RemoteCommon.DataUpload</MODLE>
+    <BSTART>true</BSTART>
+  </Service>
+</ArrayOfService>
