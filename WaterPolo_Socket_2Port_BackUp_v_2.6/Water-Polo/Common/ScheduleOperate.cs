@@ -5,6 +5,7 @@ using System.Drawing;
 using ApplicationCommon;
 using ClientCommon;
 using SubStance;
+using WaterPolo.Common;
 
 namespace Common
 {
@@ -58,35 +59,25 @@ namespace Common
             return t;
         }
 
-        public Teams GetTeamA()
-        {
-            return GetTeam(TeamType.Host);
-        }
-
-        public Teams GetTeamB()
-        {
-            return GetTeam(TeamType.Guest);
-        }
-
         public Image GetTeamFlag(TeamType type)
         {
             return BinaryHelper.ByteToImage(GetTeam(type).FLAG, string.Format(@"{0}\{1}.jpg",
                 DirectoryHelper.TempDirectory, Guid.NewGuid()));
         }
 
-       
-        public DataTable GetTeamATable()
+        public DataTable GetTeamTable(TeamType type)
         {
+            var mark = type == TeamType.Host ? "A" : "B";
+
             var dt = SqlHelper.GetDataTable(
-                $"SELECT * FROM V_ScheduleTeamAAthletes WHERE SCHEDULEGUID = '{_scheduleRow["Guid"]}'");
-            dt.TableName = "TeamAAthletes";
+                $"SELECT * FROM V_ScheduleTeam{mark}Athletes WHERE SCHEDULEGUID = '{_scheduleRow["Guid"]}'");
+            dt.TableName = $"Team{mark}Athletes";
 
             #region 按号码排序
 
             dt.Columns.Add("INUM", typeof(int));
             foreach (DataRow dr in dt.Rows)
-                //todo: try convert to int
-                dr["INUM"] = dr["BIBNUM"];
+                dr["INUM"] = dr["BIBNUM"].ToString().ToInt();
             dt.DefaultView.Sort = "INUM ASC";
             dt = dt.DefaultView.ToTable();
 
@@ -95,23 +86,6 @@ namespace Common
             return dt;
         }
 
-        public DataTable GetTeamBTable()
-        {
-            var dt = SqlHelper.GetDataTable(
-                $"SELECT * FROM V_ScheduleTeamBAthletes WHERE SCHEDULEGUID = '{_scheduleRow["Guid"]}' ORDER BY SID");
-            dt.TableName = "TeamBAthletes";
 
-            #region 按号码排序
-
-            dt.Columns.Add("INUM", typeof(int));
-            foreach (DataRow dr in dt.Rows)
-                dr["INUM"] = dr["BIBNUM"];
-            dt.DefaultView.Sort = "INUM ASC";
-            dt = dt.DefaultView.ToTable();
-
-            #endregion
-
-            return dt;
-        }
     }
 }

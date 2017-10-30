@@ -1,32 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.IO;
+using System.IO.Ports;
+using System.Threading;
+using ApplicationCommon;
+using log4net;
 
 namespace ComPublic
 {
     public class ComListening
     {
+        private static readonly ILog Log = LogManager.GetLogger("ComListening");
+
+        public delegate void DataChangingCallback(List<string> msg);
+
+        public int ByteTotal = 0;
+
+        private readonly string _fileName;
+
+        private Thread _thread;
+
+        public ComListening(int port, int bit)
+        {
+            SCom = new SerialPort("COM" + port, bit, Parity.None, 8);
+            _fileName = $"COM{port}_{bit}";
+        }
+
         public string Name { get; set; }
 
-        public System.IO.Ports.SerialPort SCom { get; set; }
+        public SerialPort SCom { get; set; }
 
         public string Header { get; set; }
 
         public string Tail { get; set; }
-
-        public int ByteTotal = 0;
-
-        string FileName = string.Empty;
-        string Record;
-        public ComListening(int port, int bit)
-        {
-            SCom = new System.IO.Ports.SerialPort("COM" + port.ToString(), bit, System.IO.Ports.Parity.None, 8);
-            FileName = string.Format("COM{0}_{1}", port, bit);
-            Record = string.Empty;
-        }
 
         public bool Open()
         {
@@ -37,7 +43,7 @@ namespace ComPublic
             }
             catch (Exception ex)
             {
-                Record += ex.Message + "\r\n";
+                Log.Error($"Could not open com. {ex.Message}");
                 return false;
             }
         }
@@ -51,86 +57,59 @@ namespace ComPublic
             }
             catch (Exception ex)
             {
-                Record += ex.Message;
+                Log.Error($"Could not close com. {ex.Message}");
                 return false;
             }
         }
 
-        public delegate void DataChangingCallback(List<string> msg);
         public event DataChangingCallback DataChanging;
 
         public void Listening()
         {
             while (true)
             {
-                string str = string.Empty;
-                List<string> lst;
-                string mark = Convert.ToString(SCom.ReadByte(), 16).PadLeft(2, '0').ToUpper();
+                var str = string.Empty;
+                var mark = Convert.ToString(SCom.ReadByte(), 16).PadLeft(2, '0').ToUpper();
+                Log.Debug($"Mark = {mark}");
                 if (mark == Header)
                 {
-                    int i = 0;
+                    var i = 0;
                     while (true)
                     {
                         mark = Convert.ToString(SCom.ReadByte(), 16).PadLeft(2, '0').ToUpper();
+                        Log.Debug($"Got the head then mark is {0}");
                         i++;
                         if (mark == Tail || i > 6)
                             break;
-                        str += string.Format("{0},", mark);
+                        str += $"{mark},";
                     }
-                    Record += string.Format("[{0}]:{2},{1},{3}\r\n", DateTime.Now.ToString("HH:mm:ss"), str.TrimEnd(','), Header, Tail);
-                    lst = new List<string>();
-                    foreach (string s in str.Split(','))
-                    {
+                    Log.Debug($"{Header},{ str.TrimEnd(',')},{Tail}");
+                    var lst = new List<string>();
+                    foreach (var s in str.Split(','))
                         lst.Add(s);
-                    }
-                    if (DataChanging != null)
-                        DataChanging(lst);
+                    DataChanging?.Invoke(lst);
                 }
             }
         }
 
-        Thread th;
         public void StartListening()
         {
-            th = new Thread(Listening);
-            th.IsBackground = true;
-            th.Start();
-            Record += string.Format("Start Listening.\r\n");
+            _thread = new Thread(Listening) { IsBackground = true };
+            _thread.Start();
+            Log.InfoFormat("Start listening");
         }
 
         public void EndListenning()
         {
-            WriteLog(Record + "\r\n");
-            if (th != null)
-                th.Abort();
+            Log.InfoFormat("End Listening");
+            _thread?.Abort();
             SCom.Close();
-        }
-
-        public void WriteLogByFinish()
-        {
-            Record += "End listening.\r\n";
-            Record += "Finish game.\r\n";
-            WriteLog(Record + "\r\n");
         }
 
         public void Dispose()
         {
             EndListenning();
-            if (SCom != null)
-                SCom.Close();
-        }
-
-        public void WriteLog(string text)
-        {
-            string fileName = string.Format(@"{0}\{1}{2}.log", ApplicationCommon.DirectoryHelper.LogDirectory, FileName, DateTime.Now.ToString("yyyyMMdd"));
-            if (!File.Exists(fileName))
-            {
-                File.Create(fileName).Close();
-            }
-            using (StreamWriter sw = new StreamWriter(fileName, true))
-            {
-                sw.Write(string.Format("[{0}]:{1}\r\n", DateTime.Now.ToString("HH:mm:ss"), text));
-            }
+            SCom?.Close();
         }
     }
 }

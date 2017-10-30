@@ -164,6 +164,10 @@
       <Project>{9D87A0B7-7A60-494A-932F-46AD72478058}</Project>
       <Name>TimingControl</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WaterPolo.Common\WaterPolo.Common.csproj">
+      <Project>{4c0aad0c-57a1-451c-9ac2-10833160c9ae}</Project>
+      <Name>WaterPolo.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

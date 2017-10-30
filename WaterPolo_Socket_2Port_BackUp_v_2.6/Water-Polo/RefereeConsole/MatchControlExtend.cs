@@ -9,13 +9,16 @@ using ApplicationCommon;
 using Common;
 using ComPublic;
 using DevExpress.XtraGrid;
+using log4net;
 using RefereeConfig;
 using SocketPublic;
+using WaterPolo.Common;
 
 namespace RefereeConsole
 {
     public partial class MatchControlExtend : UserControl
     {
+        private static readonly ILog Log = LogManager.GetLogger("MatchControlExtend");
         private readonly ComListening _secondsCom;
         private readonly ComListening _totalCom;
         private string _scheduleGuid;
@@ -38,7 +41,7 @@ namespace RefereeConsole
                 if (_totalCom.Open())
                 {
                     _totalCom.StartListening();
-                    _totalCom.DataChanging += TotalCom_DataChanging;
+                    _totalCom.DataChanging += ProcessTotalTimeFromSerialCom;
                 }
             }
             catch
@@ -61,7 +64,7 @@ namespace RefereeConsole
                 if (_secondsCom.Open())
                 {
                     _secondsCom.StartListening();
-                    _secondsCom.DataChanging += SecondsCom_DataChanging;
+                    _secondsCom.DataChanging += ProcessSecondsFromSerialCom;
                 }
             }
             catch
@@ -73,6 +76,11 @@ namespace RefereeConsole
 
             tcTotalTime_TextTimingChanged(tcTotalTime.SettingTime.ToDateTime().ToString(tcTotalTime.DisplayFormat));
             tcThirtyTime_TextTimingChanged("30");
+        }
+
+        ~MatchControlExtend()
+        {
+            EndListening();
         }
 
         public string ScheduleGuid
@@ -88,10 +96,10 @@ namespace RefereeConsole
                     $"ScheduleLoad,{value}");
 
                 _s = new ScheduleOperate(value);
-                SetControlText(lbTeamA, $"{_s.GetTeamA().SHORTNAME}   ({_s.OnSchedule.TEAMACOLOR})");
-                SetControlText(lbTeamB, $"{_s.GetTeamB().SHORTNAME}   ({_s.OnSchedule.TEAMBCOLOR})");
-                CreateAthletes(CreateTable(_s.GetTeamATable()), "A");
-                CreateAthletes(CreateTable(_s.GetTeamBTable()), "B");
+                SetControlText(lbTeamA, $"{_s.GetTeam(ScheduleOperate.TeamType.Host).SHORTNAME}   ({_s.OnSchedule.TEAMACOLOR})");
+                SetControlText(lbTeamB, $"{_s.GetTeam(ScheduleOperate.TeamType.Guest).SHORTNAME}   ({_s.OnSchedule.TEAMBCOLOR})");
+                CreateAthletes(CreateTable(_s.GetTeamTable(ScheduleOperate.TeamType.Host)), "A");
+                CreateAthletes(CreateTable(_s.GetTeamTable(ScheduleOperate.TeamType.Guest)), "B");
 
                 Court = 1;
                 ScoreA = 0;
@@ -124,12 +132,6 @@ namespace RefereeConsole
             _secondsCom?.EndListenning();
         }
 
-        public void WriteLog()
-        {
-            _totalCom?.WriteLogByFinish();
-            _secondsCom?.WriteLogByFinish();
-        }
-
         private void btShowTeamA_Click(object sender, EventArgs e)
         {
             //pauseMark = "A";
@@ -154,7 +156,7 @@ namespace RefereeConsole
         ///     30秒
         /// </summary>
         /// <param name="msg"></param>
-        private void SecondsCom_DataChanging(List<string> msg)
+        private void ProcessSecondsFromSerialCom(List<string> msg)
         {
             if (IsNumeric(msg[0]))
                 if (msg[0].Length >= 2)
@@ -177,7 +179,7 @@ namespace RefereeConsole
         ///     总计时
         /// </summary>
         /// <param name="msg"></param>
-        private void TotalCom_DataChanging(List<string> msg)
+        private void ProcessTotalTimeFromSerialCom(List<string> msg)
         {
             if (msg.Count <= 5)
             {

@@ -8,6 +8,7 @@ using ClientCommon;
 using Common;
 using DevExpress.Utils;
 using DevExpress.XtraGrid;
+using log4net;
 using RefereeConfig;
 using SocketPublic;
 
@@ -15,12 +16,14 @@ namespace RefereeConsole
 {
     public partial class HomePage : BaseForm
     {
+        private static readonly ILog Log = LogManager.GetLogger("HomePage");
         private readonly SocketListening _socket;
         private MatchControlExtend _onMatch;
 
         public HomePage()
         {
             InitializeComponent();
+            Log.Info($"Start listening from prot {Settings.ONSETTINGS.LISTENINGPORT}");
             _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
             _socket.ProcessMessage += sl_ProcessMessage;
             LoadSchedule("106e9e3f-29dd-4a8a-a8af-af90d46c8e0d");
@@ -28,8 +31,7 @@ namespace RefereeConsole
 
         private void sl_ProcessMessage(string msg)
         {
-            //todo: debug format
-            //File.AppendAllText(logfile, string.Format("get message {0}", msg));
+            Log.Debug($"Got message {msg}");
             var lstMsg = new List<string>();
             foreach (var str in msg.Split(','))
                 lstMsg.Add(str);
@@ -75,7 +77,7 @@ namespace RefereeConsole
                 case Keys.Escape:
                     CloseApplication();
                     break;
-                //todo: choose the schedule
+                    //todo: choose the schedule
             }
         }
 
@@ -109,7 +111,6 @@ namespace RefereeConsole
                 DialogResult.OK)
             {
                 _onMatch.ClearAthletes();
-                _onMatch.WriteLog();
                 //回写比赛数据
                 var sSql =
                     $"UPDATE Schedule SET TEAMASCORE = \'{_onMatch.ScoreA}\',TEAMBSCORE = \'{_onMatch.ScoreB}\',STATE = \'已结束\' WHERE GUID = \'{_onMatch.ScheduleGuid}\'";

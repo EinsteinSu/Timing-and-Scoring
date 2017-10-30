@@ -117,7 +117,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwentyTime.cs" />
-    <Compile Include="TypeConvert.cs" />
     <EmbeddedResource Include="AthletesControl.resx">
       <DependentUpon>AthletesControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,8 +137,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -170,6 +173,10 @@
     <ProjectReference Include="..\TimingControl\TimingControl.csproj">
       <Project>{9D87A0B7-7A60-494A-932F-46AD72478058}</Project>
       <Name>TimingControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaterPolo.Common\WaterPolo.Common.csproj">
+      <Project>{4c0aad0c-57a1-451c-9ac2-10833160c9ae}</Project>
+      <Name>WaterPolo.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

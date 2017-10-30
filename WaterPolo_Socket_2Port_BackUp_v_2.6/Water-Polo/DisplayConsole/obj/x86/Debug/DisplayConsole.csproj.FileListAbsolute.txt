@@ -130,8 +130,6 @@ C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.Fonts.resources
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.PDP.resources
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.Properties.Resources.resources
-C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.Temp.resources
-C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.Temp1.resources
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.csproj.GenerateResource.Cache
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.exe.licenses
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConsole\obj\x86\Debug\DisplayConsole.csproj.CoreCompileInputs.cache
