@@ -35,7 +35,7 @@ namespace Water_Polo
         {
             get { return _ListeningPort; }
             set { _ListeningPort = value; }
-        } 
+        }
 
         private static Settings _OnSettings;
         /// <summary>
@@ -45,11 +45,8 @@ namespace Water_Polo
         {
             get
             {
-                if (_OnSettings == null)
-                {
-                    _OnSettings = new Settings();
-                    _OnSettings.Load();
-                }
+                _OnSettings = new Settings();
+                _OnSettings.Load();
                 return _OnSettings;
             }
             set

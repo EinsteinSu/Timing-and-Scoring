@@ -34,7 +34,7 @@ namespace Persistent
 
         protected override string BaseSql()
         {
-            return "SELECT * FROM Params ORDER BY SID";
+            return "SELECT * FROM Params";
         }
 
         public static System.Data.DataTable GetParams(string c)

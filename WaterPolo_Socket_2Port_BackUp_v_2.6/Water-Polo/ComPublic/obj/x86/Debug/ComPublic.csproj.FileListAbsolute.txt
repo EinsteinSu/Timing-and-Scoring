@@ -88,3 +88,11 @@ C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.csproj.CoreCompileInputs.cache
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.dll
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\bin\Debug\ComPublic.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\bin\Debug\ComPublic.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\bin\Debug\ComPublic.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.Properties.Resources.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.csproj.GenerateResource.Cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\ComPublic\obj\x86\Debug\ComPublic.csprojResolveAssemblyReference.cache

@@ -1,39 +1,97 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
-using System.Text;
+using System.Media;
 using System.Windows.Forms;
+using ApplicationCommon;
+using Common;
+using ComPublic;
+using DevExpress.XtraGrid;
+using RefereeConfig;
+using SocketPublic;
 
 namespace RefereeConsole
 {
     public partial class MatchControlExtend : UserControl
     {
-        Common.ScheduleOperate s;
-        const int TWENTYTIMETOTAL = 20;
+        private readonly ComListening _secondsCom;
+        private readonly ComListening _totalCom;
         private string _scheduleGuid;
+        private ScheduleOperate _s;
+
+        public MatchControlExtend()
+        {
+            InitializeComponent();
+
+            #region 总计时
+
+            try
+            {
+                //todo: release the resource.
+                _totalCom = new ComListening(Settings.ONSETTINGS.TOTALTIMEPORT, Settings.ONSETTINGS.TOTALBIT)
+                {
+                    Header = Settings.ONSETTINGS.TOTALHEADER,
+                    Tail = Settings.ONSETTINGS.TOTALTAIL
+                };
+                if (_totalCom.Open())
+                {
+                    _totalCom.StartListening();
+                    _totalCom.DataChanging += TotalCom_DataChanging;
+                }
+            }
+            catch
+            {
+                //todo: logging the error of total serial device error
+            }
+
+            #endregion
+
+            #region 30秒
+
+            try
+            {
+                _secondsCom =
+                    new ComListening(Settings.ONSETTINGS.SECONDSTIMEPORT, Settings.ONSETTINGS.SECONDSBIT)
+                    {
+                        Header = Settings.ONSETTINGS.SECONDSHEADER,
+                        Tail = Settings.ONSETTINGS.SECONDSTAIL
+                    };
+                if (_secondsCom.Open())
+                {
+                    _secondsCom.StartListening();
+                    _secondsCom.DataChanging += SecondsCom_DataChanging;
+                }
+            }
+            catch
+            {
+                //todo: logging
+            }
+
+            #endregion
+
+            tcTotalTime_TextTimingChanged(tcTotalTime.SettingTime.ToDateTime().ToString(tcTotalTime.DisplayFormat));
+            tcThirtyTime_TextTimingChanged("30");
+        }
+
         public string ScheduleGuid
         {
-            get
-            {
-                return _scheduleGuid;
-            }
+            get => _scheduleGuid;
             set
             {
                 _scheduleGuid = value;
 
                 ClearAthletes();
                 //发送信息到显示控制台
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                    string.Format("ScheduleLoad,{0}", value));
+                SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                    $"ScheduleLoad,{value}");
 
-                s = new Common.ScheduleOperate(value);
-                SetControlText(lbTeamA, string.Format("{0}   ({1})", s.GetTeamA().SHORTNAME, s.OnSchedule.TEAMACOLOR));
-                SetControlText(lbTeamB, string.Format("{0}   ({1})", s.GetTeamB().SHORTNAME, s.OnSchedule.TEAMBCOLOR));
-                CreateAthletes(CreateTable(s.GetTeamATable()), "A");
-                CreateAthletes(CreateTable(s.GetTeamBTable()), "B");
+                _s = new ScheduleOperate(value);
+                SetControlText(lbTeamA, $"{_s.GetTeamA().SHORTNAME}   ({_s.OnSchedule.TEAMACOLOR})");
+                SetControlText(lbTeamB, $"{_s.GetTeamB().SHORTNAME}   ({_s.OnSchedule.TEAMBCOLOR})");
+                CreateAthletes(CreateTable(_s.GetTeamATable()), "A");
+                CreateAthletes(CreateTable(_s.GetTeamBTable()), "B");
 
                 Court = 1;
                 ScoreA = 0;
@@ -42,149 +100,160 @@ namespace RefereeConsole
                 TeamBTimeOutCount = 0;
             }
         }
-        ComPublic.ComListening TotalCom;
-        ComPublic.ComListening SecondsCom;
-        public MatchControlExtend()
+
+        public void SendToVrs()
         {
-            InitializeComponent();
-
-            #region 总计时
-            try
+            if (Settings.ONSETTINGS.BTOTALTIME)
             {
-                TotalCom = new ComPublic.ComListening(RefereeConfig.Settings.ONSETTINGS.TOTALTIMEPORT, RefereeConfig.Settings.ONSETTINGS.TOTALBIT);
-                TotalCom.Header = RefereeConfig.Settings.ONSETTINGS.TOTALHEADER;
-                TotalCom.Tail = RefereeConfig.Settings.ONSETTINGS.TOTALTAIL;
-                if (TotalCom.Open())
-                {
-                    TotalCom.StartListening();
-                    TotalCom.DataChanging += new ComPublic.ComListening.DataChangingCallback(TotalCom_DataChanging);
-                }
+                var bs = new byte[7];
+                bs[0] = 0xDF;
+                bs[1] = byte.Parse(tcTotalTime.Text.Split(':')[0]);
+                bs[2] = byte.Parse(tcTotalTime.Text.Split(':')[1]);
+                bs[3] = byte.Parse(ScoreA.ToString());
+                bs[4] = byte.Parse(ScoreB.ToString());
+                bs[5] = byte.Parse(Court.ToString());
+                bs[6] = 0xCF;
+                UdpSend.SendMessage(Settings.ONSETTINGS.TOTALTIMEIPADDRESS, Settings.ONSETTINGS.VRS_TOTALTIMEPORT,
+                    bs);
             }
-            catch { }
-            #endregion
+        }
 
-            #region 30秒
-            try
-            {
-                SecondsCom = new ComPublic.ComListening(RefereeConfig.Settings.ONSETTINGS.SECONDSTIMEPORT, RefereeConfig.Settings.ONSETTINGS.SECONDSBIT);
-                SecondsCom.Header = RefereeConfig.Settings.ONSETTINGS.SECONDSHEADER;
-                SecondsCom.Tail = RefereeConfig.Settings.ONSETTINGS.SECONDSTAIL;
-                if (SecondsCom.Open())
-                {
-                    SecondsCom.StartListening();
-                    SecondsCom.DataChanging += new ComPublic.ComListening.DataChangingCallback(SecondsCom_DataChanging);
-                }
-            }
-            catch { }
-            #endregion
+        public void EndListening()
+        {
+            _totalCom?.EndListenning();
+            _secondsCom?.EndListenning();
+        }
 
-            tcTotalTime_TextTimingChanged(DateTime.Parse(tcTotalTime.SettingTime).ToString(tcTotalTime.DisplayFormat));
-            tcThirtyTime_TextTimingChanged("30");
+        public void WriteLog()
+        {
+            _totalCom?.WriteLogByFinish();
+            _secondsCom?.WriteLogByFinish();
+        }
+
+        private void btShowTeamA_Click(object sender, EventArgs e)
+        {
+            //pauseMark = "A";
+            //isPauseTime = true;
+        }
+
+        private void btShowTeamB_Click(object sender, EventArgs e)
+        {
+            //pauseMark = "B";
+            //isPauseTime = true;
+        }
+
+        private void btHideTotalTime_Click(object sender, EventArgs e)
+        {
+            SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TotalTime,{0}", "Time Out"));
         }
 
         #region 总计时和30秒
+
         /// <summary>
-        /// 30秒
+        ///     30秒
         /// </summary>
         /// <param name="msg"></param>
-        void SecondsCom_DataChanging(List<string> msg)
+        private void SecondsCom_DataChanging(List<string> msg)
         {
             if (IsNumeric(msg[0]))
-            {
-                int seconds = int.Parse(msg[0]);
-                tcThirtyTime.LTime = seconds * 100;
-            }
-
-        }
-
-        bool isPauseTime = false;
-        bool isAdd = false;
-        /// <summary>
-        /// 总计时
-        /// </summary>
-        /// <param name="msg"></param>
-        void TotalCom_DataChanging(List<string> msg)
-        {
-            if (msg.Count > 5)
-            {
-                if (msg[5].IndexOf("E") >= 0 && cbCourt.Checked)
+                if (msg[0].Length >= 2)
                 {
-                    if (IsNumeric(msg[5].Replace("E", "")))
-                        Court = int.Parse(msg[5].Replace("E", ""));
-                }
-                if (msg[5].IndexOf("C") >= 0 && IsNumeric(msg[5].Replace("C", "")))
-                {
-                    isPauseTime = true;
-                    if (!isAdd)
-                    {
-                        TeamATimeOutCount++;
-                        isAdd = true;
-                    }
-                    if (IsNumeric(msg[0]) && IsNumeric(msg[1]))
-                    {
-                        string time = string.Format("00:{0}:{1}", msg[0], msg[1]);
-                        tcTimeOutA.LTime = tcTimeOutA.GetSecond(DateTime.Parse(time)) * 100;
-                    }
-                }
-                if (msg[5].IndexOf("D") >= 0 && IsNumeric(msg[5].Replace("D", "")))
-                {
-                    isPauseTime = true;
-                    if (!isAdd)
-                    {
-                        TeamBTimeOutCount++;
-                        isAdd = true;
-                    }
-                    if (IsNumeric(msg[0]) && IsNumeric(msg[1]))
-                    {
-                        string time = string.Format("00:{0}:{1}", msg[0], msg[1]);
-                        tcTimeOutB.LTime = tcTimeOutB.GetSecond(DateTime.Parse(time)) * 100;
-                    }
+                    var newMsg = msg[0].Substring(1, 1) + msg[0].Substring(0, 1);
+                    var seconds = newMsg.ToInt();
+                    tcThirtyTime.LTime = seconds * 100;
                 }
                 else
                 {
-                    if (IsNumeric(msg[5]) && cbCourt.Checked)
-                        Court = int.Parse(msg[5]);
+                    var seconds = msg[0].ToInt();
+                    tcThirtyTime.LTime = seconds * 100;
                 }
-                if (IsNumeric(msg[0]) && IsNumeric(msg[1]) && msg[5].IndexOf("C") < 0 && msg[5].IndexOf("D") < 0)
-                {
-                    //if (isPauseTime)
-                    //{
-                    //    btHideTimeOutA_Click(null, null);
-                    //    btHideTimeOutB_Click(null, null);
-                    //}
-                    isPauseTime = false;
-                    isAdd = false;
-                    string time = string.Format("00:{0}:{1}", msg[0], msg[1]);
-                    tcTotalTime.LTime = tcTotalTime.GetSecond(DateTime.Parse(time)) * 100;
-                }
-                if (IsNumeric(msg[3]) && cbScore.Checked)
-                    ScoreA = int.Parse(msg[3]);
-                if (IsNumeric(msg[4]) && cbScore.Checked)
-                    ScoreB = int.Parse(msg[4]);
+        }
+
+        private bool _isPauseTime;
+        private bool _isAdd;
+
+        /// <summary>
+        ///     总计时
+        /// </summary>
+        /// <param name="msg"></param>
+        private void TotalCom_DataChanging(List<string> msg)
+        {
+            if (msg.Count <= 5)
+            {
+                return;
             }
+            if (msg[5].IndexOf("E", StringComparison.Ordinal) >= 0 && cbCourt.Checked)
+                if (IsNumeric(msg[5].Replace("E", "")))
+                    Court = msg[5].Replace("E", "").ToInt();
+            if (msg[5].IndexOf("C", StringComparison.Ordinal) >= 0 && IsNumeric(msg[5].Replace("C", "")))
+            {
+                _isPauseTime = true;
+                if (!_isAdd)
+                {
+                    TeamATimeOutCount++;
+                    _isAdd = true;
+                }
+                if (IsNumeric(msg[0]) && IsNumeric(msg[1]))
+                {
+                    var time = $"00:{msg[0]}:{msg[1]}";
+                    tcTimeOutA.LTime = tcTimeOutA.GetSecond(time.ToDateTime()) * 100;
+                }
+            }
+            if (msg[5].IndexOf("D", StringComparison.Ordinal) >= 0 && IsNumeric(msg[5].Replace("D", "")))
+            {
+                _isPauseTime = true;
+                if (!_isAdd)
+                {
+                    TeamBTimeOutCount++;
+                    _isAdd = true;
+                }
+                if (IsNumeric(msg[0]) && IsNumeric(msg[1]))
+                {
+                    var time = $"00:{msg[0]}:{msg[1]}";
+                    tcTimeOutB.LTime = tcTimeOutB.GetSecond(time.ToDateTime()) * 100;
+                }
+            }
+            else
+            {
+                if (IsNumeric(msg[5]) && cbCourt.Checked)
+                    Court = msg[5].ToInt();
+            }
+            if (IsNumeric(msg[0]) && IsNumeric(msg[1]) && msg[5].IndexOf("C", StringComparison.Ordinal) < 0 &&
+                msg[5].IndexOf("D", StringComparison.Ordinal) < 0)
+            {
+                _isPauseTime = false;
+                _isAdd = false;
+                var time = $"00:{msg[0]}:{msg[1]}";
+                tcTotalTime.LTime = tcTotalTime.GetSecond(time.ToDateTime()) * 100;
+            }
+            if (IsNumeric(msg[3]) && cbScore.Checked)
+                ScoreA = msg[3].ToInt();
+            if (IsNumeric(msg[4]) && cbScore.Checked)
+                ScoreB = msg[4].ToInt();
         }
 
         public static bool IsNumeric(string str)
         {
             if (str.Length == 0)
                 return false;
-            char[] ch = new char[str.Length];
+            var ch = new char[str.Length];
             ch = str.ToCharArray();
-            for (int i = 0; i < ch.Length; i++)
-            {
-                if (ch[i] < 48 || ch[i] > 57)
+            foreach (char t in ch)
+                if (t < 48 || t > 57)
                     return false;
-            }
             return true;
         }
+
         #endregion
 
         #region 创建临时表
+
         public void ClearAthletes()
         {
             foreach (Control ctrl in tlpTeamA.Controls)
             {
-                AthletesControl a = ctrl as AthletesControl;
+                var a = ctrl as AthletesControl;
                 if (a != null)
                 {
                     a.StartTwentyTime -= ac_StartTwentyTime;
@@ -194,7 +263,7 @@ namespace RefereeConsole
 
             foreach (Control ctrl in tlpTeamB.Controls)
             {
-                AthletesControl a = ctrl as AthletesControl;
+                var a = ctrl as AthletesControl;
                 if (a != null)
                 {
                     a.StartTwentyTime -= ac_StartTwentyTime;
@@ -212,71 +281,60 @@ namespace RefereeConsole
                 tlp = tlpTeamA;
             else
                 tlp = tlpTeamB;
-            int row = 0;
+            var row = 0;
 
             foreach (DataRow dr in dt.Rows)
             {
-                AthletesControl ac = new AthletesControl(dr, mark);
+                var ac = new AthletesControl(dr, mark);
                 TableLayoutPanelAddControl(tlp, ac, 0, row);
                 SetControlDock(ac, DockStyle.Fill);
-                ac.StartTwentyTime += new AthletesControl.StartTwentyTimeCallback(ac_StartTwentyTime);
-                ac.TimeOver += new AthletesControl.TimeOverCallback(ac_TimeOver);
+                ac.StartTwentyTime += ac_StartTwentyTime;
+                ac.TimeOver += ac_TimeOver;
                 row++;
             }
         }
 
-        void ac_TimeOver(AthletesControl ac)
+        private void ac_TimeOver(AthletesControl ac)
         {
-            TableLayoutPanel tlp;
-            if (ac.MARK == "A")
-                tlp = tlpTeamA;
-            else
-                tlp = tlpTeamB;
+            var tlp = ac.MARK == "A" ? tlpTeamA : tlpTeamB;
 
             #region 获取排序
-            int num = 1;
-            List<AthletesControl> lst = new List<AthletesControl>();
-            List<AthletesControl> lstUn = new List<AthletesControl>();
+
+            var num = 1;
+            var lst = new List<AthletesControl>();
+            var lstUn = new List<AthletesControl>();
             foreach (Control ctrl in tlp.Controls)
             {
-                AthletesControl a = ctrl as AthletesControl;
+                var a = ctrl as AthletesControl;
                 if (a != null)
-                {
                     if (a.IsStart)
-                    {
                         lst.Add(a);
-                    }
                     else
-                    {
                         lstUn.Add(a);
-                    }
-                }
             }
 
             var c = from data in lst
                     orderby data.ORDERID
                     select data;
-            foreach (AthletesControl actrl in c)
+            foreach (var actrl in c)
             {
                 actrl.ORDERID = num;
                 num++;
             }
+
             #endregion
 
             #region
-            List<byte[]> lstbs = new List<byte[]>();
-            foreach (AthletesControl a in lst)
+
+            var lstbs = new List<byte[]>();
+            foreach (var a in lst)
             {
-                byte bMark = new byte();
+                var bMark = new byte();
                 if (a.MARK == "A")
-                {
                     bMark = 0x00;
-                }
                 else
-                {
                     bMark = 0x01;
-                }
-                byte[] bs = new byte[6];
+                var bs = new byte[6];
                 bs[0] = 0xFF;
                 bs[1] = bMark;
                 bs[2] = byte.Parse(a.NUMBER.ToString());
@@ -286,18 +344,14 @@ namespace RefereeConsole
                 lstbs.Add(bs);
             }
 
-            foreach (AthletesControl a in lstUn)
+            foreach (var a in lstUn)
             {
-                byte bMark = new byte();
+                var bMark = new byte();
                 if (a.MARK == "A")
-                {
                     bMark = 0x00;
-                }
                 else
-                {
                     bMark = 0x01;
-                }
-                byte[] bs = new byte[6];
+                var bs = new byte[6];
                 bs[0] = 0xFF;
                 bs[1] = bMark;
                 bs[2] = byte.Parse(a.NUMBER.ToString());
@@ -308,84 +362,74 @@ namespace RefereeConsole
                 num++;
             }
 
-            byte[] bts = new byte[13 * 7];
-            int k = 0;
-            foreach (byte[] b in lstbs)
-            {
-                foreach (byte bcs in b)
+            var bts = new byte[13 * 7];
+            var k = 0;
+            foreach (var b in lstbs)
+                foreach (var bcs in b)
                 {
                     bts[k] = bcs;
                     k++;
                 }
-            }
-            if (RefereeConfig.Settings.ONSETTINGS.BTWENTYSECONDS)
-                SocketPublic.UdpSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.TWENTYSECONDSIPADDRESS,
-                        RefereeConfig.Settings.ONSETTINGS.TWENTYSECONDSPORT, bts);
+            if (Settings.ONSETTINGS.BTWENTYSECONDS)
+                UdpSend.SendMessage(Settings.ONSETTINGS.TWENTYSECONDSIPADDRESS,
+                    Settings.ONSETTINGS.TWENTYSECONDSPORT, bts);
+
             #endregion
         }
 
-        void ac_StartTwentyTime(AthletesControl ac)
+        private void ac_StartTwentyTime(AthletesControl ac)
         {
             TableLayoutPanel tlp;
             if (ac.MARK == "A")
                 tlp = tlpTeamA;
             else
                 tlp = tlpTeamB;
-            int num = 0;
+            var num = 0;
             foreach (Control ctrl in tlp.Controls)
             {
-                AthletesControl a = ctrl as AthletesControl;
+                var a = ctrl as AthletesControl;
                 if (a != null && a.IsStart)
-                {
                     num++;
-                }
             }
             ac.ORDERID = num;
 
             #region 获取排序
+
             num = 1;
-            List<AthletesControl> lst = new List<AthletesControl>();
-            List<AthletesControl> lstUn = new List<AthletesControl>();
+            var lst = new List<AthletesControl>();
+            var lstUn = new List<AthletesControl>();
             foreach (Control ctrl in tlp.Controls)
             {
-                AthletesControl a = ctrl as AthletesControl;
+                var a = ctrl as AthletesControl;
                 if (a != null)
-                {
                     if (a.IsStart)
-                    {
                         lst.Add(a);
-                    }
                     else
-                    {
                         lstUn.Add(a);
-                    }
-                }
             }
 
             var c = from data in lst
                     orderby data.ORDERID
                     select data;
-            foreach (AthletesControl actrl in c)
+            foreach (var actrl in c)
             {
                 actrl.ORDERID = num;
                 num++;
             }
+
             #endregion
 
             #region
-            List<byte[]> lstbs = new List<byte[]>();
-            foreach (AthletesControl a in lst)
+
+            var lstbs = new List<byte[]>();
+            foreach (var a in lst)
             {
-                byte bMark = new byte();
+                var bMark = new byte();
                 if (a.MARK == "A")
-                {
                     bMark = 0x00;
-                }
                 else
-                {
                     bMark = 0x01;
-                }
-                byte[] bs = new byte[6];
+                var bs = new byte[6];
                 bs[0] = 0xFF;
                 bs[1] = bMark;
                 bs[2] = byte.Parse(a.NUMBER.ToString());
@@ -395,18 +439,14 @@ namespace RefereeConsole
                 lstbs.Add(bs);
             }
 
-            foreach (AthletesControl a in lstUn)
+            foreach (var a in lstUn)
             {
-                byte bMark = new byte();
+                var bMark = new byte();
                 if (a.MARK == "A")
-                {
                     bMark = 0x00;
-                }
                 else
-                {
                     bMark = 0x01;
-                }
-                byte[] bs = new byte[6];
+                var bs = new byte[6];
                 bs[0] = 0xFF;
                 bs[1] = bMark;
                 bs[2] = byte.Parse(a.NUMBER.ToString());
@@ -417,25 +457,24 @@ namespace RefereeConsole
                 num++;
             }
 
-            byte[] bts = new byte[13 * 7];
-            int k = 0;
-            foreach (byte[] b in lstbs)
-            {
-                foreach (byte bcs in b)
+            var bts = new byte[13 * 7];
+            var k = 0;
+            foreach (var b in lstbs)
+                foreach (var bcs in b)
                 {
                     bts[k] = bcs;
                     k++;
                 }
-            }
-            if (RefereeConfig.Settings.ONSETTINGS.BTWENTYSECONDS)
-                SocketPublic.UdpSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.TWENTYSECONDSIPADDRESS,
-                        RefereeConfig.Settings.ONSETTINGS.TWENTYSECONDSPORT, bts);
+            if (Settings.ONSETTINGS.BTWENTYSECONDS)
+                UdpSend.SendMessage(Settings.ONSETTINGS.TWENTYSECONDSIPADDRESS,
+                    Settings.ONSETTINGS.TWENTYSECONDSPORT, bts);
+
             #endregion
         }
 
         public DataTable CreateTable(DataTable dt)
         {
-            DataTable dtTeam = new DataTable();
+            var dtTeam = new DataTable();
             dtTeam.Columns.Add("NUM", typeof(int));
             dtTeam.Columns.Add("NAME", typeof(string));
             dtTeam.Columns.Add("FOULS", typeof(int));
@@ -443,7 +482,7 @@ namespace RefereeConsole
             dtTeam.Columns.Add("TTIME", typeof(string));
             foreach (DataRow dr in dt.Rows)
             {
-                DataRow drn = dtTeam.NewRow();
+                var drn = dtTeam.NewRow();
                 drn["Num"] = dr["BIBNUM"];
                 drn["Name"] = dr["NameEn"];
                 drn["Fouls"] = 0;
@@ -452,16 +491,16 @@ namespace RefereeConsole
             }
             return dtTeam;
         }
+
         #endregion
 
         #region 比分操作
+
         private int _scoreA;
+
         public int ScoreA
         {
-            get
-            {
-                return _scoreA;
-            }
+            get => _scoreA;
             set
             {
                 if (value >= 0)
@@ -469,10 +508,10 @@ namespace RefereeConsole
                     _scoreA = value;
                     SetControlText(lbScoreA, value.ToString());
                     //发送信息到显示控制台和主控台
-                    SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
+                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                         string.Format("Score,{0},{1}", "A", value));
-                    SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                       string.Format("Score,{0},{1}", "A", value));
+                    SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                        string.Format("Score,{0},{1}", "A", value));
 
                     SendToVrs();
                 }
@@ -480,12 +519,10 @@ namespace RefereeConsole
         }
 
         private int _scoreB;
+
         public int ScoreB
         {
-            get
-            {
-                return _scoreB;
-            }
+            get => _scoreB;
             set
             {
                 if (value >= 0)
@@ -493,9 +530,9 @@ namespace RefereeConsole
                     _scoreB = value;
                     SetControlText(lbScoreB, value.ToString());
                     //发送信息到显示控制台和主控台
-                    SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
+                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                         string.Format("Score,{0},{1}", "B", value));
-                    SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
+                    SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Score,{0},{1}", "B", value));
 
                     SendToVrs();
@@ -522,22 +559,22 @@ namespace RefereeConsole
         {
             ScoreB--;
         }
+
         #endregion
 
         #region 比赛节数操作
+
         private int _court;
+
         public int Court
         {
-            get
-            {
-                return _court;
-            }
+            get => _court;
             set
             {
                 if (value > 0)
                 {
                     _court = value;
-                    string court = string.Empty;
+                    var court = string.Empty;
                     switch (value)
                     {
                         case 1:
@@ -558,9 +595,9 @@ namespace RefereeConsole
                     }
                     SetControlText(lbAcournt, court);
                     //发送信息到显示控制台和主控台
-                    SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
+                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                         string.Format("Court,{0}", court));
-                    SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
+                    SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Court,{0}", court));
 
                     SendToVrs();
@@ -577,40 +614,38 @@ namespace RefereeConsole
         {
             Court--;
         }
+
         #endregion
 
         #region 技术暂停操作
+
         private int _teamATimeOutCount;
+
         public int TeamATimeOutCount
         {
-            get
-            {
-                return _teamATimeOutCount;
-            }
+            get => _teamATimeOutCount;
             set
             {
                 _teamATimeOutCount = value;
                 SetControlText(lbTimeOutA, value.ToString());
                 //send to display console
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                      string.Format("TimeOutCount,{0},{1}", value, TeamBTimeOutCount));
+                SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                    string.Format("TimeOutCount,{0},{1}", value, TeamBTimeOutCount));
             }
         }
 
         private int _teamBTimeOutCount;
+
         public int TeamBTimeOutCount
         {
-            get
-            {
-                return _teamBTimeOutCount;
-            }
+            get => _teamBTimeOutCount;
             set
             {
                 _teamBTimeOutCount = value;
                 SetControlText(lbTimeOutB, value.ToString());
                 //send to display console
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                      string.Format("TimeOutCount,{0},{1}", TeamATimeOutCount, value));
+                SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                    string.Format("TimeOutCount,{0},{1}", TeamATimeOutCount, value));
             }
         }
 
@@ -618,18 +653,18 @@ namespace RefereeConsole
         {
             tcTimeOutA.Stop();
             tcTimeOutA.Reset();
-            SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                     string.Format("TimeOutHide,{0}", "A"));
-            isPauseTime = false;
+            SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TimeOutHide,{0}", "A"));
+            _isPauseTime = false;
         }
 
         private void btHideTimeOutB_Click(object sender, EventArgs e)
         {
             tcTimeOutB.Stop();
             tcTimeOutB.Reset();
-            SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                     string.Format("TimeOutHide,{0}", "B"));
-            isPauseTime = false;
+            SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TimeOutHide,{0}", "B"));
+            _isPauseTime = false;
         }
 
         private void tcTimeOutA_Started()
@@ -650,49 +685,47 @@ namespace RefereeConsole
 
         private void tcTimeOutA_TextTimingChanged(string timing)
         {
-            int ltime = tcTimeOutA.GetSecond(DateTime.Parse("00:" + timing));
+            var ltime = tcTimeOutA.GetSecond(("00:" + timing).ToDateTime());
             if (ltime == 15)
             {
-                System.Media.SoundPlayer sp = new System.Media.SoundPlayer();
-                sp.SoundLocation = string.Format(@"{0}\{1}", ApplicationCommon.DirectoryHelper.SoundDirectory, "TimeOut15.wav");
+                var sp = new SoundPlayer();
+                sp.SoundLocation = string.Format(@"{0}\{1}", DirectoryHelper.SoundDirectory, "TimeOut15.wav");
                 sp.Play();
             }
             if (ltime == 0)
             {
-                System.Media.SoundPlayer sp = new System.Media.SoundPlayer();
-                sp.SoundLocation = string.Format(@"{0}\{1}", ApplicationCommon.DirectoryHelper.SoundDirectory, "TimeOut0.wav");
+                var sp = new SoundPlayer { SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut0.wav"}" };
                 sp.Play();
 
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                     string.Format("TimeOutHide,{0}", "A"));
+                SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                    string.Format("TimeOutHide,{0}", "A"));
                 return;
             }
-            SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                      string.Format("TimeOut,{0},{1}", "A", timing));
+            SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TimeOut,{0},{1}", "A", timing));
         }
 
         private void tcTimeOutB_TextTimingChanged(string timing)
         {
-            int ltime = tcTimeOutB.GetSecond(DateTime.Parse("00:" + timing));
+            var ltime = tcTimeOutB.GetSecond(("00:" + timing).ToDateTime());
             if (ltime == 15)
             {
-                System.Media.SoundPlayer sp = new System.Media.SoundPlayer();
-                sp.SoundLocation = string.Format(@"{0}\{1}", ApplicationCommon.DirectoryHelper.SoundDirectory, "TimeOut15.wav");
+                var sp = new SoundPlayer { SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut15.wav"}" };
                 sp.Play();
             }
             if (ltime == 0)
             {
                 //显示回总时间
-                System.Media.SoundPlayer sp = new System.Media.SoundPlayer();
-                sp.SoundLocation = string.Format(@"{0}\{1}", ApplicationCommon.DirectoryHelper.SoundDirectory, "TimeOut0.wav");
+                var sp = new SoundPlayer();
+                sp.SoundLocation = string.Format(@"{0}\{1}", DirectoryHelper.SoundDirectory, "TimeOut0.wav");
                 sp.Play();
 
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                     string.Format("TimeOutHide,{0}", "B"));
+                SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                    string.Format("TimeOutHide,{0}", "B"));
                 return;
             }
-            SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                      string.Format("TimeOut,{0},{1}", "B", timing));
+            SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TimeOut,{0},{1}", "B", timing));
         }
 
         private void btAddTimeOutA_Click(object sender, EventArgs e)
@@ -714,9 +747,11 @@ namespace RefereeConsole
         {
             TeamBTimeOutCount--;
         }
+
         #endregion
 
         #region 总时间操作
+
         private void btPauseTotalTime_Click(object sender, EventArgs e)
         {
             tcTotalTime.Stop();
@@ -745,9 +780,9 @@ namespace RefereeConsole
 
         private void tcTotalTime_TextTimingChanged(string timing)
         {
-            SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
+            SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TotalTime,{0}", timing));
-            if (RefereeConfig.Settings.ONSETTINGS.BTOTALTIME)
+            if (Settings.ONSETTINGS.BTOTALTIME)
                 SendToVrs();
         }
 
@@ -756,26 +791,11 @@ namespace RefereeConsole
             //if (ltime == 0)
             //    tcTotalTime.Reset();
         }
+
         #endregion
 
-        public void SendToVrs()
-        {
-            if (RefereeConfig.Settings.ONSETTINGS.BTOTALTIME)
-            {
-                byte[] bs = new byte[7];
-                bs[0] = 0xDF;
-                bs[1] = byte.Parse(tcTotalTime.Text.Split(':')[0]);
-                bs[2] = byte.Parse(tcTotalTime.Text.Split(':')[1]);
-                bs[3] = byte.Parse(ScoreA.ToString());
-                bs[4] = byte.Parse(ScoreB.ToString());
-                bs[5] = byte.Parse(Court.ToString());
-                bs[6] = 0xCF;
-                SocketPublic.UdpSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.TOTALTIMEIPADDRESS, RefereeConfig.Settings.ONSETTINGS.VRS_TOTALTIMEPORT,
-                             bs);
-            }
-        }
-
         #region 30秒操作
+
         private void btThirtyTimeStart_Click(object sender, EventArgs e)
         {
             tcThirtyTime.Start();
@@ -805,61 +825,43 @@ namespace RefereeConsole
         private void tcThirtyTime_TextTimingChanged(string timing)
         {
             #region 20秒
+
             foreach (AthletesControl ac in tlpTeamA.Controls)
-            {
                 if (ac.IsStart)
                     ac.TOTALTIME--;
-            }
             foreach (AthletesControl ac in tlpTeamB.Controls)
-            {
                 if (ac.IsStart)
                     ac.TOTALTIME--;
-            }
+
             #endregion
 
-            if (RefereeConfig.Settings.ONSETTINGS.BTIRTYSECONDS)
+            if (Settings.ONSETTINGS.BTIRTYSECONDS)
             {
-                byte[] bt = new byte[3];
+                var bt = new byte[3];
                 bt[0] = 0XEF;
                 bt[1] = byte.Parse(timing);
                 bt[2] = 0XBF;
-                SocketPublic.UdpSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.TIRTYSECONDSIPADDRESS, RefereeConfig.Settings.ONSETTINGS.THIRTYSECONDSPORT,
-                   bt);
+                UdpSend.SendMessage(Settings.ONSETTINGS.TIRTYSECONDSIPADDRESS, Settings.ONSETTINGS.THIRTYSECONDSPORT,
+                    bt);
             }
         }
 
         private void tcThirtyTime_TimeChanging(int ltime, DateTime dtime)
         {
-
         }
-        #endregion
 
-        #region 暂停操作
-        private bool _pause;
-        public bool Pause
-        {
-            get
-            {
-                return _pause;
-            }
-            set
-            {
-                _pause = value;
-                if (value)
-                {
-
-                }
-            }
-        }
         #endregion
 
         #region Delegates
-        public delegate void TableLayoutPanelAddControlCallback(TableLayoutPanel tlp, Control ctrl, int column, int row);
+
+        public delegate void
+            TableLayoutPanelAddControlCallback(TableLayoutPanel tlp, Control ctrl, int column, int row);
+
         public void TableLayoutPanelAddControl(TableLayoutPanel tlp, Control ctrl, int column, int row)
         {
             if (tlp.InvokeRequired)
             {
-                TableLayoutPanelAddControlCallback d = new TableLayoutPanelAddControlCallback(TableLayoutPanelAddControl);
+                TableLayoutPanelAddControlCallback d = TableLayoutPanelAddControl;
                 tlp.Invoke(d, tlp, ctrl, column, row);
             }
             else
@@ -868,24 +870,28 @@ namespace RefereeConsole
             }
         }
 
-        public delegate void SetDataSourceCallback(DevExpress.XtraGrid.GridControl gc, DataTable dt);
-        public void SetDataSource(DevExpress.XtraGrid.GridControl gc, DataTable dt)
+        public delegate void SetDataSourceCallback(GridControl gc, DataTable dt);
+
+        public void SetDataSource(GridControl gc, DataTable dt)
         {
             if (gc.InvokeRequired)
             {
-                SetDataSourceCallback d = new SetDataSourceCallback(SetDataSource);
+                SetDataSourceCallback d = SetDataSource;
                 gc.Invoke(d, gc, dt);
             }
             else
+            {
                 gc.DataSource = dt;
+            }
         }
 
         public delegate void SetControlTextCallback(Control ctrl, string text);
+
         public void SetControlText(Control ctrl, string text)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlTextCallback d = new SetControlTextCallback(SetControlText);
+                SetControlTextCallback d = SetControlText;
                 ctrl.Invoke(d, ctrl, text);
             }
             else
@@ -895,98 +901,80 @@ namespace RefereeConsole
         }
 
         public delegate void SetControlDockCallback(Control ctrl, DockStyle dc);
+
         public void SetControlDock(Control ctrl, DockStyle dc)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlDockCallback d = new SetControlDockCallback(SetControlDock);
+                SetControlDockCallback d = SetControlDock;
                 ctrl.Invoke(d, ctrl, dc);
             }
             else
+            {
                 ctrl.Dock = dc;
+            }
         }
 
         public delegate void AddControlCallback(Control ctrl, Control sContrl);
+
         public void AddControl(Control ctrl, Control sControl)
         {
             if (ctrl.InvokeRequired)
             {
-                AddControlCallback d = new AddControlCallback(AddControl);
+                AddControlCallback d = AddControl;
                 ctrl.Invoke(d, ctrl, sControl);
             }
             else
+            {
                 ctrl.Controls.Add(sControl);
+            }
         }
 
         public delegate void SetControlEnabledCallback(Control ctrl, bool isEnable);
+
         public void SetControlEnabled(Control ctrl, bool isEnable)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlEnabledCallback d = new SetControlEnabledCallback(SetControlEnabled);
+                SetControlEnabledCallback d = SetControlEnabled;
                 ctrl.Invoke(d, ctrl, isEnable);
             }
             else
+            {
                 ctrl.Enabled = isEnable;
+            }
         }
 
         public delegate void SetControlForeColorCallback(Control ctrl, Color c);
+
         public void SetControlForeColor(Control ctrl, Color c)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlForeColorCallback d = new SetControlForeColorCallback(SetControlForeColor);
+                SetControlForeColorCallback d = SetControlForeColor;
                 ctrl.Invoke(d, c);
             }
             else
+            {
                 ctrl.ForeColor = c;
+            }
         }
 
         public delegate void ClearControlCallback(Control ctrl);
+
         public void ClearControl(Control ctrl)
         {
             if (ctrl.InvokeRequired)
             {
-                ClearControlCallback d = new ClearControlCallback(ClearControl);
+                ClearControlCallback d = ClearControl;
                 ctrl.Invoke(d, ctrl);
             }
             else
+            {
                 ctrl.Controls.Clear();
+            }
         }
+
         #endregion
-
-        public void EndListening()
-        {
-            if (TotalCom != null)
-                TotalCom.EndListenning();
-            if (SecondsCom != null)
-                SecondsCom.EndListenning();
-        }
-
-        public void WriteLog()
-        {
-            if (TotalCom != null)
-                TotalCom.WriteLogByFinish();
-            if (SecondsCom != null)
-                SecondsCom.WriteLogByFinish();
-        }
-
-        private void btShowTeamA_Click(object sender, EventArgs e)
-        {
-            //pauseMark = "A";
-            //isPauseTime = true;
-        }
-
-        private void btShowTeamB_Click(object sender, EventArgs e)
-        {
-            //pauseMark = "B";
-            //isPauseTime = true;
-        }
-
-        private void btHideTotalTime_Click(object sender, EventArgs e)
-        {
-            SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-               string.Format("TotalTime,{0}", "Time Out"));
-        }
     }
 }

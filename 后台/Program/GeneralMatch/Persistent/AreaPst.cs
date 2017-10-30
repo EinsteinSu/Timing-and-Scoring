@@ -34,7 +34,7 @@ namespace Persistent
 
         protected override string BaseSql()
         {
-            return "SELECT * FROM Area ORDER BY Sid";
+            return "SELECT * FROM Area";
         }
     }
 }

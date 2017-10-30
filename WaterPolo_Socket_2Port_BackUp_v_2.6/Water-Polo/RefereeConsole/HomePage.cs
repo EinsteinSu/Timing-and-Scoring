@@ -1,33 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using ApplicationControlCommon;
+using ClientCommon;
+using Common;
+using DevExpress.Utils;
+using DevExpress.XtraGrid;
+using RefereeConfig;
+using SocketPublic;
 
 namespace RefereeConsole
 {
-    public partial class HomePage : ApplicationControlCommon.BaseForm
+    public partial class HomePage : BaseForm
     {
-        SocketPublic.SocketListening ul;
+        private readonly SocketListening _socket;
+        private MatchControlExtend _onMatch;
+
         public HomePage()
         {
             InitializeComponent();
-            ul = new SocketPublic.SocketListening(RefereeConfig.Settings.ONSETTINGS.LISTENINGPORT);
-            ul.ProcessMessage += new SocketPublic.SocketListening.ProcessMessageCallback(sl_ProcessMessage);
-            //LoadSchedule("1");
+            _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
+            _socket.ProcessMessage += sl_ProcessMessage;
+            LoadSchedule("106e9e3f-29dd-4a8a-a8af-af90d46c8e0d");
         }
 
-        void sl_ProcessMessage(string msg)
+        private void sl_ProcessMessage(string msg)
         {
-            List<string> lstMsg = new List<string>();
-            foreach (string str in msg.Split(','))
-            {
+            //todo: debug format
+            //File.AppendAllText(logfile, string.Format("get message {0}", msg));
+            var lstMsg = new List<string>();
+            foreach (var str in msg.Split(','))
                 lstMsg.Add(str);
-            }
-            string key = lstMsg[0];
+            var key = lstMsg[0];
             switch (key)
             {
                 case "ScheduleLoad":
@@ -36,28 +42,28 @@ namespace RefereeConsole
             }
         }
 
-        MatchControlExtend OnMatch;
-        ComPublic.ComListening ComTotal;
-        ComPublic.ComListening ComSenconds;
         public void LoadSchedule(string scheduleGuid)
         {
-            using (DevExpress.Utils.WaitDialogForm wfm = new DevExpress.Utils.WaitDialogForm("Loading data ...", "Please wait"))
+            using (var wfm = new WaitDialogForm("Loading data ...", "Please wait"))
             {
-                if (OnMatch == null)
+                if (_onMatch == null)
                 {
-                    OnMatch = new MatchControlExtend();
+                    _onMatch = new MatchControlExtend();
                     wfm.Caption = "Create Window ...";
-                    SetControlDock(OnMatch, DockStyle.Fill);
-                    AddControl(plParent, OnMatch);
+                    SetControlDock(_onMatch, DockStyle.Fill);
+                    AddControl(plParent, _onMatch);
                 }
-                OnMatch.ScheduleGuid = scheduleGuid;
-                Common.ScheduleOperate s = new Common.ScheduleOperate(scheduleGuid);
-                SetControlText(lbTitle, string.Format("2011 SHENZHEN Universiade Water-Polo Referee Console——{0}", s.OnSchedule.NAME));
+                _onMatch.ScheduleGuid = scheduleGuid;
+                var s = new ScheduleOperate(scheduleGuid);
+
+                //config it
+                SetControlText(lbTitle,
+                    $"2011 SHENZHEN Universiade Water-Polo Referee Console——{s.OnSchedule.NAME}");
                 SetControlEnabled(btFinish, true);
 
                 //回写比赛状态
-                string sSql = String.Format("UPDATE Schedule SET STATE = '{0}' WHERE GUID = '{1}'", "进行中", scheduleGuid);
-                ClientCommon.SqlHelper.RunSql(sSql);
+                var sSql = $"UPDATE Schedule SET STATE = \'进行中\' WHERE GUID = \'{scheduleGuid}\'";
+                SqlHelper.RunSql(sSql);
             }
         }
 
@@ -69,16 +75,17 @@ namespace RefereeConsole
                 case Keys.Escape:
                     CloseApplication();
                     break;
+                //todo: choose the schedule
             }
         }
 
         public void CloseApplication()
         {
-            if (MessageBox.Show("Whether to exit the program?", "Exit", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Whether to exit the program?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                if (OnMatch != null)
-                    OnMatch.EndListening();
-                ul.StopListening();
+                if (_onMatch != null)
+                    _onMatch.EndListening();
+                _socket.StopListening();
                 Application.Exit();
             }
         }
@@ -90,43 +97,72 @@ namespace RefereeConsole
 
         private void btLock_Click(object sender, EventArgs e)
         {
-            Common.LockWindow frm = new Common.LockWindow();
-            if (frm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            var frm = new LockWindow();
+            if (frm.ShowDialog() == DialogResult.OK)
             {
+            }
+        }
+
+        private void btFinish_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you ture finish this match?", "Finish", MessageBoxButtons.OKCancel) ==
+                DialogResult.OK)
+            {
+                _onMatch.ClearAthletes();
+                _onMatch.WriteLog();
+                //回写比赛数据
+                var sSql =
+                    $"UPDATE Schedule SET TEAMASCORE = \'{_onMatch.ScoreA}\',TEAMBSCORE = \'{_onMatch.ScoreB}\',STATE = \'已结束\' WHERE GUID = \'{_onMatch.ScheduleGuid}\'";
+                SqlHelper.RunSql(sSql);
+
+                //发送信息到显示控制台和主控台
+                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    "Finish");
+                SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                    "Finish");
+                SetControlEnabled(btFinish, false);
             }
         }
 
         #region Delegates
+
         public delegate void DisposeControlCallback(Control ctrl);
+
         public void DisposeControl(Control ctrl)
         {
             if (ctrl.InvokeRequired)
             {
-                DisposeControlCallback d = new DisposeControlCallback(DisposeControl);
+                DisposeControlCallback d = DisposeControl;
                 ctrl.Invoke(d, ctrl);
             }
             else
+            {
                 ctrl.Dispose();
+            }
         }
 
-        public delegate void SetDataSourceCallback(DevExpress.XtraGrid.GridControl gc, DataTable dt);
-        public void SetDataSource(DevExpress.XtraGrid.GridControl gc, DataTable dt)
+        public delegate void SetDataSourceCallback(GridControl gc, DataTable dt);
+
+        public void SetDataSource(GridControl gc, DataTable dt)
         {
             if (gc.InvokeRequired)
             {
-                SetDataSourceCallback d = new SetDataSourceCallback(SetDataSource);
+                SetDataSourceCallback d = SetDataSource;
                 gc.Invoke(d, gc, dt);
             }
             else
+            {
                 gc.DataSource = dt;
+            }
         }
 
         public delegate void SetControlTextCallback(Control ctrl, string text);
+
         public void SetControlText(Control ctrl, string text)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlTextCallback d = new SetControlTextCallback(SetControlText);
+                SetControlTextCallback d = SetControlText;
                 ctrl.Invoke(d, ctrl, text);
             }
             else
@@ -136,84 +172,80 @@ namespace RefereeConsole
         }
 
         public delegate void SetControlDockCallback(Control ctrl, DockStyle dc);
+
         public void SetControlDock(Control ctrl, DockStyle dc)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlDockCallback d = new SetControlDockCallback(SetControlDock);
+                SetControlDockCallback d = SetControlDock;
                 ctrl.Invoke(d, ctrl, dc);
             }
             else
+            {
                 ctrl.Dock = dc;
+            }
         }
 
         public delegate void AddControlCallback(Control ctrl, Control sContrl);
+
         public void AddControl(Control ctrl, Control sControl)
         {
             if (ctrl.InvokeRequired)
             {
-                AddControlCallback d = new AddControlCallback(AddControl);
+                AddControlCallback d = AddControl;
                 ctrl.Invoke(d, ctrl, sControl);
             }
             else
+            {
                 ctrl.Controls.Add(sControl);
+            }
         }
 
         public delegate void SetControlEnabledCallback(Control ctrl, bool isEnable);
+
         public void SetControlEnabled(Control ctrl, bool isEnable)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlEnabledCallback d = new SetControlEnabledCallback(SetControlEnabled);
+                SetControlEnabledCallback d = SetControlEnabled;
                 ctrl.Invoke(d, ctrl, isEnable);
             }
             else
+            {
                 ctrl.Enabled = isEnable;
+            }
         }
 
         public delegate void SetControlForeColorCallback(Control ctrl, Color c);
+
         public void SetControlForeColor(Control ctrl, Color c)
         {
             if (ctrl.InvokeRequired)
             {
-                SetControlForeColorCallback d = new SetControlForeColorCallback(SetControlForeColor);
+                SetControlForeColorCallback d = SetControlForeColor;
                 ctrl.Invoke(d, c);
             }
             else
+            {
                 ctrl.ForeColor = c;
+            }
         }
 
         public delegate void ClearControlCallback(Control ctrl);
+
         public void ClearControl(Control ctrl)
         {
             if (ctrl.InvokeRequired)
             {
-                ClearControlCallback d = new ClearControlCallback(ClearControl);
+                ClearControlCallback d = ClearControl;
                 ctrl.Invoke(d, ctrl);
             }
             else
-                ctrl.Controls.Clear();
-        }
-        #endregion
-
-        private void btFinish_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you ture finish this match?", "Finish", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
             {
-                OnMatch.ClearAthletes();
-                OnMatch.WriteLog();
-                //回写比赛数据
-                string sSql = String.Format("UPDATE Schedule SET TEAMASCORE = '{0}',TEAMBSCORE = '{1}',STATE = '{2}' WHERE GUID = '{3}'",
-                    OnMatch.ScoreA, OnMatch.ScoreB, "已结束", OnMatch.ScheduleGuid);
-                ClientCommon.SqlHelper.RunSql(sSql);
-
-                //发送信息到显示控制台和主控台
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
-                    "Finish");
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
-                    "Finish");
-                SetControlEnabled(btFinish, false);
+                ctrl.Controls.Clear();
             }
         }
+
+        #endregion
     }
 }

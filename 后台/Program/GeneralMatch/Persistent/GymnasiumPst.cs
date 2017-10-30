@@ -34,7 +34,7 @@ namespace Persistent
 
         protected override string BaseSql()
         {
-            return "SELECT * FROM Gymnasium ORDER BY Sid";
+            return "SELECT * FROM Gymnasium";
         }
     }
 }

@@ -36,7 +36,7 @@ namespace RefereeConfig
         {
             get { return _VRS_TotalTimePort; }
             set { _VRS_TotalTimePort = value; }
-        } 
+        }
 
         private bool _BTirtySeconds;
         /// <summary>
@@ -66,7 +66,7 @@ namespace RefereeConfig
         {
             get { return _ThirtySecondsPort; }
             set { _ThirtySecondsPort = value; }
-        } 
+        }
 
         private bool _BTwentySeconds;
         /// <summary>
@@ -96,7 +96,7 @@ namespace RefereeConfig
         {
             get { return _TwentySecondsPort; }
             set { _TwentySecondsPort = value; }
-        } 
+        }
 
         private string _MajorIPAddress;
         /// <summary>
@@ -156,7 +156,7 @@ namespace RefereeConfig
         {
             get { return _DisplayPortExtend; }
             set { _DisplayPortExtend = value; }
-        } 
+        }
 
         private int _TotalTimePort;
         /// <summary>
@@ -196,7 +196,7 @@ namespace RefereeConfig
         {
             get { return _TotalTail; }
             set { _TotalTail = value; }
-        } 
+        }
 
         private int _SecondsTimePort;
         /// <summary>
@@ -226,7 +226,7 @@ namespace RefereeConfig
         {
             get { return _SecondsHeader; }
             set { _SecondsHeader = value; }
-        } 
+        }
 
         private string _SecondsTail;
         /// <summary>
@@ -236,7 +236,7 @@ namespace RefereeConfig
         {
             get { return _SecondsTail; }
             set { _SecondsTail = value; }
-        } 
+        }
 
         private int _ListeningPort;
         /// <summary>
@@ -246,7 +246,7 @@ namespace RefereeConfig
         {
             get { return _ListeningPort; }
             set { _ListeningPort = value; }
-        } 
+        }
 
         private static Settings _OnSettings;
         /// <summary>

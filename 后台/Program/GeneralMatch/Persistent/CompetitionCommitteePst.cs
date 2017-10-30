@@ -34,7 +34,7 @@ namespace Persistent
 
         protected override string BaseSql()
         {
-            return "SELECT * FROM V_CompetitionCommittee ORDER BY SID";
+            return "SELECT * FROM V_CompetitionCommittee";
         }
     }
 }

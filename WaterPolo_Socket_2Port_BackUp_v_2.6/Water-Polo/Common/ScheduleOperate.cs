@@ -1,180 +1,117 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
+using System.Drawing;
+using ApplicationCommon;
+using ClientCommon;
+using SubStance;
 
 namespace Common
 {
     public class ScheduleOperate
     {
-        private DataRow ScheduleRow;
+        private readonly DataRow _scheduleRow;
 
         public ScheduleOperate(DataRow scheduleRow)
         {
-            ScheduleRow = scheduleRow;
+            _scheduleRow = scheduleRow;
         }
 
         public ScheduleOperate(string scheduleGuid)
         {
-            DataTable dt = ClientCommon.SqlHelper.GetDataTable(string.Format(
-                "SELECT * FROM V_Schedule WHERE GUID = '{0}'", scheduleGuid));
-         
+            var dt = SqlHelper.GetDataTable(
+                $"SELECT * FROM V_Schedule WHERE GUID = '{scheduleGuid}'");
+
             if (dt.Rows.Count > 0)
-            {
-                ScheduleRow = dt.Rows[0];
-            }
+                _scheduleRow = dt.Rows[0];
         }
 
-        public SubStance.Schedule OnSchedule
-        {
-            get
-            {
-                return (SubStance.Schedule)ApplicationCommon.ReflectionHelper.ReflectionFromDataRow(ScheduleRow, typeof(SubStance.Schedule));
-            }
-        }
+        public Schedule OnSchedule => (Schedule)ReflectionHelper.ReflectionFromDataRow(_scheduleRow, typeof(Schedule));
 
-        public string ScheduleName
-        {
-            get
-            {
-                return ScheduleRow["Name"].ToString();
-            }
-        }
+        public string ScheduleName => _scheduleRow["Name"].ToString();
 
         public bool IsTeamMatch
         {
             get
             {
-                DataTable temp = ClientCommon.SqlHelper.GetDataTable(string.Format(
-                    "SELECT * FROM Schedule WHERE PGuid = '{0}'", ScheduleRow["Guid"]));
+                var temp = SqlHelper.GetDataTable($"SELECT * FROM Schedule WHERE PGuid = '{_scheduleRow["Guid"]}'");
                 if (temp.Rows.Count > 0)
                     return true;
-                else
-                    return false;
+                return false;
             }
         }
 
-        public SubStance.Teams GetTeamA()
+        public enum TeamType
         {
-            SubStance.Teams t = new SubStance.Teams();
-            DataTable temp = ClientCommon.SqlHelper.GetDataTable(string.Format(
-                "SELECT * FROM TEAMS WHERE GUID = '{0}'", ScheduleRow["TeamAGuid"]));
+            Host, Guest
+        }
+
+        public Teams GetTeam(TeamType type)
+        {
+            var t = new Teams();
+            var id = type == TeamType.Host ? _scheduleRow["TeamAGuid"] : _scheduleRow["TeamBGuid"];
+            var temp = SqlHelper.GetDataTable(
+                $"SELECT * FROM TEAMS WHERE GUID = '{id}'");
             if (temp.Rows.Count > 0)
-                t = (SubStance.Teams)ApplicationCommon.ReflectionHelper.ReflectionFromDataRow(temp.Rows[0],
-                    typeof(SubStance.Teams));
+                t = (Teams)ReflectionHelper.ReflectionFromDataRow(temp.Rows[0],
+                    typeof(Teams));
             return t;
         }
 
-        public SubStance.Teams GetTeamB()
+        public Teams GetTeamA()
         {
-            SubStance.Teams t = new SubStance.Teams();
-            DataTable temp = ClientCommon.SqlHelper.GetDataTable(string.Format(
-                "SELECT * FROM TEAMS WHERE GUID = '{0}'", ScheduleRow["TeamBGuid"]));
-            if (temp.Rows.Count > 0)
-                t = (SubStance.Teams)ApplicationCommon.ReflectionHelper.ReflectionFromDataRow(temp.Rows[0],
-                    typeof(SubStance.Teams));
-            return t;
+            return GetTeam(TeamType.Host);
         }
 
-        public System.Drawing.Image GetTeamAFlag()
+        public Teams GetTeamB()
         {
-            return ApplicationCommon.BinaryHelper.ByteToImage(GetTeamA().FLAG,string.Format(@"{0}\{1}.jpg",
-                ApplicationCommon.DirectoryHelper.TempDirectory,Guid.NewGuid()));
+            return GetTeam(TeamType.Guest);
         }
 
-        public System.Drawing.Image GetTeamBFlag()
+        public Image GetTeamFlag(TeamType type)
         {
-            return ApplicationCommon.BinaryHelper.ByteToImage(GetTeamB().FLAG, string.Format(@"{0}\{1}.jpg",
-                ApplicationCommon.DirectoryHelper.TempDirectory, Guid.NewGuid()));
+            return BinaryHelper.ByteToImage(GetTeam(type).FLAG, string.Format(@"{0}\{1}.jpg",
+                DirectoryHelper.TempDirectory, Guid.NewGuid()));
         }
 
-        public List<SubStance.Athletes> GetTeamAList()
-        {
-            List<SubStance.Athletes> lst = new List<SubStance.Athletes>();
-            DataTable temp = ClientCommon.SqlHelper.GetDataTable(string.Format(
-                "SELECT * FROM V_ScheduleTeamAAthletes WHERE SCHEDULEGUID = '{0}' ORDER BY SID", ScheduleRow["Guid"]));
-            foreach (DataRow dr in temp.Rows)
-            {
-                SubStance.Athletes a = (SubStance.Athletes)ApplicationCommon.ReflectionHelper.ReflectionFromDataRow(
-                    dr, typeof(SubStance.Athletes));
-                lst.Add(a);
-            }
-            return lst;
-        }
-
+       
         public DataTable GetTeamATable()
         {
-            DataTable dt = ClientCommon.SqlHelper.GetDataTable(string.Format(
-                "SELECT * FROM V_ScheduleTeamAAthletes WHERE SCHEDULEGUID = '{0}' ORDER BY SID", ScheduleRow["Guid"]));
+            var dt = SqlHelper.GetDataTable(
+                $"SELECT * FROM V_ScheduleTeamAAthletes WHERE SCHEDULEGUID = '{_scheduleRow["Guid"]}'");
             dt.TableName = "TeamAAthletes";
+
             #region 按号码排序
+
             dt.Columns.Add("INUM", typeof(int));
             foreach (DataRow dr in dt.Rows)
-            {
+                //todo: try convert to int
                 dr["INUM"] = dr["BIBNUM"];
-            }
             dt.DefaultView.Sort = "INUM ASC";
             dt = dt.DefaultView.ToTable();
+
             #endregion
+
             return dt;
-        }
-
-        public string TeamAListForString
-        {
-            get
-            {
-                string str = string.Empty;
-                foreach (SubStance.Athletes a in GetTeamAList())
-                {
-                    str += string.Format("{0}   ", a.NAME);
-                }
-                return str.Trim();
-            }
-        }
-
-        public List<SubStance.Athletes> GetTeamBList()
-        {
-            List<SubStance.Athletes> lst = new List<SubStance.Athletes>();
-            DataTable temp = ClientCommon.SqlHelper.GetDataTable(string.Format(
-                "SELECT * FROM V_ScheduleTeamBAthletes WHERE SCHEDULEGUID = '{0}' ORDER BY SID", ScheduleRow["Guid"]));
-            foreach (DataRow dr in temp.Rows)
-            {
-                SubStance.Athletes a = (SubStance.Athletes)ApplicationCommon.ReflectionHelper.ReflectionFromDataRow(
-                    dr, typeof(SubStance.Athletes));
-                lst.Add(a);
-            }
-            return lst;
         }
 
         public DataTable GetTeamBTable()
         {
-            DataTable dt = ClientCommon.SqlHelper.GetDataTable(string.Format(
-               "SELECT * FROM V_ScheduleTeamBAthletes WHERE SCHEDULEGUID = '{0}' ORDER BY SID", ScheduleRow["Guid"]));
+            var dt = SqlHelper.GetDataTable(
+                $"SELECT * FROM V_ScheduleTeamBAthletes WHERE SCHEDULEGUID = '{_scheduleRow["Guid"]}' ORDER BY SID");
             dt.TableName = "TeamBAthletes";
+
             #region 按号码排序
+
             dt.Columns.Add("INUM", typeof(int));
             foreach (DataRow dr in dt.Rows)
-            {
                 dr["INUM"] = dr["BIBNUM"];
-            }
             dt.DefaultView.Sort = "INUM ASC";
             dt = dt.DefaultView.ToTable();
-            #endregion
-            return dt;
-        }
 
-        public string TeamBListForString
-        {
-            get
-            {
-                string str = string.Empty;
-                foreach (SubStance.Athletes a in GetTeamBList())
-                {
-                    str += string.Format("{0}   ", a.NAME);
-                }
-                return str.Trim();
-            }
+            #endregion
+
+            return dt;
         }
     }
 }

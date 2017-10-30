@@ -87,3 +87,17 @@ D:\大运会\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\Genera
 D:\大运会\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.exe.licenses
 D:\大运会\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.exe
 D:\大运会\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Testing Appliaction\ApplicationTesting.exe.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Testing Appliaction\ApplicationTesting.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Testing Appliaction\ApplicationTesting.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.csprojResolveAssemblyReference.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.Form1.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.Form2.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.Form3.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.Form4.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.Properties.Resources.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.Report.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.csproj.GenerateResource.Cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.exe.licenses
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationTesting\obj\x86\Debug\ApplicationTesting.pdb

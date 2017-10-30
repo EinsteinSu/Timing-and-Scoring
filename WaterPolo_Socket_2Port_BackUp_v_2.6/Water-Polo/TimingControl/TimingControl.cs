@@ -343,10 +343,11 @@ namespace TimingControl
         public string GetTime(int time)
         {
             TimeSpan ts = new TimeSpan(0, 0, 0, 0, time * 10);
-            return string.Format("{0}:{1}:{2}.{3}", ts.Hours.ToString().PadLeft(2, '0'), ts.Minutes.ToString().PadLeft(2, '0'),
-                ts.Seconds.ToString().PadLeft(2, '0'), ts.Milliseconds.ToString().PadLeft(2, '0'));
+            return
+                $"{ts.Hours.ToString().PadLeft(2, '0')}:{ts.Minutes.ToString().PadLeft(2, '0')}:{ts.Seconds.ToString().PadLeft(2, '0')}.{ts.Milliseconds.ToString().PadLeft(2, '0')}";
         }
 
+        //todo: check wheather a method can solve this problem well
         public int GetSecond(DateTime dt)
         {
             int second = 0;

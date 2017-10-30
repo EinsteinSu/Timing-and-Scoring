@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SqlConnect xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <IPADDRESS>127.0.0.1</IPADDRESS>
-  <DATABASENAME>WaterPolo</DATABASENAME>
+  <DATABASENAME>Generalmatch</DATABASENAME>
   <USERNAME>sa</USERNAME>
-  <PASSWORD>einstein93</PASSWORD>
-  <CONNECTTYPE>false</CONNECTTYPE>
+  <PASSWORD>Peng1011$$$001</PASSWORD>
+  <CONNECTTYPE>true</CONNECTTYPE>
   <ISPORT>false</ISPORT>
   <PORT>0</PORT>
 </SqlConnect>

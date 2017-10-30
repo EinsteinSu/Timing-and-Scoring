@@ -1,0 +1,4 @@
+Error:2017/10/30 07:53:47  Sql 第1行数据错误，未能保存。错误原因：Invalid column name 'NUM'.
+Invalid column name 'TEAMACOLOR'.
+Invalid column name 'TEAMBCOLOR'.
+Error:2017/10/30 07:59:01  Sql 第1行数据错误，未能保存。错误原因：Invalid column name 'NUM'.

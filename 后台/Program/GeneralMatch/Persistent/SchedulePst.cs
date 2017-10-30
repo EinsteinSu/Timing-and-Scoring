@@ -33,7 +33,7 @@ namespace Persistent
 
         protected override string BaseSql()
         {
-            return "SELECT * FROM V_Schedule ORDER BY SID,NUM";
+            return "SELECT * FROM V_Schedule order by gametime";
         }
     }
 }

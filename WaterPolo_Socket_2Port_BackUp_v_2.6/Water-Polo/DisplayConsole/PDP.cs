@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Common;
 
 namespace DisplayConsole
 {
@@ -131,8 +132,8 @@ namespace DisplayConsole
             SetControlText(lbTeamB, s.GetTeamB().SHORTNAME);
             //SetControlText(lbColorA, string.Format("({0})", OnSchedule.TEAMACOLOR));
             //SetControlText(lbColorB, string.Format("({0})", OnSchedule.TEAMBCOLOR));
-            SetImage(pbTeamA, s.GetTeamAFlag());
-            SetImage(pbTeamB, s.GetTeamBFlag());
+            SetImage(pbTeamA, s.GetTeamFlag(ScheduleOperate.TeamType.Host));
+            SetImage(pbTeamB, s.GetTeamFlag(ScheduleOperate.TeamType.Guest));
 
             SetControlText(lbPauseA, "");
             SetControlText(lbPauseB, "");
@@ -489,6 +490,11 @@ namespace DisplayConsole
         #endregion
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbTotalTime_Click(object sender, EventArgs e)
         {
 
         }

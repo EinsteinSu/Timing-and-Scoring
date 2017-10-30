@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeamSchedule));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             this.plButtons = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btAdd = new ApplicationControlCommon.MyButton();
@@ -80,13 +84,17 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btAddTeamAAthletes = new ApplicationControlCommon.MyButton();
             this.btDeleteTeamAAthletes = new ApplicationControlCommon.MyButton();
+            this.treeListColumn4 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
+            this.treeListColumn5 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
+            this.treeListColumn11 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
+            this.treeListColumn12 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
             this.plButtons.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rbType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbImages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tvSchedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtGameDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGameDate.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGameDate.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtGameTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueTeamA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueTeamB)).BeginInit();
@@ -111,8 +119,9 @@
             this.plButtons.Controls.Add(this.tableLayoutPanel1);
             this.plButtons.Dock = System.Windows.Forms.DockStyle.Top;
             this.plButtons.Location = new System.Drawing.Point(0, 0);
+            this.plButtons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.plButtons.Name = "plButtons";
-            this.plButtons.Size = new System.Drawing.Size(850, 71);
+            this.plButtons.Size = new System.Drawing.Size(1133, 95);
             this.plButtons.TabIndex = 3;
             // 
             // tableLayoutPanel1
@@ -134,146 +143,153 @@
             this.tableLayoutPanel1.Controls.Add(this.btCollapse, 6, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(720, 71);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(960, 95);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btAdd
             // 
-            this.btAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAdd.EnglishText = null;
             this.btAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btAdd.FOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btAdd.FOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btAdd.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btAdd.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btAdd.Image = ((System.Drawing.Image)(resources.GetObject("btAdd.Image")));
             this.btAdd.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btAdd.Location = new System.Drawing.Point(93, 3);
+            this.btAdd.Location = new System.Drawing.Point(124, 4);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(84, 65);
+            this.btAdd.Size = new System.Drawing.Size(112, 87);
             this.btAdd.TabIndex = 3;
             this.btAdd.Text = "增加父项";
             this.btAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btAdd.UNFOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btAdd.UNFOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btAdd.UNFOCUSFONTCOLOR = System.Drawing.Color.Empty;
             this.btAdd.UseVisualStyleBackColor = true;
             this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // btAddChild
             // 
-            this.btAddChild.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddChild.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddChild.EnglishText = null;
             this.btAddChild.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btAddChild.FOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btAddChild.FOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btAddChild.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btAddChild.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btAddChild.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btAddChild.Image = ((System.Drawing.Image)(resources.GetObject("btAddChild.Image")));
             this.btAddChild.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btAddChild.Location = new System.Drawing.Point(183, 3);
+            this.btAddChild.Location = new System.Drawing.Point(244, 4);
+            this.btAddChild.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddChild.Name = "btAddChild";
-            this.btAddChild.Size = new System.Drawing.Size(84, 65);
+            this.btAddChild.Size = new System.Drawing.Size(112, 87);
             this.btAddChild.TabIndex = 1;
             this.btAddChild.Text = "增加子项";
             this.btAddChild.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btAddChild.UNFOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btAddChild.UNFOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btAddChild.UNFOCUSFONTCOLOR = System.Drawing.Color.Empty;
             this.btAddChild.UseVisualStyleBackColor = true;
             this.btAddChild.Click += new System.EventHandler(this.btAddChild_Click);
             // 
             // btRefresh
             // 
-            this.btRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btRefresh.EnglishText = null;
             this.btRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btRefresh.FOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btRefresh.FOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btRefresh.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btRefresh.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btRefresh.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btRefresh.Image")));
             this.btRefresh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btRefresh.Location = new System.Drawing.Point(3, 3);
+            this.btRefresh.Location = new System.Drawing.Point(4, 4);
+            this.btRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btRefresh.Name = "btRefresh";
-            this.btRefresh.Size = new System.Drawing.Size(84, 65);
+            this.btRefresh.Size = new System.Drawing.Size(112, 87);
             this.btRefresh.TabIndex = 0;
             this.btRefresh.Text = "刷新";
             this.btRefresh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btRefresh.UNFOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btRefresh.UNFOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btRefresh.UNFOCUSFONTCOLOR = System.Drawing.Color.Empty;
             this.btRefresh.UseVisualStyleBackColor = true;
             this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
             // btSave
             // 
-            this.btSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSave.EnglishText = null;
             this.btSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btSave.FOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btSave.FOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btSave.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btSave.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btSave.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btSave.Image = ((System.Drawing.Image)(resources.GetObject("btSave.Image")));
             this.btSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btSave.Location = new System.Drawing.Point(273, 3);
+            this.btSave.Location = new System.Drawing.Point(364, 4);
+            this.btSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSave.Name = "btSave";
-            this.btSave.Size = new System.Drawing.Size(84, 65);
+            this.btSave.Size = new System.Drawing.Size(112, 87);
             this.btSave.TabIndex = 2;
             this.btSave.Text = "保存";
             this.btSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btSave.UNFOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btSave.UNFOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btSave.UNFOCUSFONTCOLOR = System.Drawing.Color.Empty;
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btExpand
             // 
-            this.btExpand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btExpand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btExpand.EnglishText = null;
             this.btExpand.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btExpand.FOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btExpand.FOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btExpand.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btExpand.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btExpand.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btExpand.Image = ((System.Drawing.Image)(resources.GetObject("btExpand.Image")));
             this.btExpand.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btExpand.Location = new System.Drawing.Point(453, 3);
+            this.btExpand.Location = new System.Drawing.Point(604, 4);
+            this.btExpand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btExpand.Name = "btExpand";
-            this.btExpand.Size = new System.Drawing.Size(84, 65);
+            this.btExpand.Size = new System.Drawing.Size(112, 87);
             this.btExpand.TabIndex = 4;
             this.btExpand.Text = "展开";
             this.btExpand.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btExpand.UNFOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btExpand.UNFOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btExpand.UNFOCUSFONTCOLOR = System.Drawing.Color.Empty;
             this.btExpand.UseVisualStyleBackColor = true;
             this.btExpand.Click += new System.EventHandler(this.btExpand_Click);
             // 
             // btCollapse
             // 
-            this.btCollapse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btCollapse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btCollapse.EnglishText = null;
             this.btCollapse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btCollapse.FOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btCollapse.FOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btCollapse.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btCollapse.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btCollapse.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btCollapse.Image = ((System.Drawing.Image)(resources.GetObject("btCollapse.Image")));
             this.btCollapse.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btCollapse.Location = new System.Drawing.Point(543, 3);
+            this.btCollapse.Location = new System.Drawing.Point(724, 4);
+            this.btCollapse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btCollapse.Name = "btCollapse";
-            this.btCollapse.Size = new System.Drawing.Size(84, 65);
+            this.btCollapse.Size = new System.Drawing.Size(112, 87);
             this.btCollapse.TabIndex = 5;
             this.btCollapse.Text = "收缩";
             this.btCollapse.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btCollapse.UNFOCUSFONT = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btCollapse.UNFOCUSFONT = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btCollapse.UNFOCUSFONTCOLOR = System.Drawing.Color.Empty;
             this.btCollapse.UseVisualStyleBackColor = true;
             this.btCollapse.Click += new System.EventHandler(this.btCollapse_Click);
@@ -371,16 +387,22 @@
             this.treeListColumn2,
             this.treeListColumn3,
             this.cTeamA,
+            this.treeListColumn5,
             this.cTeamB,
+            this.treeListColumn11,
             this.treeListColumn6,
             this.treeListColumn7,
             this.treeListColumn8,
             this.treeListColumn9,
             this.treeListColumn10,
-            this.cNum});
+            this.cNum,
+            this.treeListColumn4,
+            this.treeListColumn12});
+            this.tvSchedule.Cursor = System.Windows.Forms.Cursors.Default;
             this.tvSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvSchedule.KeyFieldName = "GUID";
-            this.tvSchedule.Location = new System.Drawing.Point(0, 71);
+            this.tvSchedule.Location = new System.Drawing.Point(0, 95);
+            this.tvSchedule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tvSchedule.Name = "tvSchedule";
             this.tvSchedule.OptionsBehavior.PopulateServiceColumns = true;
             this.tvSchedule.OptionsView.EnableAppearanceEvenRow = true;
@@ -396,7 +418,7 @@
             this.dtGameDate,
             this.btDelete});
             this.tvSchedule.RootValue = "-1";
-            this.tvSchedule.Size = new System.Drawing.Size(850, 262);
+            this.tvSchedule.Size = new System.Drawing.Size(1133, 349);
             this.tvSchedule.TabIndex = 4;
             this.tvSchedule.FocusedNodeChanged += new DevExpress.XtraTreeList.FocusedNodeChangedEventHandler(this.tvSchedule_FocusedNodeChanged);
             // 
@@ -424,9 +446,9 @@
             this.dtGameDate.AutoHeight = false;
             this.dtGameDate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtGameDate.Name = "dtGameDate";
-            this.dtGameDate.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dtGameDate.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.dtGameDate.Name = "dtGameDate";
             // 
             // treeListColumn3
             // 
@@ -475,7 +497,7 @@
             this.cTeamB.FieldName = "TEAMBGUID";
             this.cTeamB.Name = "cTeamB";
             this.cTeamB.Visible = true;
-            this.cTeamB.VisibleIndex = 5;
+            this.cTeamB.VisibleIndex = 6;
             this.cTeamB.Width = 76;
             // 
             // lueTeamB
@@ -498,7 +520,7 @@
             this.treeListColumn6.FieldName = "GYMNASIUMGUID";
             this.treeListColumn6.Name = "treeListColumn6";
             this.treeListColumn6.Visible = true;
-            this.treeListColumn6.VisibleIndex = 6;
+            this.treeListColumn6.VisibleIndex = 8;
             this.treeListColumn6.Width = 77;
             // 
             // lueGymnasium
@@ -521,7 +543,7 @@
             this.treeListColumn7.FieldName = "AREAGUID";
             this.treeListColumn7.Name = "treeListColumn7";
             this.treeListColumn7.Visible = true;
-            this.treeListColumn7.VisibleIndex = 7;
+            this.treeListColumn7.VisibleIndex = 9;
             this.treeListColumn7.Width = 77;
             // 
             // lueArea
@@ -544,7 +566,7 @@
             this.treeListColumn8.FieldName = "STATE";
             this.treeListColumn8.Name = "treeListColumn8";
             this.treeListColumn8.Visible = true;
-            this.treeListColumn8.VisibleIndex = 8;
+            this.treeListColumn8.VisibleIndex = 10;
             this.treeListColumn8.Width = 77;
             // 
             // rbState
@@ -573,14 +595,15 @@
             this.treeListColumn10.ColumnEdit = this.btDelete;
             this.treeListColumn10.Name = "treeListColumn10";
             this.treeListColumn10.Visible = true;
-            this.treeListColumn10.VisibleIndex = 10;
+            this.treeListColumn10.VisibleIndex = 12;
             this.treeListColumn10.Width = 57;
             // 
             // btDelete
             // 
             this.btDelete.AutoHeight = false;
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.btDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("btDelete.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btDelete.Name = "btDelete";
             this.btDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btDelete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btDelete_ButtonClick);
@@ -597,9 +620,11 @@
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 333);
+            this.groupBox1.Location = new System.Drawing.Point(0, 444);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(850, 176);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1133, 235);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "参赛队员";
@@ -612,11 +637,12 @@
             this.tableLayoutPanel2.Controls.Add(this.groupBox3, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.groupBox2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(844, 156);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1125, 212);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // groupBox3
@@ -624,9 +650,11 @@
             this.groupBox3.Controls.Add(this.gcTeamB);
             this.groupBox3.Controls.Add(this.tableLayoutPanel4);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(425, 3);
+            this.groupBox3.Location = new System.Drawing.Point(566, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(416, 150);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(555, 204);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "客队人员";
@@ -634,10 +662,12 @@
             // gcTeamB
             // 
             this.gcTeamB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcTeamB.Location = new System.Drawing.Point(3, 46);
+            this.gcTeamB.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcTeamB.Location = new System.Drawing.Point(4, 58);
             this.gcTeamB.MainView = this.gvTeamB;
+            this.gcTeamB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gcTeamB.Name = "gcTeamB";
-            this.gcTeamB.Size = new System.Drawing.Size(410, 101);
+            this.gcTeamB.Size = new System.Drawing.Size(547, 142);
             this.gcTeamB.TabIndex = 18;
             this.gcTeamB.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTeamB});
@@ -681,32 +711,34 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 4;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.btAddTeamBAthletes, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btDeleteTeamBAthletes, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(410, 29);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(547, 39);
             this.tableLayoutPanel4.TabIndex = 16;
             // 
             // btAddTeamBAthletes
             // 
-            this.btAddTeamBAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddTeamBAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddTeamBAthletes.EnglishText = null;
             this.btAddTeamBAthletes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddTeamBAthletes.FOCUSFONT = null;
             this.btAddTeamBAthletes.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btAddTeamBAthletes.Location = new System.Drawing.Point(3, 3);
+            this.btAddTeamBAthletes.Location = new System.Drawing.Point(4, 4);
+            this.btAddTeamBAthletes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddTeamBAthletes.Name = "btAddTeamBAthletes";
-            this.btAddTeamBAthletes.Size = new System.Drawing.Size(94, 23);
+            this.btAddTeamBAthletes.Size = new System.Drawing.Size(125, 31);
             this.btAddTeamBAthletes.TabIndex = 22;
             this.btAddTeamBAthletes.Text = "增加";
             this.btAddTeamBAthletes.UNFOCUSFONT = null;
@@ -716,16 +748,17 @@
             // 
             // btDeleteTeamBAthletes
             // 
-            this.btDeleteTeamBAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btDeleteTeamBAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btDeleteTeamBAthletes.EnglishText = null;
             this.btDeleteTeamBAthletes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btDeleteTeamBAthletes.FOCUSFONT = null;
             this.btDeleteTeamBAthletes.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btDeleteTeamBAthletes.Location = new System.Drawing.Point(103, 3);
+            this.btDeleteTeamBAthletes.Location = new System.Drawing.Point(137, 4);
+            this.btDeleteTeamBAthletes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btDeleteTeamBAthletes.Name = "btDeleteTeamBAthletes";
-            this.btDeleteTeamBAthletes.Size = new System.Drawing.Size(94, 23);
+            this.btDeleteTeamBAthletes.Size = new System.Drawing.Size(125, 31);
             this.btDeleteTeamBAthletes.TabIndex = 23;
             this.btDeleteTeamBAthletes.Text = "删除";
             this.btDeleteTeamBAthletes.UNFOCUSFONT = null;
@@ -738,9 +771,11 @@
             this.groupBox2.Controls.Add(this.gcTeamA);
             this.groupBox2.Controls.Add(this.tableLayoutPanel3);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(3, 3);
+            this.groupBox2.Location = new System.Drawing.Point(4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(416, 150);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(554, 204);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "主队人员";
@@ -748,10 +783,12 @@
             // gcTeamA
             // 
             this.gcTeamA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcTeamA.Location = new System.Drawing.Point(3, 46);
+            this.gcTeamA.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcTeamA.Location = new System.Drawing.Point(4, 58);
             this.gcTeamA.MainView = this.gvTeamA;
+            this.gcTeamA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gcTeamA.Name = "gcTeamA";
-            this.gcTeamA.Size = new System.Drawing.Size(410, 101);
+            this.gcTeamA.Size = new System.Drawing.Size(546, 142);
             this.gcTeamA.TabIndex = 17;
             this.gcTeamA.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTeamA});
@@ -795,32 +832,34 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.btAddTeamAAthletes, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btDeleteTeamAAthletes, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(410, 29);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(546, 39);
             this.tableLayoutPanel3.TabIndex = 16;
             // 
             // btAddTeamAAthletes
             // 
-            this.btAddTeamAAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddTeamAAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddTeamAAthletes.EnglishText = null;
             this.btAddTeamAAthletes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddTeamAAthletes.FOCUSFONT = null;
             this.btAddTeamAAthletes.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btAddTeamAAthletes.Location = new System.Drawing.Point(3, 3);
+            this.btAddTeamAAthletes.Location = new System.Drawing.Point(4, 4);
+            this.btAddTeamAAthletes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddTeamAAthletes.Name = "btAddTeamAAthletes";
-            this.btAddTeamAAthletes.Size = new System.Drawing.Size(94, 23);
+            this.btAddTeamAAthletes.Size = new System.Drawing.Size(125, 31);
             this.btAddTeamAAthletes.TabIndex = 22;
             this.btAddTeamAAthletes.Text = "增加";
             this.btAddTeamAAthletes.UNFOCUSFONT = null;
@@ -830,16 +869,17 @@
             // 
             // btDeleteTeamAAthletes
             // 
-            this.btDeleteTeamAAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btDeleteTeamAAthletes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btDeleteTeamAAthletes.EnglishText = null;
             this.btDeleteTeamAAthletes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btDeleteTeamAAthletes.FOCUSFONT = null;
             this.btDeleteTeamAAthletes.FOCUSFONTCOLOR = System.Drawing.Color.Empty;
-            this.btDeleteTeamAAthletes.Location = new System.Drawing.Point(103, 3);
+            this.btDeleteTeamAAthletes.Location = new System.Drawing.Point(137, 4);
+            this.btDeleteTeamAAthletes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btDeleteTeamAAthletes.Name = "btDeleteTeamAAthletes";
-            this.btDeleteTeamAAthletes.Size = new System.Drawing.Size(94, 23);
+            this.btDeleteTeamAAthletes.Size = new System.Drawing.Size(125, 31);
             this.btDeleteTeamAAthletes.TabIndex = 23;
             this.btDeleteTeamAAthletes.Text = "删除";
             this.btDeleteTeamAAthletes.UNFOCUSFONT = null;
@@ -847,21 +887,50 @@
             this.btDeleteTeamAAthletes.UseVisualStyleBackColor = true;
             this.btDeleteTeamAAthletes.Click += new System.EventHandler(this.btDeleteTeamAAthletes_Click);
             // 
+            // treeListColumn4
+            // 
+            this.treeListColumn4.Caption = "treeListColumn4";
+            this.treeListColumn4.FieldName = "treeListColumn4";
+            this.treeListColumn4.Name = "treeListColumn4";
+            // 
+            // treeListColumn5
+            // 
+            this.treeListColumn5.Caption = "主队颜色";
+            this.treeListColumn5.FieldName = "TEAMACOLOR";
+            this.treeListColumn5.Name = "treeListColumn5";
+            this.treeListColumn5.Visible = true;
+            this.treeListColumn5.VisibleIndex = 5;
+            // 
+            // treeListColumn11
+            // 
+            this.treeListColumn11.Caption = "客队颜色";
+            this.treeListColumn11.FieldName = "TEAMBCOLOR";
+            this.treeListColumn11.Name = "treeListColumn11";
+            this.treeListColumn11.Visible = true;
+            this.treeListColumn11.VisibleIndex = 7;
+            // 
+            // treeListColumn12
+            // 
+            this.treeListColumn12.Caption = "treeListColumn12";
+            this.treeListColumn12.FieldName = "NUM";
+            this.treeListColumn12.Name = "treeListColumn12";
+            // 
             // TeamSchedule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tvSchedule);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.plButtons);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TeamSchedule";
-            this.Size = new System.Drawing.Size(850, 509);
+            this.Size = new System.Drawing.Size(1133, 679);
             this.plButtons.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rbType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbImages)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tvSchedule)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGameDate.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGameDate.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtGameDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtGameTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueTeamA)).EndInit();
@@ -936,5 +1005,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private ApplicationControlCommon.MyButton btAddTeamAAthletes;
         private ApplicationControlCommon.MyButton btDeleteTeamAAthletes;
+        private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn4;
+        private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn5;
+        private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn11;
+        private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn12;
     }
 }

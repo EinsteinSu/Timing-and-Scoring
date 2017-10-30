@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -65,7 +66,7 @@ namespace Water_Polo
             else
                 SetControlText(lbScoreB, score);
         }
-
+        private string logfile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "log.wlog");
         SubStance.Schedule OnSchedule;
         private void btLoadSchedule_Click(object sender, EventArgs e)
         {
@@ -74,7 +75,7 @@ namespace Water_Polo
             Common.ScheduleLoad frm = new Common.ScheduleLoad();
             if (frm.ShowDialog() == DialogResult.OK)
             {
-                
+                File.AppendAllText(logfile,string.Format("Send to {0} {1}",Settings.ONSETTINGS.REFEREEIPADDRESS,Settings.ONSETTINGS.REFEREEPORT));
                 SocketPublic.SocketSend.SendMessage(Settings.ONSETTINGS.REFEREEIPADDRESS, Settings.ONSETTINGS.REFEREEPORT,
                     string.Format("ScheduleLoad,{0}", frm.ScheduleRow["Guid"]));
                 Common.ScheduleOperate s = new Common.ScheduleOperate(frm.ScheduleRow);

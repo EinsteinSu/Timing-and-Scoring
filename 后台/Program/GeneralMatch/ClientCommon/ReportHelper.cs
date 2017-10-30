@@ -13,7 +13,7 @@ namespace ClientCommon
             {
                 DevExpress.XtraReports.UI.XtraReport r = DevExpress.XtraReports.UI.XtraReport.FromFile(ApplicationCommon.DirectoryHelper.ReportDirectory + fileName, true);
                 r.DataSource = dt;
-                r.ShowPreview();
+                //r.ShowPreview();
             }
         }
 
@@ -23,7 +23,7 @@ namespace ClientCommon
             {
                 DevExpress.XtraReports.UI.XtraReport r = DevExpress.XtraReports.UI.XtraReport.FromFile(ApplicationCommon.DirectoryHelper.ReportDirectory + fileName, true);
                 r.DataSource = dt;
-                r.ShowDesigner();
+                //r.ShowDesigner();
             }
         }
 
@@ -33,7 +33,7 @@ namespace ClientCommon
             {
                 DevExpress.XtraReports.UI.XtraReport r = DevExpress.XtraReports.UI.XtraReport.FromFile(ApplicationCommon.DirectoryHelper.ReportDirectory + fileName, true);
                 r.DataSource = ds;
-                r.ShowDesigner();
+                //r.ShowDesigner();
             }
         }
     }

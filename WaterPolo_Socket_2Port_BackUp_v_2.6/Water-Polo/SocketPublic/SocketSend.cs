@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Net;
@@ -31,10 +32,12 @@ namespace SocketPublic
             }
         }
 
+        private static string logfile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "log.wlog");
         public static bool SendMessage(string ipAddress, int port, string message)
         {
             try
             {
+                File.AppendAllText(logfile, string.Format("ip {0} port {1} msg:{2}", ipAddress, port, message));
                 IPAddress ip = IPAddress.Parse(ipAddress);
                 IPEndPoint ipe = new IPEndPoint(ip, port);//把ip和端口转化为IPEndPoint实例
                 Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);//创建一个Socket
