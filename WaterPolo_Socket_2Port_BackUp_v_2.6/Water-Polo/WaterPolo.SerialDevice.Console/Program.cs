@@ -1,0 +1,38 @@
+﻿using ComPublic;
+using WaterPolo.Common;
+
+namespace WaterPolo.SerialDevice.Console
+{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            var type = args[0];
+            var port = args[1].ToInt();
+            var bit = args[2].ToInt();
+            var com = new ComListening(port, bit);
+
+            if (com.Open())
+            {
+                com.StartListening();
+                com.DataChanging += msg =>
+                {
+                    if (type == "30")
+                    {
+                        var process = new ThirtySecondsProcess();
+                        System.Console.WriteLine(process.Process(msg));
+                    }
+                    else
+                    {
+                        var isAdd = false;
+                        var timeoutA = 0;
+                        var timeoutB = 0;
+                        var process = new TotalTimeProcess(isAdd, timeoutA, timeoutB);
+                        System.Console.WriteLine($"IsAdd:{isAdd}");
+                        System.Console.WriteLine(process);
+                    }
+                };
+            }
+        }
+    }
+}

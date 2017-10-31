@@ -17,7 +17,8 @@ namespace Water_Polo
             TitlePictureBox.Width = 100;
             TitleGroupBox.Height = 100;
             TitlePictureBox.Image = Resources.Emblem100_80;
-            TitleLabel.Text = "WATER-POLO MAJOR CONSOLE";
+            Log.Info("Hello");
+            TitleLabel.Text = @"WATER-POLO MAJOR CONSOLE";
             TitleLabel.Font = new Font("宋体", 32, FontStyle.Bold);
             FunctionParent.BackgroundImage = Resources.Emblem;
 

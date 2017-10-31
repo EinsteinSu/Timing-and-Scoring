@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Ports;
 using System.Threading;
-using ApplicationCommon;
 using log4net;
 
 namespace ComPublic
@@ -16,14 +15,12 @@ namespace ComPublic
 
         public int ByteTotal = 0;
 
-        private readonly string _fileName;
 
         private Thread _thread;
 
         public ComListening(int port, int bit)
         {
             SCom = new SerialPort("COM" + port, bit, Parity.None, 8);
-            _fileName = $"COM{port}_{bit}";
         }
 
         public string Name { get; set; }

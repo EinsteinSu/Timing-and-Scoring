@@ -23,7 +23,7 @@ namespace RefereeConsole
         private readonly ComListening _totalCom;
         private string _scheduleGuid;
         private ScheduleOperate _s;
-
+        private readonly ThirtySecondsProcess _thirtySecondsProcess = new ThirtySecondsProcess();
         public MatchControlExtend()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace RefereeConsole
 
             try
             {
-                //todo: release the resource.
+                Log.Info($"Start listen serial device for display total time {Settings.ONSETTINGS.TOTALTIMEPORT}({Settings.ONSETTINGS.TOTALBIT}) Header{Settings.ONSETTINGS.TOTALHEADER} Tail{Settings.ONSETTINGS.TOTALTAIL}");
                 _totalCom = new ComListening(Settings.ONSETTINGS.TOTALTIMEPORT, Settings.ONSETTINGS.TOTALBIT)
                 {
                     Header = Settings.ONSETTINGS.TOTALHEADER,
@@ -41,12 +41,24 @@ namespace RefereeConsole
                 if (_totalCom.Open())
                 {
                     _totalCom.StartListening();
-                    _totalCom.DataChanging += ProcessTotalTimeFromSerialCom;
+                    _totalCom.DataChanging += msg =>
+                    {
+                        var processor = new TotalTimeProcess(_isAdd, TeamATimeOutCount, TeamBTimeOutCount);
+                        var data = processor.Process(msg);
+                        Court = data.Court;
+                        TeamATimeOutCount = data.TimeoutCountA;
+                        TeamBTimeOutCount = data.TimeoutCountB;
+                        tcTimeOutA.LTime = data.PauseTimeA;
+                        tcTimeOutB.LTime = data.PauseTimeB;
+                        tcTotalTime.LTime = data.TotalTime;
+                        ScoreA = data.ScoreA;
+                        ScoreB = data.ScoreB;
+                    };
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                //todo: logging the error of total serial device error
+                Log.Error($"Could not listen this serial device. {ex.Message}");
             }
 
             #endregion
@@ -55,6 +67,7 @@ namespace RefereeConsole
 
             try
             {
+                Log.Info($"Start listen serial device for display total time {Settings.ONSETTINGS.SECONDSTIMEPORT}({Settings.ONSETTINGS.SECONDSBIT}) Header{Settings.ONSETTINGS.SECONDSHEADER} Tail{Settings.ONSETTINGS.SECONDSTAIL}");
                 _secondsCom =
                     new ComListening(Settings.ONSETTINGS.SECONDSTIMEPORT, Settings.ONSETTINGS.SECONDSBIT)
                     {
@@ -64,12 +77,16 @@ namespace RefereeConsole
                 if (_secondsCom.Open())
                 {
                     _secondsCom.StartListening();
-                    _secondsCom.DataChanging += ProcessSecondsFromSerialCom;
+                    _secondsCom.DataChanging += delegate (List<string> msg)
+                    {
+                        //display 30 seconds
+                        tcThirtyTime.LTime = _thirtySecondsProcess.Process(msg);
+                    };
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                //todo: logging
+                Log.Error($"Could not listen this serial device. {ex.Message}");
             }
 
             #endregion
@@ -152,34 +169,13 @@ namespace RefereeConsole
 
         #region 总计时和30秒
 
-        /// <summary>
-        ///     30秒
-        /// </summary>
-        /// <param name="msg"></param>
-        private void ProcessSecondsFromSerialCom(List<string> msg)
-        {
-            if (IsNumeric(msg[0]))
-                if (msg[0].Length >= 2)
-                {
-                    var newMsg = msg[0].Substring(1, 1) + msg[0].Substring(0, 1);
-                    var seconds = newMsg.ToInt();
-                    tcThirtyTime.LTime = seconds * 100;
-                }
-                else
-                {
-                    var seconds = msg[0].ToInt();
-                    tcThirtyTime.LTime = seconds * 100;
-                }
-        }
-
-        private bool _isPauseTime;
         private bool _isAdd;
 
         /// <summary>
         ///     总计时
         /// </summary>
         /// <param name="msg"></param>
-        private void ProcessTotalTimeFromSerialCom(List<string> msg)
+        private void Original_ProcessTotalTimeFromSerialCom(List<string> msg)
         {
             if (msg.Count <= 5)
             {
@@ -190,7 +186,6 @@ namespace RefereeConsole
                     Court = msg[5].Replace("E", "").ToInt();
             if (msg[5].IndexOf("C", StringComparison.Ordinal) >= 0 && IsNumeric(msg[5].Replace("C", "")))
             {
-                _isPauseTime = true;
                 if (!_isAdd)
                 {
                     TeamATimeOutCount++;
@@ -204,7 +199,6 @@ namespace RefereeConsole
             }
             if (msg[5].IndexOf("D", StringComparison.Ordinal) >= 0 && IsNumeric(msg[5].Replace("D", "")))
             {
-                _isPauseTime = true;
                 if (!_isAdd)
                 {
                     TeamBTimeOutCount++;
@@ -224,7 +218,6 @@ namespace RefereeConsole
             if (IsNumeric(msg[0]) && IsNumeric(msg[1]) && msg[5].IndexOf("C", StringComparison.Ordinal) < 0 &&
                 msg[5].IndexOf("D", StringComparison.Ordinal) < 0)
             {
-                _isPauseTime = false;
                 _isAdd = false;
                 var time = $"00:{msg[0]}:{msg[1]}";
                 tcTotalTime.LTime = tcTotalTime.GetSecond(time.ToDateTime()) * 100;
@@ -657,7 +650,6 @@ namespace RefereeConsole
             tcTimeOutA.Reset();
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TimeOutHide,{0}", "A"));
-            _isPauseTime = false;
         }
 
         private void btHideTimeOutB_Click(object sender, EventArgs e)
@@ -666,7 +658,6 @@ namespace RefereeConsole
             tcTimeOutB.Reset();
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TimeOutHide,{0}", "B"));
-            _isPauseTime = false;
         }
 
         private void tcTimeOutA_Started()
@@ -718,16 +709,15 @@ namespace RefereeConsole
             if (ltime == 0)
             {
                 //显示回总时间
-                var sp = new SoundPlayer();
-                sp.SoundLocation = string.Format(@"{0}\{1}", DirectoryHelper.SoundDirectory, "TimeOut0.wav");
+                var sp = new SoundPlayer {SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut0.wav"}"};
                 sp.Play();
 
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
-                    string.Format("TimeOutHide,{0}", "B"));
+                    "TimeOutHide,B");
                 return;
             }
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
-                string.Format("TimeOut,{0},{1}", "B", timing));
+                $"TimeOut,B,{timing}");
         }
 
         private void btAddTimeOutA_Click(object sender, EventArgs e)
@@ -824,6 +814,7 @@ namespace RefereeConsole
             tcThirtyTime.Setting();
         }
 
+        //if you want to associate with total time, you should add this logical in total time changing method
         private void tcThirtyTime_TextTimingChanged(string timing)
         {
             #region 20秒

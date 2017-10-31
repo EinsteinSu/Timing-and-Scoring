@@ -96,8 +96,7 @@ namespace RefereeConsole
         {
             if (MessageBox.Show("Whether to exit the program?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                if (_onMatch != null)
-                    _onMatch.EndListening();
+                _onMatch?.EndListening();
                 _socket.StopListening();
                 Application.Exit();
             }
