@@ -25,11 +25,11 @@ namespace RefereeConsole
             InitializeComponent();
             Log.Info($"Start listening from prot {Settings.ONSETTINGS.LISTENINGPORT}");
             _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
-            _socket.ProcessMessage += sl_ProcessMessage;
+            _socket.ProcessMessage += ProcessMessage;
             LoadSchedule("106e9e3f-29dd-4a8a-a8af-af90d46c8e0d");
         }
 
-        private void sl_ProcessMessage(string msg)
+        private void ProcessMessage(string msg)
         {
             Log.Debug($"Got message {msg}");
             var lstMsg = new List<string>();
@@ -56,11 +56,11 @@ namespace RefereeConsole
                     AddControl(plParent, _onMatch);
                 }
                 _onMatch.ScheduleGuid = scheduleGuid;
-                var s = new ScheduleOperate(scheduleGuid);
+                var schedule = new ScheduleOperate(scheduleGuid);
 
                 //config it
                 SetControlText(lbTitle,
-                    $"2011 SHENZHEN Universiade Water-Polo Referee Console——{s.OnSchedule.NAME}");
+                    $"2011 SHENZHEN Universiade Water-Polo Referee Console——{schedule.OnSchedule.NAME}");
                 SetControlEnabled(btFinish, true);
 
                 //回写比赛状态
@@ -77,7 +77,18 @@ namespace RefereeConsole
                 case Keys.Escape:
                     CloseApplication();
                     break;
-                    //todo: choose the schedule
+                case Keys.L:
+                    LoadScheduleFromUI();
+                    break;
+            }
+        }
+
+        private void LoadScheduleFromUI()
+        {
+            var from = new ScheduleLoad();
+            if (from.ShowDialog() == DialogResult.OK)
+            {
+                LoadSchedule(from.ScheduleRow["Guid"].ToString());
             }
         }
 

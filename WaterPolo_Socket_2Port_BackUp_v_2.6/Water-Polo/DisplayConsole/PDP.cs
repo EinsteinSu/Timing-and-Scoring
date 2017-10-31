@@ -8,6 +8,7 @@ using ApplicationControlCommon;
 using Common;
 using DevExpress.XtraEditors;
 using DisplayConfig;
+using log4net;
 using SocketPublic;
 
 namespace DisplayConsole
@@ -15,16 +16,18 @@ namespace DisplayConsole
     public partial class PDP : BaseForm
     {
         private readonly SocketListening _socket;
-
+        private static readonly ILog Log = LogManager.GetLogger("PDP");
         public PDP()
         {
             InitializeComponent();
+            Log.Info($"Start listening {Settings.ONSETTINGS.LISTENINGPORT}");
             _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
-            _socket.ProcessMessage += sl_ProcessMessage;
+            _socket.ProcessMessage += ProcessMessage;
         }
 
-        private void sl_ProcessMessage(string msg)
+        private void ProcessMessage(string msg)
         {
+            Log.Debug($"Got message {msg}");
             var lstMsg = new List<string>();
             foreach (var str in msg.Split(','))
                 lstMsg.Add(str);
@@ -128,10 +131,10 @@ namespace DisplayConsole
 
         public void SetTotalTime(string time)
         {
-            if (time == "Time Out")
-                SetFont(lbTotalTime, new Font("Comic Sans MS", 36F, FontStyle.Bold, GraphicsUnit.Point, 0));
-            else
-                SetFont(lbTotalTime, new Font("Comic Sans MS", 63.75F, FontStyle.Bold, GraphicsUnit.Point, 0));
+            SetFont(lbTotalTime,
+                time == "Time Out"
+                    ? new Font("Comic Sans MS", 20F, FontStyle.Bold, GraphicsUnit.Point, 0)
+                    : new Font("Comic Sans MS", 30F, FontStyle.Bold, GraphicsUnit.Point, 0));
             SetControlText(lbTotalTime, time);
         }
 
@@ -265,10 +268,7 @@ namespace DisplayConsole
 
         public void TimeOutHide(string mark)
         {
-            if (mark == "A")
-                SetControlText(lbPauseA, "");
-            else
-                SetControlText(lbPauseB, "");
+            SetControlText(mark == "A" ? lbPauseA : lbPauseB, "");
         }
 
         #endregion
@@ -380,7 +380,7 @@ namespace DisplayConsole
             if (ctrl.InvokeRequired)
             {
                 GetLabelsCallback d = GetLabels;
-                return (List<Label>) ctrl.Invoke(d, ctrl);
+                return (List<Label>)ctrl.Invoke(d, ctrl);
             }
             var lst = new List<Label>();
             foreach (var lb in lst)

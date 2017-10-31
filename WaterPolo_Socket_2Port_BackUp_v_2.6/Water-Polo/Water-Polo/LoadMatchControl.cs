@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 using Common;
 using DevExpress.XtraGrid;
+using log4net;
 using SocketPublic;
 using SubStance;
 
@@ -13,19 +13,21 @@ namespace Water_Polo
 {
     public partial class LoadMatchControl : UserControl
     {
-        private readonly string logfile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "log.wlog");
-        private Schedule _onSchedule;
+        private static readonly ILog Log = LogManager.GetLogger("LoadMatchControl");
         private readonly SocketListening _socket;
+        private Schedule _onSchedule;
 
         public LoadMatchControl()
         {
             InitializeComponent();
+            Log.Info($"Start Listening {Settings.ONSETTINGS.LISTENINGPORT}");
             _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
-            _socket.ProcessMessage += sl_ProcessMessage;
+            _socket.ProcessMessage += ProcessMessage;
         }
 
-        private void sl_ProcessMessage(string msg)
+        private void ProcessMessage(string msg)
         {
+            Log.Debug($"Got message: {msg}");
             var lstMsg = new List<string>();
             foreach (var str in msg.Split(','))
                 lstMsg.Add(str);
@@ -76,8 +78,6 @@ namespace Water_Polo
             var frm = new ScheduleLoad();
             if (frm.ShowDialog() == DialogResult.OK)
             {
-                File.AppendAllText(logfile,
-                    $"Send to {Settings.ONSETTINGS.REFEREEIPADDRESS} {Settings.ONSETTINGS.REFEREEPORT}");
                 SocketSend.SendMessage(Settings.ONSETTINGS.REFEREEIPADDRESS, Settings.ONSETTINGS.REFEREEPORT,
                     $"ScheduleLoad,{frm.ScheduleRow["Guid"]}");
                 var s = new ScheduleOperate(frm.ScheduleRow);

@@ -162,3 +162,15 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.exe.licenses
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.exe
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.pdb
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\裁判控制台\RefereeConsole.exe.config
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\裁判控制台\RefereeConsole.exe
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\裁判控制台\RefereeConsole.pdb
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.csprojResolveAssemblyReference.cache
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.AthletesControl.resources
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.HomePage.resources
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.MatchControlExtend.resources
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.Properties.Resources.resources
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.csproj.GenerateResource.Cache
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.exe.licenses
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.exe
+C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\RefereeConsole\obj\x86\Debug\RefereeConsole.pdb
