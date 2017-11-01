@@ -73,13 +73,13 @@ namespace DisplayConsole
 
         public void ShowWelcome()
         {
-            //SetControlShowHide(plParent, true);
+            SetControlShowHide(plParent, true);
             SetControlShowHide(tlpParent, false);
         }
 
         public void ShowEvent()
         {
-            //SetControlShowHide(plParent, false);
+            SetControlShowHide(plParent, false);
             SetControlShowHide(tlpParent, true);
         }
 
@@ -124,10 +124,7 @@ namespace DisplayConsole
 
         public void SetScore(string mark, string score)
         {
-            if (mark == "A")
-                SetControlText(lbScoreA, score);
-            else
-                SetControlText(lbScoreB, score);
+            SetControlText(mark == "A" ? lbScoreA : lbScoreB, score);
         }
 
         public void SetTotalTime(string time)

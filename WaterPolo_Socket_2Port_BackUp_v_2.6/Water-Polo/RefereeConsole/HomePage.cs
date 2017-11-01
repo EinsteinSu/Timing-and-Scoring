@@ -26,7 +26,6 @@ namespace RefereeConsole
             Log.Info($"Start listening from prot {Settings.ONSETTINGS.LISTENINGPORT}");
             _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
             _socket.ProcessMessage += ProcessMessage;
-            //LoadSchedule("106e9e3f-29dd-4a8a-a8af-af90d46c8e0d");
         }
 
         private void ProcessMessage(string msg)
@@ -60,7 +59,7 @@ namespace RefereeConsole
 
                 //config it
                 SetControlText(lbTitle,
-                    $"2011 SHENZHEN Universiade Water-Polo Referee Console——{schedule.OnSchedule.NAME}");
+                    $"水球比赛裁判平台——{schedule.OnSchedule.NAME}");
                 SetControlEnabled(btFinish, true);
 
                 //回写比赛状态
@@ -94,9 +93,8 @@ namespace RefereeConsole
 
         public void CloseApplication()
         {
-            if (MessageBox.Show("Whether to exit the program?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("你确定退出程序吗?", "退出", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                _onMatch?.EndListening();
                 _socket.StopListening();
                 Application.Exit();
             }
@@ -117,7 +115,7 @@ namespace RefereeConsole
 
         private void btFinish_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you ture finish this match?", "Finish", MessageBoxButtons.OKCancel) ==
+            if (MessageBox.Show("你确定完成该比赛吗?", "比赛完成", MessageBoxButtons.OKCancel) ==
                 DialogResult.OK)
             {
                 _onMatch.ClearAthletes();
@@ -127,8 +125,8 @@ namespace RefereeConsole
                 SqlHelper.RunSql(sSql);
 
                 //发送信息到显示控制台和主控台
-                //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                //    "Finish");
+                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    "Finish");
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     "Finish");
                 SetControlEnabled(btFinish, false);

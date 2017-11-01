@@ -143,7 +143,7 @@ namespace RefereeConsole
             }
         }
 
-        public void EndListening()
+        private void EndListening()
         {
             _totalCom?.EndListenning();
             _secondsCom?.EndListenning();
@@ -507,7 +507,8 @@ namespace RefereeConsole
                     //    string.Format("Score,{0},{1}", "A", value));
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Score,{0},{1}", "A", value));
-
+                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                        string.Format("Score,{0},{1}", "A", value));
                     SendToVrs();
                 }
             }
@@ -528,6 +529,8 @@ namespace RefereeConsole
                     //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                     //    string.Format("Score,{0},{1}", "B", value));
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                        string.Format("Score,{0},{1}", "B", value));
+                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                         string.Format("Score,{0},{1}", "B", value));
 
                     SendToVrs();
@@ -590,8 +593,8 @@ namespace RefereeConsole
                     }
                     SetControlText(lbAcournt, court);
                     //发送信息到显示控制台和主控台
-                    //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    //    string.Format("Court,{0}", court));
+                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                        string.Format("Court,{0}", court));
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Court,{0}", court));
 
@@ -626,6 +629,8 @@ namespace RefereeConsole
                 //send to display console
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     string.Format("TimeOutCount,{0},{1}", value, TeamBTimeOutCount));
+                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    string.Format("TimeOutCount,{0},{1}", value, TeamBTimeOutCount));
             }
         }
 
@@ -641,6 +646,8 @@ namespace RefereeConsole
                 //send to display console
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     string.Format("TimeOutCount,{0},{1}", TeamATimeOutCount, value));
+                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    string.Format("TimeOutCount,{0},{1}", TeamATimeOutCount, value));
             }
         }
 
@@ -650,6 +657,8 @@ namespace RefereeConsole
             tcTimeOutA.Reset();
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TimeOutHide,{0}", "A"));
+            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                string.Format("TimeOutHide,{0}", "A"));
         }
 
         private void btHideTimeOutB_Click(object sender, EventArgs e)
@@ -657,6 +666,8 @@ namespace RefereeConsole
             tcTimeOutB.Stop();
             tcTimeOutB.Reset();
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TimeOutHide,{0}", "B"));
+            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                 string.Format("TimeOutHide,{0}", "B"));
         }
 
@@ -692,9 +703,13 @@ namespace RefereeConsole
 
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     string.Format("TimeOutHide,{0}", "A"));
+                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    string.Format("TimeOutHide,{0}", "A"));
                 return;
             }
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TimeOut,{0},{1}", "A", timing));
+            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                 string.Format("TimeOut,{0},{1}", "A", timing));
         }
 
@@ -709,14 +724,18 @@ namespace RefereeConsole
             if (ltime == 0)
             {
                 //显示回总时间
-                var sp = new SoundPlayer {SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut0.wav"}"};
+                var sp = new SoundPlayer { SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut0.wav"}" };
                 sp.Play();
 
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     "TimeOutHide,B");
+                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    "TimeOutHide,B");
                 return;
             }
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                $"TimeOut,B,{timing}");
+            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                 $"TimeOut,B,{timing}");
         }
 
@@ -772,7 +791,21 @@ namespace RefereeConsole
 
         private void tcTotalTime_TextTimingChanged(string timing)
         {
+
+            #region 20秒
+
+            foreach (AthletesControl ac in tlpTeamA.Controls)
+                if (ac.IsStart)
+                    ac.TOTALTIME--;
+            foreach (AthletesControl ac in tlpTeamB.Controls)
+                if (ac.IsStart)
+                    ac.TOTALTIME--;
+
+            #endregion
+
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+                string.Format("TotalTime,{0}", timing));
+            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                 string.Format("TotalTime,{0}", timing));
             if (Settings.ONSETTINGS.BTOTALTIME)
                 SendToVrs();
@@ -817,16 +850,6 @@ namespace RefereeConsole
         //if you want to associate with total time, you should add this logical in total time changing method
         private void tcThirtyTime_TextTimingChanged(string timing)
         {
-            #region 20秒
-
-            foreach (AthletesControl ac in tlpTeamA.Controls)
-                if (ac.IsStart)
-                    ac.TOTALTIME--;
-            foreach (AthletesControl ac in tlpTeamB.Controls)
-                if (ac.IsStart)
-                    ac.TOTALTIME--;
-
-            #endregion
 
             if (Settings.ONSETTINGS.BTIRTYSECONDS)
             {

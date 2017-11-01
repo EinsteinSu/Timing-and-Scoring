@@ -109,6 +109,7 @@ C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\显示控制台\DisplayConfig.exe.config
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\显示控制台\DisplayConfig.exe
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\显示控制台\DisplayConfig.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConfig\obj\x86\Debug\DisplayConfig.csprojResolveAssemblyReference.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConfig\obj\x86\Debug\DisplayConfig.HomePage.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConfig\obj\x86\Debug\DisplayConfig.Properties.Resources.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\DisplayConfig\obj\x86\Debug\DisplayConfig.csproj.GenerateResource.Cache

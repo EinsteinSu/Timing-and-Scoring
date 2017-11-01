@@ -18,46 +18,46 @@ namespace Water_Polo
             TitleGroupBox.Height = 100;
             TitlePictureBox.Image = Resources.Emblem100_80;
             Log.Info("Hello");
-            TitleLabel.Text = @"WATER-POLO MAJOR CONSOLE";
+            TitleLabel.Text = @"水球比赛主控平台";
             TitleLabel.Font = new Font("宋体", 32, FontStyle.Bold);
             FunctionParent.BackgroundImage = Resources.Emblem;
 
-            AddFunctionButton(12F, "Show Desktop", ContentAlignment.MiddleCenter, 0, null,
+            AddFunctionButton(12F, "显示桌面", ContentAlignment.MiddleCenter, 0, null,
                 ContentAlignment.MiddleCenter);
-            AddFunctionButton(12F, "Settings", ContentAlignment.MiddleCenter, 1, null, ContentAlignment.MiddleCenter);
-            AddFunctionButton(12F, "Loading Match", ContentAlignment.MiddleCenter, 2, null,
+            AddFunctionButton(12F, "设置", ContentAlignment.MiddleCenter, 1, null, ContentAlignment.MiddleCenter);
+            AddFunctionButton(12F, "加载比赛", ContentAlignment.MiddleCenter, 2, null,
                 ContentAlignment.MiddleCenter);
-            AddFunctionButton(12F, "Process Data", ContentAlignment.MiddleCenter, 3, null,
+            AddFunctionButton(12F, "数据处理", ContentAlignment.MiddleCenter, 3, null,
                 ContentAlignment.MiddleCenter);
-            AddFunctionButton(12F, "Lock Window", ContentAlignment.MiddleCenter, 4, null,
+            AddFunctionButton(12F, "锁定桌面", ContentAlignment.MiddleCenter, 4, null,
                 ContentAlignment.MiddleCenter);
-            AddFunctionButton(12F, "Quit", ContentAlignment.MiddleCenter, 5, null, ContentAlignment.MiddleCenter);
+            AddFunctionButton(12F, "退出", ContentAlignment.MiddleCenter, 5, null, ContentAlignment.MiddleCenter);
         }
 
         private void HomePage_FunctionClick(string functionName)
         {
             switch (functionName)
             {
-                case "Show Desktop":
+                case "显示桌面":
                     FunctionParent.ShowDeskTop();
                     break;
-                case "Settings":
+                case "设置":
                     ShowControl(typeof(SettingsControl), DockStyle.Fill);
                     break;
-                case "Process Data":
+                case "数据处理":
                     ShowControl(typeof(ProcessData), DockStyle.Fill);
                     break;
-                case "Lock Window":
+                case "锁定桌面":
                     FunctionParent.ShowDeskTop();
                     var frm = new LockWindow();
                     if (frm.ShowDialog() == DialogResult.OK)
                     {
                     }
                     break;
-                case "Loading Match":
+                case "加载比赛":
                     ShowControl(typeof(LoadMatchControl), DockStyle.Fill);
                     break;
-                case "Quit":
+                case "退出":
                     CloseApplication();
                     break;
             }

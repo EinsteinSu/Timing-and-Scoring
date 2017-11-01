@@ -10,7 +10,9 @@ namespace WaterPolo.SerialDevice.Console
             var type = args[0];
             var port = args[1].ToInt();
             var bit = args[2].ToInt();
-            var com = new ComListening(port, bit);
+            var head = args[3];
+            var tail = args[4];
+            var com = new ComListening(port, bit) { Header = head, Tail = tail };
 
             if (com.Open())
             {

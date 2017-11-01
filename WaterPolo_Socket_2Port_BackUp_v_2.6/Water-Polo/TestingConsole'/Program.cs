@@ -28,7 +28,6 @@ namespace TestingConsole
             {
                 string guid = node.Attributes["GUID"].Value.ToString();
                 Console.Write(guid  + "\r\n"); 
-               
             }
             Console.Read();
         }

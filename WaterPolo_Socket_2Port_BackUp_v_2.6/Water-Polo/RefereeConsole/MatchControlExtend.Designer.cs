@@ -305,8 +305,8 @@
             // btAddScoreB
             // 
             this.btAddScoreB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                             | System.Windows.Forms.AnchorStyles.Left)
+                                                                            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddScoreB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddScoreB.Image = ((System.Drawing.Image)(resources.GetObject("btAddScoreB.Image")));
             this.btAddScoreB.Location = new System.Drawing.Point(3, 3);
@@ -319,8 +319,8 @@
             // btSubScoreB
             // 
             this.btSubScoreB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                             | System.Windows.Forms.AnchorStyles.Left)
+                                                                            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubScoreB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubScoreB.Image = ((System.Drawing.Image)(resources.GetObject("btSubScoreB.Image")));
             this.btSubScoreB.Location = new System.Drawing.Point(3, 63);
@@ -367,8 +367,8 @@
             // btShowTeamB
             // 
             this.btShowTeamB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                             | System.Windows.Forms.AnchorStyles.Left)
+                                                                            | System.Windows.Forms.AnchorStyles.Right)));
             this.btShowTeamB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btShowTeamB.Location = new System.Drawing.Point(3, 113);
             this.btShowTeamB.Name = "btShowTeamB";
@@ -394,8 +394,8 @@
             // btAddTimeOutB
             // 
             this.btAddTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                               | System.Windows.Forms.AnchorStyles.Left)
+                                                                              | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddTimeOutB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddTimeOutB.Image = ((System.Drawing.Image)(resources.GetObject("btAddTimeOutB.Image")));
             this.btAddTimeOutB.Location = new System.Drawing.Point(3, 149);
@@ -408,8 +408,8 @@
             // btSubTimeOutB
             // 
             this.btSubTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                               | System.Windows.Forms.AnchorStyles.Left)
+                                                                              | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubTimeOutB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubTimeOutB.Image = ((System.Drawing.Image)(resources.GetObject("btSubTimeOutB.Image")));
             this.btSubTimeOutB.Location = new System.Drawing.Point(72, 149);
@@ -443,8 +443,8 @@
             // btHideTimeOutB
             // 
             this.btHideTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                | System.Windows.Forms.AnchorStyles.Left)
+                                                                               | System.Windows.Forms.AnchorStyles.Right)));
             this.btHideTimeOutB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btHideTimeOutB.Location = new System.Drawing.Point(72, 113);
             this.btHideTimeOutB.Name = "btHideTimeOutB";
@@ -510,8 +510,8 @@
             // btSubScoreA
             // 
             this.btSubScoreA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                             | System.Windows.Forms.AnchorStyles.Left)
+                                                                            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubScoreA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubScoreA.Image = ((System.Drawing.Image)(resources.GetObject("btSubScoreA.Image")));
             this.btSubScoreA.Location = new System.Drawing.Point(3, 63);
@@ -524,8 +524,8 @@
             // btAddScoreA
             // 
             this.btAddScoreA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                             | System.Windows.Forms.AnchorStyles.Left)
+                                                                            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddScoreA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddScoreA.Image = ((System.Drawing.Image)(resources.GetObject("btAddScoreA.Image")));
             this.btAddScoreA.Location = new System.Drawing.Point(3, 3);
@@ -572,8 +572,8 @@
             // btShowTeamA
             // 
             this.btShowTeamA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                             | System.Windows.Forms.AnchorStyles.Left)
+                                                                            | System.Windows.Forms.AnchorStyles.Right)));
             this.btShowTeamA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btShowTeamA.Location = new System.Drawing.Point(3, 113);
             this.btShowTeamA.Name = "btShowTeamA";
@@ -599,8 +599,8 @@
             // btAddTimeOutA
             // 
             this.btAddTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                               | System.Windows.Forms.AnchorStyles.Left)
+                                                                              | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddTimeOutA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddTimeOutA.Image = ((System.Drawing.Image)(resources.GetObject("btAddTimeOutA.Image")));
             this.btAddTimeOutA.Location = new System.Drawing.Point(3, 149);
@@ -613,8 +613,8 @@
             // btSubTimeOutA
             // 
             this.btSubTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                               | System.Windows.Forms.AnchorStyles.Left)
+                                                                              | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubTimeOutA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubTimeOutA.Image = ((System.Drawing.Image)(resources.GetObject("btSubTimeOutA.Image")));
             this.btSubTimeOutA.Location = new System.Drawing.Point(72, 149);
@@ -648,8 +648,8 @@
             // btHideTimeOutA
             // 
             this.btHideTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                | System.Windows.Forms.AnchorStyles.Left)
+                                                                               | System.Windows.Forms.AnchorStyles.Right)));
             this.btHideTimeOutA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btHideTimeOutA.Location = new System.Drawing.Point(72, 113);
             this.btHideTimeOutA.Name = "btHideTimeOutA";
@@ -788,8 +788,8 @@
             // btSettingTotalTime
             // 
             this.btSettingTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                    | System.Windows.Forms.AnchorStyles.Left)
+                                                                                   | System.Windows.Forms.AnchorStyles.Right)));
             this.btSettingTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSettingTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btSettingTotalTime.Image")));
             this.btSettingTotalTime.Location = new System.Drawing.Point(73, 31);
@@ -802,8 +802,8 @@
             // btResetTotalTime
             // 
             this.btResetTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                  | System.Windows.Forms.AnchorStyles.Left)
+                                                                                 | System.Windows.Forms.AnchorStyles.Right)));
             this.btResetTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btResetTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btResetTotalTime.Image")));
             this.btResetTotalTime.Location = new System.Drawing.Point(3, 31);
@@ -816,8 +816,8 @@
             // btPauseTotalTime
             // 
             this.btPauseTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                  | System.Windows.Forms.AnchorStyles.Left)
+                                                                                 | System.Windows.Forms.AnchorStyles.Right)));
             this.btPauseTotalTime.Enabled = false;
             this.btPauseTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btPauseTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btPauseTotalTime.Image")));
@@ -831,8 +831,8 @@
             // btStartTotalTime
             // 
             this.btStartTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                  | System.Windows.Forms.AnchorStyles.Left)
+                                                                                 | System.Windows.Forms.AnchorStyles.Right)));
             this.btStartTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btStartTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btStartTotalTime.Image")));
             this.btStartTotalTime.Location = new System.Drawing.Point(3, 3);
@@ -896,8 +896,8 @@
             // btThirtyTimeSetting
             // 
             this.btThirtyTimeSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                     | System.Windows.Forms.AnchorStyles.Left)
+                                                                                    | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimeSetting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimeSetting.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimeSetting.Image")));
             this.btThirtyTimeSetting.Location = new System.Drawing.Point(73, 31);
@@ -910,8 +910,8 @@
             // btThirtyTimeReset
             // 
             this.btThirtyTimeReset.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                   | System.Windows.Forms.AnchorStyles.Left)
+                                                                                  | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimeReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimeReset.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimeReset.Image")));
             this.btThirtyTimeReset.Location = new System.Drawing.Point(3, 31);
@@ -924,8 +924,8 @@
             // btThirtyTimePause
             // 
             this.btThirtyTimePause.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                   | System.Windows.Forms.AnchorStyles.Left)
+                                                                                  | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimePause.Enabled = false;
             this.btThirtyTimePause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimePause.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimePause.Image")));
@@ -939,8 +939,8 @@
             // btThirtyTimeStart
             // 
             this.btThirtyTimeStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                                   | System.Windows.Forms.AnchorStyles.Left)
+                                                                                  | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimeStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimeStart.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimeStart.Image")));
             this.btThirtyTimeStart.Location = new System.Drawing.Point(3, 3);
@@ -1040,8 +1040,8 @@
             // btSubAcournt
             // 
             this.btSubAcournt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                              | System.Windows.Forms.AnchorStyles.Left)
+                                                                             | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubAcournt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubAcournt.Image = ((System.Drawing.Image)(resources.GetObject("btSubAcournt.Image")));
             this.btSubAcournt.Location = new System.Drawing.Point(86, 3);
@@ -1054,8 +1054,8 @@
             // btAddAcournt
             // 
             this.btAddAcournt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                              | System.Windows.Forms.AnchorStyles.Left)
+                                                                             | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddAcournt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddAcournt.Image = ((System.Drawing.Image)(resources.GetObject("btAddAcournt.Image")));
             this.btAddAcournt.Location = new System.Drawing.Point(3, 3);

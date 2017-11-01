@@ -42,8 +42,8 @@
             // btStart
             // 
             this.btStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                         | System.Windows.Forms.AnchorStyles.Left)
+                                                                        | System.Windows.Forms.AnchorStyles.Right)));
             this.btStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btStart.Location = new System.Drawing.Point(3, 3);
             this.btStart.Name = "btStart";
@@ -56,8 +56,8 @@
             // btStop
             // 
             this.btStop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                        | System.Windows.Forms.AnchorStyles.Left)
+                                                                       | System.Windows.Forms.AnchorStyles.Right)));
             this.btStop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btStop.Location = new System.Drawing.Point(3, 37);
             this.btStop.Name = "btStop";
@@ -70,8 +70,8 @@
             // btReset
             // 
             this.btReset.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                         | System.Windows.Forms.AnchorStyles.Left)
+                                                                        | System.Windows.Forms.AnchorStyles.Right)));
             this.btReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btReset.Location = new System.Drawing.Point(3, 71);
             this.btReset.Name = "btReset";
@@ -84,8 +84,8 @@
             // btSetting
             // 
             this.btSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+                                                                           | System.Windows.Forms.AnchorStyles.Left)
+                                                                          | System.Windows.Forms.AnchorStyles.Right)));
             this.btSetting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSetting.Location = new System.Drawing.Point(3, 105);
             this.btSetting.Name = "btSetting";

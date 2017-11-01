@@ -35,22 +35,21 @@
             this.tbServiceIP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btClose = new System.Windows.Forms.Button();
             this.btSetting = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.tbHeight = new System.Windows.Forms.TextBox();
-            this.tbY = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbWidth = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.tbListeningPort = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.tbWidth = new System.Windows.Forms.TextBox();
+            this.tbY = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.tbX = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -58,11 +57,12 @@
             // 
             // btTesting
             // 
-            this.btTesting.Location = new System.Drawing.Point(447, 209);
+            this.btTesting.Location = new System.Drawing.Point(596, 279);
+            this.btTesting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btTesting.Name = "btTesting";
-            this.btTesting.Size = new System.Drawing.Size(75, 23);
+            this.btTesting.Size = new System.Drawing.Size(100, 31);
             this.btTesting.TabIndex = 25;
-            this.btTesting.Text = "Testing";
+            this.btTesting.Text = "测试";
             this.btTesting.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -72,63 +72,59 @@
             this.groupBox1.Controls.Add(this.tbServiceIP);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 116);
+            this.groupBox1.Location = new System.Drawing.Point(16, 155);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 87);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(444, 116);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Service";
+            this.groupBox1.Text = "服务端";
             // 
             // tbServicePort
             // 
-            this.tbServicePort.Location = new System.Drawing.Point(50, 50);
+            this.tbServicePort.Location = new System.Drawing.Point(67, 67);
+            this.tbServicePort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbServicePort.Name = "tbServicePort";
-            this.tbServicePort.Size = new System.Drawing.Size(277, 21);
+            this.tbServicePort.Size = new System.Drawing.Size(368, 22);
             this.tbServicePort.TabIndex = 3;
             // 
             // tbServiceIP
             // 
-            this.tbServiceIP.Location = new System.Drawing.Point(80, 23);
+            this.tbServiceIP.Location = new System.Drawing.Point(107, 31);
+            this.tbServiceIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbServiceIP.Name = "tbServiceIP";
-            this.tbServiceIP.Size = new System.Drawing.Size(247, 21);
+            this.tbServiceIP.Size = new System.Drawing.Size(328, 22);
             this.tbServiceIP.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 53);
+            this.label2.Location = new System.Drawing.Point(20, 71);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.Size = new System.Drawing.Size(50, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Port";
+            this.label2.Text = "端口号";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 27);
+            this.label1.Location = new System.Drawing.Point(20, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 12);
+            this.label1.Size = new System.Drawing.Size(48, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "IPAddress";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(132, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(458, 37);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "2011 SHENZHEN Universiade";
+            this.label1.Text = "IP地址";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
@@ -136,21 +132,23 @@
             // btClose
             // 
             this.btClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btClose.Location = new System.Drawing.Point(609, 209);
+            this.btClose.Location = new System.Drawing.Point(812, 279);
+            this.btClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btClose.Name = "btClose";
-            this.btClose.Size = new System.Drawing.Size(75, 23);
+            this.btClose.Size = new System.Drawing.Size(100, 31);
             this.btClose.TabIndex = 27;
-            this.btClose.Text = "Close";
+            this.btClose.Text = "关闭";
             this.btClose.UseVisualStyleBackColor = true;
             this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
             // btSetting
             // 
-            this.btSetting.Location = new System.Drawing.Point(528, 209);
+            this.btSetting.Location = new System.Drawing.Point(704, 279);
+            this.btSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSetting.Name = "btSetting";
-            this.btSetting.Size = new System.Drawing.Size(75, 23);
+            this.btSetting.Size = new System.Drawing.Size(100, 31);
             this.btSetting.TabIndex = 26;
-            this.btSetting.Text = "Setting";
+            this.btSetting.Text = "设置";
             this.btSetting.UseVisualStyleBackColor = true;
             this.btSetting.Click += new System.EventHandler(this.btSetting_Click);
             // 
@@ -159,11 +157,12 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(144, 69);
+            this.label10.Location = new System.Drawing.Point(192, 53);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(555, 37);
+            this.label10.Size = new System.Drawing.Size(430, 46);
             this.label10.TabIndex = 30;
-            this.label10.Text = "Water-Polo Display Console Config";
+            this.label10.Text = "水球比赛显示平台设置";
             // 
             // groupBox3
             // 
@@ -178,114 +177,126 @@
             this.groupBox3.Controls.Add(this.tbX);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(351, 116);
+            this.groupBox3.Location = new System.Drawing.Point(468, 155);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(333, 87);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(444, 116);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "PDP";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 27);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 12);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Listening Port";
-            // 
             // tbHeight
             // 
-            this.tbHeight.Location = new System.Drawing.Point(292, 50);
+            this.tbHeight.Location = new System.Drawing.Point(389, 67);
+            this.tbHeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbHeight.Name = "tbHeight";
-            this.tbHeight.Size = new System.Drawing.Size(33, 21);
+            this.tbHeight.Size = new System.Drawing.Size(43, 22);
             this.tbHeight.TabIndex = 9;
-            // 
-            // tbY
-            // 
-            this.tbY.Location = new System.Drawing.Point(109, 51);
-            this.tbY.Name = "tbY";
-            this.tbY.Size = new System.Drawing.Size(26, 21);
-            this.tbY.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(245, 54);
+            this.label5.Location = new System.Drawing.Point(359, 71);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.Size = new System.Drawing.Size(22, 17);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Height";
+            this.label5.Text = "高";
             // 
-            // tbWidth
+            // label11
             // 
-            this.tbWidth.Location = new System.Drawing.Point(204, 50);
-            this.tbWidth.Name = "tbWidth";
-            this.tbWidth.Size = new System.Drawing.Size(35, 21);
-            this.tbWidth.TabIndex = 8;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(8, 36);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 17);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "侦听端口";
             // 
             // tbListeningPort
             // 
-            this.tbListeningPort.Location = new System.Drawing.Point(101, 23);
+            this.tbListeningPort.Location = new System.Drawing.Point(135, 31);
+            this.tbListeningPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbListeningPort.Name = "tbListeningPort";
-            this.tbListeningPort.Size = new System.Drawing.Size(226, 21);
+            this.tbListeningPort.Size = new System.Drawing.Size(300, 22);
             this.tbListeningPort.TabIndex = 1;
             // 
-            // label8
+            // tbWidth
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(80, 55);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(11, 12);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Y";
+            this.tbWidth.Location = new System.Drawing.Point(272, 67);
+            this.tbWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbWidth.Name = "tbWidth";
+            this.tbWidth.Size = new System.Drawing.Size(45, 22);
+            this.tbWidth.TabIndex = 8;
+            // 
+            // tbY
+            // 
+            this.tbY.Location = new System.Drawing.Point(145, 68);
+            this.tbY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbY.Name = "tbY";
+            this.tbY.Size = new System.Drawing.Size(33, 22);
+            this.tbY.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(163, 54);
+            this.label6.Location = new System.Drawing.Point(233, 71);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 12);
+            this.label6.Size = new System.Drawing.Size(22, 17);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Width";
+            this.label6.Text = "宽";
+            // 
+            // tbX
+            // 
+            this.tbX.Location = new System.Drawing.Point(49, 68);
+            this.tbX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbX.Name = "tbX";
+            this.tbX.Size = new System.Drawing.Size(33, 22);
+            this.tbX.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 55);
+            this.label7.Location = new System.Drawing.Point(16, 73);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(11, 12);
+            this.label7.Size = new System.Drawing.Size(17, 17);
             this.label7.TabIndex = 9;
             this.label7.Text = "X";
             // 
-            // tbX
+            // label8
             // 
-            this.tbX.Location = new System.Drawing.Point(37, 51);
-            this.tbX.Name = "tbX";
-            this.tbX.Size = new System.Drawing.Size(26, 21);
-            this.tbX.TabIndex = 6;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(107, 73);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 17);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Y";
             // 
             // HomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btClose;
-            this.ClientSize = new System.Drawing.Size(700, 251);
+            this.ClientSize = new System.Drawing.Size(933, 335);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btTesting);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btClose);
             this.Controls.Add(this.btSetting);
             this.Controls.Add(this.label10);
             this.ENDCOLOR = System.Drawing.Color.SteelBlue;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "HomePage";
             this.ShowInTaskbar = true;
             this.STARTCOLOR = System.Drawing.SystemColors.ActiveCaption;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Display Console Config";
+            this.Text = "显示平台设置";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -304,7 +315,6 @@
         private System.Windows.Forms.TextBox tbServiceIP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Button btSetting;
