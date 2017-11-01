@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using log4net.Config;
 
 namespace Water_Polo
 {
@@ -13,10 +14,11 @@ namespace Water_Polo
         [STAThread]
         static void Main()
         {
+            XmlConfigurator.Configure();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            ApplicationControlCommon.SplashScreenHelper.ShowSplashScreen("SHENZHEN 2011 UNIVERSIADE WATER-POLO MAJOR CONSOLE",
+            ApplicationControlCommon.SplashScreenHelper.ShowSplashScreen("WATER-POLO MAJOR CONSOLE",
                 Properties.Resources.Watchword);
             ApplicationControlCommon.SplashScreenHelper.SplashScreen.QueueLoadingMessage("Loading data ...");
             System.Threading.Thread.Sleep(3000);

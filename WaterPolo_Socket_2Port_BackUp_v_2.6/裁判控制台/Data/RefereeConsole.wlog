@@ -1,3 +1,249 @@
 2017-10-30 23:03:28,579 [1] INFO  HomePage - Start listening from prot 4567
 2017-10-30 23:03:29,217 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
 2017-10-30 23:03:29,225 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:33:23,805 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:33:24,213 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:33:24,216 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:33:24,216 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:33:24,216 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:33:25,221 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:33:26,245 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:35:22,375 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:36:12,712 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:36:12,773 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:36:12,774 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:36:12,804 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:36:13,840 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:36:15,733 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:36:18,356 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:36:19,386 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:36:20,419 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:36:21,452 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:36:22,487 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:36:23,515 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:36:24,547 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:36:25,580 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:36:46,825 [1] INFO  ComListening - End Listening
+2017-10-31 22:36:46,828 [1] INFO  ComListening - End Listening
+2017-10-31 22:37:46,543 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:37:52,671 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:37:52,728 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:37:52,728 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:37:52,758 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:37:53,793 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:37:55,690 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:37:58,320 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:37:59,352 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:00,385 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:38:01,417 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:02,453 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:38:03,484 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:04,517 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:05,550 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:08,764 [1] INFO  ComListening - End Listening
+2017-10-31 22:38:08,767 [1] INFO  ComListening - End Listening
+2017-10-31 22:38:36,067 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:38:42,160 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:38:42,212 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:38:42,212 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:38:42,242 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:38:43,280 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:45,262 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:47,891 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:38:48,928 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:49,975 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:38:51,011 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:52,044 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:38:53,076 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:54,105 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:38:55,143 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:39:00,066 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:39:01,890 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:39:10,153 [1] INFO  ComListening - End Listening
+2017-10-31 22:39:10,155 [1] INFO  ComListening - End Listening
+2017-10-31 22:40:16,796 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:40:23,564 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:40:23,622 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:40:23,623 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:40:23,652 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:40:24,686 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:40:26,611 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:40:29,281 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:40:30,311 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:40:31,343 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:40:32,373 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:40:33,412 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:40:34,445 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:40:35,477 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:40:36,510 [1] ERROR SocketSend - Could not send message to 127.0.0.1(5678). cause No connection could be made because the target machine actively refused it 127.0.0.1:5678
+2017-10-31 22:40:40,696 [1] INFO  ComListening - End Listening
+2017-10-31 22:40:40,699 [1] INFO  ComListening - End Listening
+2017-10-31 22:43:04,791 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:43:10,442 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:43:10,444 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:43:10,444 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:43:10,444 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:43:10,448 [1] ERROR SocketSend - Could not send message to :::1(5678). cause An invalid IP address was specified.
+2017-10-31 22:43:11,263 [1] ERROR SocketSend - Could not send message to :::1(5678). cause An invalid IP address was specified.
+2017-10-31 22:43:13,252 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:43:13,252 [1] ERROR SocketSend - Could not send message to :::1(5678). cause An invalid IP address was specified.
+2017-10-31 22:43:14,257 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:43:14,257 [1] ERROR SocketSend - Could not send message to :::1(5678). cause An invalid IP address was specified.
+2017-10-31 22:43:15,260 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:43:15,260 [1] ERROR SocketSend - Could not send message to :::1(5678). cause An invalid IP address was specified.
+2017-10-31 22:43:15,261 [1] ERROR SocketSend - Could not send message to :::1(5678). cause An invalid IP address was specified.
+2017-10-31 22:43:15,261 [1] ERROR SocketSend - Could not send message to :::1(5678). cause An invalid IP address was specified.
+2017-10-31 22:43:24,682 [1] INFO  ComListening - End Listening
+2017-10-31 22:43:24,684 [1] INFO  ComListening - End Listening
+2017-10-31 22:44:25,716 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:44:30,907 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:44:30,909 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:44:30,909 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:44:30,909 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:44:34,018 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:44:35,022 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:44:36,025 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:46:08,345 [1] INFO  ComListening - End Listening
+2017-10-31 22:46:08,348 [1] INFO  ComListening - End Listening
+2017-10-31 22:48:57,144 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:49:08,670 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:49:08,725 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:49:08,726 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:49:08,754 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:49:12,388 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:49:13,422 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:49:14,453 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:50:22,292 [1] INFO  ComListening - End Listening
+2017-10-31 22:50:22,295 [1] INFO  ComListening - End Listening
+2017-10-31 22:51:23,225 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:51:34,276 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:51:34,331 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:51:34,332 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:51:34,361 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:51:38,079 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:51:39,113 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:51:40,144 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:52:06,466 [1] INFO  ComListening - End Listening
+2017-10-31 22:52:06,469 [1] INFO  ComListening - End Listening
+2017-10-31 22:53:11,327 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:53:24,427 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:53:24,482 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:53:24,482 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:53:24,511 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:53:28,214 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:53:29,249 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:53:30,282 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:54:00,888 [1] INFO  ComListening - End Listening
+2017-10-31 22:54:00,891 [1] INFO  ComListening - End Listening
+2017-10-31 22:55:16,143 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:55:25,186 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:55:25,243 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:55:25,244 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:55:25,274 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:55:28,985 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:55:30,021 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:55:31,057 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:55:56,803 [1] INFO  ComListening - End Listening
+2017-10-31 22:55:56,806 [1] INFO  ComListening - End Listening
+2017-10-31 22:56:30,234 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:56:35,397 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:56:35,398 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:56:35,398 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:56:35,399 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:56:38,478 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:56:39,484 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:56:40,489 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:56:46,774 [1] INFO  ComListening - End Listening
+2017-10-31 22:56:46,777 [1] INFO  ComListening - End Listening
+2017-10-31 22:57:49,784 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 22:57:54,623 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 22:57:54,624 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 22:57:54,625 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 22:57:54,625 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 22:57:57,670 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:57:58,674 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:57:59,677 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:27,523 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:28,578 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:31,405 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:32,420 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:33,432 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:34,442 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:35,452 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:36,462 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:42,650 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:58:48,074 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:00,275 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:17,202 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:21,209 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:22,216 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:23,221 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:24,231 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:25,243 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:26,253 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:27,259 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:28,269 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:29,278 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:30,286 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:31,295 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:32,307 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 22:59:37,420 [1] INFO  ComListening - End Listening
+2017-10-31 22:59:37,423 [1] INFO  ComListening - End Listening
+2017-10-31 23:03:36,846 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 23:03:43,585 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 23:03:50,915 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 23:03:50,916 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 23:03:50,917 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 23:03:50,917 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 23:03:53,993 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:03:54,999 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:03:56,004 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:19,009 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:21,753 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:22,760 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:23,769 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:24,779 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:25,788 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:26,796 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:27,806 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:04:33,783 [1] INFO  ComListening - End Listening
+2017-10-31 23:04:33,787 [1] INFO  ComListening - End Listening
+2017-10-31 23:07:22,687 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 23:07:29,462 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 23:07:29,464 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 23:07:29,464 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 23:07:29,464 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 23:07:32,433 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:07:33,438 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:07:34,443 [1] ERROR SocketSend - Could not send message to 127.0.0.1(1234). cause No connection could be made because the target machine actively refused it 127.0.0.1:1234
+2017-10-31 23:07:38,302 [1] INFO  ComListening - End Listening
+2017-10-31 23:07:38,305 [1] INFO  ComListening - End Listening
+2017-10-31 23:09:53,939 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 23:10:00,200 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 23:10:00,201 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 23:10:00,201 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 23:10:00,201 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 23:10:48,414 [1] INFO  ComListening - End Listening
+2017-10-31 23:10:48,416 [1] INFO  ComListening - End Listening
+2017-10-31 23:15:34,111 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 23:15:40,814 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 23:15:40,815 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 23:15:40,816 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 23:15:40,816 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 23:15:52,997 [1] INFO  ComListening - End Listening
+2017-10-31 23:15:52,999 [1] INFO  ComListening - End Listening
+2017-10-31 23:16:23,588 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 23:16:29,688 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 23:16:29,690 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 23:16:29,690 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 23:16:29,691 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 23:16:37,663 [1] INFO  ComListening - End Listening
+2017-10-31 23:16:37,666 [1] INFO  ComListening - End Listening
+2017-10-31 23:17:29,255 [1] INFO  HomePage - Start listening from prot 4567
+2017-10-31 23:17:35,098 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-10-31 23:17:35,100 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-10-31 23:17:35,100 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-10-31 23:17:35,100 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-10-31 23:18:49,850 [1] ERROR SocketSend - Could not send message to 192.168.31.153(5678). cause No connection could be made because the target machine actively refused it 192.168.31.153:5678
+2017-10-31 23:18:50,688 [1] INFO  ComListening - End Listening
+2017-10-31 23:18:50,691 [1] INFO  ComListening - End Listening

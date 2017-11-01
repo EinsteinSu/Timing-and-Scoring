@@ -162,8 +162,8 @@ namespace RefereeConsole
                     _Fouls = value;
                     SetControlText(lbFoulsCount, value.ToString());
                     //发送信息到显示控制台和主控台
-                    SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
-                        string.Format("Foul,{0},{1},{2}", MARK, NUMBER, value));
+                    //SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
+                    //    string.Format("Foul,{0},{1},{2}", MARK, NUMBER, value));
                     SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Foul,{0},{1},{2}", MARK, NUMBER, value));
                 }
@@ -182,8 +182,8 @@ namespace RefereeConsole
                 _Serious = value;
 
                 //发送信息到显示控制台和主控台
-                SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
-                    string.Format("Serious,{0},{1},{2}", MARK, NUMBER, value));
+                //SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.MAJORIPADDRESS, RefereeConfig.Settings.ONSETTINGS.MAJORPORT,
+                //    string.Format("Serious,{0},{1},{2}", MARK, NUMBER, value));
                 SocketPublic.SocketSend.SendMessage(RefereeConfig.Settings.ONSETTINGS.DISPLAYIPADDRESS, RefereeConfig.Settings.ONSETTINGS.DISPLAYPORT,
                     string.Format("Serious,{0},{1},{2}", MARK, NUMBER, value));
             }
@@ -249,8 +249,7 @@ namespace RefereeConsole
             FOULS++;
             IsStart = true;
             TOTALTIME = 20;
-            if (StartTwentyTime != null)
-                StartTwentyTime(this);
+            StartTwentyTime?.Invoke(this);
             SetControlEnabled(btStart, false);
             SetControlEnabled(btCancel, true);
         }

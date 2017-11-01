@@ -22,20 +22,20 @@ namespace DisplayConsole
 
         public void SetAthleteStyle()
         {
-            lbNumber.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.BIBNUMBERFont);
-            lbNumber.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.BIBNUMBERCOLOR);
+            //lbNumber.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.BIBNUMBERFont);
+            //lbNumber.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.BIBNUMBERCOLOR);
 
-            lbName.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.NAMEFont);
-            lbName.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.NAMECOLOR);
+            //lbName.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.NAMEFont);
+            //lbName.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.NAMECOLOR);
 
-            lbFoul1.Font = lbFoul2.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.FOULSFont);
-            lbFoul1.ForeColor = lbFoul2.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.FOULSCOLOR);
+            //lbFoul1.Font = lbFoul2.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.FOULSFont);
+            //lbFoul1.ForeColor = lbFoul2.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.FOULSCOLOR);
 
-            lbSerious.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SERIOUSFont);
-            lbSerious.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
+            //lbSerious.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SERIOUSFont);
+            //lbSerious.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
 
-            lbTTime.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SECONDSFont);
-            lbTTime.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
+            //lbTTime.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SECONDSFont);
+            //lbTTime.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
         }
 
         public void SetFouls(int fouls)
@@ -49,10 +49,8 @@ namespace DisplayConsole
             {
                 foreach (Label lb in tlpFouls.Controls)
                 {
-                    if (lb.Name == "lbFoul" + (i + 1).ToString())
+                    if (lb.Name == "lbFoul" + (i + 1))
                     {
-                        string a = lbNumber.Text;
-                        string b = lbName.Text;
                         SetControlText(lb, "●");
                     }
                 }

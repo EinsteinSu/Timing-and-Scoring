@@ -19,3 +19,13 @@ C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\obj\Debug\WaterPolo.Common.csprojResolveAssemblyReference.cache
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\obj\Debug\WaterPolo.Common.dll
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\obj\Debug\WaterPolo.Common.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\bin\Debug\WaterPolo.Common.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\bin\Debug\WaterPolo.Common.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\bin\Debug\SocketPublic.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\bin\Debug\log4net.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\bin\Debug\SocketPublic.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\bin\Debug\SocketPublic.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\bin\Debug\log4net.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\obj\Debug\WaterPolo.Common.csprojResolveAssemblyReference.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\obj\Debug\WaterPolo.Common.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.Common\obj\Debug\WaterPolo.Common.pdb

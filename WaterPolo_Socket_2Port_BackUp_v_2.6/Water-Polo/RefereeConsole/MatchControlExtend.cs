@@ -503,8 +503,8 @@ namespace RefereeConsole
                     _scoreA = value;
                     SetControlText(lbScoreA, value.ToString());
                     //发送信息到显示控制台和主控台
-                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                        string.Format("Score,{0},{1}", "A", value));
+                    //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    //    string.Format("Score,{0},{1}", "A", value));
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Score,{0},{1}", "A", value));
 
@@ -525,8 +525,8 @@ namespace RefereeConsole
                     _scoreB = value;
                     SetControlText(lbScoreB, value.ToString());
                     //发送信息到显示控制台和主控台
-                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                        string.Format("Score,{0},{1}", "B", value));
+                    //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    //    string.Format("Score,{0},{1}", "B", value));
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Score,{0},{1}", "B", value));
 
@@ -590,8 +590,8 @@ namespace RefereeConsole
                     }
                     SetControlText(lbAcournt, court);
                     //发送信息到显示控制台和主控台
-                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                        string.Format("Court,{0}", court));
+                    //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                    //    string.Format("Court,{0}", court));
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Court,{0}", court));
 

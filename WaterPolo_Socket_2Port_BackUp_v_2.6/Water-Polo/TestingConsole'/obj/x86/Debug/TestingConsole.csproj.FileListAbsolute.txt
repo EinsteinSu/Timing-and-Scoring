@@ -427,3 +427,10 @@ C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\obj\x86\Debug\TestingConsole.csprojResolveAssemblyReference.cache
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\obj\x86\Debug\TestingConsole.exe
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\obj\x86\Debug\TestingConsole.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\bin\Debug\WaterPolo.Common.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\bin\Debug\SocketPublic.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\bin\Debug\log4net.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\bin\Debug\WaterPolo.Common.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\bin\Debug\SocketPublic.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\bin\Debug\SocketPublic.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TestingConsole'\bin\Debug\log4net.xml

@@ -26,7 +26,7 @@ namespace RefereeConsole
             Log.Info($"Start listening from prot {Settings.ONSETTINGS.LISTENINGPORT}");
             _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
             _socket.ProcessMessage += ProcessMessage;
-            LoadSchedule("106e9e3f-29dd-4a8a-a8af-af90d46c8e0d");
+            //LoadSchedule("106e9e3f-29dd-4a8a-a8af-af90d46c8e0d");
         }
 
         private void ProcessMessage(string msg)
@@ -127,8 +127,8 @@ namespace RefereeConsole
                 SqlHelper.RunSql(sSql);
 
                 //发送信息到显示控制台和主控台
-                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    "Finish");
+                //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
+                //    "Finish");
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     "Finish");
                 SetControlEnabled(btFinish, false);

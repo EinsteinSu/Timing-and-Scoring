@@ -32,6 +32,7 @@ namespace DisplayConsole
             foreach (var str in msg.Split(','))
                 lstMsg.Add(str);
             var key = lstMsg[0];
+            Log.Info($"Got the key {key}");
             switch (key)
             {
                 case "ScheduleLoad":
@@ -72,13 +73,13 @@ namespace DisplayConsole
 
         public void ShowWelcome()
         {
-            SetControlShowHide(plParent, true);
+            //SetControlShowHide(plParent, true);
             SetControlShowHide(tlpParent, false);
         }
 
         public void ShowEvent()
         {
-            SetControlShowHide(plParent, false);
+            //SetControlShowHide(plParent, false);
             SetControlShowHide(tlpParent, true);
         }
 
@@ -160,8 +161,7 @@ namespace DisplayConsole
             base.OnLoad(e);
 
             Location = new Point(Settings.ONSETTINGS.X, Settings.ONSETTINGS.Y);
-            Width = Settings.ONSETTINGS.WIDTH;
-            Height = Settings.ONSETTINGS.HEIGHT;
+            //this.Size = new Size(Settings.ONSETTINGS.WIDTH, Settings.ONSETTINGS.HEIGHT);
 
             ShowWelcome();
 
