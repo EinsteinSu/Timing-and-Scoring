@@ -53,9 +53,9 @@
             this.groupBox1.Controls.Add(this.lbTitle);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1052, 63);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -78,10 +78,10 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Location = new System.Drawing.Point(0, 63);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(183, 612);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(151, 612);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -97,7 +97,7 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -106,16 +106,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(175, 589);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(143, 589);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Location = new System.Drawing.Point(4, 494);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(167, 91);
+            this.pictureBox4.Size = new System.Drawing.Size(135, 91);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -124,9 +124,9 @@
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(4, 396);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(167, 90);
+            this.pictureBox3.Size = new System.Drawing.Size(135, 90);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -139,9 +139,9 @@
             this.btQuit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btQuit.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQuit.Location = new System.Drawing.Point(4, 200);
-            this.btQuit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btQuit.Margin = new System.Windows.Forms.Padding(4);
             this.btQuit.Name = "btQuit";
-            this.btQuit.Size = new System.Drawing.Size(167, 90);
+            this.btQuit.Size = new System.Drawing.Size(135, 90);
             this.btQuit.TabIndex = 2;
             this.btQuit.Text = "退出";
             this.btQuit.UseVisualStyleBackColor = true;
@@ -156,11 +156,11 @@
             this.btFinish.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btFinish.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btFinish.Location = new System.Drawing.Point(4, 102);
-            this.btFinish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btFinish.Margin = new System.Windows.Forms.Padding(4);
             this.btFinish.Name = "btFinish";
-            this.btFinish.Size = new System.Drawing.Size(167, 90);
+            this.btFinish.Size = new System.Drawing.Size(135, 90);
             this.btFinish.TabIndex = 1;
-            this.btFinish.Text = "比赛完成";
+            this.btFinish.Text = "完成";
             this.btFinish.UseVisualStyleBackColor = true;
             this.btFinish.Click += new System.EventHandler(this.btFinish_Click);
             // 
@@ -172,9 +172,9 @@
             this.btLock.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btLock.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLock.Location = new System.Drawing.Point(4, 4);
-            this.btLock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btLock.Margin = new System.Windows.Forms.Padding(4);
             this.btLock.Name = "btLock";
-            this.btLock.Size = new System.Drawing.Size(167, 90);
+            this.btLock.Size = new System.Drawing.Size(135, 90);
             this.btLock.TabIndex = 0;
             this.btLock.Text = "锁定";
             this.btLock.UseVisualStyleBackColor = true;
@@ -184,9 +184,9 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Location = new System.Drawing.Point(4, 298);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(167, 90);
+            this.pictureBox2.Size = new System.Drawing.Size(135, 90);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -195,10 +195,10 @@
             // 
             this.plParent.BackColor = System.Drawing.Color.Transparent;
             this.plParent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plParent.Location = new System.Drawing.Point(183, 63);
-            this.plParent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.plParent.Location = new System.Drawing.Point(151, 63);
+            this.plParent.Margin = new System.Windows.Forms.Padding(4);
             this.plParent.Name = "plParent";
-            this.plParent.Size = new System.Drawing.Size(869, 612);
+            this.plParent.Size = new System.Drawing.Size(901, 612);
             this.plParent.TabIndex = 2;
             // 
             // HomePage
@@ -214,7 +214,7 @@
             this.ENDCOLOR = System.Drawing.Color.SteelBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomePage";
             this.STARTCOLOR = System.Drawing.SystemColors.ActiveCaption;
             this.Text = "2011 SHENZHEN Universiade Water-Polo Referee Console";

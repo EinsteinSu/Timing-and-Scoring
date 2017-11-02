@@ -138,21 +138,23 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel13, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1024, 768);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1365, 1024);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lbTeamB
             // 
             this.lbTeamB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTeamB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTeamB.Location = new System.Drawing.Point(515, 0);
+            this.lbTeamB.Location = new System.Drawing.Point(686, 0);
+            this.lbTeamB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTeamB.Name = "lbTeamB";
-            this.lbTeamB.Size = new System.Drawing.Size(506, 27);
+            this.lbTeamB.Size = new System.Drawing.Size(675, 36);
             this.lbTeamB.TabIndex = 3;
             this.lbTeamB.Text = "TEAMB";
             this.lbTeamB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,9 +163,10 @@
             // 
             this.lbTeamA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTeamA.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTeamA.Location = new System.Drawing.Point(3, 0);
+            this.lbTeamA.Location = new System.Drawing.Point(4, 0);
+            this.lbTeamA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTeamA.Name = "lbTeamA";
-            this.lbTeamA.Size = new System.Drawing.Size(506, 27);
+            this.lbTeamA.Size = new System.Drawing.Size(674, 36);
             this.lbTeamA.TabIndex = 2;
             this.lbTeamA.Text = "TEAMA";
             this.lbTeamA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -171,16 +174,17 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(515, 119);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(686, 159);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(506, 646);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(675, 861);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // panel5
@@ -188,9 +192,10 @@
             this.panel5.Controls.Add(this.tlpTeamB);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(153, 3);
+            this.panel5.Location = new System.Drawing.Point(204, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(350, 640);
+            this.panel5.Size = new System.Drawing.Size(467, 853);
             this.panel5.TabIndex = 7;
             // 
             // tlpTeamB
@@ -198,7 +203,8 @@
             this.tlpTeamB.ColumnCount = 1;
             this.tlpTeamB.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpTeamB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpTeamB.Location = new System.Drawing.Point(0, 21);
+            this.tlpTeamB.Location = new System.Drawing.Point(0, 28);
+            this.tlpTeamB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tlpTeamB.Name = "tlpTeamB";
             this.tlpTeamB.RowCount = 13;
             this.tlpTeamB.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -214,7 +220,7 @@
             this.tlpTeamB.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
             this.tlpTeamB.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
             this.tlpTeamB.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
-            this.tlpTeamB.Size = new System.Drawing.Size(350, 619);
+            this.tlpTeamB.Size = new System.Drawing.Size(467, 825);
             this.tlpTeamB.TabIndex = 1;
             // 
             // panel6
@@ -224,8 +230,9 @@
             this.panel6.Controls.Add(this.label5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(350, 21);
+            this.panel6.Size = new System.Drawing.Size(467, 28);
             this.panel6.TabIndex = 0;
             // 
             // label3
@@ -234,8 +241,9 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(10)));
             this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 21);
+            this.label3.Size = new System.Drawing.Size(261, 28);
             this.label3.TabIndex = 9;
             this.label3.Text = "Athlete";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,9 +253,10 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Dock = System.Windows.Forms.DockStyle.Right;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(10)));
-            this.label4.Location = new System.Drawing.Point(195, 0);
+            this.label4.Location = new System.Drawing.Point(261, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 21);
+            this.label4.Size = new System.Drawing.Size(93, 28);
             this.label4.TabIndex = 8;
             this.label4.Text = "Fouls";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -257,9 +266,10 @@
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Dock = System.Windows.Forms.DockStyle.Right;
             this.label5.Font = new System.Drawing.Font("Arial", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(265, 0);
+            this.label5.Location = new System.Drawing.Point(354, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 21);
+            this.label5.Size = new System.Drawing.Size(113, 28);
             this.label5.TabIndex = 7;
             this.label5.Text = "Foul Time";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -269,9 +279,10 @@
             this.panel2.Controls.Add(this.tableLayoutPanel5);
             this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(144, 640);
+            this.panel2.Size = new System.Drawing.Size(192, 853);
             this.panel2.TabIndex = 6;
             // 
             // tableLayoutPanel5
@@ -282,50 +293,54 @@
             this.tableLayoutPanel5.Controls.Add(this.btAddScoreB, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.btSubScoreB, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 266);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 355);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(144, 374);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(192, 498);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // lbScoreB
             // 
             this.lbScoreB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbScoreB.Font = new System.Drawing.Font("Microsoft Sans Serif", 64F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbScoreB.Location = new System.Drawing.Point(3, 120);
+            this.lbScoreB.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbScoreB.Location = new System.Drawing.Point(4, 160);
+            this.lbScoreB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbScoreB.Name = "lbScoreB";
-            this.lbScoreB.Size = new System.Drawing.Size(138, 254);
+            this.lbScoreB.Size = new System.Drawing.Size(184, 338);
             this.lbScoreB.TabIndex = 4;
             this.lbScoreB.Text = "0";
             this.lbScoreB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btAddScoreB
             // 
-            this.btAddScoreB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                             | System.Windows.Forms.AnchorStyles.Left)
-                                                                            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddScoreB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddScoreB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddScoreB.Image = ((System.Drawing.Image)(resources.GetObject("btAddScoreB.Image")));
-            this.btAddScoreB.Location = new System.Drawing.Point(3, 3);
+            this.btAddScoreB.Location = new System.Drawing.Point(4, 4);
+            this.btAddScoreB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddScoreB.Name = "btAddScoreB";
-            this.btAddScoreB.Size = new System.Drawing.Size(138, 54);
+            this.btAddScoreB.Size = new System.Drawing.Size(184, 72);
             this.btAddScoreB.TabIndex = 1;
             this.btAddScoreB.UseVisualStyleBackColor = true;
             this.btAddScoreB.Click += new System.EventHandler(this.btAddScoreB_Click);
             // 
             // btSubScoreB
             // 
-            this.btSubScoreB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                             | System.Windows.Forms.AnchorStyles.Left)
-                                                                            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSubScoreB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubScoreB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubScoreB.Image = ((System.Drawing.Image)(resources.GetObject("btSubScoreB.Image")));
-            this.btSubScoreB.Location = new System.Drawing.Point(3, 63);
+            this.btSubScoreB.Location = new System.Drawing.Point(4, 84);
+            this.btSubScoreB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSubScoreB.Name = "btSubScoreB";
-            this.btSubScoreB.Size = new System.Drawing.Size(138, 54);
+            this.btSubScoreB.Size = new System.Drawing.Size(184, 72);
             this.btSubScoreB.TabIndex = 2;
             this.btSubScoreB.UseVisualStyleBackColor = true;
             this.btSubScoreB.Click += new System.EventHandler(this.btSubScoreB_Click);
@@ -335,8 +350,10 @@
             this.groupBox4.Controls.Add(this.tableLayoutPanel10);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(144, 266);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(192, 355);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Time Out";
@@ -353,26 +370,28 @@
             this.tableLayoutPanel10.Controls.Add(this.tcTimeOutB, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.btHideTimeOutB, 1, 1);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 4;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(138, 246);
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(184, 332);
             this.tableLayoutPanel10.TabIndex = 2;
             // 
             // btShowTeamB
             // 
-            this.btShowTeamB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                             | System.Windows.Forms.AnchorStyles.Left)
-                                                                            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btShowTeamB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btShowTeamB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btShowTeamB.Location = new System.Drawing.Point(3, 113);
+            this.btShowTeamB.Location = new System.Drawing.Point(4, 153);
+            this.btShowTeamB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btShowTeamB.Name = "btShowTeamB";
-            this.btShowTeamB.Size = new System.Drawing.Size(63, 30);
+            this.btShowTeamB.Size = new System.Drawing.Size(84, 41);
             this.btShowTeamB.TabIndex = 8;
             this.btShowTeamB.Text = "Show";
             this.btShowTeamB.UseVisualStyleBackColor = true;
@@ -384,37 +403,40 @@
             this.tableLayoutPanel10.SetColumnSpan(this.lbTimeOutB, 2);
             this.lbTimeOutB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTimeOutB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTimeOutB.Location = new System.Drawing.Point(3, 195);
+            this.lbTimeOutB.Location = new System.Drawing.Point(4, 264);
+            this.lbTimeOutB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTimeOutB.Name = "lbTimeOutB";
-            this.lbTimeOutB.Size = new System.Drawing.Size(132, 51);
+            this.lbTimeOutB.Size = new System.Drawing.Size(176, 68);
             this.lbTimeOutB.TabIndex = 4;
             this.lbTimeOutB.Text = "0";
             this.lbTimeOutB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btAddTimeOutB
             // 
-            this.btAddTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                               | System.Windows.Forms.AnchorStyles.Left)
-                                                                              | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddTimeOutB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddTimeOutB.Image = ((System.Drawing.Image)(resources.GetObject("btAddTimeOutB.Image")));
-            this.btAddTimeOutB.Location = new System.Drawing.Point(3, 149);
+            this.btAddTimeOutB.Location = new System.Drawing.Point(4, 202);
+            this.btAddTimeOutB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddTimeOutB.Name = "btAddTimeOutB";
-            this.btAddTimeOutB.Size = new System.Drawing.Size(63, 43);
+            this.btAddTimeOutB.Size = new System.Drawing.Size(84, 58);
             this.btAddTimeOutB.TabIndex = 2;
             this.btAddTimeOutB.UseVisualStyleBackColor = true;
             this.btAddTimeOutB.Click += new System.EventHandler(this.btAddTimeOutB_Click);
             // 
             // btSubTimeOutB
             // 
-            this.btSubTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                               | System.Windows.Forms.AnchorStyles.Left)
-                                                                              | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSubTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubTimeOutB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubTimeOutB.Image = ((System.Drawing.Image)(resources.GetObject("btSubTimeOutB.Image")));
-            this.btSubTimeOutB.Location = new System.Drawing.Point(72, 149);
+            this.btSubTimeOutB.Location = new System.Drawing.Point(96, 202);
+            this.btSubTimeOutB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSubTimeOutB.Name = "btSubTimeOutB";
-            this.btSubTimeOutB.Size = new System.Drawing.Size(63, 43);
+            this.btSubTimeOutB.Size = new System.Drawing.Size(84, 58);
             this.btSubTimeOutB.TabIndex = 3;
             this.btSubTimeOutB.UseVisualStyleBackColor = true;
             this.btSubTimeOutB.Click += new System.EventHandler(this.btSubTimeOutB_Click);
@@ -426,29 +448,31 @@
             this.tcTimeOutB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcTimeOutB.IsAdd = false;
             this.tcTimeOutB.IsShowEndTime = false;
-            this.tcTimeOutB.Location = new System.Drawing.Point(3, 3);
+            this.tcTimeOutB.Location = new System.Drawing.Point(5, 5);
             this.tcTimeOutB.LTime = 6000;
+            this.tcTimeOutB.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tcTimeOutB.Name = "tcTimeOutB";
             this.tcTimeOutB.SettingTime = "00:01:00";
             this.tcTimeOutB.ShowButtons = true;
-            this.tcTimeOutB.Size = new System.Drawing.Size(132, 104);
+            this.tcTimeOutB.Size = new System.Drawing.Size(174, 139);
             this.tcTimeOutB.TabIndex = 5;
             this.tcTimeOutB.TimingBackColor = System.Drawing.Color.Empty;
             this.tcTimeOutB.TimingForeColor = System.Drawing.Color.Empty;
-            this.tcTimeOutB.TimingLabelFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tcTimeOutB.TimingLabelFont = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tcTimeOutB.TimingTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tcTimeOutB.Started += new TimingControl.TimingControl.StartedCallback(this.tcTimeOutB_Started);
             this.tcTimeOutB.TextTimingChanged += new TimingControl.TimingControl.TextTimingChangedCallback(this.tcTimeOutB_TextTimingChanged);
+            this.tcTimeOutB.Started += new TimingControl.TimingControl.StartedCallback(this.tcTimeOutB_Started);
             // 
             // btHideTimeOutB
             // 
-            this.btHideTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                | System.Windows.Forms.AnchorStyles.Left)
-                                                                               | System.Windows.Forms.AnchorStyles.Right)));
+            this.btHideTimeOutB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btHideTimeOutB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btHideTimeOutB.Location = new System.Drawing.Point(72, 113);
+            this.btHideTimeOutB.Location = new System.Drawing.Point(96, 153);
+            this.btHideTimeOutB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btHideTimeOutB.Name = "btHideTimeOutB";
-            this.btHideTimeOutB.Size = new System.Drawing.Size(63, 30);
+            this.btHideTimeOutB.Size = new System.Drawing.Size(84, 41);
             this.btHideTimeOutB.TabIndex = 7;
             this.btHideTimeOutB.Text = "Hide";
             this.btHideTimeOutB.UseVisualStyleBackColor = true;
@@ -458,15 +482,16 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel3.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 119);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 159);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(506, 646);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(674, 861);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // panel1
@@ -474,9 +499,10 @@
             this.panel1.Controls.Add(this.tableLayoutPanel4);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(359, 3);
+            this.panel1.Location = new System.Drawing.Point(478, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(144, 640);
+            this.panel1.Size = new System.Drawing.Size(192, 853);
             this.panel1.TabIndex = 5;
             // 
             // tableLayoutPanel4
@@ -487,50 +513,54 @@
             this.tableLayoutPanel4.Controls.Add(this.btSubScoreA, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.btAddScoreA, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 266);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 355);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(144, 374);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(192, 498);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // lbScoreA
             // 
             this.lbScoreA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbScoreA.Font = new System.Drawing.Font("Microsoft Sans Serif", 64F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbScoreA.Location = new System.Drawing.Point(3, 120);
+            this.lbScoreA.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbScoreA.Location = new System.Drawing.Point(4, 160);
+            this.lbScoreA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbScoreA.Name = "lbScoreA";
-            this.lbScoreA.Size = new System.Drawing.Size(138, 254);
+            this.lbScoreA.Size = new System.Drawing.Size(184, 338);
             this.lbScoreA.TabIndex = 3;
             this.lbScoreA.Text = "0";
             this.lbScoreA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btSubScoreA
             // 
-            this.btSubScoreA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                             | System.Windows.Forms.AnchorStyles.Left)
-                                                                            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSubScoreA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubScoreA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubScoreA.Image = ((System.Drawing.Image)(resources.GetObject("btSubScoreA.Image")));
-            this.btSubScoreA.Location = new System.Drawing.Point(3, 63);
+            this.btSubScoreA.Location = new System.Drawing.Point(4, 84);
+            this.btSubScoreA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSubScoreA.Name = "btSubScoreA";
-            this.btSubScoreA.Size = new System.Drawing.Size(138, 54);
+            this.btSubScoreA.Size = new System.Drawing.Size(184, 72);
             this.btSubScoreA.TabIndex = 1;
             this.btSubScoreA.UseVisualStyleBackColor = true;
             this.btSubScoreA.Click += new System.EventHandler(this.btSubScoreA_Click);
             // 
             // btAddScoreA
             // 
-            this.btAddScoreA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                             | System.Windows.Forms.AnchorStyles.Left)
-                                                                            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddScoreA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddScoreA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddScoreA.Image = ((System.Drawing.Image)(resources.GetObject("btAddScoreA.Image")));
-            this.btAddScoreA.Location = new System.Drawing.Point(3, 3);
+            this.btAddScoreA.Location = new System.Drawing.Point(4, 4);
+            this.btAddScoreA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddScoreA.Name = "btAddScoreA";
-            this.btAddScoreA.Size = new System.Drawing.Size(138, 54);
+            this.btAddScoreA.Size = new System.Drawing.Size(184, 72);
             this.btAddScoreA.TabIndex = 0;
             this.btAddScoreA.UseVisualStyleBackColor = true;
             this.btAddScoreA.Click += new System.EventHandler(this.btAddScoreA_Click);
@@ -540,8 +570,10 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel9);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(144, 266);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(192, 355);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Time Out";
@@ -558,26 +590,28 @@
             this.tableLayoutPanel9.Controls.Add(this.tcTimeOutA, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.btHideTimeOutA, 1, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(138, 246);
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(184, 332);
             this.tableLayoutPanel9.TabIndex = 2;
             // 
             // btShowTeamA
             // 
-            this.btShowTeamA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                             | System.Windows.Forms.AnchorStyles.Left)
-                                                                            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btShowTeamA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btShowTeamA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btShowTeamA.Location = new System.Drawing.Point(3, 113);
+            this.btShowTeamA.Location = new System.Drawing.Point(4, 153);
+            this.btShowTeamA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btShowTeamA.Name = "btShowTeamA";
-            this.btShowTeamA.Size = new System.Drawing.Size(63, 30);
+            this.btShowTeamA.Size = new System.Drawing.Size(84, 41);
             this.btShowTeamA.TabIndex = 7;
             this.btShowTeamA.Text = "Show";
             this.btShowTeamA.UseVisualStyleBackColor = true;
@@ -589,37 +623,40 @@
             this.tableLayoutPanel9.SetColumnSpan(this.lbTimeOutA, 2);
             this.lbTimeOutA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTimeOutA.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTimeOutA.Location = new System.Drawing.Point(3, 195);
+            this.lbTimeOutA.Location = new System.Drawing.Point(4, 264);
+            this.lbTimeOutA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTimeOutA.Name = "lbTimeOutA";
-            this.lbTimeOutA.Size = new System.Drawing.Size(132, 51);
+            this.lbTimeOutA.Size = new System.Drawing.Size(176, 68);
             this.lbTimeOutA.TabIndex = 4;
             this.lbTimeOutA.Text = "0";
             this.lbTimeOutA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btAddTimeOutA
             // 
-            this.btAddTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                               | System.Windows.Forms.AnchorStyles.Left)
-                                                                              | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddTimeOutA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddTimeOutA.Image = ((System.Drawing.Image)(resources.GetObject("btAddTimeOutA.Image")));
-            this.btAddTimeOutA.Location = new System.Drawing.Point(3, 149);
+            this.btAddTimeOutA.Location = new System.Drawing.Point(4, 202);
+            this.btAddTimeOutA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddTimeOutA.Name = "btAddTimeOutA";
-            this.btAddTimeOutA.Size = new System.Drawing.Size(63, 43);
+            this.btAddTimeOutA.Size = new System.Drawing.Size(84, 58);
             this.btAddTimeOutA.TabIndex = 2;
             this.btAddTimeOutA.UseVisualStyleBackColor = true;
             this.btAddTimeOutA.Click += new System.EventHandler(this.btAddTimeOutA_Click);
             // 
             // btSubTimeOutA
             // 
-            this.btSubTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                               | System.Windows.Forms.AnchorStyles.Left)
-                                                                              | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSubTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubTimeOutA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubTimeOutA.Image = ((System.Drawing.Image)(resources.GetObject("btSubTimeOutA.Image")));
-            this.btSubTimeOutA.Location = new System.Drawing.Point(72, 149);
+            this.btSubTimeOutA.Location = new System.Drawing.Point(96, 202);
+            this.btSubTimeOutA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSubTimeOutA.Name = "btSubTimeOutA";
-            this.btSubTimeOutA.Size = new System.Drawing.Size(63, 43);
+            this.btSubTimeOutA.Size = new System.Drawing.Size(84, 58);
             this.btSubTimeOutA.TabIndex = 3;
             this.btSubTimeOutA.UseVisualStyleBackColor = true;
             this.btSubTimeOutA.Click += new System.EventHandler(this.btSubTimeOutA_Click);
@@ -631,29 +668,31 @@
             this.tcTimeOutA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcTimeOutA.IsAdd = false;
             this.tcTimeOutA.IsShowEndTime = false;
-            this.tcTimeOutA.Location = new System.Drawing.Point(3, 3);
+            this.tcTimeOutA.Location = new System.Drawing.Point(5, 5);
             this.tcTimeOutA.LTime = 6000;
+            this.tcTimeOutA.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tcTimeOutA.Name = "tcTimeOutA";
             this.tcTimeOutA.SettingTime = "00:01:00";
             this.tcTimeOutA.ShowButtons = true;
-            this.tcTimeOutA.Size = new System.Drawing.Size(132, 104);
+            this.tcTimeOutA.Size = new System.Drawing.Size(174, 139);
             this.tcTimeOutA.TabIndex = 5;
             this.tcTimeOutA.TimingBackColor = System.Drawing.Color.Empty;
             this.tcTimeOutA.TimingForeColor = System.Drawing.Color.Empty;
-            this.tcTimeOutA.TimingLabelFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tcTimeOutA.TimingLabelFont = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tcTimeOutA.TimingTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tcTimeOutA.Started += new TimingControl.TimingControl.StartedCallback(this.tcTimeOutA_Started);
             this.tcTimeOutA.TextTimingChanged += new TimingControl.TimingControl.TextTimingChangedCallback(this.tcTimeOutA_TextTimingChanged);
+            this.tcTimeOutA.Started += new TimingControl.TimingControl.StartedCallback(this.tcTimeOutA_Started);
             // 
             // btHideTimeOutA
             // 
-            this.btHideTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                | System.Windows.Forms.AnchorStyles.Left)
-                                                                               | System.Windows.Forms.AnchorStyles.Right)));
+            this.btHideTimeOutA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btHideTimeOutA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btHideTimeOutA.Location = new System.Drawing.Point(72, 113);
+            this.btHideTimeOutA.Location = new System.Drawing.Point(96, 153);
+            this.btHideTimeOutA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btHideTimeOutA.Name = "btHideTimeOutA";
-            this.btHideTimeOutA.Size = new System.Drawing.Size(63, 30);
+            this.btHideTimeOutA.Size = new System.Drawing.Size(84, 41);
             this.btHideTimeOutA.TabIndex = 6;
             this.btHideTimeOutA.Text = "Hide";
             this.btHideTimeOutA.UseVisualStyleBackColor = true;
@@ -664,9 +703,10 @@
             this.panel3.Controls.Add(this.tlpTeamA);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Location = new System.Drawing.Point(4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(350, 640);
+            this.panel3.Size = new System.Drawing.Size(466, 853);
             this.panel3.TabIndex = 6;
             // 
             // tlpTeamA
@@ -674,7 +714,8 @@
             this.tlpTeamA.ColumnCount = 1;
             this.tlpTeamA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpTeamA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpTeamA.Location = new System.Drawing.Point(0, 21);
+            this.tlpTeamA.Location = new System.Drawing.Point(0, 28);
+            this.tlpTeamA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tlpTeamA.Name = "tlpTeamA";
             this.tlpTeamA.RowCount = 13;
             this.tlpTeamA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -690,7 +731,7 @@
             this.tlpTeamA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
             this.tlpTeamA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
             this.tlpTeamA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
-            this.tlpTeamA.Size = new System.Drawing.Size(350, 619);
+            this.tlpTeamA.Size = new System.Drawing.Size(466, 825);
             this.tlpTeamA.TabIndex = 1;
             // 
             // panel4
@@ -700,8 +741,9 @@
             this.panel4.Controls.Add(this.lbNumber);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(350, 21);
+            this.panel4.Size = new System.Drawing.Size(466, 28);
             this.panel4.TabIndex = 0;
             // 
             // label2
@@ -710,8 +752,9 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(10)));
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 21);
+            this.label2.Size = new System.Drawing.Size(260, 28);
             this.label2.TabIndex = 9;
             this.label2.Text = "Athlete";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -721,9 +764,10 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(10)));
-            this.label1.Location = new System.Drawing.Point(195, 0);
+            this.label1.Location = new System.Drawing.Point(260, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 21);
+            this.label1.Size = new System.Drawing.Size(93, 28);
             this.label1.TabIndex = 8;
             this.label1.Text = "Fouls";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -733,9 +777,10 @@
             this.lbNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbNumber.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbNumber.Font = new System.Drawing.Font("Arial", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNumber.Location = new System.Drawing.Point(265, 0);
+            this.lbNumber.Location = new System.Drawing.Point(353, 0);
+            this.lbNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNumber.Name = "lbNumber";
-            this.lbNumber.Size = new System.Drawing.Size(85, 21);
+            this.lbNumber.Size = new System.Drawing.Size(113, 28);
             this.lbNumber.TabIndex = 7;
             this.lbNumber.Text = "Foul Time";
             this.lbNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -748,11 +793,12 @@
             this.tableLayoutPanel7.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.groupBox2, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(515, 30);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(686, 40);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(506, 83);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(675, 111);
             this.tableLayoutPanel7.TabIndex = 9;
             // 
             // groupBox1
@@ -760,9 +806,11 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel11);
             this.groupBox1.Controls.Add(this.tcTotalTime);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(247, 77);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(329, 103);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "TotalTime";
@@ -777,67 +825,72 @@
             this.tableLayoutPanel11.Controls.Add(this.btPauseTotalTime, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.btStartTotalTime, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(103, 17);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(137, 19);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 2;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(141, 57);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(188, 80);
             this.tableLayoutPanel11.TabIndex = 1;
             // 
             // btSettingTotalTime
             // 
-            this.btSettingTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                    | System.Windows.Forms.AnchorStyles.Left)
-                                                                                   | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSettingTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSettingTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSettingTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btSettingTotalTime.Image")));
-            this.btSettingTotalTime.Location = new System.Drawing.Point(73, 31);
+            this.btSettingTotalTime.Location = new System.Drawing.Point(98, 44);
+            this.btSettingTotalTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSettingTotalTime.Name = "btSettingTotalTime";
-            this.btSettingTotalTime.Size = new System.Drawing.Size(65, 23);
+            this.btSettingTotalTime.Size = new System.Drawing.Size(86, 32);
             this.btSettingTotalTime.TabIndex = 3;
             this.btSettingTotalTime.UseVisualStyleBackColor = true;
             this.btSettingTotalTime.Click += new System.EventHandler(this.btSettingTotalTime_Click);
             // 
             // btResetTotalTime
             // 
-            this.btResetTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                  | System.Windows.Forms.AnchorStyles.Left)
-                                                                                 | System.Windows.Forms.AnchorStyles.Right)));
+            this.btResetTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btResetTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btResetTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btResetTotalTime.Image")));
-            this.btResetTotalTime.Location = new System.Drawing.Point(3, 31);
+            this.btResetTotalTime.Location = new System.Drawing.Point(4, 44);
+            this.btResetTotalTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btResetTotalTime.Name = "btResetTotalTime";
-            this.btResetTotalTime.Size = new System.Drawing.Size(64, 23);
+            this.btResetTotalTime.Size = new System.Drawing.Size(86, 32);
             this.btResetTotalTime.TabIndex = 2;
             this.btResetTotalTime.UseVisualStyleBackColor = true;
             this.btResetTotalTime.Click += new System.EventHandler(this.btResetTotalTime_Click);
             // 
             // btPauseTotalTime
             // 
-            this.btPauseTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                  | System.Windows.Forms.AnchorStyles.Left)
-                                                                                 | System.Windows.Forms.AnchorStyles.Right)));
+            this.btPauseTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btPauseTotalTime.Enabled = false;
             this.btPauseTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btPauseTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btPauseTotalTime.Image")));
-            this.btPauseTotalTime.Location = new System.Drawing.Point(73, 3);
+            this.btPauseTotalTime.Location = new System.Drawing.Point(98, 4);
+            this.btPauseTotalTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btPauseTotalTime.Name = "btPauseTotalTime";
-            this.btPauseTotalTime.Size = new System.Drawing.Size(65, 22);
+            this.btPauseTotalTime.Size = new System.Drawing.Size(86, 32);
             this.btPauseTotalTime.TabIndex = 1;
             this.btPauseTotalTime.UseVisualStyleBackColor = true;
             this.btPauseTotalTime.Click += new System.EventHandler(this.btPauseTotalTime_Click);
             // 
             // btStartTotalTime
             // 
-            this.btStartTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                  | System.Windows.Forms.AnchorStyles.Left)
-                                                                                 | System.Windows.Forms.AnchorStyles.Right)));
+            this.btStartTotalTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btStartTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btStartTotalTime.Image = ((System.Drawing.Image)(resources.GetObject("btStartTotalTime.Image")));
-            this.btStartTotalTime.Location = new System.Drawing.Point(3, 3);
+            this.btStartTotalTime.Location = new System.Drawing.Point(4, 4);
+            this.btStartTotalTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btStartTotalTime.Name = "btStartTotalTime";
-            this.btStartTotalTime.Size = new System.Drawing.Size(64, 22);
+            this.btStartTotalTime.Size = new System.Drawing.Size(86, 32);
             this.btStartTotalTime.TabIndex = 0;
             this.btStartTotalTime.UseVisualStyleBackColor = true;
             this.btStartTotalTime.Click += new System.EventHandler(this.btStartTotalTime_Click);
@@ -849,28 +902,31 @@
             this.tcTotalTime.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcTotalTime.IsAdd = false;
             this.tcTotalTime.IsShowEndTime = false;
-            this.tcTotalTime.Location = new System.Drawing.Point(3, 17);
+            this.tcTotalTime.Location = new System.Drawing.Point(4, 19);
             this.tcTotalTime.LTime = 48000;
+            this.tcTotalTime.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tcTotalTime.Name = "tcTotalTime";
             this.tcTotalTime.SettingTime = "00:08:00";
             this.tcTotalTime.ShowButtons = false;
-            this.tcTotalTime.Size = new System.Drawing.Size(100, 57);
+            this.tcTotalTime.Size = new System.Drawing.Size(133, 80);
             this.tcTotalTime.TabIndex = 0;
             this.tcTotalTime.TimingBackColor = System.Drawing.Color.Empty;
             this.tcTotalTime.TimingForeColor = System.Drawing.Color.Empty;
             this.tcTotalTime.TimingLabelFont = new System.Drawing.Font("Consolas", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcTotalTime.TimingTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tcTotalTime.TimeChanging += new TimingControl.TimingControl.TimeChangingCallback(this.tcTotalTime_TimeChanging);
             this.tcTotalTime.TextTimingChanged += new TimingControl.TimingControl.TextTimingChangedCallback(this.tcTotalTime_TextTimingChanged);
+            this.tcTotalTime.TimeChanging += new TimingControl.TimingControl.TimeChangingCallback(this.tcTotalTime_TimeChanging);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tableLayoutPanel12);
             this.groupBox2.Controls.Add(this.tcThirtyTime);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(256, 3);
+            this.groupBox2.Location = new System.Drawing.Point(341, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(247, 77);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(330, 103);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "30 Seconds";
@@ -885,67 +941,72 @@
             this.tableLayoutPanel12.Controls.Add(this.btThirtyTimePause, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.btThirtyTimeStart, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(103, 17);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(137, 19);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 2;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(141, 57);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(189, 80);
             this.tableLayoutPanel12.TabIndex = 2;
             // 
             // btThirtyTimeSetting
             // 
-            this.btThirtyTimeSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                     | System.Windows.Forms.AnchorStyles.Left)
-                                                                                    | System.Windows.Forms.AnchorStyles.Right)));
+            this.btThirtyTimeSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimeSetting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimeSetting.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimeSetting.Image")));
-            this.btThirtyTimeSetting.Location = new System.Drawing.Point(73, 31);
+            this.btThirtyTimeSetting.Location = new System.Drawing.Point(98, 44);
+            this.btThirtyTimeSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btThirtyTimeSetting.Name = "btThirtyTimeSetting";
-            this.btThirtyTimeSetting.Size = new System.Drawing.Size(65, 23);
+            this.btThirtyTimeSetting.Size = new System.Drawing.Size(87, 32);
             this.btThirtyTimeSetting.TabIndex = 3;
             this.btThirtyTimeSetting.UseVisualStyleBackColor = true;
             this.btThirtyTimeSetting.Click += new System.EventHandler(this.btThirtyTimeSetting_Click);
             // 
             // btThirtyTimeReset
             // 
-            this.btThirtyTimeReset.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                   | System.Windows.Forms.AnchorStyles.Left)
-                                                                                  | System.Windows.Forms.AnchorStyles.Right)));
+            this.btThirtyTimeReset.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimeReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimeReset.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimeReset.Image")));
-            this.btThirtyTimeReset.Location = new System.Drawing.Point(3, 31);
+            this.btThirtyTimeReset.Location = new System.Drawing.Point(4, 44);
+            this.btThirtyTimeReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btThirtyTimeReset.Name = "btThirtyTimeReset";
-            this.btThirtyTimeReset.Size = new System.Drawing.Size(64, 23);
+            this.btThirtyTimeReset.Size = new System.Drawing.Size(86, 32);
             this.btThirtyTimeReset.TabIndex = 2;
             this.btThirtyTimeReset.UseVisualStyleBackColor = true;
             this.btThirtyTimeReset.Click += new System.EventHandler(this.btThirtyTimeReset_Click);
             // 
             // btThirtyTimePause
             // 
-            this.btThirtyTimePause.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                   | System.Windows.Forms.AnchorStyles.Left)
-                                                                                  | System.Windows.Forms.AnchorStyles.Right)));
+            this.btThirtyTimePause.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimePause.Enabled = false;
             this.btThirtyTimePause.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimePause.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimePause.Image")));
-            this.btThirtyTimePause.Location = new System.Drawing.Point(73, 3);
+            this.btThirtyTimePause.Location = new System.Drawing.Point(98, 4);
+            this.btThirtyTimePause.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btThirtyTimePause.Name = "btThirtyTimePause";
-            this.btThirtyTimePause.Size = new System.Drawing.Size(65, 22);
+            this.btThirtyTimePause.Size = new System.Drawing.Size(87, 32);
             this.btThirtyTimePause.TabIndex = 1;
             this.btThirtyTimePause.UseVisualStyleBackColor = true;
             this.btThirtyTimePause.Click += new System.EventHandler(this.btThirtyTimePause_Click);
             // 
             // btThirtyTimeStart
             // 
-            this.btThirtyTimeStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                                   | System.Windows.Forms.AnchorStyles.Left)
-                                                                                  | System.Windows.Forms.AnchorStyles.Right)));
+            this.btThirtyTimeStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btThirtyTimeStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThirtyTimeStart.Image = ((System.Drawing.Image)(resources.GetObject("btThirtyTimeStart.Image")));
-            this.btThirtyTimeStart.Location = new System.Drawing.Point(3, 3);
+            this.btThirtyTimeStart.Location = new System.Drawing.Point(4, 4);
+            this.btThirtyTimeStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btThirtyTimeStart.Name = "btThirtyTimeStart";
-            this.btThirtyTimeStart.Size = new System.Drawing.Size(64, 22);
+            this.btThirtyTimeStart.Size = new System.Drawing.Size(86, 32);
             this.btThirtyTimeStart.TabIndex = 0;
             this.btThirtyTimeStart.UseVisualStyleBackColor = true;
             this.btThirtyTimeStart.Click += new System.EventHandler(this.btThirtyTimeStart_Click);
@@ -956,42 +1017,46 @@
             this.tcThirtyTime.Dock = System.Windows.Forms.DockStyle.Left;
             this.tcThirtyTime.IsAdd = false;
             this.tcThirtyTime.IsShowEndTime = false;
-            this.tcThirtyTime.Location = new System.Drawing.Point(3, 17);
+            this.tcThirtyTime.Location = new System.Drawing.Point(4, 19);
             this.tcThirtyTime.LTime = 3000;
+            this.tcThirtyTime.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tcThirtyTime.Name = "tcThirtyTime";
             this.tcThirtyTime.SettingTime = "00:00:30";
             this.tcThirtyTime.ShowButtons = false;
-            this.tcThirtyTime.Size = new System.Drawing.Size(100, 57);
+            this.tcThirtyTime.Size = new System.Drawing.Size(133, 80);
             this.tcThirtyTime.TabIndex = 1;
             this.tcThirtyTime.TimingBackColor = System.Drawing.Color.Empty;
             this.tcThirtyTime.TimingForeColor = System.Drawing.Color.Empty;
             this.tcThirtyTime.TimingLabelFont = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcThirtyTime.TimingTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tcThirtyTime.TimeChanging += new TimingControl.TimingControl.TimeChangingCallback(this.tcThirtyTime_TimeChanging);
             this.tcThirtyTime.TextTimingChanged += new TimingControl.TimingControl.TextTimingChangedCallback(this.tcThirtyTime_TextTimingChanged);
+            this.tcThirtyTime.TimeChanging += new TimingControl.TimingControl.TimeChangingCallback(this.tcThirtyTime_TimeChanging);
             // 
             // tableLayoutPanel13
             // 
             this.tableLayoutPanel13.ColumnCount = 2;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel13.Controls.Add(this.groupBox5, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.groupBox6, 1, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 30);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(4, 40);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(506, 83);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(674, 111);
             this.tableLayoutPanel13.TabIndex = 10;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.tableLayoutPanel6);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox5.Location = new System.Drawing.Point(3, 3);
+            this.groupBox5.Location = new System.Drawing.Point(4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(350, 77);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(466, 103);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Court";
@@ -1004,20 +1069,22 @@
             this.tableLayoutPanel6.Controls.Add(this.lbAcournt, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel8, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(344, 57);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(458, 80);
             this.tableLayoutPanel6.TabIndex = 9;
             // 
             // lbAcournt
             // 
             this.lbAcournt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbAcournt.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAcournt.Location = new System.Drawing.Point(3, 0);
+            this.lbAcournt.Location = new System.Drawing.Point(4, 0);
+            this.lbAcournt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAcournt.Name = "lbAcournt";
-            this.lbAcournt.Size = new System.Drawing.Size(166, 57);
+            this.lbAcournt.Size = new System.Drawing.Size(221, 80);
             this.lbAcournt.TabIndex = 3;
             this.lbAcournt.Text = "1st";
             this.lbAcournt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1030,37 +1097,40 @@
             this.tableLayoutPanel8.Controls.Add(this.btSubAcournt, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.btAddAcournt, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(175, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(233, 4);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(166, 51);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(221, 72);
             this.tableLayoutPanel8.TabIndex = 4;
             // 
             // btSubAcournt
             // 
-            this.btSubAcournt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                              | System.Windows.Forms.AnchorStyles.Left)
-                                                                             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSubAcournt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubAcournt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubAcournt.Image = ((System.Drawing.Image)(resources.GetObject("btSubAcournt.Image")));
-            this.btSubAcournt.Location = new System.Drawing.Point(86, 3);
+            this.btSubAcournt.Location = new System.Drawing.Point(114, 4);
+            this.btSubAcournt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSubAcournt.Name = "btSubAcournt";
-            this.btSubAcournt.Size = new System.Drawing.Size(77, 45);
+            this.btSubAcournt.Size = new System.Drawing.Size(103, 64);
             this.btSubAcournt.TabIndex = 2;
             this.btSubAcournt.UseVisualStyleBackColor = true;
             this.btSubAcournt.Click += new System.EventHandler(this.btSubAcournt_Click);
             // 
             // btAddAcournt
             // 
-            this.btAddAcournt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                                                                              | System.Windows.Forms.AnchorStyles.Left)
-                                                                             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAddAcournt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAddAcournt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddAcournt.Image = ((System.Drawing.Image)(resources.GetObject("btAddAcournt.Image")));
-            this.btAddAcournt.Location = new System.Drawing.Point(3, 3);
+            this.btAddAcournt.Location = new System.Drawing.Point(4, 4);
+            this.btAddAcournt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAddAcournt.Name = "btAddAcournt";
-            this.btAddAcournt.Size = new System.Drawing.Size(77, 45);
+            this.btAddAcournt.Size = new System.Drawing.Size(102, 64);
             this.btAddAcournt.TabIndex = 1;
             this.btAddAcournt.UseVisualStyleBackColor = true;
             this.btAddAcournt.Click += new System.EventHandler(this.btAddAcournt_Click);
@@ -1071,9 +1141,11 @@
             this.groupBox6.Controls.Add(this.cbScore);
             this.groupBox6.Controls.Add(this.cbCourt);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox6.Location = new System.Drawing.Point(359, 3);
+            this.groupBox6.Location = new System.Drawing.Point(478, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(144, 77);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Size = new System.Drawing.Size(192, 103);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Receive";
@@ -1081,9 +1153,10 @@
             // btHideTotalTime
             // 
             this.btHideTotalTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btHideTotalTime.Location = new System.Drawing.Point(72, 20);
+            this.btHideTotalTime.Location = new System.Drawing.Point(96, 27);
+            this.btHideTotalTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btHideTotalTime.Name = "btHideTotalTime";
-            this.btHideTotalTime.Size = new System.Drawing.Size(63, 48);
+            this.btHideTotalTime.Size = new System.Drawing.Size(84, 64);
             this.btHideTotalTime.TabIndex = 9;
             this.btHideTotalTime.Text = "Hide";
             this.btHideTotalTime.UseVisualStyleBackColor = true;
@@ -1092,9 +1165,10 @@
             // cbScore
             // 
             this.cbScore.AutoSize = true;
-            this.cbScore.Location = new System.Drawing.Point(12, 52);
+            this.cbScore.Location = new System.Drawing.Point(16, 69);
+            this.cbScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbScore.Name = "cbScore";
-            this.cbScore.Size = new System.Drawing.Size(54, 16);
+            this.cbScore.Size = new System.Drawing.Size(67, 21);
             this.cbScore.TabIndex = 1;
             this.cbScore.Text = "Score";
             this.cbScore.UseVisualStyleBackColor = true;
@@ -1102,21 +1176,23 @@
             // cbCourt
             // 
             this.cbCourt.AutoSize = true;
-            this.cbCourt.Location = new System.Drawing.Point(12, 20);
+            this.cbCourt.Location = new System.Drawing.Point(16, 27);
+            this.cbCourt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbCourt.Name = "cbCourt";
-            this.cbCourt.Size = new System.Drawing.Size(54, 16);
+            this.cbCourt.Size = new System.Drawing.Size(64, 21);
             this.cbCourt.TabIndex = 0;
             this.cbCourt.Text = "Court";
             this.cbCourt.UseVisualStyleBackColor = true;
             // 
             // MatchControlExtend
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MatchControlExtend";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(1365, 1024);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

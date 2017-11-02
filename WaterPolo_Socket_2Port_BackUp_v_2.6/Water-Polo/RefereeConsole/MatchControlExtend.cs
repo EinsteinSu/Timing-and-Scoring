@@ -41,19 +41,7 @@ namespace RefereeConsole
                 if (_totalCom.Open())
                 {
                     _totalCom.StartListening();
-                    _totalCom.DataChanging += msg =>
-                    {
-                        var processor = new TotalTimeProcess(_isAdd, TeamATimeOutCount, TeamBTimeOutCount);
-                        var data = processor.Process(msg);
-                        Court = data.Court;
-                        TeamATimeOutCount = data.TimeoutCountA;
-                        TeamBTimeOutCount = data.TimeoutCountB;
-                        tcTimeOutA.LTime = data.PauseTimeA;
-                        tcTimeOutB.LTime = data.PauseTimeB;
-                        tcTotalTime.LTime = data.TotalTime;
-                        ScoreA = data.ScoreA;
-                        ScoreB = data.ScoreB;
-                    };
+                    _totalCom.DataChanging += Original_ProcessTotalTimeFromSerialCom;
                 }
             }
             catch (Exception ex)

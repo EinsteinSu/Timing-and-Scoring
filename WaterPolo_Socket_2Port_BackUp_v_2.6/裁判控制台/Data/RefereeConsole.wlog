@@ -503,3 +503,23 @@
 2017-11-01 20:59:49,470 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
 2017-11-01 20:59:49,471 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
 2017-11-01 20:59:49,501 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-11-02 10:01:13,459 [1] INFO  HomePage - Start listening from prot 4567
+2017-11-02 10:05:21,532 [1] INFO  HomePage - Start listening from prot 4567
+2017-11-02 10:07:06,767 [1] INFO  HomePage - Start listening from prot 4567
+2017-11-02 11:00:24,267 [1] INFO  HomePage - Start listening from prot 4567
+2017-11-02 11:00:29,563 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-11-02 11:00:29,623 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-11-02 11:00:29,623 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-11-02 11:00:29,653 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-11-02 11:01:28,120 [1] INFO  HomePage - Start listening from prot 4567
+2017-11-02 11:01:33,025 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-11-02 11:01:33,078 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-11-02 11:01:33,079 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-11-02 11:01:33,106 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-11-02 11:02:18,371 [1] INFO  HomePage - Start listening from prot 4567
+2017-11-02 11:02:23,413 [1] INFO  MatchControlExtend - Start listen serial device for display total time 4(4800) HeaderDF TailCF
+2017-11-02 11:02:23,474 [1] ERROR ComListening - Could not open com. The port 'COM4' does not exist.
+2017-11-02 11:02:23,475 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderEF TailBF
+2017-11-02 11:02:23,507 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2017-11-02 11:22:10,946 [1] INFO  HomePage - Start listening from prot 4567
+2017-11-02 11:31:43,292 [1] INFO  HomePage - Start listening from prot 4567

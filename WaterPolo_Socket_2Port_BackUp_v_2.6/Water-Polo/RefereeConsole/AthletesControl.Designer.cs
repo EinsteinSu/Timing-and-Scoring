@@ -40,9 +40,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btStart = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cbSerious.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,7 +58,7 @@
             this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCancel.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Location = new System.Drawing.Point(0, 23);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(85, 22);
             this.btCancel.TabIndex = 1;
@@ -84,7 +84,7 @@
             // 
             this.cbSerious.Dock = System.Windows.Forms.DockStyle.Right;
             this.cbSerious.Location = new System.Drawing.Point(301, 0);
-            this.cbSerious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSerious.Margin = new System.Windows.Forms.Padding(4);
             this.cbSerious.Name = "cbSerious";
             this.cbSerious.Properties.AutoHeight = false;
             this.cbSerious.Properties.Caption = "";
@@ -116,7 +116,7 @@
             this.btSubFoul.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSubFoul.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSubFoul.Location = new System.Drawing.Point(0, 23);
-            this.btSubFoul.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSubFoul.Margin = new System.Windows.Forms.Padding(4);
             this.btSubFoul.Name = "btSubFoul";
             this.btSubFoul.Size = new System.Drawing.Size(36, 22);
             this.btSubFoul.TabIndex = 1;
@@ -130,7 +130,7 @@
             this.btAddFoul.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btAddFoul.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAddFoul.Location = new System.Drawing.Point(0, 0);
-            this.btAddFoul.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btAddFoul.Margin = new System.Windows.Forms.Padding(4);
             this.btAddFoul.Name = "btAddFoul";
             this.btAddFoul.Size = new System.Drawing.Size(36, 23);
             this.btAddFoul.TabIndex = 0;
@@ -142,11 +142,11 @@
             // 
             this.lbNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbNumber.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbNumber.Font = new System.Drawing.Font("Agency FB", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(10)));
+            this.lbNumber.Font = new System.Drawing.Font("Agency FB", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNumber.Location = new System.Drawing.Point(0, 0);
             this.lbNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNumber.Name = "lbNumber";
-            this.lbNumber.Size = new System.Drawing.Size(35, 45);
+            this.lbNumber.Size = new System.Drawing.Size(42, 45);
             this.lbNumber.TabIndex = 6;
             this.lbNumber.Text = "0";
             this.lbNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -156,10 +156,10 @@
             this.lbName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbName.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(10)));
-            this.lbName.Location = new System.Drawing.Point(35, 0);
+            this.lbName.Location = new System.Drawing.Point(42, 0);
             this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(208, 45);
+            this.lbName.Size = new System.Drawing.Size(201, 45);
             this.lbName.TabIndex = 7;
             this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -169,7 +169,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(379, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(85, 45);
             this.panel1.TabIndex = 8;
@@ -179,7 +179,7 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(85, 23);
             this.panel2.TabIndex = 0;
@@ -189,31 +189,10 @@
             this.panel5.Controls.Add(this.btStart);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(85, 23);
             this.panel5.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btSubFoul);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(265, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 45);
-            this.panel3.TabIndex = 9;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btAddFoul);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(36, 23);
-            this.panel4.TabIndex = 0;
             // 
             // btStart
             // 
@@ -229,6 +208,27 @@
             this.btStart.UseVisualStyleBackColor = true;
             this.btStart.Click += new System.EventHandler(this.btStart_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btSubFoul);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(265, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(36, 45);
+            this.panel3.TabIndex = 9;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btAddFoul);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(36, 23);
+            this.panel4.TabIndex = 0;
+            // 
             // AthletesControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -241,7 +241,7 @@
             this.Controls.Add(this.lbTwentyTime);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbNumber);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AthletesControl";
             this.Size = new System.Drawing.Size(464, 45);
             ((System.ComponentModel.ISupportInitialize)(this.cbSerious.Properties)).EndInit();
