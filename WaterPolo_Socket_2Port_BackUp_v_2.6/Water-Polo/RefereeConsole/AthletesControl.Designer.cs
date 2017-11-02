@@ -62,7 +62,7 @@
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(85, 22);
             this.btCancel.TabIndex = 1;
-            this.btCancel.Text = "Cancel";
+            this.btCancel.Text = "取消";
             this.btCancel.UseVisualStyleBackColor = true;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
@@ -204,7 +204,7 @@
             this.btStart.Name = "btStart";
             this.btStart.Size = new System.Drawing.Size(85, 23);
             this.btStart.TabIndex = 0;
-            this.btStart.Text = "Start";
+            this.btStart.Text = "开始";
             this.btStart.UseVisualStyleBackColor = true;
             this.btStart.Click += new System.EventHandler(this.btStart_Click);
             // 

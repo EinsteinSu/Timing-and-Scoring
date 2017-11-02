@@ -111,6 +111,8 @@ namespace RefereeConsole
                 ScoreB = 0;
                 TeamATimeOutCount = 0;
                 TeamBTimeOutCount = 0;
+                tcTimeOutA.Refresh();
+                tcTimeOutB.Refresh();
             }
         }
 
@@ -684,7 +686,7 @@ namespace RefereeConsole
                 sp.SoundLocation = string.Format(@"{0}\{1}", DirectoryHelper.SoundDirectory, "TimeOut15.wav");
                 sp.Play();
             }
-            if (ltime == 0)
+            if (ltime == 0 && !tcTimeOutA.IsInitial)
             {
                 var sp = new SoundPlayer { SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut0.wav"}" };
                 sp.Play();
@@ -709,7 +711,7 @@ namespace RefereeConsole
                 var sp = new SoundPlayer { SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut15.wav"}" };
                 sp.Play();
             }
-            if (ltime == 0)
+            if (ltime == 0 && !tcTimeOutB.IsInitial)
             {
                 //显示回总时间
                 var sp = new SoundPlayer { SoundLocation = $@"{DirectoryHelper.SoundDirectory}\{"TimeOut0.wav"}" };

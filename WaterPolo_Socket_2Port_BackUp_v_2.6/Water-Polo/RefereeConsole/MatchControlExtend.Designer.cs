@@ -245,7 +245,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(261, 28);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Athlete";
+            this.label3.Text = "运动员";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -258,7 +258,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 28);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Fouls";
+            this.label4.Text = "犯规";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -271,7 +271,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 28);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Foul Time";
+            this.label5.Text = "20秒";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -356,7 +356,7 @@
             this.groupBox4.Size = new System.Drawing.Size(192, 355);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Time Out";
+            this.groupBox4.Text = "暂停";
             // 
             // tableLayoutPanel10
             // 
@@ -393,7 +393,7 @@
             this.btShowTeamB.Name = "btShowTeamB";
             this.btShowTeamB.Size = new System.Drawing.Size(84, 41);
             this.btShowTeamB.TabIndex = 8;
-            this.btShowTeamB.Text = "Show";
+            this.btShowTeamB.Text = "显示";
             this.btShowTeamB.UseVisualStyleBackColor = true;
             this.btShowTeamB.Visible = false;
             this.btShowTeamB.Click += new System.EventHandler(this.btShowTeamB_Click);
@@ -474,7 +474,7 @@
             this.btHideTimeOutB.Name = "btHideTimeOutB";
             this.btHideTimeOutB.Size = new System.Drawing.Size(84, 41);
             this.btHideTimeOutB.TabIndex = 7;
-            this.btHideTimeOutB.Text = "Hide";
+            this.btHideTimeOutB.Text = "隐藏";
             this.btHideTimeOutB.UseVisualStyleBackColor = true;
             this.btHideTimeOutB.Click += new System.EventHandler(this.btHideTimeOutB_Click);
             // 
@@ -576,7 +576,7 @@
             this.groupBox3.Size = new System.Drawing.Size(192, 355);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Time Out";
+            this.groupBox3.Text = "暂停";
             // 
             // tableLayoutPanel9
             // 
@@ -613,7 +613,7 @@
             this.btShowTeamA.Name = "btShowTeamA";
             this.btShowTeamA.Size = new System.Drawing.Size(84, 41);
             this.btShowTeamA.TabIndex = 7;
-            this.btShowTeamA.Text = "Show";
+            this.btShowTeamA.Text = "显示";
             this.btShowTeamA.UseVisualStyleBackColor = true;
             this.btShowTeamA.Visible = false;
             this.btShowTeamA.Click += new System.EventHandler(this.btShowTeamA_Click);
@@ -694,7 +694,7 @@
             this.btHideTimeOutA.Name = "btHideTimeOutA";
             this.btHideTimeOutA.Size = new System.Drawing.Size(84, 41);
             this.btHideTimeOutA.TabIndex = 6;
-            this.btHideTimeOutA.Text = "Hide";
+            this.btHideTimeOutA.Text = "隐藏";
             this.btHideTimeOutA.UseVisualStyleBackColor = true;
             this.btHideTimeOutA.Click += new System.EventHandler(this.btHideTimeOutA_Click);
             // 
@@ -756,7 +756,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 28);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Athlete";
+            this.label2.Text = "运动员";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -769,7 +769,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 28);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Fouls";
+            this.label1.Text = "犯规";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbNumber
@@ -782,7 +782,7 @@
             this.lbNumber.Name = "lbNumber";
             this.lbNumber.Size = new System.Drawing.Size(113, 28);
             this.lbNumber.TabIndex = 7;
-            this.lbNumber.Text = "Foul Time";
+            this.lbNumber.Text = "20秒";
             this.lbNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
@@ -813,7 +813,7 @@
             this.groupBox1.Size = new System.Drawing.Size(329, 103);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "TotalTime";
+            this.groupBox1.Text = "总计时";
             // 
             // tableLayoutPanel11
             // 
@@ -929,7 +929,7 @@
             this.groupBox2.Size = new System.Drawing.Size(330, 103);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "30 Seconds";
+            this.groupBox2.Text = "30 秒";
             // 
             // tableLayoutPanel12
             // 
@@ -1059,7 +1059,7 @@
             this.groupBox5.Size = new System.Drawing.Size(466, 103);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Court";
+            this.groupBox5.Text = "比赛节数";
             // 
             // tableLayoutPanel6
             // 
@@ -1149,6 +1149,7 @@
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Receive";
+            this.groupBox6.Visible = false;
             // 
             // btHideTotalTime
             // 

@@ -12,11 +12,17 @@ namespace TimingControl
         public TimingControl()
         {
             InitializeComponent();
+
         }
+
+        public bool IsInitial => _isInitial;
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+            _isInitial = true;
+            lbTime.Text = string.Empty;
+            _isInitial = false;
             LTime = GetSecond(DateTime.Parse(SettingTime)) * 100;
             SetEnable(btStart, true);
             SetEnable(btStop, false);
@@ -117,7 +123,9 @@ namespace TimingControl
             {
                 _ltime = value;
                 if (value >= 0)
+                {
                     DTime = DateTime.Parse(GetTime(value));
+                }
             }
         }
 
@@ -129,14 +137,18 @@ namespace TimingControl
             set
             {
                 _dtime = value;
-                if (!IsAdd && value.Minute == 0 && value.Second < 1 && IsShowEndTime)
-                    SetText(lbTime, value.ToString("s.fff"));
-                else
-                    SetText(lbTime, value.ToString(DisplayFormat));
+                //if (!IsAdd && value.Minute == 0 && value.Second < 1 && IsShowEndTime)
+                //{
+                //    SetText(lbTime, value.ToString("s.fff"));
+                //}
+                //else
+                //{
+                SetText(lbTime, value.ToString(DisplayFormat));
+                //}
             }
         }
 
-        public string DisplayFormat { get; set; } = "HH:mm:ss fff";
+        public string DisplayFormat { get; set; } = "mm:ss";
 
         public bool IsAdd { get; set; } = false;
 
@@ -239,6 +251,7 @@ namespace TimingControl
 
         public event ResetedCallback Reseted;
         private bool isReset;
+        private bool _isInitial;
 
         public void Reset()
         {
