@@ -7,24 +7,38 @@ namespace WaterPolo.Common
         T Process(List<string> messages);
     }
 
-    public class ThirtySecondsProcess : ISerialDataProcess<int>
+    public class ThirtySecondsProcess : ISerialDataProcess<ThirySecondsData>
     {
-        public int Process(List<string> msg)
+        public ThirySecondsData Process(List<string> msg)
         {
+            var data = new ThirySecondsData();
             if (msg[0].IsNumeric())
+            {
                 if (msg[0].Length >= 2)
                 {
                     var newMsg = msg[0].Substring(1, 1) + msg[0].Substring(0, 1);
                     var seconds = newMsg.ToInt();
-                    return seconds * 100;
+                    data.Seconds = seconds * 100;
                 }
                 else
                 {
                     var seconds = msg[0].ToInt();
-                    return seconds * 100;
+                    data.Seconds = seconds * 100;
                 }
-            return 0;
+            }
+            if (msg.Count > 2)
+            {
+                data.IsStopped = msg[2].Contains("FB");
+            }
+            return data;
         }
+    }
+
+    public class ThirySecondsData
+    {
+        public int Seconds { get; set; }
+
+        public bool IsStopped { get; set; }
     }
 
     public class TotalTimeProcess : ISerialDataProcess<TotalTimeDeviceData>

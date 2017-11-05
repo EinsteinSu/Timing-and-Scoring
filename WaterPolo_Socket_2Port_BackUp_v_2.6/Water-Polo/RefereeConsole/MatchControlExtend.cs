@@ -68,7 +68,10 @@ namespace RefereeConsole
                     _secondsCom.DataChanging += delegate (List<string> msg)
                     {
                         //display 30 seconds
-                        tcThirtyTime.LTime = _thirtySecondsProcess.Process(msg);
+                        var data = _thirtySecondsProcess.Process(msg);
+                        tcThirtyTime.LTime = data.Seconds;
+                        _isStopped = data.IsStopped;
+                        
                     };
                 }
             }
@@ -784,20 +787,7 @@ namespace RefereeConsole
         private void tcTotalTime_TextTimingChanged(string timing)
         {
 
-            #region 20秒
 
-            if (!_isStopped)
-            {
-                foreach (AthletesControl ac in tlpTeamA.Controls)
-                    if (ac.IsStart)
-                        ac.TOTALTIME--;
-                foreach (AthletesControl ac in tlpTeamB.Controls)
-                    if (ac.IsStart)
-                        ac.TOTALTIME--;
-            }
-           
-
-            #endregion
 
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TotalTime,{0}", timing));
@@ -846,7 +836,28 @@ namespace RefereeConsole
         //if you want to associate with total time, you should add this logical in total time changing method
         private void tcThirtyTime_TextTimingChanged(string timing)
         {
+            #region 20秒
 
+            if (!_isStopped)
+            {
+                foreach (AthletesControl ac in tlpTeamA.Controls)
+                {
+                    if (ac.IsStart)
+                    {
+                        ac.TOTALTIME--;
+                    }
+                }
+                foreach (AthletesControl ac in tlpTeamB.Controls)
+                {
+                    if (ac.IsStart)
+                    {
+                        ac.TOTALTIME--;
+                    }
+                }
+            }
+
+
+            #endregion
             if (Settings.ONSETTINGS.BTIRTYSECONDS)
             {
                 var bt = new byte[3];
