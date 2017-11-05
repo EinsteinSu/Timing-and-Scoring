@@ -118,4 +118,3 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\SocketPublic\obj\x86\Debug\SocketPublic.csproj.GenerateResource.Cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\SocketPublic\obj\x86\Debug\SocketPublic.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\SocketPublic\obj\x86\Debug\SocketPublic.pdb
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\SocketPublic\obj\x86\Debug\SocketPublic.csprojResolveAssemblyReference.cache

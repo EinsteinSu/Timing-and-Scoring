@@ -43,8 +43,7 @@ namespace ApplicationClient
                 broadcastPanel1.LoadBroadCast();
             }
             catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
+            {throw new Exception(ex.Message);
                 broadcastPanel1.Visible = false;
             }
         }

@@ -91,6 +91,9 @@ namespace DisplayConsole
             SetControlShowHide(tlpParent, false);
             if (!string.IsNullOrEmpty(Settings.ONSETTINGS.PriceUrl) && File.Exists(Settings.ONSETTINGS.PriceUrl))
             {
+                SetControlText(label4, "");
+                SetControlText(label3, "");
+                SetControlText(label2, "");
                 SetControlImage(plParent, Image.FromFile(Settings.ONSETTINGS.PriceUrl));
             }
         }
@@ -191,6 +194,9 @@ namespace DisplayConsole
                 case Keys.Escape:
                     _socket.StopListening();
                     Application.Exit();
+                    break;
+                case Keys.T:
+                    LoadSchedule("0fa63c72-c4e3-4b0f-89dc-7e8ce17cfa78");
                     break;
                 case Keys.F4:
                     var frm = new Fonts();
