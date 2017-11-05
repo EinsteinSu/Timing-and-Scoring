@@ -78,25 +78,31 @@
             </summary>
             <param name="serverName">
 		 
+
             </param>
             <param name="port">
 		 
+
             </param>
             <param name="databaseName">
 		 
+
             </param>
             <param name="userName">
 		 
+
             </param>
             <param name="password">
 		 
+
             </param>
 
 
         </member>
         <member name="F:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.DefaultPort">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
             <returns> </returns>
 
@@ -113,9 +119,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.Port">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use. Use the <see cref="P:DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.PortNumber"/> property instead.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -484,25 +492,31 @@
             </summary>
             <param name="serverName">
 		 
+
             </param>
             <param name="port">
 		 
+
             </param>
             <param name="databaseName">
 		 
+
             </param>
             <param name="userName">
 		 
+
             </param>
             <param name="password">
 		 
+
             </param>
 
 
         </member>
         <member name="F:DevExpress.DataAccess.ConnectionParameters.TeradataConnectionParameters.DefaultPort">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
             <returns> </returns>
 
@@ -519,9 +533,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.ConnectionParameters.TeradataConnectionParameters.Port">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use. Use the <see cref="P:DevExpress.DataAccess.ConnectionParameters.TeradataConnectionParameters.PortNumber"/> property instead.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -548,25 +564,6 @@
                 <para>Initializes a new instance of the PartialAggregationValidationException class with the default settings.
 </para>
             </summary>
-
-
-        </member>
-        <member name="T:DevExpress.DataAccess.Web.IConnectionProviderFactory">
-
-            <summary>
-                <para>Provides methods for creating a provider to restore a data connection on deserializing a report.
-
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.DataAccess.Web.IConnectionProviderFactory.Create">
-            <summary>
-                <para>Creates and returns an object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Services.IConnectionProviderService"/> interface.
-</para>
-            </summary>
-            <returns>An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Services.IConnectionProviderService"/> interface.
-</returns>
 
 
         </member>
@@ -3029,7 +3026,8 @@
         </member>
         <member name="P:DevExpress.DataAccess.Sql.ConnectionOptions.CommandTimeout">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use. Use the <see cref="P:DevExpress.DataAccess.Sql.ConnectionOptions.DbCommandTimeout"/> property instead.
+</para>
             </summary>
             <value> </value>
 
@@ -3345,9 +3343,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.Sql.Table.MetaSerializable">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -5005,7 +5005,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.Wizard.SqlWizardOptions.AlwaysSaveCredentials">
             <summary>
-                <para>For internal use.</para>
+                <para>Enables the SQL Wizard to silently save the credentials, without prompting a user.
+</para>
             </summary>
 
 
@@ -6298,9 +6299,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.Excel.ExcelDataSource.Base64">
             <summary>
-                <para>For internal use.</para>
+                <para>Specifies base-<b>64</b> character data of an object data source.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -6365,9 +6368,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.Excel.ExcelDataSource.ResultSchemaSerializable">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -7931,9 +7936,12 @@
         </member>
         <member name="P:DevExpress.DataAccess.ObjectBinding.ObjectDataSource.Base64">
             <summary>
-                <para>For internal use.</para>
+                <para>Specifies base-<b>64</b> character data of an object data source.
+
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -8002,9 +8010,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.ObjectBinding.ObjectDataSource.DataSourceType">
             <summary>
-                <para>For internal use.</para>
+                <para>Specifies the type of an object data source.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.Type"/> structure.
+</value>
 
 
         </member>
@@ -8692,25 +8702,31 @@
             </summary>
             <param name="serverName">
 		 
+
             </param>
             <param name="port">
 		 
+
             </param>
             <param name="databaseName">
 		 
+
             </param>
             <param name="userName">
 		 
+
             </param>
             <param name="password">
 		 
+
             </param>
 
 
         </member>
         <member name="F:DevExpress.DataAccess.ConnectionParameters.AmazonRedshiftConnectionParameters.DefaultPort">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
             <returns> </returns>
 
@@ -9940,20 +9956,6 @@
 
 
         </member>
-        <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.ObjectDataSourceWizard_CannotGetPropertiesForThisMethodReturnType">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.ObjectDataSourceWizard_CannotGetTypeProperties">
-            <summary>
-                <para> </para>
-            </summary>
-
-
-        </member>
         <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.ODSErrorMissingMember">
             <summary>
                 <para><b>Default value</b>: "A data member '{0}' does not exist."
@@ -10388,7 +10390,7 @@
         </member>
         <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.StoredProcedureParameterTypeValidationException">
             <summary>
-                <para><b>Default value</b>: "Parameter '{2}' type mismatch: &lt;{0}&gt;, &lt;{1}&gt; is expected."
+                <para><b>Default value</b>: ""
 </para>
             </summary>
 
@@ -11182,7 +11184,8 @@
             <summary>
                 <para>For internal use.</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -11429,7 +11432,8 @@
         </member>
         <member name="F:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.DefaultPort">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
             <returns> </returns>
 
@@ -11466,9 +11470,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.Port">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use. Use the <see cref="P:DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.PortNumber"/> property instead.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -12480,13 +12486,18 @@
         </member>
         <member name="M:DevExpress.DataAccess.EntityFramework.EFDataSource.#ctor(DevExpress.DataAccess.EntityFramework.EFConnectionParameters,System.String)">
             <summary>
-                <para>For internal use.</para>
+                <para>Initializes a new instance of the EFDataSource class with the specified connection parameters. 
+
+</para>
             </summary>
             <param name="connectionParameters">
-		 
+		An <see cref="T:DevExpress.DataAccess.EntityFramework.EFConnectionParameters"/> object containing parameters used to establish a data connection.
+
+
             </param>
             <param name="storedProcedureName">
-		 
+		A <see cref="T:System.String"/> specifying the name of a stored procedure.
+
             </param>
 
 
@@ -12566,33 +12577,41 @@
         </member>
         <member name="P:DevExpress.DataAccess.EntityFramework.EFDataSource.ConnectionString">
             <summary>
-                <para>For internal use.</para>
+                <para>Specifies a connection string used to connect to data.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value, specifying the connection string.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DataAccess.EntityFramework.EFDataSource.ConnectionStringName">
             <summary>
-                <para>For internal use.</para>
+                <para>Specifies the name of a connection string used to connect to data.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value, specifying the name of a connection string.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DataAccess.EntityFramework.EFDataSource.CustomAssemblyPath">
             <summary>
-                <para>For internal use.</para>
+                <para>Specifies the path to a custom assembly.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value, specifying the path to a custom assembly.
+</value>
 
 
         </member>
         <member name="P:DevExpress.DataAccess.EntityFramework.EFDataSource.CustomContextName">
             <summary>
-                <para>For internal use.</para>
+                <para>Specifies the type to load from a custom assembly.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value, specifying the type to load from a custom assembly.
+</value>
 
 
         </member>
@@ -12660,9 +12679,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.EntityFramework.EFDataSource.ProceduresSerialized">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -12678,9 +12699,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.EntityFramework.EFDataSource.Source">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -12705,7 +12728,8 @@
         </member>
         <member name="M:DevExpress.DataAccess.Sql.SqlDataSource.#ctor">
             <summary>
-                <para>For internal use.</para>
+                <para>Initializes a new instance of the SqlDataSource class with default settings.
+</para>
             </summary>
 
 
@@ -12736,23 +12760,28 @@
         </member>
         <member name="M:DevExpress.DataAccess.Sql.SqlDataSource.#ctor(System.String,DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase)">
             <summary>
-                <para>For internal use.</para>
+                <para>Initializes a new instance of the SqlDataSource class with the specified connection name and parameters.
+</para>
             </summary>
             <param name="connectionName">
-		 
+		A <see cref="T:System.String"/> value, specifying the connection name in the <b>App.config</b> file. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.SqlDataSource.ConnectionName"/> property.
+
             </param>
             <param name="connectionParameters">
-		 
+		A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant, corresponding to the appropriate data provider. This value is assigned to the <see cref="P:DevExpress.DataAccess.Sql.SqlDataSource.ConnectionParameters"/> property.
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.DataAccess.Sql.SqlDataSource.#ctor(System.ComponentModel.IContainer)">
             <summary>
-                <para>For internal use.</para>
+                <para>Initializes a new instance of the SqlDataSource class with the specified container.
+</para>
             </summary>
             <param name="container">
-		 
+		An object that implements the <see cref="T:System.ComponentModel.IContainer"/> interface. 
+
             </param>
 
 
@@ -12770,9 +12799,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.Sql.SqlDataSource.Base64">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -12922,7 +12953,8 @@
         </member>
         <member name="M:DevExpress.DataAccess.Sql.SqlDataSource.Invalidate">
             <summary>
-                <para>For internal use.</para>
+                <para>Deletes all data cached when filling the SqlDataSource.
+</para>
             </summary>
 
 
@@ -13056,9 +13088,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.Sql.SqlDataSource.ResultSchemaSerializable">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>
@@ -16300,9 +16334,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.DataSourceParameterBase.ValueInfo">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
-            <value> </value>
+            <value> 
+</value>
 
 
         </member>
@@ -16476,7 +16512,8 @@
             <summary>
                 <para>For internal use.</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:DevExpress.DataAccess.EntityFramework.CustomAssemblyBehavior"/> enumeration value.
+</value>
 
 
         </member>
@@ -16552,18 +16589,14 @@
             </summary>
 
         </member>
-        <member name="M:DevExpress.DataAccess.Wizard.Presenters.ObjectConstructorParametersPage`1.#ctor(DevExpress.DataAccess.Wizard.IWizardRunnerContext,DevExpress.DataAccess.Wizard.Views.IObjectConstructorParametersPageView,DevExpress.DataAccess.Wizard.Services.IParameterService)">
+        <member name="M:DevExpress.DataAccess.Wizard.Presenters.ObjectConstructorParametersPage`1.#ctor(DevExpress.DataAccess.Wizard.Views.IObjectConstructorParametersPageView)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the ObjectConstructorParametersPage&lt;TModel&gt; class with the specified view.
+</para>
             </summary>
-            <param name="context">
-		 
-            </param>
             <param name="view">
-		 
-            </param>
-            <param name="parameterService">
-		 
+		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Views.IObjectConstructorParametersPageView"/> interface that provides a view for a wizard page.
+
             </param>
 
 
@@ -16591,20 +16624,6 @@
             </summary>
             <value><b>true</b>, if the <b>Finish</b> button is enabled; otherwise, <b>false</b>. 
 </value>
-
-
-        </member>
-        <member name="M:DevExpress.DataAccess.Wizard.Presenters.ObjectConstructorParametersPage`1.Validate(System.String@)">
-            <summary>
-                <para>Validates the correctness of settings specified on the current wizard page.
-</para>
-            </summary>
-            <param name="errorMessage">
-		A <see cref="T:System.String"/> value specifying the text of an error message shown if the validation fails.
-
-            </param>
-            <returns><b>true</b>, if the validation succeeded; otherwise, <b>false</b>.
-</returns>
 
 
         </member>
@@ -18077,6 +18096,16 @@
 
 
         </member>
+        <member name="P:DevExpress.DataAccess.Wizard.Model.ObjectDataSourceModel.DataConnection">
+            <summary>
+                <para>Specifies the connection to an object data source.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Model.IDataConnection"/> interface that specifies the connection to the object data source. 
+</value>
+
+
+        </member>
         <member name="M:DevExpress.DataAccess.Wizard.Model.ObjectDataSourceModel.Equals(System.Object)">
             <summary>
                 <para>Determines whether or not the specified object is equal to the current ObjectDataSourceModel instance.
@@ -18807,49 +18836,54 @@
             </summary>
 
         </member>
-        <member name="M:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.#ctor(System.Boolean,System.String,System.String,System.String,DevExpress.DataAccess.Wizard.Views.NodeType,System.Collections.Generic.IEnumerable`1)">
+        <member name="M:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.#ctor(System.Boolean,System.String,System.String,DevExpress.DataAccess.Wizard.Views.NodeType,System.Collections.Generic.IEnumerable`1)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the TypeViewInfo class with the specified settings.
+</para>
             </summary>
             <param name="highlighted">
-		 
+		Specifies whether a type is highlighted. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.Highlighted"/> property.
+
             </param>
             <param name="ns">
-		 
+		The name of the namespace containing the current type. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.Namespace"/> property.
+
             </param>
             <param name="typeName">
-		 
-            </param>
-            <param name="typeFullName">
-		 
+		The name of the current type. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.TypeName"/> property.
+
             </param>
             <param name="classType">
-		 
+		The type of the current object class. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.ClassType"/> property.
+
             </param>
             <param name="nested">
-		 
+		Nested types of the current type. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.Nested"/> property.
+
             </param>
 
 
         </member>
-        <member name="M:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.#ctor(System.Boolean,System.String,System.String,System.String,DevExpress.DataAccess.Wizard.Views.NodeType)">
+        <member name="M:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.#ctor(System.Boolean,System.String,System.String,DevExpress.DataAccess.Wizard.Views.NodeType)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the TypeViewInfo class with the specified settings.
+</para>
             </summary>
             <param name="highlighted">
-		 
+		Specifies whether a type is highlighted. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.Highlighted"/> property.
+
             </param>
             <param name="ns">
-		 
+		The name of the namespace containing the current type. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.Namespace"/> property.
+
             </param>
             <param name="typeName">
-		 
-            </param>
-            <param name="typeFullName">
-		 
+		The name of the current type. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.TypeName"/> property.
+
             </param>
             <param name="classType">
-		 
+		The type of the current object class. This value is assigned to the <see cref="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.ClassType"/> property.
+
             </param>
 
 
@@ -18902,14 +18936,6 @@
             </summary>
             <value>A <see cref="T:DevExpress.DataAccess.Wizard.Views.TypeViewInfo"/> object specifying the parent of the current type.
 </value>
-
-
-        </member>
-        <member name="P:DevExpress.DataAccess.Wizard.Views.TypeViewInfo.TypeFullName">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
 
 
         </member>
@@ -20413,21 +20439,17 @@
             </summary>
 
         </member>
-        <member name="M:DevExpress.DataAccess.Wizard.Presenters.ChooseObjectBindingModePage`1.#ctor(DevExpress.DataAccess.Wizard.IWizardRunnerContext,DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView,DevExpress.DataAccess.Wizard.OperationMode)">
+        <member name="M:DevExpress.DataAccess.Wizard.Presenters.ChooseObjectBindingModePage`1.#ctor(DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView,DevExpress.DataAccess.Wizard.OperationMode)">
             <summary>
                 <para>Initializes a new instance of the ChooseObjectBindingModePage&lt;TModel&gt; class with the specified settings.
 </para>
             </summary>
-            <param name="context">
-		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.IWizardRunnerContext"/> interface.
-
-            </param>
             <param name="view">
-		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView"/> interface.
+		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView"/> interface that provides a view for a wizard page.
 
             </param>
             <param name="operationMode">
-		An <see cref="T:DevExpress.DataAccess.Wizard.OperationMode"/> enumeration value.
+		An <see cref="T:DevExpress.DataAccess.Wizard.OperationMode"/> enumeration value that specifies which modes of operation are available.
 
             </param>
 
@@ -20476,20 +20498,6 @@
             </summary>
             <value><b>true</b>, if the <b>Next</b> button is enabled; otherwise, <b>false</b>. 
 </value>
-
-
-        </member>
-        <member name="M:DevExpress.DataAccess.Wizard.Presenters.ChooseObjectBindingModePage`1.Validate(System.String@)">
-            <summary>
-                <para>Validates the correctness of settings specified on the current wizard page.
-</para>
-            </summary>
-            <param name="errorMessage">
-		A <see cref="T:System.String"/> value specifying the text of an error message shown if the validation fails.
-
-            </param>
-            <returns><b>true</b>, if the validation succeeded; otherwise, <b>false</b>.
-</returns>
 
 
         </member>
@@ -21969,25 +21977,31 @@
             </summary>
             <param name="serverName">
 		 
+
             </param>
             <param name="databaseName">
 		 
+
             </param>
             <param name="userName">
 		 
+
             </param>
             <param name="password">
 		 
+
             </param>
             <param name="port">
 		 
+
             </param>
 
 
         </member>
         <member name="F:DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.DefaultPort">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
             <returns> </returns>
 
@@ -22004,9 +22018,11 @@
         </member>
         <member name="P:DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.Port">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use. Use the <see cref="P:DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.PortNumber"/> property instead.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="T:System.String"/> value.
+</value>
 
 
         </member>

@@ -16,11 +16,13 @@ namespace Water_Polo
             InitializeComponent();
             TitlePictureBox.Width = 100;
             TitleGroupBox.Height = 100;
-            TitlePictureBox.Image = Resources.Emblem100_80;
+            TitlePictureBox.Image = Resources.Emblem;
+            TitlePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             Log.Info("Hello");
-            TitleLabel.Text = @"水球比赛主控平台";
+            TitleLabel.Text = @"云南体拓科技有限公司 水球比赛中控平台（TTKJ-WP-SO-III）";
             TitleLabel.Font = new Font("宋体", 32, FontStyle.Bold);
-            FunctionParent.BackgroundImage = Resources.Emblem;
+            FunctionParent.BackgroundImage = Resources.Watchword;
+            FunctionParent.BackgroundImageLayout = ImageLayout.Stretch;
 
             AddFunctionButton(12F, "显示桌面", ContentAlignment.MiddleCenter, 0, null,
                 ContentAlignment.MiddleCenter);

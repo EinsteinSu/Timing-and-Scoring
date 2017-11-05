@@ -17,25 +17,25 @@ namespace DisplayConsole
 
             lbNumber.Text = dr["BIBNum"].ToString();
             lbName.Text = dr["NameEn"].ToString();
-            this.Tag = dr["BIBNum"].ToString();
+            Tag = dr["BIBNum"].ToString();
         }
 
         public void SetAthleteStyle()
         {
-            //lbNumber.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.BIBNUMBERFont);
-            //lbNumber.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.BIBNUMBERCOLOR);
+            lbNumber.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.BIBNUMBERFont);
+            lbNumber.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.BIBNUMBERCOLOR);
 
-            //lbName.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.NAMEFont);
-            //lbName.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.NAMECOLOR);
+            lbName.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.NAMEFont);
+            lbName.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.NAMECOLOR);
 
-            //lbFoul1.Font = lbFoul2.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.FOULSFont);
-            //lbFoul1.ForeColor = lbFoul2.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.FOULSCOLOR);
+            lbFoul1.Font = lbFoul2.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.FOULSFont);
+            lbFoul1.ForeColor = lbFoul2.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.FOULSCOLOR);
 
-            //lbSerious.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SERIOUSFont);
-            //lbSerious.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
+            lbSerious.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SERIOUSFont);
+            lbSerious.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
 
-            //lbTTime.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SECONDSFont);
-            //lbTTime.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
+            lbTTime.Font = StyleSettings.StringToFont(StyleSettings.ONSETTINGS.SECONDSFont);
+            lbTTime.ForeColor = StyleSettings.StringToColor(StyleSettings.ONSETTINGS.SERIOUSCOLOR);
         }
 
         public void SetFouls(int fouls)

@@ -1473,18 +1473,18 @@
             </summary>
 
         </member>
-        <member name="M:DevExpress.XtraReports.Wizards3.Presenters.ObjectConstructorParametersPageEx`1.#ctor(DevExpress.DataAccess.Wizard.IWizardRunnerContext,DevExpress.DataAccess.Wizard.Views.IObjectConstructorParametersPageView,DevExpress.DataAccess.Wizard.Services.IParameterService)">
+        <member name="M:DevExpress.XtraReports.Wizards3.Presenters.ObjectConstructorParametersPageEx`1.#ctor(DevExpress.DataAccess.Wizard.Views.IObjectConstructorParametersPageView,DevExpress.DataAccess.Wizard.Services.IParameterService)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the ObjectConstructorParametersPageEx&lt;TModel&gt; class with the specified settings.
+</para>
             </summary>
-            <param name="wizardRunnerContext">
-		 
-            </param>
             <param name="view">
-		 
+		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Views.IObjectConstructorParametersPageView"/> interface that provides a view for a wizard page.
+
             </param>
             <param name="parameterService">
-		 
+		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Services.IParameterService"/> interface that provides a service functionality to manage parameters.
+
             </param>
 
 
@@ -1826,21 +1826,17 @@
             </summary>
 
         </member>
-        <member name="M:DevExpress.XtraReports.Wizards3.Presenters.ChooseObjectBindingModePageEx`1.#ctor(DevExpress.DataAccess.Wizard.IWizardRunnerContext,DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView,DevExpress.DataAccess.Wizard.OperationMode)">
+        <member name="M:DevExpress.XtraReports.Wizards3.Presenters.ChooseObjectBindingModePageEx`1.#ctor(DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView,DevExpress.DataAccess.Wizard.OperationMode)">
             <summary>
                 <para>Initializes a new instance of the ChooseObjectBindingModePageEx&lt;TModel&gt; class with the specified settings.
 </para>
             </summary>
-            <param name="wizardRunnerContext">
-		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.IWizardRunnerContext"/> interface.
-
-            </param>
             <param name="view">
-		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView"/> interface.
+		An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Views.IChooseObjectBindingModePageView"/> interface that provides a view for a wizard page.
 
             </param>
             <param name="operationMode">
-		An <see cref="T:DevExpress.DataAccess.Wizard.OperationMode"/> enumeration value.
+		An <see cref="T:DevExpress.DataAccess.Wizard.OperationMode"/> enumeration value that specifies which modes of operation are available.
 
             </param>
 
@@ -2390,10 +2386,12 @@
         </member>
         <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.CreateNewReportWizard(DevExpress.XtraReports.UI.XtraReport)">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use. Invokes the Report Wizard for the specified report.
+</para>
             </summary>
             <param name="report">
-		 
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+
             </param>
 
 
@@ -3460,10 +3458,12 @@
         </member>
         <member name="M:DevExpress.XtraReports.UI.XtraReportExtensions.About(DevExpress.XtraReports.UI.XtraReport)">
             <summary>
-                <para>For internal use.</para>
+                <para>For internal use.
+</para>
             </summary>
             <param name="report">
-		 
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+
             </param>
 
 

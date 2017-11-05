@@ -33,15 +33,16 @@
             // 
             // HomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(694, 517);
+            this.ClientSize = new System.Drawing.Size(925, 689);
             this.ClosedQuestions = true;
             this.FunctionCount = 6;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "HomePage";
-            this.Text = "SHENZHEN 2011 UNIVERSIADE WATER-POLO MAJOR CONSOLE";
+            this.Text = "水球比赛管理系统(TTKJ-WP-SO-III)";
             this.FunctionClick += new ApplicationControlCommon.SimpleApplicationForm.FunctionClickCallback(this.HomePage_FunctionClick);
             this.ResumeLayout(false);
 

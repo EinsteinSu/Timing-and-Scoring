@@ -37,14 +37,13 @@
             this.btQuit = new System.Windows.Forms.Button();
             this.btFinish = new System.Windows.Forms.Button();
             this.btLock = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.plParent = new System.Windows.Forms.Panel();
+            this.btPrice = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -70,7 +69,7 @@
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(1044, 40);
             this.lbTitle.TabIndex = 22;
-            this.lbTitle.Text = "水球比赛裁判平台";
+            this.lbTitle.Text = "云南体拓科技有限公司 水球比赛裁判平台（TTKJ-WP-SO-III)";
             // 
             // groupBox2
             // 
@@ -89,12 +88,12 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.btPrice, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.btQuit, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.btFinish, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btLock, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 19);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -106,6 +105,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(183, 589);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -180,17 +180,6 @@
             this.btLock.UseVisualStyleBackColor = true;
             this.btLock.Click += new System.EventHandler(this.btLock_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 298);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(175, 90);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
             // plParent
             // 
             this.plParent.BackColor = System.Drawing.Color.Transparent;
@@ -200,6 +189,22 @@
             this.plParent.Name = "plParent";
             this.plParent.Size = new System.Drawing.Size(861, 612);
             this.plParent.TabIndex = 2;
+            // 
+            // btPrice
+            // 
+            this.btPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btPrice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btPrice.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPrice.Location = new System.Drawing.Point(4, 298);
+            this.btPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.btPrice.Name = "btPrice";
+            this.btPrice.Size = new System.Drawing.Size(175, 90);
+            this.btPrice.TabIndex = 3;
+            this.btPrice.Text = "颁奖";
+            this.btPrice.UseVisualStyleBackColor = true;
+            this.btPrice.Click += new System.EventHandler(this.btPrice_Click);
             // 
             // HomePage
             // 
@@ -224,7 +229,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -240,9 +244,8 @@
         private System.Windows.Forms.Button btQuit;
         private System.Windows.Forms.Button btFinish;
         private System.Windows.Forms.Button btLock;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel plParent;
-
+        private System.Windows.Forms.Button btPrice;
     }
 }
 

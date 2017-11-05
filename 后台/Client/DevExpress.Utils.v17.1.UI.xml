@@ -94,21 +94,24 @@
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Btn_Cancel">
             <summary>
-                <para>For internal use.</para>
+                <para>"Cancel".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Btn_Delete">
             <summary>
-                <para>For internal use.</para>
+                <para>"Delete".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Btn_Ok">
             <summary>
-                <para>For internal use.</para>
+                <para>"OK".
+</para>
             </summary>
 
 
@@ -171,35 +174,40 @@
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_GrBox_Sample">
             <summary>
-                <para>For internal use.</para>
+                <para>"Sample".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_Category">
             <summary>
-                <para>For internal use.</para>
+                <para>"Category".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_CustomGeneral">
             <summary>
-                <para>For internal use.</para>
+                <para>"General format has no specific number format".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_Prefix">
             <summary>
-                <para>For internal use.</para>
+                <para>"Prefix:".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_Suffix">
             <summary>
-                <para>For internal use.</para>
+                <para>"Suffix:".
+</para>
             </summary>
 
 
@@ -214,21 +222,24 @@
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Tab_Custom">
             <summary>
-                <para>For internal use.</para>
+                <para>"Custom".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Tab_StandardTypes">
             <summary>
-                <para>For internal use.</para>
+                <para>"Standard Types".
+</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Text">
             <summary>
-                <para>For internal use.</para>
+                <para>"FormatString Editor".
+</para>
             </summary>
 
 

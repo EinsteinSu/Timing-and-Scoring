@@ -31083,24 +31083,20 @@ A <see cref="T:DevExpress.XtraCharts.Palette"/> object that is the <b>Oriel</b> 
         </member>
         <member name="M:DevExpress.XtraCharts.PaletteRepository.Remove(System.Object)">
             <summary>
-                <para>Removes the element with the specified key.
-</para>
+                <para> </para>
             </summary>
             <param name="key">
-		The key of the element to remove.
-
+		 
             </param>
 
 
         </member>
         <member name="M:DevExpress.XtraCharts.PaletteRepository.RemoveAt(System.Int32)">
             <summary>
-                <para>Removes the element at the specified index of the PaletteRepository instance.
-</para>
+                <para> </para>
             </summary>
             <param name="index">
-		A zero-based integer specifying the index of the entry to remove.
-
+		 
             </param>
 
 
@@ -42975,9 +42971,7 @@ An object implementing the <see cref="T:System.Collections.IEnumerable"/> interf
         </member>
         <member name="F:DevExpress.XtraCharts.ProcessMissingPointsMode.InsertEmptyPoints">
             <summary>
-                <para><para>Inserts empty points into series where there are gaps in series points. </para>
-
-<para></para>
+                <para>Inserts empty points into series where there are gaps in series points. 
 </para>
             </summary>
 
@@ -42985,9 +42979,7 @@ An object implementing the <see cref="T:System.Collections.IEnumerable"/> interf
         </member>
         <member name="F:DevExpress.XtraCharts.ProcessMissingPointsMode.InsertZeroValues">
             <summary>
-                <para><para>Inserts zero value points into series where there are gaps in series points. </para>
-
-<para></para>
+                <para>Inserts zero value points into series where there are gaps in series points. 
 </para>
             </summary>
 
@@ -42995,9 +42987,7 @@ An object implementing the <see cref="T:System.Collections.IEnumerable"/> interf
         </member>
         <member name="F:DevExpress.XtraCharts.ProcessMissingPointsMode.Skip">
             <summary>
-                <para><para>Skips missing points in series.</para>
-
-<para></para>
+                <para>Skips missing points in series.
 </para>
             </summary>
 

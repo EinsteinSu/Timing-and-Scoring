@@ -45,7 +45,7 @@ namespace DisplayConfig
         {
             get { return _Y; }
             set { _Y = value; }
-        } 
+        }
 
         private int _Width;
         /// <summary>
@@ -85,7 +85,11 @@ namespace DisplayConfig
         {
             get { return _ListeningPortExtend; }
             set { _ListeningPortExtend = value; }
-        } 
+        }
+
+        public string WelcomeUrl { get; set; }
+
+        public string PriceUrl { get; set; }
 
         private static Settings _OnSettings;
         /// <summary>

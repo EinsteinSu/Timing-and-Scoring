@@ -24,6 +24,10 @@ namespace DisplayConfig
             tbX.DataBindings.Add("Text", Settings.ONSETTINGS, "X", true, DataSourceUpdateMode.OnPropertyChanged);
             tbY.DataBindings.Add("Text", Settings.ONSETTINGS, "Y", true, DataSourceUpdateMode.OnPropertyChanged);
             tbListeningPort.DataBindings.Add("Text", Settings.ONSETTINGS, "LISTENINGPORT", true, DataSourceUpdateMode.OnPropertyChanged);
+            tbWelcome.DataBindings.Add("Text", Settings.ONSETTINGS, "WelcomeUrl", true,
+                DataSourceUpdateMode.OnPropertyChanged);
+            tbPrice.DataBindings.Add("Text", Settings.ONSETTINGS, "PriceUrl", true,
+                DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void btClose_Click(object sender, EventArgs e)

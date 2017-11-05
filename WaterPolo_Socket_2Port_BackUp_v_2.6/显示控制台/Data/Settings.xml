@@ -6,4 +6,6 @@
   <HEIGHT>768</HEIGHT>
   <LISTENINGPORT>5678</LISTENINGPORT>
   <LISTENINGPORTEXTEND>7890</LISTENINGPORTEXTEND>
+  <WelcomeUrl />
+  <PriceUrl>C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\显示控制台\Data\price.jpg</PriceUrl>
 </Settings>

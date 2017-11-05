@@ -44,7 +44,7 @@
             this.lbNumber.Font = new System.Drawing.Font("Franklin Gothic Heavy", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNumber.ForeColor = System.Drawing.Color.Gold;
             this.lbNumber.Location = new System.Drawing.Point(0, 0);
-            this.lbNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNumber.Margin = new System.Windows.Forms.Padding(0);
             this.lbNumber.Name = "lbNumber";
             this.lbNumber.Size = new System.Drawing.Size(87, 49);
             this.lbNumber.TabIndex = 4;
@@ -57,7 +57,7 @@
             this.lbName.Font = new System.Drawing.Font("Broadway", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.Gold;
             this.lbName.Location = new System.Drawing.Point(87, 0);
-            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbName.Margin = new System.Windows.Forms.Padding(0);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(385, 49);
             this.lbName.TabIndex = 5;
@@ -70,7 +70,7 @@
             this.lbSerious.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSerious.ForeColor = System.Drawing.Color.Red;
             this.lbSerious.Location = new System.Drawing.Point(552, 0);
-            this.lbSerious.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSerious.Margin = new System.Windows.Forms.Padding(0);
             this.lbSerious.Name = "lbSerious";
             this.lbSerious.Size = new System.Drawing.Size(32, 49);
             this.lbSerious.TabIndex = 7;
@@ -82,7 +82,7 @@
             this.lbTTime.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTTime.ForeColor = System.Drawing.Color.Red;
             this.lbTTime.Location = new System.Drawing.Point(584, 0);
-            this.lbTTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTTime.Margin = new System.Windows.Forms.Padding(0);
             this.lbTTime.Name = "lbTTime";
             this.lbTTime.Size = new System.Drawing.Size(80, 49);
             this.lbTTime.TabIndex = 8;
@@ -93,10 +93,10 @@
             this.lbFoul1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbFoul1.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFoul1.ForeColor = System.Drawing.Color.Gold;
-            this.lbFoul1.Location = new System.Drawing.Point(4, 0);
-            this.lbFoul1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbFoul1.Location = new System.Drawing.Point(0, 0);
+            this.lbFoul1.Margin = new System.Windows.Forms.Padding(0);
             this.lbFoul1.Name = "lbFoul1";
-            this.lbFoul1.Size = new System.Drawing.Size(32, 49);
+            this.lbFoul1.Size = new System.Drawing.Size(40, 49);
             this.lbFoul1.TabIndex = 2;
             this.lbFoul1.Tag = "";
             this.lbFoul1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,10 +106,10 @@
             this.lbFoul2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbFoul2.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFoul2.ForeColor = System.Drawing.Color.Gold;
-            this.lbFoul2.Location = new System.Drawing.Point(44, 0);
-            this.lbFoul2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbFoul2.Location = new System.Drawing.Point(40, 0);
+            this.lbFoul2.Margin = new System.Windows.Forms.Padding(0);
             this.lbFoul2.Name = "lbFoul2";
-            this.lbFoul2.Size = new System.Drawing.Size(32, 49);
+            this.lbFoul2.Size = new System.Drawing.Size(40, 49);
             this.lbFoul2.TabIndex = 3;
             this.lbFoul2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -124,7 +124,7 @@
             this.tlpFouls.Dock = System.Windows.Forms.DockStyle.Right;
             this.tlpFouls.Font = new System.Drawing.Font("SimSun", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tlpFouls.Location = new System.Drawing.Point(472, 0);
-            this.tlpFouls.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tlpFouls.Margin = new System.Windows.Forms.Padding(4);
             this.tlpFouls.Name = "tlpFouls";
             this.tlpFouls.RowCount = 1;
             this.tlpFouls.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -141,7 +141,7 @@
             this.Controls.Add(this.lbNumber);
             this.Controls.Add(this.lbSerious);
             this.Controls.Add(this.lbTTime);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AthleteControl";
             this.Size = new System.Drawing.Size(664, 49);
             this.tlpFouls.ResumeLayout(false);

@@ -1811,6 +1811,95 @@
 
 
         </member>
+        <member name="T:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx">
+
+            <summary>
+                <para>Contains options for a field.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.#ctor(DevExpress.XtraPivotGrid.PivotOptionsChangedEventHandler,DevExpress.WebUtils.IViewBagOwner,System.String)">
+            <summary>
+                <para>Initializes a new instance of the PivotGridFieldOptionsEx class with the specified settings.
+</para>
+            </summary>
+            <param name="optionsChanged">
+		A delegate that will receive change notifications.
+
+            </param>
+            <param name="viewBagOwner">
+		An IViewBagOwner object that is used to initialize the created object.
+
+            </param>
+            <param name="objectPath">
+		A string value that is used to initialize the created object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.AllowEdit">
+            <summary>
+                <para>Gets or sets whether data editing is allowed for the current field.
+</para>
+            </summary>
+            <value><b>true</b> to allow editing cell values that correspond to the current data field; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.AllowHide">
+            <summary>
+                <para>Gets or sets whether or not an end-user can hide the current field.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether or not an end-user can hide the current field.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.IsFilterRadioMode">
+            <summary>
+                <para>Gets or sets whether an end-user is allowed to select only a single item in the filter drop-down.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether an end-user is allowed to select only a single item in the filter drop-down.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.ReadOnly">
+            <summary>
+                <para>Gets or sets whether end-users can modify cell values.
+</para>
+            </summary>
+            <value><b>true</b> to prevent a cell value from being changed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.ShowButtonMode">
+            <summary>
+                <para>Gets or sets which cells corresponding to the current field  display editor buttons.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotShowButtonModeEnum"/> value that specifies the current display mode for cell buttons.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.ShowUnboundExpressionMenu">
+            <summary>
+                <para>Gets or sets whether an end-user can open an Expression Editor for the current unbound field, using a context menu.
+</para>
+            </summary>
+            <value><b>true</b> if an end-user can open an Expression Editor for the current unbound field using a context menu; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
         <member name="T:DevExpress.XtraPivotGrid.PivotGridOptionsCustomizationEx">
 
             <summary>
@@ -2138,6 +2227,102 @@
 
 
             </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection">
+
+            <summary>
+                <para>A collection of style format conditions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.Add(DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition)">
+            <summary>
+                <para>Appends a style condition object to the collection.
+</para>
+            </summary>
+            <param name="condition">
+		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> object to be added to the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.AddRange(DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition[])">
+            <summary>
+                <para>Adds an array of style condition objects to the end of the collection.
+</para>
+            </summary>
+            <param name="conditions">
+		An array of <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> objects to be appended to the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.CompareValues(System.Object,System.Object)">
+            <summary>
+                <para>Performs a comparison of two objects of the same type and returns a value indicating whether one is less than, equal to or greater than the other.
+</para>
+            </summary>
+            <param name="val1">
+		The first object to compare.
+
+            </param>
+            <param name="val2">
+		The second object to compare.
+
+            </param>
+            <returns>An integer value indicating whether one is less than, equal to or greater than the other.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.IsLoading">
+            <summary>
+                <para>Indicates whether the Pivot Grid Control that owns the current collection is currently being initialized.
+</para>
+            </summary>
+            <value><b>true</b> if the Pivot Grid Control is being initialized; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.Item(System.Int32)">
+            <summary>
+                <para>Provides indexed access to individual items within the collection.
+</para>
+            </summary>
+            <param name="index">
+		An integer value specifying the item's zero based index within the collection. If its negative or exceeds the last available index, an exception is raised. 
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> object which resides at the specified position within the collection.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.Item(System.Object)">
+            <summary>
+                <para>Gets a style format condition with the specified tag.
+</para>
+            </summary>
+            <param name="tag">
+		An object which contains information associated with the style format condition. 
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> object which represents a style format condition within the collection whose <see cref="P:DevExpress.XtraEditors.StyleFormatConditionBase.Tag"/> property's value matches the <i>tag</i> parameter. <b>null</b> (<b>Nothing</b> in Visual Basic) if no style format condition is found.
+</value>
 
 
         </member>
@@ -2483,25 +2668,25 @@
 
 
         </member>
-        <member name="T:DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventHandler">
+        <member name="T:DevExpress.XtraPivotGrid.PivotCustomGroupIntervalEventArgs">
 
             <summary>
-                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomDrawFieldHeaderArea"/> event.
+                <para>Provides data for the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomGroupInterval"/> event.
 </para>
             </summary>
 
         </member>
-        <member name="M:DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventHandler.Invoke(System.Object,DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventArgs)">
+        <member name="M:DevExpress.XtraPivotGrid.PivotCustomGroupIntervalEventArgs.#ctor(DevExpress.XtraPivotGrid.PivotGridField,System.Object)">
             <summary>
-                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomDrawFieldHeaderArea"/> event.
+                <para>Initializes a new instance of the PivotCustomGroupIntervalEventArgs class.
 </para>
             </summary>
-            <param name="sender">
-		The event source. This parameter identifies the Pivot Grid Control which raised the event.
+            <param name="field">
+		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridField"/> object that represents the processed field.
 
             </param>
-            <param name="e">
-		A <see cref="T:DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventArgs"/> object which contains event data.
+            <param name="value">
+		An object that specifies the currently processed value. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotCustomGroupIntervalEventArgsBase`1.Value"/> property.
 
             </param>
 
@@ -2582,30 +2767,6 @@
             </summary>
             <value>An integer value that specifies the row index. 
 </value>
-
-
-        </member>
-        <member name="T:DevExpress.XtraPivotGrid.PivotCustomGroupIntervalEventArgs">
-
-            <summary>
-                <para>Provides data for the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomGroupInterval"/> event.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraPivotGrid.PivotCustomGroupIntervalEventArgs.#ctor(DevExpress.XtraPivotGrid.PivotGridField,System.Object)">
-            <summary>
-                <para>Initializes a new instance of the PivotCustomGroupIntervalEventArgs class.
-</para>
-            </summary>
-            <param name="field">
-		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridField"/> object that represents the processed field.
-
-            </param>
-            <param name="value">
-		An object that specifies the currently processed value. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotCustomGroupIntervalEventArgsBase`1.Value"/> property.
-
-            </param>
 
 
         </member>
@@ -4876,99 +5037,27 @@
 
 
         </member>
-        <member name="T:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection">
+        <member name="T:DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventHandler">
 
             <summary>
-                <para>A collection of style format conditions.
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomDrawFieldHeaderArea"/> event.
 </para>
             </summary>
 
         </member>
-        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.#ctor">
+        <member name="M:DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventHandler.Invoke(System.Object,DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventArgs)">
             <summary>
-                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection"/> class.
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraPivotGrid.PivotGridControl.CustomDrawFieldHeaderArea"/> event.
 </para>
             </summary>
-
-
-        </member>
-        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.Add(DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition)">
-            <summary>
-                <para>Appends a style condition object to the collection.
-</para>
-            </summary>
-            <param name="condition">
-		A <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> object to be added to the collection.
+            <param name="sender">
+		The event source. This parameter identifies the Pivot Grid Control which raised the event.
 
             </param>
-
-
-        </member>
-        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.AddRange(DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition[])">
-            <summary>
-                <para>Adds an array of style condition objects to the end of the collection.
-</para>
-            </summary>
-            <param name="conditions">
-		An array of <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> objects to be appended to the collection.
+            <param name="e">
+		A <see cref="T:DevExpress.XtraPivotGrid.PivotCustomDrawHeaderAreaEventArgs"/> object which contains event data.
 
             </param>
-
-
-        </member>
-        <member name="M:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.CompareValues(System.Object,System.Object)">
-            <summary>
-                <para>Performs a comparison of two objects of the same type and returns a value indicating whether one is less than, equal to or greater than the other.
-</para>
-            </summary>
-            <param name="val1">
-		The first object to compare.
-
-            </param>
-            <param name="val2">
-		The second object to compare.
-
-            </param>
-            <returns>An integer value indicating whether one is less than, equal to or greater than the other.
-</returns>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.IsLoading">
-            <summary>
-                <para>Indicates whether the Pivot Grid Control that owns the current collection is currently being initialized.
-</para>
-            </summary>
-            <value><b>true</b> if the Pivot Grid Control is being initialized; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.Item(System.Int32)">
-            <summary>
-                <para>Provides indexed access to individual items within the collection.
-</para>
-            </summary>
-            <param name="index">
-		An integer value specifying the item's zero based index within the collection. If its negative or exceeds the last available index, an exception is raised. 
-
-            </param>
-            <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> object which resides at the specified position within the collection.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFormatConditionCollection.Item(System.Object)">
-            <summary>
-                <para>Gets a style format condition with the specified tag.
-</para>
-            </summary>
-            <param name="tag">
-		An object which contains information associated with the style format condition. 
-
-            </param>
-            <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridStyleFormatCondition"/> object which represents a style format condition within the collection whose <see cref="P:DevExpress.XtraEditors.StyleFormatConditionBase.Tag"/> property's value matches the <i>tag</i> parameter. <b>null</b> (<b>Nothing</b> in Visual Basic) if no style format condition is found.
-</value>
 
 
         </member>
@@ -12526,95 +12615,6 @@
 </para>
             </summary>
             <value>An <see cref="T:DevExpress.Utils.AppearanceObject"/> object containing appearance settings for the processed cell.
-</value>
-
-
-        </member>
-        <member name="T:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx">
-
-            <summary>
-                <para>Contains options for a field.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.#ctor(DevExpress.XtraPivotGrid.PivotOptionsChangedEventHandler,DevExpress.WebUtils.IViewBagOwner,System.String)">
-            <summary>
-                <para>Initializes a new instance of the PivotGridFieldOptionsEx class with the specified settings.
-</para>
-            </summary>
-            <param name="optionsChanged">
-		A delegate that will receive change notifications.
-
-            </param>
-            <param name="viewBagOwner">
-		An IViewBagOwner object that is used to initialize the created object.
-
-            </param>
-            <param name="objectPath">
-		A string value that is used to initialize the created object.
-
-            </param>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.AllowEdit">
-            <summary>
-                <para>Gets or sets whether data editing is allowed for the current field.
-</para>
-            </summary>
-            <value><b>true</b> to allow editing cell values that correspond to the current data field; otherwise, <b>false</b>.
-
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.AllowHide">
-            <summary>
-                <para>Gets or sets whether or not an end-user can hide the current field.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether or not an end-user can hide the current field.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.IsFilterRadioMode">
-            <summary>
-                <para>Gets or sets whether an end-user is allowed to select only a single item in the filter drop-down.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether an end-user is allowed to select only a single item in the filter drop-down.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.ReadOnly">
-            <summary>
-                <para>Gets or sets whether end-users can modify cell values.
-</para>
-            </summary>
-            <value><b>true</b> to prevent a cell value from being changed; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.ShowButtonMode">
-            <summary>
-                <para>Gets or sets which cells corresponding to the current field  display editor buttons.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotShowButtonModeEnum"/> value that specifies the current display mode for cell buttons.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptionsEx.ShowUnboundExpressionMenu">
-            <summary>
-                <para>Gets or sets whether an end-user can open an Expression Editor for the current unbound field, using a context menu.
-</para>
-            </summary>
-            <value><b>true</b> if an end-user can open an Expression Editor for the current unbound field using a context menu; otherwise, <b>false</b>.
 </value>
 
 

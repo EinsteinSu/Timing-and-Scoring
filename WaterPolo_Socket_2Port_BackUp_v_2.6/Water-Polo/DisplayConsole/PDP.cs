@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Windows.Forms;
 using ApplicationControlCommon;
 using Common;
@@ -68,6 +69,9 @@ namespace DisplayConsole
                 case "Finish":
                     ShowWelcome();
                     break;
+                case "Price":
+                    ShowFinish();
+                    break;
             }
         }
 
@@ -75,6 +79,20 @@ namespace DisplayConsole
         {
             SetControlShowHide(plParent, true);
             SetControlShowHide(tlpParent, false);
+            if (!string.IsNullOrEmpty(Settings.ONSETTINGS.WelcomeUrl) && File.Exists(Settings.ONSETTINGS.WelcomeUrl))
+            {
+                SetControlImage(plParent, Image.FromFile(Settings.ONSETTINGS.WelcomeUrl));
+            }
+        }
+
+        public void ShowFinish()
+        {
+            SetControlShowHide(plParent, true);
+            SetControlShowHide(tlpParent, false);
+            if (!string.IsNullOrEmpty(Settings.ONSETTINGS.PriceUrl) && File.Exists(Settings.ONSETTINGS.PriceUrl))
+            {
+                SetControlImage(plParent, Image.FromFile(Settings.ONSETTINGS.PriceUrl));
+            }
         }
 
         public void ShowEvent()
@@ -129,10 +147,10 @@ namespace DisplayConsole
 
         public void SetTotalTime(string time)
         {
-            SetFont(lbTotalTime,
-                time == "Time Out"
-                    ? new Font("Comic Sans MS", 20F, FontStyle.Bold, GraphicsUnit.Point, 0)
-                    : new Font("Comic Sans MS", 30F, FontStyle.Bold, GraphicsUnit.Point, 0));
+            //SetFont(lbTotalTime,
+            //    time == "Time Out"
+            //        ? new Font("Comic Sans MS", 20F, FontStyle.Bold, GraphicsUnit.Point, 0)
+            //        : new Font("Comic Sans MS", 30F, FontStyle.Bold, GraphicsUnit.Point, 0));
             SetControlText(lbTotalTime, time);
         }
 
@@ -158,7 +176,7 @@ namespace DisplayConsole
             base.OnLoad(e);
 
             Location = new Point(Settings.ONSETTINGS.X, Settings.ONSETTINGS.Y);
-            //this.Size = new Size(Settings.ONSETTINGS.WIDTH, Settings.ONSETTINGS.HEIGHT);
+            Size = new Size(Settings.ONSETTINGS.WIDTH, Settings.ONSETTINGS.HEIGHT);
 
             ShowWelcome();
 
@@ -336,6 +354,21 @@ namespace DisplayConsole
             else
             {
                 pb.Image = img;
+            }
+        }
+
+        public delegate void SetControlImageCallback(Control control, Image img);
+
+        public void SetControlImage(Control control, Image image)
+        {
+            if (control.InvokeRequired)
+            {
+                SetControlImageCallback d = SetControlImage;
+                control.Invoke(d, control, image);
+            }
+            else
+            {
+                control.BackgroundImage = image;
             }
         }
 

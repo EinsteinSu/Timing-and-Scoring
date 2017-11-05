@@ -50,15 +50,21 @@
             this.tbX = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbPrice = new System.Windows.Forms.TextBox();
+            this.tbWelcome = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btTesting
             // 
-            this.btTesting.Location = new System.Drawing.Point(596, 279);
-            this.btTesting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btTesting.Location = new System.Drawing.Point(596, 394);
+            this.btTesting.Margin = new System.Windows.Forms.Padding(4);
             this.btTesting.Name = "btTesting";
             this.btTesting.Size = new System.Drawing.Size(100, 31);
             this.btTesting.TabIndex = 25;
@@ -73,9 +79,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 155);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(444, 116);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
@@ -84,7 +90,7 @@
             // tbServicePort
             // 
             this.tbServicePort.Location = new System.Drawing.Point(67, 67);
-            this.tbServicePort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbServicePort.Margin = new System.Windows.Forms.Padding(4);
             this.tbServicePort.Name = "tbServicePort";
             this.tbServicePort.Size = new System.Drawing.Size(368, 22);
             this.tbServicePort.TabIndex = 3;
@@ -92,7 +98,7 @@
             // tbServiceIP
             // 
             this.tbServiceIP.Location = new System.Drawing.Point(107, 31);
-            this.tbServiceIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbServiceIP.Margin = new System.Windows.Forms.Padding(4);
             this.tbServiceIP.Name = "tbServiceIP";
             this.tbServiceIP.Size = new System.Drawing.Size(328, 22);
             this.tbServiceIP.TabIndex = 2;
@@ -110,7 +116,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 36);
+            this.label1.Location = new System.Drawing.Point(20, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 17);
@@ -122,7 +128,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(152, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -132,8 +138,8 @@
             // btClose
             // 
             this.btClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btClose.Location = new System.Drawing.Point(812, 279);
-            this.btClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btClose.Location = new System.Drawing.Point(812, 395);
+            this.btClose.Margin = new System.Windows.Forms.Padding(4);
             this.btClose.Name = "btClose";
             this.btClose.Size = new System.Drawing.Size(100, 31);
             this.btClose.TabIndex = 27;
@@ -143,8 +149,8 @@
             // 
             // btSetting
             // 
-            this.btSetting.Location = new System.Drawing.Point(704, 279);
-            this.btSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSetting.Location = new System.Drawing.Point(704, 394);
+            this.btSetting.Margin = new System.Windows.Forms.Padding(4);
             this.btSetting.Name = "btSetting";
             this.btSetting.Size = new System.Drawing.Size(100, 31);
             this.btSetting.TabIndex = 26;
@@ -178,9 +184,9 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Location = new System.Drawing.Point(468, 155);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(444, 116);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
@@ -189,7 +195,7 @@
             // tbHeight
             // 
             this.tbHeight.Location = new System.Drawing.Point(389, 67);
-            this.tbHeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbHeight.Margin = new System.Windows.Forms.Padding(4);
             this.tbHeight.Name = "tbHeight";
             this.tbHeight.Size = new System.Drawing.Size(43, 22);
             this.tbHeight.TabIndex = 9;
@@ -217,7 +223,7 @@
             // tbListeningPort
             // 
             this.tbListeningPort.Location = new System.Drawing.Point(135, 31);
-            this.tbListeningPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbListeningPort.Margin = new System.Windows.Forms.Padding(4);
             this.tbListeningPort.Name = "tbListeningPort";
             this.tbListeningPort.Size = new System.Drawing.Size(300, 22);
             this.tbListeningPort.TabIndex = 1;
@@ -225,7 +231,7 @@
             // tbWidth
             // 
             this.tbWidth.Location = new System.Drawing.Point(272, 67);
-            this.tbWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbWidth.Margin = new System.Windows.Forms.Padding(4);
             this.tbWidth.Name = "tbWidth";
             this.tbWidth.Size = new System.Drawing.Size(45, 22);
             this.tbWidth.TabIndex = 8;
@@ -233,7 +239,7 @@
             // tbY
             // 
             this.tbY.Location = new System.Drawing.Point(145, 68);
-            this.tbY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbY.Margin = new System.Windows.Forms.Padding(4);
             this.tbY.Name = "tbY";
             this.tbY.Size = new System.Drawing.Size(33, 22);
             this.tbY.TabIndex = 7;
@@ -251,7 +257,7 @@
             // tbX
             // 
             this.tbX.Location = new System.Drawing.Point(49, 68);
-            this.tbX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbX.Margin = new System.Windows.Forms.Padding(4);
             this.tbX.Name = "tbX";
             this.tbX.Size = new System.Drawing.Size(33, 22);
             this.tbX.TabIndex = 6;
@@ -276,12 +282,65 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "Y";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.tbPrice);
+            this.groupBox2.Controls.Add(this.tbWelcome);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Location = new System.Drawing.Point(16, 278);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(444, 116);
+            this.groupBox2.TabIndex = 32;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "其他显示";
+            // 
+            // tbPrice
+            // 
+            this.tbPrice.Location = new System.Drawing.Point(107, 67);
+            this.tbPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPrice.Name = "tbPrice";
+            this.tbPrice.Size = new System.Drawing.Size(328, 22);
+            this.tbPrice.TabIndex = 3;
+            // 
+            // tbWelcome
+            // 
+            this.tbWelcome.Location = new System.Drawing.Point(107, 31);
+            this.tbWelcome.Margin = new System.Windows.Forms.Padding(4);
+            this.tbWelcome.Name = "tbWelcome";
+            this.tbWelcome.Size = new System.Drawing.Size(328, 22);
+            this.tbWelcome.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 71);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "颁奖界面";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 33);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "欢迎界面";
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btClose;
-            this.ClientSize = new System.Drawing.Size(933, 335);
+            this.ClientSize = new System.Drawing.Size(933, 435);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btTesting);
             this.Controls.Add(this.groupBox1);
@@ -291,7 +350,7 @@
             this.Controls.Add(this.label10);
             this.ENDCOLOR = System.Drawing.Color.SteelBlue;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "HomePage";
             this.ShowInTaskbar = true;
             this.STARTCOLOR = System.Drawing.SystemColors.ActiveCaption;
@@ -302,6 +361,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,6 +391,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox tbListeningPort;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox tbPrice;
+        private System.Windows.Forms.TextBox tbWelcome;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

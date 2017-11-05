@@ -18,9 +18,9 @@ namespace Water_Polo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            ApplicationControlCommon.SplashScreenHelper.ShowSplashScreen("WATER-POLO MAJOR CONSOLE",
+            ApplicationControlCommon.SplashScreenHelper.ShowSplashScreen("欢迎使用云南体拓科技有限公司 水球管理软件 TTKJ-WP-SO-III",
                 Properties.Resources.Watchword);
-            ApplicationControlCommon.SplashScreenHelper.SplashScreen.QueueLoadingMessage("Loading data ...");
+            ApplicationControlCommon.SplashScreenHelper.SplashScreen.QueueLoadingMessage("数据加载中 ...");
             System.Threading.Thread.Sleep(3000);
 
             ApplicationControlCommon.SplashScreenHelper.InitialiseSplashScreenCloseSequence();

@@ -71,6 +71,17 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\Cl
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ClientCommon.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ClientCommon.pdb
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ApplicationCommon.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\RemoteCommon.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ApplicationCommon.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ApplicationCommon.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\RemoteCommon.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\RemoteCommon.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.csprojResolveAssemblyReference.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.Properties.Resources.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.csproj.GenerateResource.Cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.dll.licenses
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.pdb
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.Charts.v17.1.Core.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.CodeParser.v17.1.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.Data.v17.1.dll
@@ -90,7 +101,6 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\Cl
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.XtraReports.v17.1.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.XtraReports.v17.1.Extensions.dll
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\RemoteCommon.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.XtraLayout.v17.1.dll
@@ -105,10 +115,6 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\Cl
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.Xpo.v17.1.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.Diagram.v17.1.Core.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.XtraDiagram.v17.1.dll
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ApplicationCommon.pdb
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ApplicationCommon.dll.config
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\RemoteCommon.pdb
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\RemoteCommon.dll.config
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.Printing.v17.1.Core.xml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\DevExpress.Data.v17.1.xml
@@ -250,9 +256,3 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\Cl
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\es\DevExpress.Diagram.v17.1.Core.resources.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ja\DevExpress.Diagram.v17.1.Core.resources.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\bin\Debug\ru\DevExpress.Diagram.v17.1.Core.resources.dll
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.csprojResolveAssemblyReference.cache
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.Properties.Resources.resources
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.csproj.GenerateResource.Cache
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.dll.licenses
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.dll
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ClientCommon\obj\x86\Debug\ClientCommon.pdb

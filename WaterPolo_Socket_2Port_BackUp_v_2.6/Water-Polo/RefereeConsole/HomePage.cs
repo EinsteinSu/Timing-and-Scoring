@@ -256,5 +256,11 @@ namespace RefereeConsole
         }
 
         #endregion
+
+        private void btPrice_Click(object sender, EventArgs e)
+        {
+            SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
+               "Price");
+        }
     }
 }

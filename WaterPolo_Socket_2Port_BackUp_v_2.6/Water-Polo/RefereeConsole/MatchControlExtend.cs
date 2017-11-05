@@ -160,6 +160,7 @@ namespace RefereeConsole
         #region 总计时和30秒
 
         private bool _isAdd;
+        private bool _isStopped;
 
         /// <summary>
         ///     总计时
@@ -171,6 +172,7 @@ namespace RefereeConsole
             {
                 return;
             }
+            _isStopped = msg[2].Contains("FA");
             if (msg[5].IndexOf("E", StringComparison.Ordinal) >= 0 && cbCourt.Checked)
                 if (IsNumeric(msg[5].Replace("E", "")))
                     Court = msg[5].Replace("E", "").ToInt();
@@ -784,12 +786,16 @@ namespace RefereeConsole
 
             #region 20秒
 
-            foreach (AthletesControl ac in tlpTeamA.Controls)
-                if (ac.IsStart)
-                    ac.TOTALTIME--;
-            foreach (AthletesControl ac in tlpTeamB.Controls)
-                if (ac.IsStart)
-                    ac.TOTALTIME--;
+            if (!_isStopped)
+            {
+                foreach (AthletesControl ac in tlpTeamA.Controls)
+                    if (ac.IsStart)
+                        ac.TOTALTIME--;
+                foreach (AthletesControl ac in tlpTeamB.Controls)
+                    if (ac.IsStart)
+                        ac.TOTALTIME--;
+            }
+           
 
             #endregion
 

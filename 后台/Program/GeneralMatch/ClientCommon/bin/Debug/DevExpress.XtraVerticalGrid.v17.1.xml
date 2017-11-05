@@ -148,6 +148,51 @@
 
 
         </member>
+        <member name="T:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraVerticalGrid.VGridControlBase.PopupMenuShowing"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.#ctor(DevExpress.Utils.Menu.DXPopupMenu,DevExpress.XtraVerticalGrid.Rows.BaseRow)">
+            <summary>
+                <para>Initializes a new instance of the PopupMenuShowingEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="menu">
+		A <see cref="T:DevExpress.Utils.Menu.DXPopupMenu"/> object that is the menu to be displayed. This value is assigned to the <see cref="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Menu"/> property.
+
+            </param>
+            <param name="row">
+		A <see cref="T:DevExpress.XtraVerticalGrid.Rows.BaseRow"/> object that specifies the row where the menu is to be displayed. This value is assigned to the <see cref="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Row"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Menu">
+            <summary>
+                <para>Gets or sets the control's popup menu that will be shown.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Menu.DXPopupMenu"/> object that is the menu that will be shown.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Row">
+            <summary>
+                <para>Gets the row where the popup menu will be displayed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraVerticalGrid.Rows.BaseRow"/> object that specifies the row where the popup menu will be displayed.
+</value>
+
+
+        </member>
         <member name="T:DevExpress.XtraVerticalGrid.Events.CustomPropertyDescriptorsEventArgs">
 
             <summary>
@@ -353,51 +398,6 @@
 </para>
             </summary>
             <value>A value that specifies whether multiple records, rows or cells can be selected.
-</value>
-
-
-        </member>
-        <member name="T:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs">
-
-            <summary>
-                <para>Provides data for the <see cref="E:DevExpress.XtraVerticalGrid.VGridControlBase.PopupMenuShowing"/> event.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.#ctor(DevExpress.Utils.Menu.DXPopupMenu,DevExpress.XtraVerticalGrid.Rows.BaseRow)">
-            <summary>
-                <para>Initializes a new instance of the PopupMenuShowingEventArgs class with the specified settings.
-</para>
-            </summary>
-            <param name="menu">
-		A <see cref="T:DevExpress.Utils.Menu.DXPopupMenu"/> object that is the menu to be displayed. This value is assigned to the <see cref="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Menu"/> property.
-
-            </param>
-            <param name="row">
-		A <see cref="T:DevExpress.XtraVerticalGrid.Rows.BaseRow"/> object that specifies the row where the menu is to be displayed. This value is assigned to the <see cref="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Row"/> property.
-
-            </param>
-
-
-        </member>
-        <member name="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Menu">
-            <summary>
-                <para>Gets or sets the control's popup menu that will be shown.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Utils.Menu.DXPopupMenu"/> object that is the menu that will be shown.
-
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraVerticalGrid.Events.PopupMenuShowingEventArgs.Row">
-            <summary>
-                <para>Gets the row where the popup menu will be displayed.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.XtraVerticalGrid.Rows.BaseRow"/> object that specifies the row where the popup menu will be displayed.
 </value>
 
 
@@ -1216,14 +1216,6 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
 
 
         </member>
-        <member name="P:DevExpress.XtraVerticalGrid.VGridAppearanceCollection.SelectedCategory">
-            <summary>
-                <para> </para>
-            </summary>
-            <value> </value>
-
-
-        </member>
         <member name="P:DevExpress.XtraVerticalGrid.VGridAppearanceCollection.SelectedCell">
             <summary>
                 <para>Contains appearance settings used to paint selected cells in multiple cell selection mode (<see cref="F:DevExpress.XtraVerticalGrid.MultiSelectMode.CellSelect"/>).
@@ -1588,19 +1580,6 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
             <param name="childID">
 		A child System.Windows.Forms.Control which fires the event.
 
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.AccessibleNotifyClients(System.Windows.Forms.AccessibleEvents,DevExpress.Accessibility.BaseAccessible)">
-            <summary>
-                <para> </para>
-            </summary>
-            <param name="accEvents">
-		 
-            </param>
-            <param name="acc">
-		 
             </param>
 
 
@@ -4464,6 +4443,30 @@ For the <see cref="T:DevExpress.XtraVerticalGrid.PropertyGridControl"/>, this me
             </summary>
             <value>A <see cref="T:DevExpress.XtraVerticalGrid.GridRowReadOnlyCollection"/> object that represents the collection of visible rows.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraVerticalGrid.VGridControlBase.CustomDrawRowValueCell"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventHandler.Invoke(System.Object,DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraVerticalGrid.VGridControlBase.CustomDrawRowValueCell"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event sender (the <see cref="T:DevExpress.XtraVerticalGrid.VGridControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventArgs"/> object that contains event data.
+
+            </param>
 
 
         </member>
@@ -7915,30 +7918,6 @@ Office2003 style:
             </summary>
             <value>A <see cref="T:System.String"/> value representing the painted cell separator's text.
 </value>
-
-
-        </member>
-        <member name="T:DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventHandler">
-
-            <summary>
-                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraVerticalGrid.VGridControlBase.CustomDrawRowValueCell"/> event.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventHandler.Invoke(System.Object,DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventArgs)">
-            <summary>
-                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraVerticalGrid.VGridControlBase.CustomDrawRowValueCell"/> event.
-</para>
-            </summary>
-            <param name="sender">
-		The event sender (the <see cref="T:DevExpress.XtraVerticalGrid.VGridControl"/>).
-
-            </param>
-            <param name="e">
-		A <see cref="T:DevExpress.XtraVerticalGrid.Events.CustomDrawRowValueCellEventArgs"/> object that contains event data.
-
-            </param>
 
 
         </member>
