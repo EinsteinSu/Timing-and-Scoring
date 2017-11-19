@@ -1,0 +1,19 @@
+﻿<Window x:Class="Demostration.DevExpress.MVVM.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:interactivity="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <interactivity:Interaction.Behaviors>
+            <dx:DXMessageBoxService/>
+        </interactivity:Interaction.Behaviors>
+        <CheckBox IsChecked="{Binding Enabled}"></CheckBox>
+        <Button Command="{Binding ShowDocumentCommand}" CommandParameter="Text" Content="Click me!"/>
+        <TextBlock Text="{Binding Test}"></TextBlock>
+    </StackPanel>
+</Window>
+

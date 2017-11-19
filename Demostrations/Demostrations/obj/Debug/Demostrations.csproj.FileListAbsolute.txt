@@ -6,3 +6,12 @@ C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\obj
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.pdb
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Newtonsoft.Json.dll
 C:\Users\esu\Documents\GitHub\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Newtonsoft.Json.xml
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Demostrations.exe.config
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Demostrations.exe
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Demostrations.pdb
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Newtonsoft.Json.dll
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\bin\Debug\Newtonsoft.Json.xml
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.csprojResolveAssemblyReference.cache
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.csproj.CoreCompileInputs.cache
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.exe
+D:\Sports\Timing-and-Scoring\Demostrations\Demostrations\obj\Debug\Demostrations.pdb
