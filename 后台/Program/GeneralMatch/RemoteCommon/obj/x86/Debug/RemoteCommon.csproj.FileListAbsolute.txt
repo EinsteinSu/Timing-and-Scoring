@@ -62,5 +62,6 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\Re
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\RemoteCommon\obj\x86\Debug\RemoteCommon.csprojResolveAssemblyReference.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\RemoteCommon\obj\x86\Debug\RemoteCommon.Properties.Resources.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\RemoteCommon\obj\x86\Debug\RemoteCommon.csproj.GenerateResource.Cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\RemoteCommon\obj\x86\Debug\RemoteCommon.csproj.CoreCompileInputs.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\RemoteCommon\obj\x86\Debug\RemoteCommon.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\RemoteCommon\obj\x86\Debug\RemoteCommon.pdb

@@ -28,9 +28,3 @@ D:\大运会\后台\Testing Console\TestingConsole.pdb
 D:\大运会\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\大运会\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.exe
 D:\大运会\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.pdb
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Testing Console\TestingConsole.exe.config
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Testing Console\TestingConsole.exe
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Testing Console\TestingConsole.pdb
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.csprojResolveAssemblyReference.cache
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.exe
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\TestingConsole\obj\x86\Debug\TestingConsole.pdb

@@ -52,7 +52,9 @@ D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\Genera
 D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe.licenses
 D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe
 D:\大运会\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Service\General Match Service.exe.config
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Service\General Match Service.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Service\General Match Service.pdb
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.csprojResolveAssemblyReference.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.BroadCastControl.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.HomePage.resources
@@ -65,3 +67,6 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\Ap
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\ApplicationService.ServiceSettingControl.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.csproj.GenerateResource.Cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe.licenses
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.csproj.CoreCompileInputs.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationService\obj\x86\Debug\General Match Service.pdb

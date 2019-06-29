@@ -79,7 +79,7 @@
             // lbTTime
             // 
             this.lbTTime.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lbTTime.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTTime.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTTime.ForeColor = System.Drawing.Color.Red;
             this.lbTTime.Location = new System.Drawing.Point(584, 0);
             this.lbTTime.Margin = new System.Windows.Forms.Padding(0);

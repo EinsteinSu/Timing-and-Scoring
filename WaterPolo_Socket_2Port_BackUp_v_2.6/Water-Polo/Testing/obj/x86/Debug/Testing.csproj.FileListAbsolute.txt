@@ -119,5 +119,6 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.Form1.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.Properties.Resources.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.csproj.GenerateResource.Cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.csproj.CoreCompileInputs.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.exe
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\Testing\obj\x86\Debug\Testing.pdb

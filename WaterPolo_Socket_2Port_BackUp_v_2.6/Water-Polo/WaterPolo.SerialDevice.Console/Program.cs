@@ -13,9 +13,10 @@ namespace WaterPolo.SerialDevice.Console
             var head = args[3];
             var tail = args[4];
             var com = new ComListening(port, bit) { Header = head, Tail = tail };
-
+            System.Console.WriteLine("Start");
             if (com.Open())
             {
+                System.Console.WriteLine("Start Listenings");
                 com.StartListening();
                 com.DataChanging += msg =>
                 {
@@ -29,12 +30,15 @@ namespace WaterPolo.SerialDevice.Console
                         var isAdd = false;
                         var timeoutA = 0;
                         var timeoutB = 0;
+                        System.Console.WriteLine(string.Join(",",msg));
                         var process = new TotalTimeProcess(isAdd, timeoutA, timeoutB);
                         System.Console.WriteLine($"IsAdd:{isAdd}");
                         System.Console.WriteLine(process);
                     }
                 };
             }
+
+            System.Console.Read();
         }
     }
 }

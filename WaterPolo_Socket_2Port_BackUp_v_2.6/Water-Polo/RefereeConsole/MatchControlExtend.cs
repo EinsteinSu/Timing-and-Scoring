@@ -41,7 +41,16 @@ namespace RefereeConsole
                 if (_totalCom.Open())
                 {
                     _totalCom.StartListening();
-                    _totalCom.DataChanging += Original_ProcessTotalTimeFromSerialCom;
+
+                    _totalCom.DataChanging += delegate (List<string> msg)
+                    {
+                        var isAdd = false;
+                        var timeoutA = 0;
+                        var timeoutB = 0;
+                        var process = new TotalTimeProcess(isAdd, timeoutA, timeoutB);
+                        var data = process.Process(msg);
+                        tcTotalTime.LTime = data.TotalTime;
+                    };
                 }
             }
             catch (Exception ex)
@@ -71,7 +80,7 @@ namespace RefereeConsole
                         var data = _thirtySecondsProcess.Process(msg);
                         tcThirtyTime.LTime = data.Seconds;
                         _isStopped = data.IsStopped;
-                        
+
                     };
                 }
             }
@@ -498,11 +507,8 @@ namespace RefereeConsole
                     _scoreA = value;
                     SetControlText(lbScoreA, value.ToString());
                     //发送信息到显示控制台和主控台
-                    //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    //    string.Format("Score,{0},{1}", "A", value));
+
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
-                        string.Format("Score,{0},{1}", "A", value));
-                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                         string.Format("Score,{0},{1}", "A", value));
                     SendToVrs();
                 }
@@ -521,11 +527,8 @@ namespace RefereeConsole
                     _scoreB = value;
                     SetControlText(lbScoreB, value.ToString());
                     //发送信息到显示控制台和主控台
-                    //SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    //    string.Format("Score,{0},{1}", "B", value));
+
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
-                        string.Format("Score,{0},{1}", "B", value));
-                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
                         string.Format("Score,{0},{1}", "B", value));
 
                     SendToVrs();
@@ -588,8 +591,7 @@ namespace RefereeConsole
                     }
                     SetControlText(lbAcournt, court);
                     //发送信息到显示控制台和主控台
-                    SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                        string.Format("Court,{0}", court));
+
                     SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                         string.Format("Court,{0}", court));
 
@@ -624,8 +626,7 @@ namespace RefereeConsole
                 //send to display console
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     string.Format("TimeOutCount,{0},{1}", value, TeamBTimeOutCount));
-                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    string.Format("TimeOutCount,{0},{1}", value, TeamBTimeOutCount));
+
             }
         }
 
@@ -641,8 +642,7 @@ namespace RefereeConsole
                 //send to display console
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     string.Format("TimeOutCount,{0},{1}", TeamATimeOutCount, value));
-                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    string.Format("TimeOutCount,{0},{1}", TeamATimeOutCount, value));
+
             }
         }
 
@@ -652,8 +652,7 @@ namespace RefereeConsole
             tcTimeOutA.Reset();
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TimeOutHide,{0}", "A"));
-            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                string.Format("TimeOutHide,{0}", "A"));
+
         }
 
         private void btHideTimeOutB_Click(object sender, EventArgs e)
@@ -662,8 +661,7 @@ namespace RefereeConsole
             tcTimeOutB.Reset();
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TimeOutHide,{0}", "B"));
-            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                string.Format("TimeOutHide,{0}", "B"));
+
         }
 
         private void tcTimeOutA_Started()
@@ -698,14 +696,12 @@ namespace RefereeConsole
 
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     string.Format("TimeOutHide,{0}", "A"));
-                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    string.Format("TimeOutHide,{0}", "A"));
+
                 return;
             }
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TimeOut,{0},{1}", "A", timing));
-            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                string.Format("TimeOut,{0},{1}", "A", timing));
+
         }
 
         private void tcTimeOutB_TextTimingChanged(string timing)
@@ -724,14 +720,12 @@ namespace RefereeConsole
 
                 SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                     "TimeOutHide,B");
-                SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                    "TimeOutHide,B");
+
                 return;
             }
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 $"TimeOut,B,{timing}");
-            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                $"TimeOut,B,{timing}");
+
         }
 
         private void btAddTimeOutA_Click(object sender, EventArgs e)
@@ -791,8 +785,7 @@ namespace RefereeConsole
 
             SocketSend.SendMessage(Settings.ONSETTINGS.DISPLAYIPADDRESS, Settings.ONSETTINGS.DISPLAYPORT,
                 string.Format("TotalTime,{0}", timing));
-            SocketSend.SendMessage(Settings.ONSETTINGS.MAJORIPADDRESS, Settings.ONSETTINGS.MAJORPORT,
-                string.Format("TotalTime,{0}", timing));
+
             if (Settings.ONSETTINGS.BTOTALTIME)
                 SendToVrs();
         }

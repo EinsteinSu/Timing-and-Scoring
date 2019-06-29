@@ -91,9 +91,6 @@ namespace DisplayConsole
             SetControlShowHide(tlpParent, false);
             if (!string.IsNullOrEmpty(Settings.ONSETTINGS.PriceUrl) && File.Exists(Settings.ONSETTINGS.PriceUrl))
             {
-                SetControlText(label4, "");
-                SetControlText(label3, "");
-                SetControlText(label2, "");
                 SetControlImage(plParent, Image.FromFile(Settings.ONSETTINGS.PriceUrl));
             }
         }
@@ -533,5 +530,10 @@ namespace DisplayConsole
         }
 
         #endregion
+
+        private void lbColorA_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

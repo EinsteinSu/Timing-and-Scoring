@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RemoteConnect xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <IPADDRESS>192.168.1.101</IPADDRESS>
+  <IPADDRESS>127.0.0.1</IPADDRESS>
   <BROADCASTPORT>8399</BROADCASTPORT>
   <SERVICEPORT>8393</SERVICEPORT>
 </RemoteConnect>

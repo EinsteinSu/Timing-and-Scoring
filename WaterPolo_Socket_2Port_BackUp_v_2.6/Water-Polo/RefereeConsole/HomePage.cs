@@ -25,6 +25,7 @@ namespace RefereeConsole
             InitializeComponent();
             Log.Info($"Start listening from prot {Settings.ONSETTINGS.LISTENINGPORT}");
             _socket = new SocketListening(Settings.ONSETTINGS.LISTENINGPORT);
+            _socket.StartListening();
             _socket.ProcessMessage += ProcessMessage;
         }
 

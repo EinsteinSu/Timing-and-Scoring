@@ -16,7 +16,7 @@ namespace WaterPolo.Common
             {
                 if (msg[0].Length >= 2)
                 {
-                    var newMsg = msg[0].Substring(1, 1) + msg[0].Substring(0, 1);
+                    var newMsg = msg[0];
                     var seconds = newMsg.ToInt();
                     data.Seconds = seconds * 100;
                 }
@@ -57,45 +57,10 @@ namespace WaterPolo.Common
         public TotalTimeDeviceData Process(List<string> msg)
         {
             var data = new TotalTimeDeviceData { TimeoutCountA = _timeoutCountA, TimeoutCountB = _timeoutCountB };
-            if (msg.Count <= 5)
+            if (msg.Count <= 3)
                 return data;
-            if (msg[5].Contains("E") && msg[5].Replace("E", "").IsNumeric())
-                data.Court = msg[5].Replace("E", "").ToInt();
-            if (msg[5].Contains("C") && msg[5].Replace("C", "").IsNumeric())
-            {
-                if (!_isAdd)
-                {
-                    data.TimeoutCountA++;
-                    _isAdd = true;
-                }
-                if (msg[0].IsNumeric() && msg[1].IsNumeric())
-                    data.PauseTimeA = $"00:{msg[0]}:{msg[1]}".ToSeconds() * 100;
-            }
-            if (msg[5].Contains("D") && msg[5].Replace("D", "").IsNumeric())
-            {
-                if (!_isAdd)
-                {
-                    data.TimeoutCountB++;
-                    _isAdd = true;
-                }
-                if (msg[0].IsNumeric() && msg[1].IsNumeric())
-                    data.PauseTimeB = $"00:{msg[0]}:{msg[1]}".ToSeconds() * 100;
-            }
-            else
-            {
-                if (msg[5].IsNumeric())
-                    data.Court = msg[5].ToInt();
-            }
-            if (msg[0].IsNumeric() && msg[1].IsNumeric() && msg[5].Contains("C") &&
-                msg[5].Contains("D"))
-            {
-                _isAdd = false;
-                data.TotalTime = $"00:{msg[0]}:{msg[1]}".ToSeconds() * 100;
-            }
-            if (msg[3].IsNumeric())
-                data.ScoreA = msg[3].ToInt();
-            if (msg[4].IsNumeric())
-                data.ScoreB = msg[4].ToInt();
+
+            data.TotalTime = $"00:{msg[0]}:{msg[1]}".ToSeconds() * 100;
             return data;
         }
     }

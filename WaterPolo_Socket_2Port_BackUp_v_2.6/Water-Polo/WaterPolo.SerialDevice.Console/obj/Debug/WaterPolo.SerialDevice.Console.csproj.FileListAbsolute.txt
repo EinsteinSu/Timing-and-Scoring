@@ -1,0 +1,17 @@
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\WaterPolo.SerialDevice.Console.exe.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\WaterPolo.SerialDevice.Console.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\WaterPolo.SerialDevice.Console.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\ComPublic.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\WaterPolo.Common.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\log4net.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\SocketPublic.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\ComPublic.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\ComPublic.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\WaterPolo.Common.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\log4net.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\SocketPublic.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\bin\Debug\SocketPublic.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\obj\Debug\WaterPolo.SerialDevice.Console.csprojResolveAssemblyReference.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\obj\Debug\WaterPolo.SerialDevice.Console.csproj.CoreCompileInputs.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\obj\Debug\WaterPolo.SerialDevice.Console.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\WaterPolo.SerialDevice.Console\obj\Debug\WaterPolo.SerialDevice.Console.pdb

@@ -51,6 +51,9 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\Ap
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\ApplicationClient.Settings.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.csproj.GenerateResource.Cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.exe.licenses
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\General Match Client.csproj.CoreCompileInputs.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.pdb
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Client\WaterPolo Client.exe.config
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Client\WaterPolo Client.exe.manifest
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Client\WaterPolo Client.application
@@ -58,5 +61,3 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Client\WaterPolo Client
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Client\WaterPolo Client.pdb
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.exe.manifest
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.application
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.exe
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\后台\Program\GeneralMatch\ApplicationClient\obj\x86\Debug\WaterPolo Client.pdb
