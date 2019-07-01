@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <X>1500</X>
+  <X>0</X>
   <Y>0</Y>
-  <WIDTH>1920</WIDTH>
-  <HEIGHT>1080</HEIGHT>
+  <WIDTH>1024</WIDTH>
+  <HEIGHT>768</HEIGHT>
   <LISTENINGPORT>5678</LISTENINGPORT>
   <LISTENINGPORTEXTEND>7890</LISTENINGPORTEXTEND>
   <WelcomeUrl />

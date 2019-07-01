@@ -1211,3 +1211,13 @@
 2019-06-29 18:52:53,791 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
 2019-06-29 18:52:53,792 [1] INFO  MatchControlExtend - Start listen serial device for display total time 3(4800) HeaderEF TailBF
 2019-06-29 18:52:53,792 [1] ERROR ComListening - Could not open com. The port 'COM3' does not exist.
+2019-06-30 14:49:27,305 [1] INFO  HomePage - Start listening from prot 4567
+2019-06-30 14:49:34,040 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderDF TailCF
+2019-06-30 14:49:34,056 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2019-06-30 14:49:34,056 [1] INFO  MatchControlExtend - Start listen serial device for display total time 3(4800) HeaderEF TailBF
+2019-06-30 14:49:34,056 [1] ERROR ComListening - Could not open com. The port 'COM3' does not exist.
+2019-06-30 14:52:22,231 [1] INFO  HomePage - Start listening from prot 4567
+2019-06-30 14:52:37,555 [1] INFO  MatchControlExtend - Start listen serial device for display total time 5(4800) HeaderDF TailCF
+2019-06-30 14:52:37,555 [1] ERROR ComListening - Could not open com. The port 'COM5' does not exist.
+2019-06-30 14:52:37,555 [1] INFO  MatchControlExtend - Start listen serial device for display total time 3(4800) HeaderEF TailBF
+2019-06-30 14:52:37,555 [1] ERROR ComListening - Could not open com. The port 'COM3' does not exist.

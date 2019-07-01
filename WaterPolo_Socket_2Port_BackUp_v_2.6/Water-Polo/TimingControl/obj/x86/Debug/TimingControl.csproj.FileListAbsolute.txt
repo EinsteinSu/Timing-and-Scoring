@@ -122,3 +122,4 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TimingControl\obj\x86\Debug\TimingControl.csproj.CoreCompileInputs.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TimingControl\obj\x86\Debug\TimingControl.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TimingControl\obj\x86\Debug\TimingControl.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo_Socket_2Port_BackUp_v_2.6\Water-Polo\TimingControl\obj\x86\Debug\TimingControl.csprojResolveAssemblyReference.cache

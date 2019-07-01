@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple", "WaterPolo.Simple\WaterPolo.Simple.csproj", "{03BC89D5-DF0D-404F-8459-E9A01C97DF67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Core", "WaterPolo.Simple.Core\WaterPolo.Simple.Core.csproj", "{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DataAccess", "WaterPolo.Simple.DataAccess\WaterPolo.Simple.DataAccess.csproj", "{F9677219-9DA4-4F5C-8B92-5B01FCBF8FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DisplayConsole", "WaterPolo.Simple.DisplayConsole\WaterPolo.Simple.DisplayConsole.csproj", "{BC23D1C7-223E-4F4A-AA34-78911AA4AE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.RefereeConsole", "WaterPolo.Simple.RefereeConsole\WaterPolo.Simple.RefereeConsole.csproj", "{0C5F31D8-BF02-4A57-8856-4E4C3E18CF8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DataAccess.Test", "WaterPolo.Simple.DataAccess.Test\WaterPolo.Simple.DataAccess.Test.csproj", "{C5B48639-F2D7-48D1-9B23-0E82A02299C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DataCenter", "WaterPolo.Simple.DataCenter\WaterPolo.Simple.DataCenter.csproj", "{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9677219-9DA4-4F5C-8B92-5B01FCBF8FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9677219-9DA4-4F5C-8B92-5B01FCBF8FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9677219-9DA4-4F5C-8B92-5B01FCBF8FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9677219-9DA4-4F5C-8B92-5B01FCBF8FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC23D1C7-223E-4F4A-AA34-78911AA4AE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC23D1C7-223E-4F4A-AA34-78911AA4AE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC23D1C7-223E-4F4A-AA34-78911AA4AE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC23D1C7-223E-4F4A-AA34-78911AA4AE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C5F31D8-BF02-4A57-8856-4E4C3E18CF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5F31D8-BF02-4A57-8856-4E4C3E18CF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5F31D8-BF02-4A57-8856-4E4C3E18CF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5F31D8-BF02-4A57-8856-4E4C3E18CF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B48639-F2D7-48D1-9B23-0E82A02299C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B48639-F2D7-48D1-9B23-0E82A02299C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B48639-F2D7-48D1-9B23-0E82A02299C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B48639-F2D7-48D1-9B23-0E82A02299C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BB9DB7A-E832-4E3B-9F83-73E979E5C150}
+	EndGlobalSection
+EndGlobal
