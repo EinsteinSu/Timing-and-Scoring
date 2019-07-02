@@ -12,7 +12,7 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
         }
         public override void Add()
         {
-            var player = new Player { DisplayName = "New Player", TeamId = 1 };
+            var player = new Player { DisplayName = "New Player" };
             var viewModel = new PlayerEditWindowViewModel(player, Context);
             if (viewModel.Show())
             {

@@ -1,0 +1,6 @@
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\WaterPolo.Simple.Core.dll
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\WaterPolo.Simple.Core.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.csprojResolveAssemblyReference.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.csproj.CoreCompileInputs.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.dll
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.pdb

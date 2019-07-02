@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\obj\Debug\
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\obj\Debug\
 WaterPolo.Simple.DataCenter
 none
 false
 DEBUG;TRACE
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\App.xaml
-4-20241019
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\App.xaml
+62144144783
 
-22-79258475
-28-629945639
-DataEdit\EditWindow\DialogWindow.xaml;DataEdit\EditWindow\PlayerEdit.xaml;DataEdit\EditWindow\TeamEdit.xaml;MainWindow.xaml;
+26-942574492
+30-577064880
+DataEdit\EditWindow\DialogWindow.xaml;DataEdit\EditWindow\PlayerEdit.xaml;DataEdit\EditWindow\PlayerSelect.xaml;DataEdit\EditWindow\ScheduleEdit.xaml;DataEdit\EditWindow\TeamEdit.xaml;MainWindow.xaml;
 
-False
+True
 

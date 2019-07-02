@@ -12,6 +12,10 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
             content = new TC { DataContext = Data };
         }
 
+        public virtual double Height => 300;
+
+        public virtual double Width => 300;
+
         public abstract string Title { get; }
         public virtual FrameworkElement Content => content;
         protected abstract string Check();

@@ -1,0 +1,15 @@
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\bin\Debug\DisplayConsole.exe.config
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\bin\Debug\DisplayConsole.exe
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\bin\Debug\DisplayConsole.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\WaterPolo.Simple.DisplayConsole.csprojResolveAssemblyReference.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\MainWindow.g.cs
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\App.g.cs
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\DisplayConsole_MarkupCompile.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\DisplayConsole_MarkupCompile.lref
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\MainWindow.baml
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\DisplayConsole.g.resources
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\WaterPolo.Simple.DisplayConsole.Properties.Resources.resources
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\WaterPolo.Simple.DisplayConsole.csproj.GenerateResource.Cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\WaterPolo.Simple.DisplayConsole.csproj.CoreCompileInputs.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\DisplayConsole.exe
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\obj\Debug\DisplayConsole.pdb

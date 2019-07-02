@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using DevExpress.Xpf.Grid;
 using WaterPolo.Simple.DataAccess;
+using WaterPolo.Simple.DataCenter.DataEdit.EditWindow;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
 {
@@ -12,8 +13,12 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
 
         public override void Add()
         {
-            var schedule = new Schedule {DisplayName = "New Schedule"};
-            Context.Schedules.Add(schedule);
+            var schedule = new Schedule { DisplayName = "New Schedule" };
+            var vm = new ScheduleEditViewModel(schedule, Context);
+            if (vm.Show())
+            {
+                Context.Schedules.Add(schedule);
+            }
         }
 
         public override void Import(string path)

@@ -9,3 +9,14 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Sim
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\WaterPolo.Simple.DataAccess.dll.config
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\WaterPolo.Simple.DataAccess.dll
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\WaterPolo.Simple.DataAccess.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.dll
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.pdb

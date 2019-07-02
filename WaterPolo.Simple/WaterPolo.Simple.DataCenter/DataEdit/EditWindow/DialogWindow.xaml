@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaterPolo.Simple.DataCenter.DataEdit.EditWindow"
         mc:Ignorable="d"
-        Title="{Binding Title}" Height="300" Width="500">
+        Title="{Binding Title}" Height="{Binding Height}" Width="{Binding Width}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Row="0">
-            <Label Content="{Binding Title}"></Label>
+            <Label Margin="5" Content="{Binding Title}"></Label>
         </Grid>
         <ContentControl Grid.Row="1" Content="{Binding Content}"></ContentControl>
         <Grid Row="2">

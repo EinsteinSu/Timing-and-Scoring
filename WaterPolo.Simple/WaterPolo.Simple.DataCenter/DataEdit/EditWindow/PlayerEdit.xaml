@@ -18,7 +18,7 @@
                     <dxe:TextEdit EditValue="{Binding DisplayName}"/>
                 </dxlc:LayoutItem>
                 <dxlc:LayoutItem Label="Team">
-                    <dxe:ComboBoxEdit EditValue="{Binding TeamId}" DisplayMember="Name" ValueMember="TeamId" ItemsSource="{Binding Teams}"/>
+                    <dxe:ComboBoxEdit x:Name="cbTeam" ItemsSource="{Binding Teams}" EditValue="{Binding TeamId}" DisplayMember="Name" ValueMember="TeamId"/>
                 </dxlc:LayoutItem>
                 <dxlc:LayoutItem Label="Order Number">
                     <dxe:TextEdit EditValue="{Binding OrderNumber}"/>
