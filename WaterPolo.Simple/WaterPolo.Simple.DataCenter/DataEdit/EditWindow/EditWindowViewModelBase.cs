@@ -1,15 +1,16 @@
-﻿using System.Windows;
+﻿using DevExpress.Mvvm;
+using System.Windows;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
 {
-    public abstract class EditWindowViewModelBase<T, TC> : IDialogWindow where TC : FrameworkElement, new()
+    public abstract class EditWindowViewModelBase<T, TC> : ViewModelBase, IDialogWindow where TC : FrameworkElement, new()
     {
         protected readonly TC content;
-        protected T Data;
+        public T Data { get; set; }
         public EditWindowViewModelBase(T data)
         {
             Data = data;
-            content = new TC { DataContext = Data };
+            content = new TC { DataContext = this };
         }
 
         public virtual double Height => 300;
