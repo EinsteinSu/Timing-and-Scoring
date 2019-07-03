@@ -12,13 +12,13 @@
             <dxlc:LayoutGroup Orientation="Vertical">
                 <dxlc:LayoutGroup Orientation="Vertical">
                     <dxlc:LayoutItem Label="Name">
-                        <dxe:TextEdit EditValue="{Binding Name}"/>
+                        <dxe:TextEdit EditValue="{Binding Data.Name}"/>
                     </dxlc:LayoutItem>
                     <dxlc:LayoutItem Label="Display Name">
-                        <dxe:TextEdit EditValue="{Binding DisplayName}"/>
+                        <dxe:TextEdit EditValue="{Binding Data.DisplayName}"/>
                     </dxlc:LayoutItem>
                     <dxlc:LayoutItem Label="Start Time">
-                        <dxe:DateEdit EditValue="{Binding StartTime}"/>
+                        <dxe:DateEdit EditValue="{Binding Data.StartTime}"/>
                     </dxlc:LayoutItem>
                 </dxlc:LayoutGroup>
                 <dxlc:LayoutGroup>
@@ -27,7 +27,7 @@
                             <Button Content="Choose" Command="{Binding ChooseTeamCommand}" CommandParameter="White" Tag="White"/>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem>
-                            <dxe:ListBoxEdit ItemsSource="{Binding TeamA.Players}"></dxe:ListBoxEdit>
+                            <dxe:ListBoxEdit Height="100" DisplayMember="Name" ItemsSource="{Binding TeamA.Players,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></dxe:ListBoxEdit>
                         </dxlc:LayoutItem>
                     </dxlc:LayoutGroup>
                     <dxlc:LayoutGroup Orientation="Vertical" Header="Blue Cap" View="GroupBox">
@@ -35,7 +35,7 @@
                             <Button Content="Choose" Command="{Binding ChooseTeamCommand}" CommandParameter="Blue" Tag="Blue"/>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem>
-                            <dxe:ListBoxEdit ItemsSource="{Binding TeamB.Players}"></dxe:ListBoxEdit>
+                            <dxe:ListBoxEdit Height="100" ItemsSource="{Binding TeamB.Players}" DisplayMember="Name"></dxe:ListBoxEdit>
                         </dxlc:LayoutItem>
                     </dxlc:LayoutGroup>
                 </dxlc:LayoutGroup>

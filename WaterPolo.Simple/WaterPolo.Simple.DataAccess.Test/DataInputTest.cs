@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace WaterPolo.Simple.DataAccess.Test
 {
@@ -47,7 +48,7 @@ namespace WaterPolo.Simple.DataAccess.Test
             {
                 CapColor = CapColor.White,
                 TeamId = t1,
-                Players = new ObservableCollection<Player>()
+                Players = new List<Player>()
                 {
                     Context.Players.Find(t1a),
                     Context.Players.Find(t1b)
@@ -57,7 +58,7 @@ namespace WaterPolo.Simple.DataAccess.Test
             {
                 CapColor = CapColor.White,
                 TeamId = t2,
-                Players = new ObservableCollection<Player>()
+                Players = new List<Player>()
                 {
                     Context.Players.Find(t2a),
                     Context.Players.Find(t2b)

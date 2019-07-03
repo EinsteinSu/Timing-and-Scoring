@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -19,7 +20,7 @@ namespace WaterPolo.Simple.DataAccess
 
         public int Score { get; set; }
 
-        public virtual ObservableCollection<Player> Players { get; set; }
+        public virtual List<Player> Players { get; set; }
     }
 
     public enum CapColor

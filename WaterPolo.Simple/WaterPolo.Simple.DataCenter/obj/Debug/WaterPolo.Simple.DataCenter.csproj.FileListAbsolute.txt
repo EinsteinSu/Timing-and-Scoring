@@ -183,3 +183,4 @@ C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Si
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\obj\Debug\WaterPolo.Simple.DataCenter.csproj.CoreCompileInputs.cache
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\obj\Debug\DataCenter.exe
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\obj\Debug\DataCenter.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter\obj\Debug\GeneratedInternalTypeHelper.g.cs

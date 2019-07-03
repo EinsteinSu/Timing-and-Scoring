@@ -6,7 +6,14 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
     public abstract class EditWindowViewModelBase<T, TC> : ViewModelBase, IDialogWindow where TC : FrameworkElement, new()
     {
         protected readonly TC content;
-        public T Data { get; set; }
+        private T _data;
+
+        public T Data
+        {
+            get => _data;
+            set => SetProperty(ref _data, value, () => Data);
+        }
+
         public EditWindowViewModelBase(T data)
         {
             Data = data;

@@ -91,7 +91,7 @@
     <Compile Include="DataEdit\EditWindow\PlayerSelect.xaml.cs">
       <DependentUpon>PlayerSelect.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataEdit\EditWindow\PlayerSelectEdit.cs" />
+    <Compile Include="DataEdit\EditWindow\PlayerSelectEditViewModel.cs" />
     <Compile Include="DataEdit\EditWindow\ScheduleEdit.xaml.cs">
       <DependentUpon>ScheduleEdit.xaml</DependentUpon>
     </Compile>
