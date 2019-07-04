@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using DevExpress.Xpf.Grid;
 using WaterPolo.Simple.DataAccess;
 using WaterPolo.Simple.DataCenter.DataEdit.EditWindow;
@@ -15,20 +16,17 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
         {
             var team = new Team {DisplayName = "TAM"};
             var viewModel = new TeamEditWindowViewModel(team);
-            if (viewModel.Show())
-            {
-                Context.Teams.Add(team);
-            }
+            if (viewModel.Show()) Context.Teams.Add(team);
         }
 
         public override void Import(string path)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public override void Export(string fileName)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         protected override object GetList()

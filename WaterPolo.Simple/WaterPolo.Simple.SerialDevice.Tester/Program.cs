@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using WaterPolo.Simple.Core.DataTransfer.SerialDevice;
 
 namespace WaterPolo.Simple.SerialDevice.Tester
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var port = int.Parse(args[0]);
             var serialPort = new TotalTimeController(port);
@@ -33,6 +29,7 @@ namespace WaterPolo.Simple.SerialDevice.Tester
                             break;
                     }
                 }
+
                 Thread.Sleep(100);
             }
         }

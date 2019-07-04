@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO.Ports;
-using System.Linq;
-using System.Text;
+﻿using System.IO.Ports;
 using System.Threading.Tasks;
 
 namespace WaterPolo.Simple.Core.DataTransfer
@@ -23,9 +19,9 @@ namespace WaterPolo.Simple.Core.DataTransfer
 
         protected virtual int Length => 6;
 
-        protected abstract void ProcessData(int[] ints);
-
         protected bool IsQuit { get; set; }
+
+        protected abstract void ProcessData(int[] ints);
 
         public void StartListening()
         {
@@ -51,6 +47,7 @@ namespace WaterPolo.Simple.Core.DataTransfer
                         bytes[i] = data;
                         i++;
                     }
+
                     ProcessData(bytes);
                 }
             }

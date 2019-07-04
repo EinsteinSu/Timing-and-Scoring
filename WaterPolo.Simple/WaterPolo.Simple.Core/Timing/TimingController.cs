@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using WaterPolo.Simple.Core.Timing.Interface;
@@ -38,6 +35,8 @@ namespace WaterPolo.Simple.Core.Timing
 
         public virtual string DisplayTime => $"{Time.Minutes:00}:{Time.Seconds:00}";
 
+        protected virtual int TimeInterval => 100;
+
         public void Dispose()
         {
             TokenSource.Cancel();
@@ -50,6 +49,7 @@ namespace WaterPolo.Simple.Core.Timing
                 TimingTask = new Task(Timing, TokenSource.Token);
                 TimingTask.Start();
             }
+
             _resetEvent.Set();
         }
 
@@ -62,8 +62,6 @@ namespace WaterPolo.Simple.Core.Timing
         {
             Time = TimeSpan.FromSeconds(InitializeSeconds);
         }
-
-        protected virtual int TimeInterval => 100;
 
         private void Timing()
         {
@@ -81,11 +79,13 @@ namespace WaterPolo.Simple.Core.Timing
                     Console.WriteLine("Cancelled");
                     break;
                 }
+
                 if (Type == TimingType.Decrease && Time.Seconds == 0 && Time.Milliseconds == 0)
                 {
                     Console.WriteLine("Time up");
                     break;
                 }
+
                 DisplayAction?.Invoke(DisplayTime);
                 Thread.Sleep(TimeInterval);
             }

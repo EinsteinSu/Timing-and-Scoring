@@ -1,41 +1,41 @@
 ﻿<dx:ThemedWindow
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
-        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" x:Class="WaterPolo.Simple.DataCenter.MainWindow"
-        Title="MainWindow" Height="350" Width="525" WindowState="Maximized">
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" x:Class="WaterPolo.Simple.DataCenter.MainWindow"
+    Title="MainWindow" Height="350" Width="525" WindowState="Maximized">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Label Content="Function name"/>
+        <Label Content="Function name" />
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <StackPanel Margin="5">
-                <Button Margin="5" Content="Teams" Click="Button_Click"/>
-                <Button Margin="5" Content="Players" Click="Button_Click"/>
-                <Button Margin="5" Content="Schedules" Click="Button_Click"/>
+                <Button Margin="5" Content="Teams" Click="Button_Click" />
+                <Button Margin="5" Content="Players" Click="Button_Click" />
+                <Button Margin="5" Content="Schedules" Click="Button_Click" />
             </StackPanel>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackPanel Margin="5" Orientation="Horizontal">
-                    <Button Margin="5" Content="Refresh" Click="DataEditClick"/>
-                    <Button Margin="5" Content="Add" Click="DataEditClick"/>
-                    <Button Margin="5" Content="Save" Click="DataEditClick"/>
-                    <Button Margin="5" Content="Import" Click="DataEditClick"/>
-                    <Button Margin="5" Content="Export" Click="DataEditClick"/>
+                    <Button Margin="5" Content="Refresh" Click="DataEditClick" />
+                    <Button Margin="5" Content="Add" Click="DataEditClick" />
+                    <Button Margin="5" Content="Save" Click="DataEditClick" />
+                    <Button Margin="5" Content="Import" Click="DataEditClick" />
+                    <Button Margin="5" Content="Export" Click="DataEditClick" />
                 </StackPanel>
                 <dxg:GridControl AutoGenerateColumns="AddNew" Grid.Row="1" x:Name="GridControl">
                     <dxg:GridControl.View>
-                        <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True"/>
+                        <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" />
                     </dxg:GridControl.View>
                 </dxg:GridControl>
             </Grid>

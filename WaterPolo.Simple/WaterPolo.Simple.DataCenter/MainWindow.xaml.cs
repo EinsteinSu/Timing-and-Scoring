@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 using DevExpress.Xpf.Core;
 using WaterPolo.Simple.DataAccess;
 using WaterPolo.Simple.DataCenter.DataEdit;
@@ -12,12 +13,13 @@ namespace WaterPolo.Simple.DataCenter
     {
         protected WaterPoloDataContext Context = new WaterPoloDataContext();
         protected DataManagerBase ManagerBase;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
             var func = button?.Content.ToString();
@@ -35,10 +37,11 @@ namespace WaterPolo.Simple.DataCenter
                 default:
                     break;
             }
+
             ManagerBase?.Refresh();
         }
 
-        private void DataEditClick(object sender, System.Windows.RoutedEventArgs e)
+        private void DataEditClick(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
             var func = button?.Content.ToString();

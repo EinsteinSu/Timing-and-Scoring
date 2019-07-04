@@ -1,43 +1,39 @@
-﻿using log4net;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
+using log4net;
 using WaterPolo.Simple.Core.DataTransfer.Interface;
 
 namespace WaterPolo.Simple.Core.DataTransfer
 {
     public class SocketController : ISocketController
     {
+        private static readonly ILog Log = LogManager.GetLogger("SocketController");
         private readonly int _compacity;
         private Server _server;
-        private static readonly ILog Log = LogManager.GetLogger("SocketController");
+
         public SocketController(int compacity)
         {
             _compacity = compacity;
             Log.Info($"Campacity is {compacity}");
         }
 
-        ~SocketController()
-        {
-            StopListening();
-        }
-
         public void StartListening(IRequestProcess process, int port)
         {
             _server = new Server();
-            Task.Factory.StartNew(() =>
-            {
-                _server.CreateListener(port, process, _compacity);
-            });
+            Task.Factory.StartNew(() => { _server.CreateListener(port, process, _compacity); });
         }
 
         public void StopListening()
         {
             _server?.QuitListener();
+        }
+
+        ~SocketController()
+        {
+            StopListening();
         }
 
         public class Server
@@ -52,7 +48,6 @@ namespace WaterPolo.Simple.Core.DataTransfer
             /// <param name="campacity">how big can be processed in per times.</param>
             public void CreateListener(int port, IRequestProcess requestProcess, int campacity)
             {
-
                 TcpListener tcpListener;
                 var ipAddress = Dns.GetHostEntry("localhost").AddressList[0];
                 try

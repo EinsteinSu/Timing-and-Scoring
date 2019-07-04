@@ -12,30 +12,19 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
         {
             var items = new List<object>();
             if (value is IList<Player> players)
-            {
-                foreach (Player item in players)
-                {
+                foreach (var item in players)
                     items.Add(item);
-                }
-            }
             return items;
-
-
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var results = new List<Player>();
             if (value is IList<object> items)
-            {
-                foreach (object item in items)
-                {
-                    results.Add((Player)item);
-                }
-            }
+                foreach (var item in items)
+                    results.Add((Player) item);
 
             return results;
-
         }
     }
 }

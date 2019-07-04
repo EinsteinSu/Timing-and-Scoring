@@ -5,9 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaterPolo.Simple.DisplayConsole"
         xmlns:coreControl="clr-namespace:WaterPolo.Simple.Core.Control;assembly=WaterPolo.Simple.Core.Control"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
         mc:Ignorable="d" 
-        Title="MainWindow" Height="768" Width="1024">
+        Title="{Binding Settings.Title}" WindowStyle="None" Focusable="False" ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:EventToCommand Command="{Binding LoadCommand}" EventName="Loaded"/>
+    </dxmvvm:Interaction.Behaviors>
     <Grid>
-        <coreControl:MatchDisplayControl DataContext="{Binding Match}"/>
+        <coreControl:MatchDisplayControl DataContext="{Binding Match}" />
     </Grid>
 </Window>

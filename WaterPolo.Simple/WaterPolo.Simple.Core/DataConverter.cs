@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WaterPolo.Simple.Core
+﻿namespace WaterPolo.Simple.Core
 {
     public static class DataConverter
     {
@@ -19,7 +13,5 @@ namespace WaterPolo.Simple.Core
         {
             return ToInt(input?.ToString());
         }
-
-
     }
 }

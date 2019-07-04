@@ -7,7 +7,7 @@
     <ProjectGuid>{E9022ADE-E6AE-4DED-A964-B710A54A48C2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>WaterPolo.Simple.SerialDevice.Tester</RootNamespace>
-    <AssemblyName>WaterPolo.Simple.SerialDevice.Tester</AssemblyName>
+    <AssemblyName>SerialDeviceTester</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

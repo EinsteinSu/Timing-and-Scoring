@@ -1,29 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WaterPolo.Simple.Core;
 
 namespace WaterPolo.Simple.DisplayConsole
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    ///     Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        protected string RootPath = AppDomain.CurrentDomain.BaseDirectory;
+
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
+            var rootFolder = Path.Combine(RootPath, "Data");
+            var settigns = SettingsHelper.LoadData<DisplaySettings>(rootFolder, "settings.config") ??
+                           new DisplaySettings
+                           {
+                               X = 0,
+                               Y = 0,
+                               Width = 1024,
+                               Height = 768,
+                               ListeningPort = 1234
+                           };
+            Top = settigns.Y;
+            Left = settigns.X;
+            Width = settigns.Width;
+            Height = settigns.Height;
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple", "WaterPolo.Simple\WaterPolo.Simple.csproj", "{03BC89D5-DF0D-404F-8459-E9A01C97DF67}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.SerialDevice.Tester", "WaterPolo.Simple.SerialDevice.Tester\WaterPolo.Simple.SerialDevice.Tester.csproj", "{E9022ADE-E6AE-4DED-A964-B710A54A48C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Socket.Tester", "WaterPolo.Simple.Socket.Tester\WaterPolo.Simple.Socket.Tester.csproj", "{019D016B-43D6-4445-BED3-4E36BAA059DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Core.Test", "WaterPolo.Simple.Core.Test\WaterPolo.Simple.Core.Test.csproj", "{00D67C00-C28A-4922-A5B2-72102EDFEC47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{019D016B-43D6-4445-BED3-4E36BAA059DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{019D016B-43D6-4445-BED3-4E36BAA059DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{019D016B-43D6-4445-BED3-4E36BAA059DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D67C00-C28A-4922-A5B2-72102EDFEC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D67C00-C28A-4922-A5B2-72102EDFEC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D67C00-C28A-4922-A5B2-72102EDFEC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D67C00-C28A-4922-A5B2-72102EDFEC47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

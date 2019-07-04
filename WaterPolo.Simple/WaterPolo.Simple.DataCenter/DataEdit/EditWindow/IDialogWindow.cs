@@ -20,10 +20,7 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
             var window = new DialogWindow();
             window.DataContext = context;
             var result = window.ShowDialog();
-            if (result.HasValue && result.Value)
-            {
-                return true;
-            }
+            if (result.HasValue && result.Value) return true;
 
             return false;
         }

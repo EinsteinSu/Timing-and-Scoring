@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using WaterPolo.Simple.DataAccess;
+﻿using WaterPolo.Simple.DataAccess;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
 {
@@ -9,13 +8,12 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
         {
         }
 
-        
+
         public override string Title => "Team Management";
+
         protected override string Check()
         {
             return string.Empty;
         }
-
-
     }
 }

@@ -1,5 +1,5 @@
-﻿using DevExpress.Mvvm.UI;
-using System.Windows.Input;
+﻿using System.Windows.Input;
+using DevExpress.Mvvm.UI;
 
 namespace WaterPolo.Simple.Core.Control.Common
 {
@@ -16,9 +16,10 @@ namespace WaterPolo.Simple.Core.Control.Common
         object IEventArgsConverter.Convert(object sender, object args)
         {
             //throw new NotImplementedException();
-            Key pressedKey = ((KeyEventArgs)args).Key;
+            var pressedKey = ((KeyEventArgs) args).Key;
             return pressedKey;
         }
+
         #endregion
     }
 }

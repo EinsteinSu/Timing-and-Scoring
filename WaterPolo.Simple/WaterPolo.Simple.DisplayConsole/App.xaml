@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:WaterPolo.Simple.DisplayConsole"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

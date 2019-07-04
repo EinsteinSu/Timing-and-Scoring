@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WaterPolo.Simple.Core.Control.Common;
+﻿using WaterPolo.Simple.Core.Control.Common;
 
 namespace WaterPolo.Simple.Core.Control.Control
 {

@@ -30,7 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Mvvm.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
@@ -49,22 +49,28 @@
   <ItemGroup>
     <Compile Include="DataTransfer\Interface\IDataTransfer.cs" />
     <Compile Include="DataTransfer\Interface\ISocketController.cs" />
+    <Compile Include="DataTransfer\MatchDataTransfer.cs" />
     <Compile Include="DataTransfer\SerialDevice\ThirtySecondsTimeController.cs" />
     <Compile Include="DataTransfer\SerialDevice\TotalTimeController.cs" />
     <Compile Include="DataTransfer\SerialPortController.cs" />
     <Compile Include="DataTransfer\SocketController.cs" />
     <Compile Include="DataTransfer\SocketHelper.cs" />
-    <Compile Include="Display\IPlayerRaw.cs" />
-    <Compile Include="Display\PlayerRaw.cs" />
+    <Compile Include="Display\Interface\IMatchRaw.cs" />
+    <Compile Include="Display\Interface\IPlayerRaw.cs" />
+    <Compile Include="Display\Interface\ITeamRaw.cs" />
+    <Compile Include="Display\PlayerModel.cs" />
     <Compile Include="DataConverter.cs" />
-    <Compile Include="Display\MatchRaw.cs" />
-    <Compile Include="Display\Player.cs" />
-    <Compile Include="Display\TeamRaw.cs" />
+    <Compile Include="Display\MatchModel.cs" />
+    <Compile Include="Display\RawData\MatchRaw.cs" />
+    <Compile Include="Display\RawData\PlayerRaw.cs" />
+    <Compile Include="Display\RawData\TeamRaw.cs" />
+    <Compile Include="Display\TeamModel.cs" />
+    <Compile Include="Display\TransferDataConvert.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsHelper.cs" />
     <Compile Include="Timing\Interface\ITimingController.cs" />
     <Compile Include="Timing\TimingController.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

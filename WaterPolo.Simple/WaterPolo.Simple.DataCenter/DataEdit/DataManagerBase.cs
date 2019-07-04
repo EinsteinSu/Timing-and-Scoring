@@ -25,13 +25,6 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
 
         public abstract void Add();
 
-        public virtual void AddAndRefresh()
-        {
-            Add();
-            Save();
-            Refresh();
-        }
-
         public virtual void Save()
         {
             Context.SaveChanges();
@@ -40,7 +33,13 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
         public abstract void Import(string path);
         public abstract void Export(string fileName);
 
-        protected abstract object GetList();
+        public virtual void AddAndRefresh()
+        {
+            Add();
+            Save();
+            Refresh();
+        }
 
+        protected abstract object GetList();
     }
 }

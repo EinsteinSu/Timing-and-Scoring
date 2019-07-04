@@ -1,26 +1,22 @@
-﻿using log4net.Config;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
+using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
+using log4net.Config;
 using WaterPolo.Simple.Core.DataTransfer;
 using WaterPolo.Simple.Core.DataTransfer.Interface;
-using System.Net.Sockets;
 
 namespace WaterPolo.Simple.Socket.Tester
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             XmlConfigurator.Configure();
             while (true)
-            {
                 if (Console.KeyAvailable)
                 {
                     var cki = Console.ReadKey(true);
-                    int port = 0;
+                    var port = 0;
                     switch (cki.Key)
                     {
                         case ConsoleKey.S:
@@ -32,20 +28,19 @@ namespace WaterPolo.Simple.Socket.Tester
                             break;
                         case ConsoleKey.L:
                             Console.WriteLine("Enter a port");
-                             port = int.Parse(Console.ReadLine());
-                            SocketController controller = new SocketController(1024);
+                            port = int.Parse(Console.ReadLine());
+                            var controller = new SocketController(1024);
                             controller.StartListening(new DataProcess(), port);
                             break;
                     }
                 }
-            }
         }
 
         public class DataProcess : IRequestProcess
         {
             public void Process(TcpClient client, NetworkStream stream, byte[] bytesReceived)
             {
-                string response = "I got it";
+                var response = "I got it";
                 try
                 {
                     var message = Encoding.Unicode.GetString(bytesReceived, 0, bytesReceived.Length);
@@ -55,9 +50,6 @@ namespace WaterPolo.Simple.Socket.Tester
                 {
                     response = "error";
                 }
-
-                var bytesSent = Encoding.Unicode.GetBytes(response);
-                stream.Write(bytesSent, 0, bytesSent.Length);
             }
         }
     }

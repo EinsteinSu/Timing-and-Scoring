@@ -21,6 +21,18 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
 
         public override string Title => "Schedule Edit";
 
+        public TeamMatch TeamA
+        {
+            get => _teamA;
+            set => SetProperty(ref _teamA, value, () => TeamA);
+        }
+
+        public TeamMatch TeamB
+        {
+            get => _teamB;
+            set => SetProperty(ref _teamB, value, () => TeamB);
+        }
+
         public void ChooseTeam(CapColor type)
         {
             var data = type == CapColor.White ? Data.TeamA : Data.TeamB;
@@ -41,18 +53,6 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
                 TeamA = Data.TeamA;
                 TeamB = Data.TeamB;
             }
-        }
-
-        public TeamMatch TeamA
-        {
-            get => _teamA;
-            set => SetProperty(ref _teamA, value, () => TeamA);
-        }
-
-        public TeamMatch TeamB
-        {
-            get => _teamB;
-            set => SetProperty(ref _teamB, value, () => TeamB);
         }
 
         protected override string Check()

@@ -8,9 +8,14 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
 {
     public class PlayerSelectEditViewModel : ViewModelBase, IDialogWindow
     {
-        private readonly TeamMatch _teamMatch;
         private readonly WaterPoloDataContext _context;
         private readonly PlayerSelect _playerSelect;
+        private readonly TeamMatch _teamMatch;
+        private List<Player> _players;
+        private List<Player> _selectedPlayers;
+
+        private int _selectedTeamId;
+
         public PlayerSelectEditViewModel(TeamMatch teamMatch, WaterPoloDataContext context)
         {
             _teamMatch = teamMatch;
@@ -23,12 +28,6 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
         public double Height => 300;
 
         public double Width => 300;
-
-        private int _selectedTeamId;
-        private List<Player> _players;
-        private List<Player> _selectedPlayers;
-        public string Title => "Player Selection";
-        public FrameworkElement Content => _playerSelect;
 
         public int SelectedTeamId
         {
@@ -54,6 +53,9 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
             get => _players;
             set => SetProperty(ref _players, value, () => Players);
         }
+
+        public string Title => "Player Selection";
+        public FrameworkElement Content => _playerSelect;
 
         //todo: check quantity
         public bool Confirm()

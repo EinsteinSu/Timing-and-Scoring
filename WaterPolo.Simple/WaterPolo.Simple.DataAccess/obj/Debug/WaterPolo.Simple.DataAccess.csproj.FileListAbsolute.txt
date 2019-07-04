@@ -19,3 +19,4 @@ C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Si
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.dll
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.pdb
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.csprojResolveAssemblyReference.cache

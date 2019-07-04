@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WaterPolo.Simple.Core.Control.Common
+﻿namespace WaterPolo.Simple.Core.Control.Common
 {
     public static class ActionHelper
     {
@@ -12,7 +6,7 @@ namespace WaterPolo.Simple.Core.Control.Common
         {
             var item = content.ToInt();
             var value = item + 1;
-            if (max > 0 && (value) > max)
+            if (max > 0 && value > max)
                 return max;
             return value.ToString();
         }

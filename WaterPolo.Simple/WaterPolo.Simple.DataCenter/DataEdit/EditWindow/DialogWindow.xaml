@@ -8,14 +8,14 @@
         Title="{Binding Title}" Height="{Binding Height}" Width="{Binding Width}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid Row="0">
-            <Label Margin="5" Content="{Binding Title}"></Label>
+            <Label Margin="5" Content="{Binding Title}" />
         </Grid>
-        <ContentControl Grid.Row="1" Content="{Binding Content}"></ContentControl>
+        <ContentControl Grid.Row="1" Content="{Binding Content}" />
         <Grid Row="2">
             <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button Width="80" Margin="5" Click="Ok_Click">OK</Button>

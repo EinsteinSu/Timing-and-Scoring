@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 
 namespace WaterPolo.Simple.DataAccess.Test
 {
@@ -9,6 +7,7 @@ namespace WaterPolo.Simple.DataAccess.Test
     public class DataInputTest
     {
         protected readonly WaterPoloDataContext Context = new WaterPoloDataContext();
+
         [TestMethod]
         public void CreateTeam()
         {
@@ -48,7 +47,7 @@ namespace WaterPolo.Simple.DataAccess.Test
             {
                 CapColor = CapColor.White,
                 TeamId = t1,
-                Players = new List<Player>()
+                Players = new List<Player>
                 {
                     Context.Players.Find(t1a),
                     Context.Players.Find(t1b)
@@ -58,7 +57,7 @@ namespace WaterPolo.Simple.DataAccess.Test
             {
                 CapColor = CapColor.White,
                 TeamId = t2,
-                Players = new List<Player>()
+                Players = new List<Player>
                 {
                     Context.Players.Find(t2a),
                     Context.Players.Find(t2b)
@@ -67,7 +66,7 @@ namespace WaterPolo.Simple.DataAccess.Test
             Context.Schedules.Add(schedule);
             Context.SaveChanges();
             Assert.IsTrue(schedule.ScheduleId > 0);
-            Assert.IsTrue(schedule.TeamA.Players[0].Name =="team1-a");
+            Assert.IsTrue(schedule.TeamA.Players[0].Name == "team1-a");
             Assert.IsTrue(schedule.TeamB.Players[1].Name == "team2-b");
         }
 
@@ -91,7 +90,6 @@ namespace WaterPolo.Simple.DataAccess.Test
             Context.SaveChanges();
             return player.PlayerId;
         }
-
 
 
         private int CreateTeam(string name)

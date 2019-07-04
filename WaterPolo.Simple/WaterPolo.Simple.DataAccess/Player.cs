@@ -13,21 +13,9 @@ namespace WaterPolo.Simple.DataAccess
 
         public string DisplayNumber { get; set; }
 
-        [MaxLength(50)]
-        public string Name { get; set; }
+        [Display(AutoGenerateField = false)] public Team Team { get; set; }
 
-        [Required]
-        [MaxLength(12)]
-        public string DisplayName { get; set; }
-
-        [Display(AutoGenerateField = false)]
-        public Team Team { get; set; }
-
-        [Display(Name = "Team Name")]
-        public string TeamName
-        {
-            get { return Team?.Name; }
-        }
+        [Display(Name = "Team Name")] public string TeamName => Team?.Name;
 
         [ForeignKey("Team")]
         [Display(AutoGenerateField = false)]
@@ -36,5 +24,9 @@ namespace WaterPolo.Simple.DataAccess
         public int OrderNumber { get; set; }
 
         public virtual ObservableCollection<TeamMatch> TeamMatches { get; set; }
+
+        [MaxLength(50)] public string Name { get; set; }
+
+        [Required] [MaxLength(12)] public string DisplayName { get; set; }
     }
 }
