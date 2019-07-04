@@ -17,6 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DataAccess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DataCenter", "WaterPolo.Simple.DataCenter\WaterPolo.Simple.DataCenter.csproj", "{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Core.Control", "WaterPolo.Simple.Core.Control\WaterPolo.Simple.Core.Control.csproj", "{212434C5-91AA-4EF5-9617-B163CE3E1B20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Utility", "Test Utility", "{BA6A0F74-15A7-4B24-8329-6CA86831C319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.SerialDevice.Tester", "WaterPolo.Simple.SerialDevice.Tester\WaterPolo.Simple.SerialDevice.Tester.csproj", "{E9022ADE-E6AE-4DED-A964-B710A54A48C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Socket.Tester", "WaterPolo.Simple.Socket.Tester\WaterPolo.Simple.Socket.Tester.csproj", "{019D016B-43D6-4445-BED3-4E36BAA059DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,9 +59,25 @@ Global
 		{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C1AD6A6-FF29-4886-B355-7C8DB15B212E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212434C5-91AA-4EF5-9617-B163CE3E1B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212434C5-91AA-4EF5-9617-B163CE3E1B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212434C5-91AA-4EF5-9617-B163CE3E1B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212434C5-91AA-4EF5-9617-B163CE3E1B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9022ADE-E6AE-4DED-A964-B710A54A48C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9022ADE-E6AE-4DED-A964-B710A54A48C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9022ADE-E6AE-4DED-A964-B710A54A48C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9022ADE-E6AE-4DED-A964-B710A54A48C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019D016B-43D6-4445-BED3-4E36BAA059DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019D016B-43D6-4445-BED3-4E36BAA059DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019D016B-43D6-4445-BED3-4E36BAA059DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019D016B-43D6-4445-BED3-4E36BAA059DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9022ADE-E6AE-4DED-A964-B710A54A48C2} = {BA6A0F74-15A7-4B24-8329-6CA86831C319}
+		{019D016B-43D6-4445-BED3-4E36BAA059DB} = {BA6A0F74-15A7-4B24-8329-6CA86831C319}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BB9DB7A-E832-4E3B-9F83-73E979E5C150}

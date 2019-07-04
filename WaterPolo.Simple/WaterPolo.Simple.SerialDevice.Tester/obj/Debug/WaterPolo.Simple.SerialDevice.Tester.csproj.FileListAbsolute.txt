@@ -1,0 +1,13 @@
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\WaterPolo.Simple.SerialDevice.Tester.exe.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\WaterPolo.Simple.SerialDevice.Tester.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\WaterPolo.Simple.SerialDevice.Tester.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\log4net.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\WaterPolo.Simple.Core.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\DevExpress.Mvvm.v19.1.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\WaterPolo.Simple.Core.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\log4net.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\bin\Debug\DevExpress.Mvvm.v19.1.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\obj\Debug\WaterPolo.Simple.SerialDevice.Tester.csprojResolveAssemblyReference.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\obj\Debug\WaterPolo.Simple.SerialDevice.Tester.csproj.CoreCompileInputs.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\obj\Debug\WaterPolo.Simple.SerialDevice.Tester.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.SerialDevice.Tester\obj\Debug\WaterPolo.Simple.SerialDevice.Tester.pdb

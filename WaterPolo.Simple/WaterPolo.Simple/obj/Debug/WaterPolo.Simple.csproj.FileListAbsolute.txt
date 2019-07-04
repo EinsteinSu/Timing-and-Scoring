@@ -9,3 +9,14 @@ C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Si
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\obj\Debug\WaterPolo.Simple.csproj.CoreCompileInputs.cache
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\obj\Debug\WaterPolo.Simple.dll
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\obj\Debug\WaterPolo.Simple.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\bin\Debug\WaterPolo.Simple.dll.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\bin\Debug\WaterPolo.Simple.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\bin\Debug\WaterPolo.Simple.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\bin\Debug\EntityFramework.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\bin\Debug\EntityFramework.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\obj\Debug\WaterPolo.Simple.csprojResolveAssemblyReference.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\obj\Debug\WaterPolo.Simple.csproj.CoreCompileInputs.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\obj\Debug\WaterPolo.Simple.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple\obj\Debug\WaterPolo.Simple.pdb

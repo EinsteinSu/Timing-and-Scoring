@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaterPolo.Simple.DisplayConsole"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        xmlns:coreControl="clr-namespace:WaterPolo.Simple.Core.Control;assembly=WaterPolo.Simple.Core.Control"
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="768" Width="1024">
     <Grid>
-        
+        <coreControl:MatchDisplayControl DataContext="{Binding Match}"/>
     </Grid>
 </Window>

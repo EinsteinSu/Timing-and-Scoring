@@ -1,0 +1,11 @@
+2019-07-04 15:39:13,998 [1] ERROR SocketHelper - System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:123
+   at System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   at WaterPolo.Simple.Core.DataTransfer.SocketHelper.SendMessage(String ipAddress, Int32 port, String message, Int32 compacity) in C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\DataTransfer\SocketHelper.cs:line 15
+2019-07-04 15:42:17,537 [1] INFO  SocketController - Campacity is 1024
+2019-07-04 15:42:17,556 [3] INFO  SocketController - Listening ::1(123)
+2019-07-04 15:42:28,288 [1] ERROR SocketHelper - System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:123
+   at System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   at WaterPolo.Simple.Core.DataTransfer.SocketHelper.SendMessage(String ipAddress, Int32 port, String message, Int32 compacity) in C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\DataTransfer\SocketHelper.cs:line 15
+2019-07-04 15:43:06,757 [1] ERROR SocketHelper - System.Net.Sockets.SocketException (0x80004005): A socket operation was attempted to an unreachable network 0.0.0.111:1
+   at System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   at WaterPolo.Simple.Core.DataTransfer.SocketHelper.SendMessage(String ipAddress, Int32 port, String message, Int32 compacity) in C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\DataTransfer\SocketHelper.cs:line 15

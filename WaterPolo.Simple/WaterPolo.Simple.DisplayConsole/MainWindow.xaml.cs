@@ -23,6 +23,7 @@ namespace WaterPolo.Simple.DisplayConsole
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

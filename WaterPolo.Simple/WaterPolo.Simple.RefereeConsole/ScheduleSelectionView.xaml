@@ -1,0 +1,21 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WaterPolo.Simple.RefereeConsole"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="WaterPolo.Simple.RefereeConsole.ScheduleSelectionView"
+             mc:Ignorable="d" 
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    DataContext="{dxmvvm:ViewModelSource Type={x:Type local:ScheduleSelectionViewModel}}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <dxmvvm:Interaction.Triggers>
+        <dxmvvm:EventToCommand  Command="{Binding LoadCommand}" EventName="Loaded"/>
+    </dxmvvm:Interaction.Triggers>
+    <!--<mvvm:Interaction.Triggers>
+        <mvvm:EventToCommand Command="{Binding LoadCommand}" EventName="{Loaded}"/>
+    </mvvm:Interaction.Triggers>-->
+    <Grid>
+        <dxe:ListBoxEdit ItemsSource="{Binding Schedules}" EditValue="{Binding SelectedSchedule,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+    </Grid>
+</UserControl>

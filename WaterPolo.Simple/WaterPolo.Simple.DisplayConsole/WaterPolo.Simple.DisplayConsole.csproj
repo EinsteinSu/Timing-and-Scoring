@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Mvvm.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -68,6 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,6 +94,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WaterPolo.Simple.Core.Control\WaterPolo.Simple.Core.Control.csproj">
+      <Project>{212434c5-91aa-4ef5-9617-b163ce3e1b20}</Project>
+      <Name>WaterPolo.Simple.Core.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaterPolo.Simple.Core\WaterPolo.Simple.Core.csproj">
+      <Project>{5e8b0ab3-2108-4b7a-9bb0-ef2c163b0ecc}</Project>
+      <Name>WaterPolo.Simple.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
