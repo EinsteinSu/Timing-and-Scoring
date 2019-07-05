@@ -2,14 +2,22 @@
 {
     public interface IDataManager
     {
-        void Refresh();
+        void Add(object Item);
 
-        void Add();
+        void Edit();
+
+        object CurrentItem { get; set; }
+
+        object GetItemSource();
 
         void Save();
+
+        void Delete();
 
         void Import(string path);
 
         void Export(string fileName);
+
+        object NewItem();
     }
 }

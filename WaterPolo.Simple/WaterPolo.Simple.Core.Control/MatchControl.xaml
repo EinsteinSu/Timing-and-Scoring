@@ -37,8 +37,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="20*" />
-            <RowDefinition Height="80*" />
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="70*" />
         </Grid.RowDefinitions>
         <Grid Row="0">
             <Grid.RowDefinitions>
@@ -60,8 +60,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="{Binding TotalTime}" Foreground="Orange" VerticalAlignment="Center"
-                           TextAlignment="Center" FontSize="56" FontFamily="Comic Sans MS" />
+                <local:TimingView DataContext="{Binding TimingControl}"/>
                 <TextBlock Grid.Column="1" Foreground="Aqua" Text="{Binding ThirtySeconds}" VerticalAlignment="Center"
                            TextAlignment="Center" FontSize="42" FontFamily="Comic Sans MS" />
             </Grid>
@@ -77,8 +76,7 @@
                            Background="White">
                     WHITE
                 </TextBlock>
-                <TextBlock Grid.Row="1" Text="{Binding TeamA.PauseTime}" VerticalAlignment="Center"
-                           TextAlignment="Center" />
+                <local:TimingView Grid.Row="1" DataContext="{Binding TeamA.TimingControl}"></local:TimingView>
             </Grid>
             <controls:NumericEditableButton Margin="5" Grid.Row="1" Grid.Column="1"
                                             Content="{Binding TeamA.Score,Mode=TwoWay}" FontSize="48" FontWeight="Bold"
@@ -134,8 +132,7 @@
                            Background="Blue">
                     BLUE
                 </TextBlock>
-                <TextBlock Grid.Row="1" Text="{Binding TeamB.PauseTime}" VerticalAlignment="Center"
-                           TextAlignment="Center" />
+                <local:TimingView Grid.Row="1" DataContext="{Binding TeamB.TimingControl}"></local:TimingView>
             </Grid>
         </Grid>
         <Border Grid.Row="1" BorderBrush="White" BorderThickness="2">

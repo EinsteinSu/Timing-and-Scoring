@@ -58,7 +58,7 @@ namespace WaterPolo.Simple.Core.DataTransfer
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
+                    Log.Error(e);
                     throw;
                 }
 

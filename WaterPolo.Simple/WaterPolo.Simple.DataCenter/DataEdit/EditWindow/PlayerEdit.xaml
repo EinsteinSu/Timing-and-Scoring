@@ -13,6 +13,9 @@
 
         <dxlc:LayoutControl>
             <dxlc:LayoutGroup Orientation="Vertical">
+                <dxlc:LayoutItem Label="Number">
+                    <dxe:TextEdit EditValue="{Binding Data.DisplayNumber}" />
+                </dxlc:LayoutItem>
                 <dxlc:LayoutItem Label="Name">
                     <dxe:TextEdit EditValue="{Binding Data.Name}" />
                 </dxlc:LayoutItem>

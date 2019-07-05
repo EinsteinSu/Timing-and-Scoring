@@ -6,7 +6,7 @@ using WaterPolo.Simple.DataCenter.DataEdit.EditWindow;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
 {
-    public class ScheduleEdit : DataManagerBase
+    public class ScheduleEdit : DataManagerBase1
     {
         public ScheduleEdit(WaterPoloDataContext context, GridControl grid) : base(context, grid)
         {

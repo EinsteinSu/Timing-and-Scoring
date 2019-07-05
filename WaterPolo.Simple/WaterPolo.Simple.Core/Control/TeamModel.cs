@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using DevExpress.Mvvm;
+using WaterPolo.Simple.Core.Control;
 using WaterPolo.Simple.Core.Display.Interface;
 
 namespace WaterPolo.Simple.Core.Display
@@ -12,11 +13,26 @@ namespace WaterPolo.Simple.Core.Display
         private List<PlayerModel> _players;
         private int _score;
         private int _timeout;
-
+        private TimingViewModel _timingControl;
         public TeamModel()
         {
             Score = 0;
             Timeout = 0;
+            _timingControl = new TimingViewModel(3)
+            {
+                TimingChanged = (time) =>
+                {
+                    //todo: play sound
+                    PauseTime = time;
+                },
+                DisplayFontSize = 50
+            };
+        }
+
+        public TimingViewModel TimingControl
+        {
+            get => _timingControl;
+            set => _timingControl = value;
         }
 
 

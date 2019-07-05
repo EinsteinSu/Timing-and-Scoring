@@ -33,7 +33,8 @@ namespace WaterPolo.Simple.Core.Timing
 
         public Action<string> DisplayAction { get; set; }
 
-        public virtual string DisplayTime => $"{Time.Minutes:00}:{Time.Seconds:00}";
+        public string DisplayTime => $"{Time.Minutes:0}:{Time.Seconds:00}";
+
 
         protected virtual int TimeInterval => 100;
 

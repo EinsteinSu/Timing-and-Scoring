@@ -1,37 +1,43 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using DevExpress.Xpf.Grid;
+using System.Text;
+using System.Threading.Tasks;
 using WaterPolo.Simple.DataAccess;
-using WaterPolo.Simple.DataCenter.DataEdit.EditWindow;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
 {
     public class TeamEdit : DataManagerBase
     {
-        public TeamEdit(WaterPoloDataContext context, GridControl grid) : base(context, grid)
+        public override void Add(object item)
+        {
+            Context.Teams.Add((Team)item);
+            Context.SaveChanges();
+        }
+
+        public override void Edit()
         {
         }
 
-        public override void Add()
-        {
-            var team = new Team {DisplayName = "TAM"};
-            var viewModel = new TeamEditWindowViewModel(team);
-            if (viewModel.Show()) Context.Teams.Add(team);
-        }
-
-        public override void Import(string path)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Export(string fileName)
-        {
-            throw new NotImplementedException();
-        }
-
-        protected override object GetList()
+        public override object GetItemSource()
         {
             return Context.Teams.ToList();
+        }
+
+        public override object NewItem()
+        {
+            var team = new Team();
+            team.DisplayName = "CHN";
+            return team;
+        }
+
+        public override void Delete()
+        {
+            if (CurrentItem is Team team)
+            {
+                Context.Teams.Remove(team);
+                Context.SaveChanges();
+            }
         }
     }
 }

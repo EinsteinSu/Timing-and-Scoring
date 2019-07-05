@@ -17,8 +17,7 @@ namespace WaterPolo.Simple.Core.DataTransfer
                 var data = Encoding.Unicode.GetBytes(message);
                 var stream = client.GetStream();
                 stream.Write(data, 0, data.Length);
-
-              
+                Log.Debug($"send message to {ipAddress}:{port}");
                 stream.Close();
                 client.Close();
             }

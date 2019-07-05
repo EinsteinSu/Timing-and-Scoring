@@ -8,30 +8,37 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
 {
     public class PlayerEdit : DataManagerBase
     {
-        public PlayerEdit(WaterPoloDataContext context, GridControl grid) : base(context, grid)
+        public override void Add(object Item)
         {
+            var player = ((PlayerEditViewModel)Item).Data;
+            Context.Players.Add(player);
+            Context.SaveChanges();
         }
 
-        public override void Add()
-        {
-            var player = new Player {DisplayName = "New Player"};
-            var viewModel = new PlayerEditWindowViewModel(player, Context);
-            if (viewModel.Show()) Context.Players.Add(player);
-        }
-
-        public override void Import(string path)
+        public override void Edit()
         {
             throw new NotImplementedException();
         }
 
-        public override void Export(string fileName)
-        {
-            throw new NotImplementedException();
-        }
-
-        protected override object GetList()
+        public override object GetItemSource()
         {
             return Context.Players.ToList();
+        }
+
+        public override object NewItem()
+        {
+            var player = new Player();
+            player.DisplayName = "Player";
+            return new PlayerEditViewModel(Context, player);
+        }
+
+        public override void Delete()
+        {
+            if (CurrentItem is Player player)
+            {
+                Context.Players.Remove(player);
+                Context.SaveChanges();
+            }
         }
     }
 }

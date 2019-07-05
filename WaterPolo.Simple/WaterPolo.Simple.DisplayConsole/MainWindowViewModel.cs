@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
+using log4net;
 using Newtonsoft.Json;
 using WaterPolo.Simple.Core;
 using WaterPolo.Simple.Core.DataTransfer;
@@ -20,14 +21,15 @@ namespace WaterPolo.Simple.DisplayConsole
     {
         private MatchModel _match;
         private SocketController controller;
+        private static readonly ILog Log = LogManager.GetLogger("Display Console");
         public MainWindowViewModel()
         {
             var dep = new DependencyObject();
-            if (!DesignerProperties.GetIsInDesignMode(dep))
-            {
-                CreateTestData();
-            }
-            //LoadCommand = new DelegateCommand(Load, true);
+            //if (!DesignerProperties.GetIsInDesignMode(dep))
+            //{
+            //    CreateTestData();
+            //}
+            LoadCommand = new DelegateCommand(Load, true);
         }
 
         protected string RootPath = System.AppDomain.CurrentDomain.BaseDirectory;
@@ -42,21 +44,21 @@ namespace WaterPolo.Simple.DisplayConsole
             {
                 X = 0,
                 Y = 0,
-                Width = 1024,
-                Height = 768,
+                Width = 1920,
+                Height = 1080,
                 ListeningPort = 1234,
                 Compacity = 2048
             };
             controller = new SocketController(Settigns.Compacity);
             controller.StartListening(new DataProcess((message) =>
             {
+                Log.Debug(message);
                 //todo: save settings, display data
                 var data = JsonConvert.DeserializeObject<MatchRaw>(message);
                 if (data != null)
                 {
                     Match = TransferDataConvert.ConvertToMatchModel(data);
-                    Match.TotalTime = "sss";
-                    RaisePropertiesChanged("Match");
+                    //RaisePropertiesChanged("Match");
                 }
             }), Settigns.ListeningPort);
         }
@@ -79,14 +81,14 @@ namespace WaterPolo.Simple.DisplayConsole
                 }
                 catch (Exception e)
                 {
-                    //todo： log it
-
+                    Log.Error(e);
                 }
             }
         }
 
         ~MainWindowViewModel()
         {
+            Log?.Info("Stop listening.");
             controller?.StopListening();
         }
 
@@ -131,6 +133,8 @@ namespace WaterPolo.Simple.DisplayConsole
                 var player = new PlayerModel();
                 player.Number = $"{i + 1}";
                 player.Name = $"{team.Name}:Num.{i + 1}";
+                player.Fouls = 3;
+                player.FoulTime = 20;
                 players.Add(player);
             }
 

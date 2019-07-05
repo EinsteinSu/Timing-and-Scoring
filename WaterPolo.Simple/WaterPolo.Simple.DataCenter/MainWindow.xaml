@@ -3,37 +3,84 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
-    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" x:Class="WaterPolo.Simple.DataCenter.MainWindow"
-    Title="MainWindow" Height="350" Width="525" WindowState="Maximized">
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+    xmlns:common="clr-namespace:WaterPolo.Simple.Core.Control.Common"
+    xmlns:local="clr-namespace:WaterPolo.Simple.DataCenter" 
+    x:Class="WaterPolo.Simple.DataCenter.MainWindow"
+    xmlns:edit="clr-namespace:WaterPolo.Simple.DataCenter.DataEdit.EditWindow"
+    xmlns:mvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    Title="Data Center" Height="350" Width="525" WindowState="Maximized">
+    <dx:ThemedWindow.Resources>
+        <DataTemplate x:Key="features">
+            <Grid>
+                <Button Margin="5" Content="{Binding Name}" Command="{Binding ClickCommand}"/>
+            </Grid>
+        </DataTemplate>
+    </dx:ThemedWindow.Resources>
+    <dx:ThemedWindow.DataContext>
+        <local:MainWindowViewModel/>
+    </dx:ThemedWindow.DataContext>
+    <mvvm:Interaction.Behaviors>
+        <dx:DialogService DialogWindowStartupLocation="CenterOwner" x:Name="Teams">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <edit:TeamEdit/>
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:DXDialogWindow">
+                    <Setter Property="Width" Value="500" />
+                    <Setter Property="Height" Value="300" />
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>
+        <dx:DialogService DialogWindowStartupLocation="CenterOwner" x:Name="Players">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <edit:PlayerEdit/>
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:DXDialogWindow">
+                    <Setter Property="Width" Value="500" />
+                    <Setter Property="Height" Value="300" />
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>
+    </mvvm:Interaction.Behaviors>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Label Content="Function name" />
+        <TextBlock Text="{Binding CurrentFeature.Name}" Margin="5" FontSize="20"/>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <StackPanel Margin="5">
-                <Button Margin="5" Content="Teams" Click="Button_Click" />
-                <Button Margin="5" Content="Players" Click="Button_Click" />
-                <Button Margin="5" Content="Schedules" Click="Button_Click" />
-            </StackPanel>
+            <ListBox ItemTemplate="{StaticResource features}" ItemsSource="{Binding Features}">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackPanel Margin="5" Orientation="Horizontal">
-                    <Button Margin="5" Content="Refresh" Click="DataEditClick" />
-                    <Button Margin="5" Content="Add" Click="DataEditClick" />
-                    <Button Margin="5" Content="Save" Click="DataEditClick" />
-                    <Button Margin="5" Content="Import" Click="DataEditClick" />
-                    <Button Margin="5" Content="Export" Click="DataEditClick" />
+                    <Button Margin="5" Content="Refresh"  Command="{Binding RefreshCommand}"/>
+                    <Button Margin="5" Content="Add"  Command="{Binding AddCommand}"/>
+                    <Button Margin="5" Content="Edit"  Command="{Binding EditCommand}"/>
+                    <Button Margin="5" Content="Delete"  Command="{Binding DeleteCommand}"/>
+                    <Button Margin="5" Content="Save"  Command="{Binding SaveCommand}"/>
+                    <Button Margin="5" Content="Import"  Command="{Binding ImportCommand}"/>
+                    <Button Margin="5" Content="Export"  Command="{Binding ExportCommand}"/>
                 </StackPanel>
-                <dxg:GridControl AutoGenerateColumns="AddNew" Grid.Row="1" x:Name="GridControl">
+                <dxg:GridControl CurrentItem="{Binding CurrentFeature.DataManager.CurrentItem,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="AddNew" Grid.Row="1" ItemsSource="{Binding ItemSource}" x:Name="GridControl">
                     <dxg:GridControl.View>
                         <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" />
                     </dxg:GridControl.View>

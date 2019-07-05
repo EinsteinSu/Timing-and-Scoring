@@ -8,7 +8,7 @@ using System.Windows;
 using System.Windows.Input;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.XtraPrinting.Native.WebClientUIControl;
+using log4net;
 using Newtonsoft.Json;
 using WaterPolo.Simple.Core.DataTransfer;
 using WaterPolo.Simple.Core.Display;
@@ -19,22 +19,25 @@ namespace WaterPolo.Simple.RefereeConsole
     public class MainWindowViewModel : ViewModelBase
     {
         private readonly WaterPoloDataContext _context = new WaterPoloDataContext();
-        private ScheduleSelectionViewModel _selectionViewModel;
         private MatchModel _match;
-        private bool _showMatchController;
+        private ScheduleSelectionViewModel _selectionViewModel;
 
+        private Task _sendMessageTask;
+        private bool _showMatchController;
+        private bool _stop;
+        private static readonly ILog Log = LogManager.GetLogger("Referee Console");
         public MainWindowViewModel()
         {
             ShowMatchController = false;
             var dep = new DependencyObject();
             if (!DesignerProperties.GetIsInDesignMode(dep))
             {
-                LoadSchedule(6);
-
+                //CreateTestData();
+                //LoadSchedule(6);
             }
         }
 
-        private IDialogService DialogService => GetService<IDialogService>();
+        private IDialogService DialogService => GetService<IDialogService>(currentDialogWindow);
 
         public MatchModel Match
         {
@@ -52,45 +55,103 @@ namespace WaterPolo.Simple.RefereeConsole
             set => SetProperty(ref _showMatchController, value, () => ShowMatchController);
         }
 
+        private string currentDialogWindow = "schedule";
         public void KeyDown(Key key)
         {
             switch (key)
             {
                 case Key.L:
-                    if (_selectionViewModel == null)
-                        _selectionViewModel = new ScheduleSelectionViewModel(_context);
-
-                    #region  Create Buttons
-                    var okCommand = new UICommand
-                    {
-                        Caption = "Ok",
-                        IsCancel = false,
-                        IsDefault = true,
-                        Command = new DelegateCommand<CancelEventArgs>(
-                            x =>
-                            {
-                                //todo: load schedule by id
-                            }, x => _selectionViewModel.SelectedSchedule != null)
-                    };
-                    var cancelCommand = new UICommand
-                    {
-                        Caption = "Close",
-                        IsCancel = true
-                    };
-                    #endregion
-
-                    var result = DialogService.ShowDialog(new List<UICommand> { okCommand, cancelCommand },
-                        "Schedule Selection", _selectionViewModel);
-                    if (result == okCommand)
-                    {
-                        LoadSchedule(_selectionViewModel.SelectedSchedule.ScheduleId);
-
-                    }
+                    currentDialogWindow = "schedule";
+                    LoadSchedule();
+                    break;
+                case Key.S:
+                    currentDialogWindow = "settings";
+                    LoadSettings();
                     break;
             }
         }
+        ~MainWindowViewModel()
+        {
+            _stop = true;
+        }
 
-        private Task _sendMessageTask;
+        #region Settings
+        private SettingsViewModel _settingsViewModel;
+        protected void LoadSettings()
+        {
+            if (_settingsViewModel == null)
+                _settingsViewModel = new SettingsViewModel();
+            #region  Create Buttons
+
+            var okCommand = new UICommand
+            {
+                Caption = "Ok",
+                IsCancel = false,
+                IsDefault = true,
+                Command = new DelegateCommand<CancelEventArgs>(
+                    x =>
+                    {
+                    }, x => ValidateSettings())
+            };
+            var cancelCommand = new UICommand
+            {
+                Caption = "Close",
+                IsCancel = true
+            };
+
+            #endregion
+
+            var result = DialogService.ShowDialog(new List<UICommand> { okCommand, cancelCommand },
+                "Settings", _settingsViewModel);
+            if (result == okCommand)
+            {
+                _settingsViewModel.Save();
+            }
+        }
+
+        private bool ValidateSettings()
+        {
+            return !string.IsNullOrEmpty(_settingsViewModel.Settings.DisplayConsoleSettings.IpAddress) &&
+                   _settingsViewModel.Settings.DisplayConsoleSettings.Port > 0;
+        }
+        #endregion
+
+        #region load schedule 
+        protected void LoadSchedule()
+        {
+            if (_selectionViewModel == null)
+                _selectionViewModel = new ScheduleSelectionViewModel(_context);
+
+            #region  Create Buttons
+
+            var okCommand = new UICommand
+            {
+                Caption = "Ok",
+                IsCancel = false,
+                IsDefault = true,
+                Command = new DelegateCommand<CancelEventArgs>(
+                    x =>
+                    {
+                        //todo: load schedule by id
+                    }, x => _selectionViewModel.SelectedSchedule != null)
+            };
+            var cancelCommand = new UICommand
+            {
+                Caption = "Close",
+                IsCancel = true
+            };
+
+            #endregion
+
+            var result = DialogService.ShowDialog(new List<UICommand> { okCommand, cancelCommand },
+                "Schedule Selection", _selectionViewModel);
+            if (result == okCommand)
+            {
+                LoadSchedule(_selectionViewModel.SelectedSchedule.ScheduleId);
+            }
+        }
+
+
         private void LoadSchedule(int scheduleId)
         {
             Match = new MatchModel
@@ -109,30 +170,31 @@ namespace WaterPolo.Simple.RefereeConsole
                 Match.TeamA = GetTeamRaw(schedule.TeamA);
                 Match.TeamB = GetTeamRaw(schedule.TeamB);
             }
+
             if (_sendMessageTask == null)
             {
                 _sendMessageTask = new Task(() =>
                 {
+                    Log.Info("Sending message thread has started.");
                     while (true)
                     {
                         var data = JsonConvert.SerializeObject(TransferDataConvert.ConvertToMatchRaw(Match));
+                        Log.Debug($"Send Message: {data}");
                         SocketHelper.SendMessage("::1", 1234, data, 2048);
                         Thread.Sleep(300);
                         if (_stop)
+                        {
+                            Log.Info("Sending message thread has stopped.");
                             break;
+                        }
                     }
-
                 });
                 _sendMessageTask.Start(TaskScheduler.Current);
             }
         }
+        #endregion
 
-        private bool _stop;
-        ~MainWindowViewModel()
-        {
-            _stop = true;
-        }
-
+        #region get data from database
         private TeamModel GetTeamRaw(TeamMatch teamMatch)
         {
             return new TeamModel
@@ -158,8 +220,10 @@ namespace WaterPolo.Simple.RefereeConsole
 
             return players;
         }
+        #endregion
 
         #region create test data
+
         private void CreateTestData()
         {
             Match = new MatchModel();
@@ -168,7 +232,8 @@ namespace WaterPolo.Simple.RefereeConsole
             Match.TeamA = new TeamModel
             {
                 Name = "CHN",
-                Score = 1
+                Score = 1,
+                PauseTime = "0:59"
             };
             AddPlayer(Match.TeamA);
             Match.TeamB = new TeamModel
@@ -182,7 +247,7 @@ namespace WaterPolo.Simple.RefereeConsole
         private void AddPlayer(TeamModel team)
         {
             var playerCount = 13;
-            var players = new System.Collections.Generic.List<PlayerModel>();
+            var players = new List<PlayerModel>();
             for (var i = 0; i < playerCount; i++)
             {
                 var player = new PlayerModel();
@@ -193,11 +258,7 @@ namespace WaterPolo.Simple.RefereeConsole
 
             team.Players = players;
         }
-        #endregion
 
-        public static MainWindowViewModel Create()
-        {
-            return ViewModelSource.Create(() => new MainWindowViewModel());
-        }
+        #endregion
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DevExpress.Xpf.Core;
+using log4net.Config;
 
 namespace WaterPolo.Simple.RefereeConsole
 {
@@ -10,6 +11,8 @@ namespace WaterPolo.Simple.RefereeConsole
         public MainWindow()
         {
             InitializeComponent();
+
+            XmlConfigurator.Configure();
         }
     }
 }

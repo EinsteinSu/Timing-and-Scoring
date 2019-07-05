@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple", "WaterPolo.Simple\WaterPolo.Simple.csproj", "{03BC89D5-DF0D-404F-8459-E9A01C97DF67}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Core", "WaterPolo.Simple.Core\WaterPolo.Simple.Core.csproj", "{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DataAccess", "WaterPolo.Simple.DataAccess\WaterPolo.Simple.DataAccess.csproj", "{F9677219-9DA4-4F5C-8B92-5B01FCBF8FFC}"
@@ -33,10 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03BC89D5-DF0D-404F-8459-E9A01C97DF67}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E8B0AB3-2108-4B7A-9BB0-EF2C163B0ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU

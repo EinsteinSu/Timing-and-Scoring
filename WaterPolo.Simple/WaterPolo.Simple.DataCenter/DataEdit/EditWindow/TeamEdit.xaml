@@ -13,13 +13,13 @@
         <dxlc:LayoutControl>
             <dxlc:LayoutGroup Orientation="Vertical">
                 <dxlc:LayoutItem Label="Flag" Height="100">
-                    <dxe:ImageEdit EditValue="{Binding Data.Flag}" />
+                    <dxe:ImageEdit EditValue="{Binding Flag}" />
                 </dxlc:LayoutItem>
                 <dxlc:LayoutItem Label="Name">
-                    <dxe:TextEdit EditValue="{Binding Data.Name}" />
+                    <dxe:TextEdit EditValue="{Binding Name}" />
                 </dxlc:LayoutItem>
                 <dxlc:LayoutItem Label="Display Name">
-                    <dxe:TextEdit EditValue="{Binding Data.DisplayName}" />
+                    <dxe:TextEdit EditValue="{Binding DisplayName}" />
                 </dxlc:LayoutItem>
             </dxlc:LayoutGroup>
         </dxlc:LayoutControl>

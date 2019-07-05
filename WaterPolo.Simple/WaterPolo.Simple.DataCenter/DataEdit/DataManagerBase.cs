@@ -1,45 +1,42 @@
-﻿using DevExpress.Xpf.Grid;
+﻿using DevExpress.Mvvm;
 using WaterPolo.Simple.DataAccess;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
 {
-    public abstract class DataManagerBase : IDataManager
+    public abstract class DataManagerBase : ViewModelBase, IDataManager
     {
-        protected readonly WaterPoloDataContext Context;
-        protected readonly GridControl Grid;
+        private object _currentItem;
+        protected WaterPoloDataContext Context = new WaterPoloDataContext();
 
-        public DataManagerBase(WaterPoloDataContext context, GridControl grid)
+
+        public abstract void Add(object Item);
+
+        public abstract void Edit();
+
+
+        public object CurrentItem
         {
-            Context = context;
-            Grid = grid;
+            get => _currentItem;
+            set { SetProperty(ref _currentItem, value, () => CurrentItem); }
         }
 
-        public virtual void Refresh()
-        {
-            if (Grid != null)
-            {
-                Grid.ItemsSource = null;
-                Grid.ItemsSource = GetList();
-            }
-        }
-
-        public abstract void Add();
+        public abstract object GetItemSource();
 
         public virtual void Save()
         {
             Context.SaveChanges();
         }
 
-        public abstract void Import(string path);
-        public abstract void Export(string fileName);
-
-        public virtual void AddAndRefresh()
+        public virtual void Import(string path)
         {
-            Add();
-            Save();
-            Refresh();
         }
 
-        protected abstract object GetList();
+        public void Export(string fileName)
+        {
+        }
+
+        public abstract object NewItem();
+
+        public abstract void Delete();
     }
 }

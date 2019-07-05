@@ -35,22 +35,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Images.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Images.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.CodeView.v17.1" />
-    <Reference Include="DevExpress.Xpf.Core.v17.1" />
-    <Reference Include="DevExpress.Data.v17.1" />
-    <Reference Include="DevExpress.Office.v17.1.Core" />
-    <Reference Include="DevExpress.RichEdit.v17.1.Core" />
-    <Reference Include="DevExpress.RichEdit.v17.1.Export" />
-    <Reference Include="DevExpress.Printing.v17.1.Core" />
-    <Reference Include="DevExpress.Mvvm.v17.1" />
-    <Reference Include="DevExpress.Xpf.Printing.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Grid.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Grid.v17.1.Core, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.LayoutControl.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v17.1" />
+    <Reference Include="DevExpress.Xpf.CodeView.v19.1" />
+    <Reference Include="DevExpress.Xpf.Core.v19.1" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.Office.v19.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.Mvvm.v19.1" />
+    <Reference Include="DevExpress.Xpf.Printing.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v19.1" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -82,6 +82,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataEdit\DataManagerBase.cs" />
+    <Compile Include="DataEdit\DataManagerBase1.cs" />
     <Compile Include="DataEdit\DataService.cs" />
     <Compile Include="DataEdit\EditWindow\DialogWindow.xaml.cs">
       <DependentUpon>DialogWindow.xaml</DependentUpon>
@@ -92,6 +93,7 @@
     <Compile Include="DataEdit\EditWindow\PlayerEdit.xaml.cs">
       <DependentUpon>PlayerEdit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataEdit\EditWindow\PlayerEditViewModel.cs" />
     <Compile Include="DataEdit\EditWindow\PlayerEditWindowViewModel.cs" />
     <Compile Include="DataEdit\EditWindow\PlayerSelect.xaml.cs">
       <DependentUpon>PlayerSelect.xaml</DependentUpon>
@@ -108,6 +110,10 @@
     <Compile Include="DataEdit\PlayerEdit.cs" />
     <Compile Include="DataEdit\ScheduleEdit.cs" />
     <Compile Include="DataEdit\TeamEdit.cs" />
+    <Compile Include="DataEdit\TeamEdit1.cs" />
+    <Compile Include="WindowBackup.xaml.cs">
+      <DependentUpon>WindowBackup.xaml</DependentUpon>
+    </Compile>
     <Page Include="DataEdit\EditWindow\DialogWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -141,8 +147,13 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowBackup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -172,6 +183,14 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WaterPolo.Simple.Core.Control\WaterPolo.Simple.Core.Control.csproj">
+      <Project>{212434c5-91aa-4ef5-9617-b163ce3e1b20}</Project>
+      <Name>WaterPolo.Simple.Core.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaterPolo.Simple.Core\WaterPolo.Simple.Core.csproj">
+      <Project>{5e8b0ab3-2108-4b7a-9bb0-ef2c163b0ecc}</Project>
+      <Name>WaterPolo.Simple.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WaterPolo.Simple.DataAccess\WaterPolo.Simple.DataAccess.csproj">
       <Project>{f9677219-9da4-4f5c-8b92-5b01fcbf8ffc}</Project>
       <Name>WaterPolo.Simple.DataAccess</Name>
