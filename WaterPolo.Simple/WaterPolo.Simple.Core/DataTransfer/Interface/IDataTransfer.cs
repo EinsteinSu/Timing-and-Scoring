@@ -2,7 +2,7 @@
 {
     public interface IDataTransfer<T>
     {
-        DataType Type { get;  }
+        DataType Type { get; }
 
         T Data { get; set; }
     }

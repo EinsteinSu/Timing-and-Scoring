@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WaterPolo.Simple.Core.Display.RawData;
+﻿using WaterPolo.Simple.Core.Display.RawData;
 
 namespace WaterPolo.Simple.Core.Display.Interface
 {

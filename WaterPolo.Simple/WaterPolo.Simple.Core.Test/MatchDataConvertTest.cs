@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
-using WaterPolo.Simple.Core.DataTransfer;
+using WaterPolo.Simple.Core.Control;
 using WaterPolo.Simple.Core.Display;
 
 namespace WaterPolo.Simple.Core.Test
@@ -24,6 +25,7 @@ namespace WaterPolo.Simple.Core.Test
         }
 
         #region create test data
+
         private MatchModel CreateTestData()
         {
             var match = new MatchModel();
@@ -47,7 +49,7 @@ namespace WaterPolo.Simple.Core.Test
         private void AddPlayer(TeamModel team)
         {
             var playerCount = 13;
-            var players = new System.Collections.Generic.List<PlayerModel>();
+            var players = new List<PlayerModel>();
             for (var i = 0; i < playerCount; i++)
             {
                 var player = new PlayerModel();
@@ -58,6 +60,7 @@ namespace WaterPolo.Simple.Core.Test
 
             team.Players = players;
         }
+
         #endregion
     }
 }

@@ -6,13 +6,31 @@
         xmlns:local="clr-namespace:WaterPolo.Simple.DisplayConsole"
         xmlns:coreControl="clr-namespace:WaterPolo.Simple.Core.Control;assembly=WaterPolo.Simple.Core.Control"
         xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
-        mc:Ignorable="d" 
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:common="clr-namespace:WaterPolo.Simple.Core.Control.Common;assembly=WaterPolo.Simple.Core.Control"
+        mc:Ignorable="d" DataContext="{dxmvvm:ViewModelSource Type={x:Type local:MainWindowViewModel}}"
         Title="{Binding Settings.Title}" WindowStyle="None" Focusable="False" ResizeMode="NoResize">
-    <Window.DataContext>
-        <local:MainWindowViewModel/>
-    </Window.DataContext>
     <dxmvvm:Interaction.Behaviors>
-        <dxmvvm:EventToCommand Command="{Binding LoadCommand}" EventName="Loaded"/>
+        <dxmvvm:EventToCommand PassEventArgsToCommand="True" Command="{Binding KeyDownCommand}" EventName="KeyDown">
+            <dxmvvm:EventToCommand.EventArgsConverter>
+                <common:KeyConverter />
+            </dxmvvm:EventToCommand.EventArgsConverter>
+        </dxmvvm:EventToCommand>
+        <dxmvvm:EventToCommand Command="{Binding LoadCommand}" EventName="Loaded" />
+        
+        <dx:DialogService DialogWindowStartupLocation="CenterOwner">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <local:SettingsView />
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:DXDialogWindow">
+                    <Setter Property="Width" Value="500" />
+                    <Setter Property="Height" Value="300" />
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>
     </dxmvvm:Interaction.Behaviors>
     <Grid>
         <coreControl:MatchDisplayControl DataContext="{Binding Match}" />

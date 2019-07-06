@@ -1,8 +1,4 @@
-﻿using System.Windows;
-using System.Windows.Controls;
-using DevExpress.Xpf.Core;
-using WaterPolo.Simple.DataAccess;
-using WaterPolo.Simple.DataCenter.DataEdit;
+﻿using DevExpress.Xpf.Core;
 
 namespace WaterPolo.Simple.DataCenter
 {
@@ -20,6 +16,7 @@ namespace WaterPolo.Simple.DataCenter
         }
 
         #region Expired
+
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
         //    var button = sender as Button;
@@ -61,7 +58,7 @@ namespace WaterPolo.Simple.DataCenter
         //            break;
         //    }
         //}
-        #endregion
 
+        #endregion
     }
 }

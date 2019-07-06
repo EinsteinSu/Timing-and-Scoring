@@ -19,16 +19,9 @@ namespace WaterPolo.Simple.DisplayConsole
             XmlConfigurator.Configure();
             var rootFolder = Path.Combine(RootPath, "Data");
             var settigns = SettingsHelper.LoadData<DisplaySettings>(rootFolder, "settings.config") ??
-                           new DisplaySettings
-                           {
-                               X = 0,
-                               Y = 0,
-                               Width = 1920,
-                               Height = 1080,
-                               ListeningPort = 1234
-                           };
-            Top = settigns.Y;
-            Left = settigns.X;
+                           DisplaySettings.InitialDisplaySettings();
+            Top = settigns.Top;
+            Left = settigns.Left;
             Width = settigns.Width;
             Height = settigns.Height;
         }

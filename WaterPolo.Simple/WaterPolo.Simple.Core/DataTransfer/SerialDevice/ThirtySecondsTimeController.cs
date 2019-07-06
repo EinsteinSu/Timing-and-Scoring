@@ -21,7 +21,7 @@ namespace WaterPolo.Simple.Core.DataTransfer.SerialDevice
             var thrity = new SerialPortThirtySecondsData();
             var data = ints[0].ToString("X").PadLeft(2, '0');
             thrity.Seconds = data.ToInt();
-            thrity.IsStopped = ints[2] == 0xFB;
+            //thrity.IsStopped = ints[2] == 0xFB;
             DisplayData?.Invoke(thrity);
         }
     }

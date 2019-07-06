@@ -5,7 +5,7 @@
     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
     xmlns:common="clr-namespace:WaterPolo.Simple.Core.Control.Common"
-    xmlns:local="clr-namespace:WaterPolo.Simple.DataCenter" 
+    xmlns:local="clr-namespace:WaterPolo.Simple.DataCenter"
     x:Class="WaterPolo.Simple.DataCenter.MainWindow"
     xmlns:edit="clr-namespace:WaterPolo.Simple.DataCenter.DataEdit.EditWindow"
     xmlns:mvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
@@ -13,18 +13,18 @@
     <dx:ThemedWindow.Resources>
         <DataTemplate x:Key="features">
             <Grid>
-                <Button Margin="5" Content="{Binding Name}" Command="{Binding ClickCommand}"/>
+                <Button Margin="5" Content="{Binding Name}" Command="{Binding ClickCommand}" />
             </Grid>
         </DataTemplate>
     </dx:ThemedWindow.Resources>
     <dx:ThemedWindow.DataContext>
-        <local:MainWindowViewModel/>
+        <local:MainWindowViewModel />
     </dx:ThemedWindow.DataContext>
     <mvvm:Interaction.Behaviors>
         <dx:DialogService DialogWindowStartupLocation="CenterOwner" x:Name="Teams">
             <dx:DialogService.ViewTemplate>
                 <DataTemplate>
-                    <edit:TeamEdit/>
+                    <edit:TeamEdit />
                 </DataTemplate>
             </dx:DialogService.ViewTemplate>
             <dx:DialogService.DialogStyle>
@@ -37,7 +37,7 @@
         <dx:DialogService DialogWindowStartupLocation="CenterOwner" x:Name="Players">
             <dx:DialogService.ViewTemplate>
                 <DataTemplate>
-                    <edit:PlayerEdit/>
+                    <edit:PlayerEdit />
                 </DataTemplate>
             </dx:DialogService.ViewTemplate>
             <dx:DialogService.DialogStyle>
@@ -47,13 +47,26 @@
                 </Style>
             </dx:DialogService.DialogStyle>
         </dx:DialogService>
+        <dx:DialogService DialogWindowStartupLocation="CenterOwner" x:Name="Schedules">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <edit:ScheduleEdit />
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:DXDialogWindow">
+                    <Setter Property="Width" Value="500" />
+                    <Setter Property="Height" Value="500" />
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>
     </mvvm:Interaction.Behaviors>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding CurrentFeature.Name}" Margin="5" FontSize="20"/>
+        <TextBlock Text="{Binding CurrentFeature.Name}" Margin="5" FontSize="20" />
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
@@ -72,15 +85,19 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackPanel Margin="5" Orientation="Horizontal">
-                    <Button Margin="5" Content="Refresh"  Command="{Binding RefreshCommand}"/>
-                    <Button Margin="5" Content="Add"  Command="{Binding AddCommand}"/>
-                    <Button Margin="5" Content="Edit"  Command="{Binding EditCommand}"/>
-                    <Button Margin="5" Content="Delete"  Command="{Binding DeleteCommand}"/>
-                    <Button Margin="5" Content="Save"  Command="{Binding SaveCommand}"/>
-                    <Button Margin="5" Content="Import"  Command="{Binding ImportCommand}"/>
-                    <Button Margin="5" Content="Export"  Command="{Binding ExportCommand}"/>
+                    <Button Margin="5" Content="Refresh" Command="{Binding RefreshCommand}" />
+                    <Button Margin="5" Content="Add" Command="{Binding AddCommand}" />
+                    <!--<Button Margin="5" Content="Edit" Command="{Binding EditCommand}" />-->
+                    <Button Margin="5" Content="Delete" Command="{Binding DeleteCommand}" />
+                    <Button Margin="5" Content="Save" Command="{Binding SaveCommand}" />
+                    <Button Margin="5" Content="Import" Command="{Binding ImportCommand}" />
+                    <Button Margin="5" Content="Export" Command="{Binding ExportCommand}" />
+                    <Button Margin="5" Content="Copy" Command="{Binding CopyCommand}" />
+                    <Button Margin="5" Content="Paste" Command="{Binding PasteCommand}" />
                 </StackPanel>
-                <dxg:GridControl CurrentItem="{Binding CurrentFeature.DataManager.CurrentItem,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="AddNew" Grid.Row="1" ItemsSource="{Binding ItemSource}" x:Name="GridControl">
+                <dxg:GridControl
+                    CurrentItem="{Binding CurrentFeature.DataManager.CurrentItem,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                    AutoGenerateColumns="AddNew" Grid.Row="1" ItemsSource="{Binding ItemSource}" x:Name="GridControl">
                     <dxg:GridControl.View>
                         <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" />
                     </dxg:GridControl.View>

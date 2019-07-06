@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DevExpress.Mvvm;
 using WaterPolo.Simple.Core.Timing;
 using WaterPolo.Simple.Core.Timing.Interface;
@@ -11,26 +7,20 @@ namespace WaterPolo.Simple.Core.Control
 {
     public class TimingViewModel : ViewModelBase
     {
-        private string _displayTime;
-        private readonly TimingController timing;
+        private readonly TimingController _timing;
         private int _displayFontSize;
+        private string _displayTime;
 
-        public TimingViewModel(long totalTime, TimingType type = TimingType.Decrease, bool showTimeWhenInitialized = false)
+        public TimingViewModel(long totalTime, TimingType type = TimingType.Decrease,
+            bool showTimeWhenInitialized = false)
         {
-            timing = new TimingController
+            _timing = new TimingController
             {
                 InitializeSeconds = totalTime,
                 Type = type,
-                DisplayAction = time =>
-                {
-                    DisplayTime = time;
-                }
-
+                DisplayAction = time => { DisplayTime = time; },
             };
-            if (showTimeWhenInitialized)
-            {
-                DisplayTime = timing.DisplayTime;
-            }
+            if (showTimeWhenInitialized) DisplayTime = _timing.DisplayTime;
             _displayFontSize = 10;
             ResetCommand = new DelegateCommand(Reset);
             PauseCommand = new DelegateCommand(Pause, () => IsStarted);
@@ -39,6 +29,13 @@ namespace WaterPolo.Simple.Core.Control
         }
 
         public Action<string> TimingChanged { get; set; }
+
+        public Action Timesup
+        {
+            get => _timing?.TimesupAction;
+            set => _timing.TimesupAction = value;
+        }
+
         public string DisplayTime
         {
             get => _displayTime;
@@ -68,7 +65,7 @@ namespace WaterPolo.Simple.Core.Control
         public void Start()
         {
             IsStarted = true;
-            timing.Start();
+            _timing.Start();
         }
 
         public void CleanDisplay()
@@ -77,18 +74,20 @@ namespace WaterPolo.Simple.Core.Control
             DisplayTime = "";
         }
 
+        public Action Reseted { get; set; }
         public void Reset()
         {
             IsStarted = false;
-            timing.Reset();
-            DisplayTime = timing.DisplayTime;
-            timing.Pause();
+            _timing.Reset();
+            DisplayTime = _timing.DisplayTime;
+            _timing.Pause();
+            Reseted?.Invoke();
         }
 
         public void Pause()
         {
             IsStarted = false;
-            timing.Pause();
+            _timing.Pause();
         }
     }
 }

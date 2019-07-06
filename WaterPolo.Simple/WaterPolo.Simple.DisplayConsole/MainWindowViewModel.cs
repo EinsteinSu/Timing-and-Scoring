@@ -4,63 +4,111 @@ using System.ComponentModel;
 using System.IO;
 using System.Net.Sockets;
 using System.Text;
-using System.Windows;
+using System.Windows.Input;
 using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
 using log4net;
 using Newtonsoft.Json;
 using WaterPolo.Simple.Core;
+using WaterPolo.Simple.Core.Control;
 using WaterPolo.Simple.Core.DataTransfer;
 using WaterPolo.Simple.Core.DataTransfer.Interface;
-using WaterPolo.Simple.Core.Display;
 using WaterPolo.Simple.Core.Display.RawData;
 
 namespace WaterPolo.Simple.DisplayConsole
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        private MatchModel _match;
-        private SocketController controller;
         private static readonly ILog Log = LogManager.GetLogger("Display Console");
+        private SocketController _controller;
+        private MatchModel _match;
+        private DisplaySettings _settigns;
+        private string rootFolder;
+        protected string RootPath = AppDomain.CurrentDomain.BaseDirectory;
+
         public MainWindowViewModel()
         {
-            var dep = new DependencyObject();
             //if (!DesignerProperties.GetIsInDesignMode(dep))
             //{
-            //    CreateTestData();
+                //CreateTestData();
             //}
             LoadCommand = new DelegateCommand(Load, true);
+            //KeyDownCommand = new DelegateCommand(() => { MessageBox.Show("Key"); });
         }
-
-        protected string RootPath = System.AppDomain.CurrentDomain.BaseDirectory;
-        private DisplaySettings _settigns;
 
         public DelegateCommand LoadCommand { get; set; }
 
+        private IDialogService DialogService => GetService<IDialogService>();
+
+        public DisplaySettings Settigns
+        {
+            get => _settigns;
+            set => SetProperty(ref _settigns, value, () => Settigns);
+        }
+
+        public MatchModel Match
+        {
+            get => _match;
+            set => SetProperty(ref _match, value, () => Match);
+        }
+
+        //public DelegateCommand KeyDownCommand { get; set; }
+
+        public void KeyDown(Key key)
+        {
+            switch (key)
+            {
+                case Key.S:
+                    LoadSettings();
+                    break;
+            }
+        }
+
+
+        protected void LoadSettings()
+        {
+            #region  Create Buttons
+
+            var okCommand = new UICommand
+            {
+                Caption = "Ok",
+                IsCancel = false,
+                IsDefault = true,
+                Command = new DelegateCommand<CancelEventArgs>(
+                    x => { }, x => true)
+            };
+            var cancelCommand = new UICommand
+            {
+                Caption = "Close",
+                IsCancel = true
+            };
+
+            #endregion
+
+            var result = DialogService.ShowDialog(new List<UICommand> {okCommand, cancelCommand},
+                "Settings", _settigns);
+
+            if (result == okCommand) _settigns.SaveData(rootFolder, "Settings.config");
+        }
+
         public void Load()
         {
-            string rootFolder = Path.Combine(RootPath, "Data");
-            Settigns = SettingsHelper.LoadData<DisplaySettings>(rootFolder, "settings.config") ?? new DisplaySettings
-            {
-                X = 0,
-                Y = 0,
-                Width = 1920,
-                Height = 1080,
-                ListeningPort = 1234,
-                Compacity = 2048
-            };
-            controller = new SocketController(Settigns.Compacity);
-            controller.StartListening(new DataProcess((message) =>
+            rootFolder = Path.Combine(RootPath, "Data");
+            Settigns = SettingsHelper.LoadData<DisplaySettings>(rootFolder, "settings.config") ??
+                       DisplaySettings.InitialDisplaySettings();
+            _controller = new SocketController(Settigns.Campacity);
+            _controller.StartListening(new DataProcess(message =>
             {
                 Log.Debug(message);
                 //todo: save settings, display data
                 var data = JsonConvert.DeserializeObject<MatchRaw>(message);
-                if (data != null)
-                {
-                    Match = TransferDataConvert.ConvertToMatchModel(data);
-                    //RaisePropertiesChanged("Match");
-                }
+                if (data != null) Match = TransferDataConvert.ConvertToMatchModel(data);
             }), Settigns.ListeningPort);
+        }
+
+        ~MainWindowViewModel()
+        {
+            Log?.Info("Stop listening.");
+            _controller?.StopListening();
         }
 
         internal class DataProcess : IRequestProcess
@@ -86,25 +134,8 @@ namespace WaterPolo.Simple.DisplayConsole
             }
         }
 
-        ~MainWindowViewModel()
-        {
-            Log?.Info("Stop listening.");
-            controller?.StopListening();
-        }
-
-        public DisplaySettings Settigns
-        {
-            get => _settigns;
-            set => SetProperty(ref _settigns, value, () => Settigns);
-        }
-
-        public MatchModel Match
-        {
-            get => _match;
-            set => SetProperty(ref _match, value, () => Match);
-        }
-
         #region Create Test Data
+
         private void CreateTestData()
         {
             Match = new MatchModel();
@@ -140,7 +171,7 @@ namespace WaterPolo.Simple.DisplayConsole
 
             team.Players = players;
         }
-        #endregion
 
+        #endregion
     }
 }

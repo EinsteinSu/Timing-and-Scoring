@@ -1,17 +1,17 @@
 ﻿<UserControl
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:common="clr-namespace:WaterPolo.Simple.Core.Control.Common"
-             xmlns:Display="clr-namespace:WaterPolo.Simple.Core.Display;assembly=WaterPolo.Simple.Core" 
-             x:Class="WaterPolo.Simple.Core.Control.MatchDisplayControl"
-             mc:Ignorable="d"
-             d:DesignHeight="1080" d:DesignWidth="1920">
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:common="clr-namespace:WaterPolo.Simple.Core.Control.Common"
+    xmlns:control="clr-namespace:WaterPolo.Simple.Core.Control;assembly=WaterPolo.Simple.Core"
+    x:Class="WaterPolo.Simple.Core.Control.MatchDisplayControl"
+    mc:Ignorable="d"
+    d:DesignHeight="1080" d:DesignWidth="1920">
     <UserControl.Resources>
-        <common:VisibilityConverter x:Key="visibilityConvert" />
+        <common:VisibilityConverter x:Key="VisibilityConvert" />
 
-        <DataTemplate x:Key="playerTemplate">
+        <DataTemplate x:Key="PlayerTemplate">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="13*" />
@@ -22,19 +22,21 @@
                     <ColumnDefinition Width="10*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="{Binding Number}" HorizontalAlignment="Center" VerticalAlignment="Center"
-                           FontSize="42" FontWeight="Bold" />
-                <TextBlock FontSize="42" Text="{Binding Name}" Margin="5,0,0,0" Grid.Column="1" VerticalAlignment="Center" 
+                           FontSize="42" FontWeight="Bold" Foreground="Yellow" />
+                <TextBlock FontSize="42" Text="{Binding Name}" Margin="5,0,0,0" Grid.Column="1"
+                           VerticalAlignment="Center" Foreground="Yellow"
                            FontWeight="Bold" />
                 <Ellipse Height="35" Width="35" Fill="Yellow"
-                         Visibility="{Binding Foul1, Converter={StaticResource visibilityConvert}}"
+                         Visibility="{Binding Foul1, Converter={StaticResource VisibilityConvert}}"
                          HorizontalAlignment="Center" Grid.Column="2" VerticalAlignment="Center" />
                 <Ellipse Height="35" Width="35" Fill="Yellow"
-                         Visibility="{Binding Foul2, Converter={StaticResource visibilityConvert}}"
+                         Visibility="{Binding Foul2, Converter={StaticResource VisibilityConvert}}"
                          HorizontalAlignment="Center" Grid.Column="3" VerticalAlignment="Center" />
                 <Ellipse Height="35" Width="35" Fill="Red"
-                         Visibility="{Binding Foul3, Converter={StaticResource visibilityConvert}}"
+                         Visibility="{Binding Foul3, Converter={StaticResource VisibilityConvert}}"
                          HorizontalAlignment="Center" Grid.Column="4" VerticalAlignment="Center" />
-                <TextBlock  FontSize="42" Grid.Column="5" Foreground="Red"  Text="{Binding FoulTimeDisplay}" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <TextBlock FontSize="42" Grid.Column="5" Foreground="Red" Text="{Binding FoulTimeDisplay}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Grid>
         </DataTemplate>
     </UserControl.Resources>
@@ -46,7 +48,7 @@
         </LinearGradientBrush>
     </UserControl.Background>
     <UserControl.DataContext>
-        <Display:MatchModel/>
+        <control:MatchModel />
     </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
@@ -66,35 +68,40 @@
                 <ColumnDefinition Width="15*" />
             </Grid.ColumnDefinitions>
             <Image Grid.Row="0" Grid.Column="0" Source="{Binding TeamA.Image}" />
-            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding TeamA.Name}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="100" FontFamily="Segoe UI Black" Foreground="White"/>
-            <TextBlock Grid.Row="0" Grid.Column="2" Foreground="#FFF5F516" Text="{Binding TotalTime}" FontSize="160" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Black"/>
-            <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding TeamB.Name}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="100" FontFamily="Segoe UI Black" Foreground="White"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding TeamA.Name}" VerticalAlignment="Center"
+                       HorizontalAlignment="Center" FontSize="100" FontFamily="Segoe UI Black" Foreground="White" />
+            <TextBlock Grid.Row="0" Grid.Column="2" Foreground="#FFF5F516" Text="{Binding TotalTime}" FontSize="160"
+                       VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Black" />
+            <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding TeamB.Name}" VerticalAlignment="Center"
+                       HorizontalAlignment="Center" FontSize="100" FontFamily="Segoe UI Black" Foreground="White" />
             <Image Grid.Row="0" Grid.Column="4" Source="{Binding TeamB.Image}" />
             <Grid Grid.Row="1" Grid.Column="0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="70" Foreground="Blue" Text="WHITE">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="70" Foreground="Blue"
+                           Text="WHITE">
                     <TextBlock.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF60AAD4" Offset="0"/>
-                            <GradientStop Color="#FF3A94C7" Offset="1"/>
+                            <GradientStop Color="#FF60AAD4" Offset="0" />
+                            <GradientStop Color="#FF3A94C7" Offset="1" />
                         </LinearGradientBrush>
                     </TextBlock.Background>
                 </TextBlock>
                 <TextBlock Grid.Row="1" Text="{Binding TeamA.PauseTime}" VerticalAlignment="Center"
-                           HorizontalAlignment="Center" FontSize="70" Foreground="Yellow"/>
+                           HorizontalAlignment="Center" FontSize="70" Foreground="Yellow" />
 
             </Grid>
             <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding TeamA.Score}" VerticalAlignment="Center"
-                       HorizontalAlignment="Center" Foreground="White" FontSize="160" FontFamily="Segoe UI Black"/>
+                       HorizontalAlignment="Center" Foreground="White" FontSize="160" FontFamily="Segoe UI Black" />
             <Grid Grid.Row="1" Grid.Column="2">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBlock Text="{Binding CourtToString}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75" FontFamily="Segoe UI Black" Foreground="#FF6EEA5A" />
+                <TextBlock Text="{Binding CourtToString}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="75" FontFamily="Segoe UI Black" Foreground="#FF6EEA5A" />
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*" />
@@ -103,9 +110,13 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="{Binding TeamA.Timeout}" Foreground="Yellow" VerticalAlignment="Center"
                                HorizontalAlignment="Center" FontFamily="Segoe UI Black" FontSize="80" />
-                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red" FontFamily="Segoe UI Black" FontSize="50"><Run Text="TIMEOUT"/></TextBlock>
-                    <TextBlock Grid.Column="2" Text="{Binding TeamB.Timeout}" VerticalAlignment="Center" Foreground="Yellow"
-                               HorizontalAlignment="Center" FontFamily="Segoe UI Black" FontSize="80"/>
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red"
+                               FontFamily="Segoe UI Black" FontSize="50">
+                        <Run Text="TIMEOUT" />
+                    </TextBlock>
+                    <TextBlock Grid.Column="2" Text="{Binding TeamB.Timeout}" VerticalAlignment="Center"
+                               Foreground="Yellow"
+                               HorizontalAlignment="Center" FontFamily="Segoe UI Black" FontSize="80" />
                 </Grid>
             </Grid>
             <TextBlock Grid.Row="1" Grid.Column="3" Text="{Binding TeamB.Score}" VerticalAlignment="Center"
@@ -115,15 +126,17 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Text=" BLUE " FontSize="70">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Text=" BLUE "
+                           FontSize="70">
                     <TextBlock.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF095E85" Offset="0"/>
-                            <GradientStop Color="#FF56BCEC" Offset="1"/>
+                            <GradientStop Color="#FF095E85" Offset="0" />
+                            <GradientStop Color="#FF56BCEC" Offset="1" />
                         </LinearGradientBrush>
                     </TextBlock.Background>
                 </TextBlock>
-                <TextBlock Grid.Row="1" Text="{Binding TeamB.PauseTime}" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="1" Text="{Binding TeamB.PauseTime}" VerticalAlignment="Center" HorizontalAlignment="Center"
+                           FontSize="70" Foreground="Yellow"/>
             </Grid>
         </Grid>
         <Border Grid.Row="1" BorderBrush="White" BorderThickness="2">
@@ -134,8 +147,10 @@
                 </Grid.ColumnDefinitions>
                 <Border BorderBrush="White" BorderThickness="0,0,1,0">
                     <Grid>
-                        <ListBox ItemTemplate="{StaticResource playerTemplate}" ItemsSource="{Binding TeamA.Players}"
-                                 BorderThickness="0" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                        <ListBox ItemTemplate="{StaticResource PlayerTemplate}" ItemsSource="{Binding TeamA.Players}"
+                                 BorderThickness="0" Background="Transparent"
+                                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                 ScrollViewer.VerticalScrollBarVisibility="Disabled">
                             <ListBox.ItemContainerStyle>
                                 <Style TargetType="{x:Type ListBoxItem}">
                                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -146,8 +161,10 @@
                 </Border>
                 <Border BorderBrush="White" BorderThickness="1,0,0,0" Grid.Column="1">
                     <Grid>
-                        <ListBox ItemTemplate="{StaticResource playerTemplate}" ItemsSource="{Binding TeamB.Players}"
-                                 BorderThickness="0" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                        <ListBox ItemTemplate="{StaticResource PlayerTemplate}" ItemsSource="{Binding TeamB.Players}"
+                                 BorderThickness="0" Background="Transparent"
+                                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                 ScrollViewer.VerticalScrollBarVisibility="Disabled">
                             <ListBox.ItemContainerStyle>
                                 <Style TargetType="{x:Type ListBoxItem}">
                                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />

@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using DevExpress.Mvvm;
-using WaterPolo.Simple.Core.Control;
-using WaterPolo.Simple.Core.Display.Interface;
+using WaterPolo.Simple.Core.Display;
 using WaterPolo.Simple.Core.Timing.Interface;
 
-namespace WaterPolo.Simple.Core.Display
+namespace WaterPolo.Simple.Core.Control
 {
     public class MatchModel : ViewModelBase
     {
@@ -16,30 +15,23 @@ namespace WaterPolo.Simple.Core.Display
         private TeamModel _teamB;
         private int _thirtySeconds;
         private string _totalTime;
-        private TimingViewModel _timingControl;
 
         public MatchModel()
         {
             TotalTime = TotalTimeValue;
             ThirtySeconds = ThirtySecondsValue;
 
-            _timingControl = new TimingViewModel(480, TimingType.Decrease, true)
+            TimingControl = new TimingViewModel(480, TimingType.Decrease, true)
             {
-                TimingChanged = (time) =>
+                TimingChanged = time =>
                 {
-                    if (time == "0:00")
-                    {
-                        TotalTime = string.Empty;
-                    }
-                    else
-                    {
-                        TotalTime = time;
-                    }
+                    TotalTime = time;
                 },
                 DisplayFontSize = 80
             };
 
             #region for designing the UI
+
             //_teamA = new TeamModel { Name = "CHN", PauseTime = "1:00", Timeout = 1 };
             //_teamA.Players = new List<PlayerModel>();
             //for (int i = 0; i < 13; i++)
@@ -48,19 +40,25 @@ namespace WaterPolo.Simple.Core.Display
             //}
 
             //_teamB = new TeamModel { Name = "USA" };
+
             #endregion
         }
 
-        public TimingViewModel TimingControl
-        {
-            get => _timingControl;
-            set => _timingControl = value;
-        }
+        public TimingViewModel TimingControl { get; set; }
+
+        public Action TotalTimeChanged { get; set; }
 
         public string TotalTime
         {
             get => _totalTime;
-            set => SetProperty(ref _totalTime, value, () => TotalTime);
+            set
+            {
+                if (_totalTime != null && !_totalTime.Equals(value))
+                {
+                    TotalTimeChanged?.Invoke();
+                }
+                SetProperty(ref _totalTime, value, () => TotalTime);
+            }
         }
 
         public int Court
@@ -69,7 +67,24 @@ namespace WaterPolo.Simple.Core.Display
             set => SetProperty(ref _court, value, () => Court);
         }
 
-        public string CourtToString => Court.ToString();
+        public string CourtToString
+        {
+            get
+            {
+                switch (Court)
+                {
+                    case 1:
+                        return "1st";
+                    case 2:
+                        return "2nd";
+                    case 3:
+                        return "3rd";
+                    case 4:
+                        return "4th";
+                }
+                return Court.ToInt() > 4 ? $"Extral({Court - 4})" : string.Empty;
+            }
+        }
 
         public bool IsTimeout
         {
@@ -89,10 +104,19 @@ namespace WaterPolo.Simple.Core.Display
             set => SetProperty(ref _teamB, value, () => TeamB);
         }
 
+
+        public Action<int> ThirtySecondsChanged { get; set; }
         public int ThirtySeconds
         {
             get => _thirtySeconds;
-            set => SetProperty(ref _thirtySeconds, value, () => ThirtySeconds);
+            set
+            {
+                if (value < _thirtySeconds)
+                {
+                    ThirtySecondsChanged?.Invoke(value);
+                }
+                SetProperty(ref _thirtySeconds, value, () => ThirtySeconds);
+            }
         }
     }
 }

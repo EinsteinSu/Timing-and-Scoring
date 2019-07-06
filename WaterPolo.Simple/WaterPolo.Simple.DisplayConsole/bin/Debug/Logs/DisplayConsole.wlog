@@ -1,2 +1,101 @@
-2019-07-05 11:25:03,984 [1] INFO  SocketController - Campacity is 2048
-2019-07-05 11:25:04,168 [3] INFO  SocketController - Listening ::1(1234)
+2019-07-06 08:42:13,274 [1] INFO  SocketController - Campacity is 10000
+2019-07-06 08:42:13,293 [8] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:06:23,718 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:06:23,743 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:06:54,598 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:06:54,623 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:07:29,360 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:07:29,383 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:08:04,905 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:08:04,934 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:08:46,516 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:08:46,547 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:09:48,824 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:09:48,851 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:11:46,919 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:11:46,944 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:12:21,738 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:12:21,762 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:12:45,075 [1] INFO  SocketController - Campacity is 0
+2019-07-06 09:12:45,096 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:13:30,214 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 09:13:30,246 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:14:01,364 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 09:14:01,392 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:15:11,739 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 09:15:11,765 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:16:35,143 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 09:16:35,166 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 09:17:30,804 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 09:17:30,825 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:26:05,651 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:26:05,680 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:26:24,276 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:26:24,304 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:26:48,327 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:26:48,353 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:27:29,486 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:27:29,509 [4] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:46:30,576 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:46:30,603 [6] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:48:04,813 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:48:04,834 [6] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:48:31,925 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:48:31,952 [6] INFO  SocketController - Listening ::1(1234)
+2019-07-06 14:49:30,628 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 14:49:30,646 [3] INFO  SocketController - Listening ::1(1234)
+2019-07-06 17:39:23,193 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 17:39:23,212 [7] INFO  SocketController - Listening ::1(1234)
+2019-07-06 17:42:03,843 [7] ERROR Display Console - Newtonsoft.Json.JsonReaderException: Unterminated string. Expected delimiter: ". Path 'TeamB.Players[14].Number', line 1, position 25000.
+   at Newtonsoft.Json.JsonTextReader.ReadStringIntoBuffer(Char quote)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at WaterPolo.Simple.DisplayConsole.MainWindowViewModel.<Load>b__21_0(String message) in C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\MainWindowViewModel.cs:line 103
+   at WaterPolo.Simple.DisplayConsole.MainWindowViewModel.DataProcess.Process(TcpClient client, NetworkStream stream, Byte[] bytesReceived) in C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\MainWindowViewModel.cs:line 128
+2019-07-06 17:45:06,290 [1] INFO  SocketController - Campacity is 50000
+2019-07-06 17:45:06,316 [8] INFO  SocketController - Listening ::1(1234)
+2019-07-06 17:46:06,925 [8] ERROR Display Console - Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got:  . Path 'TeamB.Players[2].Number', line 1, position 25000.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at WaterPolo.Simple.DisplayConsole.MainWindowViewModel.<Load>b__21_0(String message) in C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\MainWindowViewModel.cs:line 103
+   at WaterPolo.Simple.DisplayConsole.MainWindowViewModel.DataProcess.Process(TcpClient client, NetworkStream stream, Byte[] bytesReceived) in C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DisplayConsole\MainWindowViewModel.cs:line 128

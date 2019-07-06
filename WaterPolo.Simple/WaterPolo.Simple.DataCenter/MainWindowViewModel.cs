@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using DevExpress.Mvvm;
 using WaterPolo.Simple.DataCenter.DataEdit;
 
@@ -17,10 +13,12 @@ namespace WaterPolo.Simple.DataCenter
 
         public MainWindowViewModel()
         {
-            Features = new List<Feature>();
-            Features.Add(new Feature("Teams", FeatureClick) { DataManager = new TeamEdit() });
-            Features.Add(new Feature("Players", FeatureClick) { DataManager = new PlayerEdit() });
-            Features.Add(new Feature("Schedules", FeatureClick));
+            Features = new List<Feature>
+            {
+                new Feature("Teams", FeatureClick) {DataManager = new TeamEdit()},
+                new Feature("Players", FeatureClick) {DataManager = new PlayerEdit()},
+                new Feature("Schedules", FeatureClick) {DataManager = new ScheduleEdit()}
+            };
             RefreshCommand = new DelegateCommand(OnRefresh, () => CurrentFeature?.DataManager != null);
             AddCommand = new DelegateCommand(OnAdd, () => CurrentFeature?.DataManager != null);
             EditCommand = new DelegateCommand(OnEdit, () => CurrentFeature?.DataManager != null);
@@ -28,28 +26,9 @@ namespace WaterPolo.Simple.DataCenter
             SaveCommand = new DelegateCommand(OnSave, () => CurrentFeature?.DataManager != null);
             ImportCommand = new DelegateCommand(null, () => CurrentFeature?.DataManager != null);
             ExportCommand = new DelegateCommand(null, () => CurrentFeature?.DataManager != null);
+            CopyCommand = new DelegateCommand(OnCopy, () => CurrentFeature?.DataManager != null);
+            PasteCommand = new DelegateCommand(OnPaste, () => CurrentFeature?.DataManager != null);
         }
-
-        protected void FeatureClick(Feature feature)
-        {
-            CurrentFeature = feature;
-        }
-
-        #region Commands
-        public DelegateCommand AddCommand { get; set; }
-
-        public DelegateCommand RefreshCommand { get; set; }
-
-        public DelegateCommand DeleteCommand { get; set; }
-
-        public DelegateCommand EditCommand { get; set; }
-
-        public DelegateCommand ImportCommand { get; set; }
-
-        public DelegateCommand ExportCommand { get; set; }
-
-        public DelegateCommand SaveCommand { get; set; }
-        #endregion
 
         private IDialogService DialogService => GetService<IDialogService>(CurrentFeature.Name);
 
@@ -70,6 +49,22 @@ namespace WaterPolo.Simple.DataCenter
         }
 
         public List<Feature> Features { get; set; }
+
+        protected void FeatureClick(Feature feature)
+        {
+            CurrentFeature = feature;
+        }
+
+        protected void OnCopy()
+        {
+            CurrentFeature?.DataManager.Copy();
+        }
+
+        protected void OnPaste()
+        {
+            CurrentFeature?.DataManager.Paste();
+            OnRefresh();
+        }
 
         protected void OnAdd()
         {
@@ -122,9 +117,29 @@ namespace WaterPolo.Simple.DataCenter
 
         protected void OnEdit()
         {
-
         }
 
+        #region Commands
+
+        public DelegateCommand AddCommand { get; set; }
+
+        public DelegateCommand RefreshCommand { get; set; }
+
+        public DelegateCommand DeleteCommand { get; set; }
+
+        public DelegateCommand EditCommand { get; set; }
+
+        public DelegateCommand ImportCommand { get; set; }
+
+        public DelegateCommand ExportCommand { get; set; }
+
+        public DelegateCommand SaveCommand { get; set; }
+
+        public DelegateCommand CopyCommand { get; set; }
+
+        public DelegateCommand PasteCommand { get; set; }
+
+        #endregion
     }
 
     public class Feature : ViewModelBase
@@ -132,10 +147,7 @@ namespace WaterPolo.Simple.DataCenter
         public Feature(string name, Action<Feature> onClick)
         {
             Name = name;
-            ClickCommand = new DelegateCommand(() =>
-            {
-                onClick?.Invoke(this);
-            });
+            ClickCommand = new DelegateCommand(() => { onClick?.Invoke(this); });
         }
 
         public string Name { get; set; }

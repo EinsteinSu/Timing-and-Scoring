@@ -19,6 +19,7 @@ namespace WaterPolo.Simple.Core.Control
         #region Create Test Data
 
         private MatchModel Match;
+
         private void CreateTestData()
         {
             Match = new MatchModel();
@@ -54,6 +55,7 @@ namespace WaterPolo.Simple.Core.Control
 
             team.Players = players;
         }
+
         #endregion
     }
 }

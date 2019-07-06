@@ -2,11 +2,10 @@
 {
     public interface IDataManager
     {
-        void Add(object Item);
-
-        void Edit();
-
         object CurrentItem { get; set; }
+        void Add(object item);
+
+        void Edit(object item);
 
         object GetItemSource();
 
@@ -19,5 +18,9 @@
         void Export(string fileName);
 
         object NewItem();
+
+        void Copy();
+
+        void Paste();
     }
 }

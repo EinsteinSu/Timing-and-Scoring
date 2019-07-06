@@ -7,10 +7,11 @@
     xmlns:core="clr-namespace:WaterPolo.Simple.Core.Control;assembly=WaterPolo.Simple.Core.Control"
     xmlns:local="clr-namespace:WaterPolo.Simple.RefereeConsole" x:Class="WaterPolo.Simple.RefereeConsole.MainWindow"
     Title="Referee Console" Height="350" Width="525"
-    
-    WindowStartupLocation="CenterScreen" WindowState="Maximized" DataContext="{dxmvvm:ViewModelSource Type={x:Type local:MainWindowViewModel}}">
+
+    WindowStartupLocation="CenterScreen" WindowState="Maximized"
+    DataContext="{dxmvvm:ViewModelSource Type={x:Type local:MainWindowViewModel}}">
     <dx:ThemedWindow.Resources>
-        <coreConvert:VisibilityConverter x:Key="VisibilityConverter"/>
+        <coreConvert:VisibilityConverter x:Key="VisibilityConverter" />
     </dx:ThemedWindow.Resources>
     <Grid Visibility="{Binding ShowMatchController,Converter={StaticResource VisibilityConverter}}">
         <core:MatchControl DataContext="{Binding Match}" />

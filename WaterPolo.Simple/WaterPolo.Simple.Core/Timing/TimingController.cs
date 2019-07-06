@@ -33,6 +33,8 @@ namespace WaterPolo.Simple.Core.Timing
 
         public Action<string> DisplayAction { get; set; }
 
+        public Action TimesupAction { get; set; }
+
         public string DisplayTime => $"{Time.Minutes:0}:{Time.Seconds:00}";
 
 
@@ -81,9 +83,10 @@ namespace WaterPolo.Simple.Core.Timing
                     break;
                 }
 
-                if (Type == TimingType.Decrease && Time.Seconds == 0 && Time.Milliseconds == 0)
+                if (Type == TimingType.Decrease && Time.Minutes == 0 && Time.Seconds == 0 && Time.Milliseconds == 0)
                 {
                     Console.WriteLine("Time up");
+                    TimesupAction?.Invoke();
                     break;
                 }
 

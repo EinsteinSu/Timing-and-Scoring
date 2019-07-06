@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using DevExpress.Mvvm;
-using WaterPolo.Simple.Core.Control;
-using WaterPolo.Simple.Core.Display.Interface;
 
-namespace WaterPolo.Simple.Core.Display
+namespace WaterPolo.Simple.Core.Control
 {
     public class TeamModel : ViewModelBase
     {
@@ -13,31 +11,36 @@ namespace WaterPolo.Simple.Core.Display
         private List<PlayerModel> _players;
         private int _score;
         private int _timeout;
-        private TimingViewModel _timingControl;
+
         public TeamModel()
         {
             Score = 0;
             Timeout = 0;
-            _timingControl = new TimingViewModel(3)
+            TimingControl = new TimingViewModel(61)
             {
-                TimingChanged = (time) =>
+                TimingChanged = time =>
                 {
                     //todo: play sound
                     PauseTime = time;
                 },
-                DisplayFontSize = 50
+                DisplayFontSize = 50,
+                Timesup = () => { PauseTime = string.Empty; },
+                Reseted = () => { PauseTime = string.Empty; }
             };
         }
 
-        public TimingViewModel TimingControl
-        {
-            get => _timingControl;
-            set => _timingControl = value;
-        }
+        public TimingViewModel TimingControl { get; set; }
 
 
         //todo process the image url to specify to the root folder/image
-        public string Image { get; set; }
+        public string Image
+        {
+            get
+            {
+                return $"pack://application:,,,/WaterPolo.Simple.Core.Control;component/Flags/{Name}.png";
+
+            }
+        }
 
         public string Name
         {

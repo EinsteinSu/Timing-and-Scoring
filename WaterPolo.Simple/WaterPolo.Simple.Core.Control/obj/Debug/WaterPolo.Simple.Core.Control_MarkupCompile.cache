@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core.Control\obj\Debug\
+C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core.Control\obj\Debug\
 WaterPolo.Simple.Core.Control
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 3399737972
 
 121627348133
-171655600601
+161595261413
 MatchControl.xaml;MatchDisplayControl.xaml;TimingView.xaml;
 
 False

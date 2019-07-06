@@ -48,6 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDisplay.cs" />
+    <Compile Include="Migrations\201907011310153_InitialCreate.cs" />
+    <Compile Include="Migrations\201907011310153_InitialCreate.Designer.cs">
+      <DependentUpon>201907011310153_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907060801228_IncreaseDisplayNameLimitation.cs" />
+    <Compile Include="Migrations\201907060801228_IncreaseDisplayNameLimitation.Designer.cs">
+      <DependentUpon>201907060801228_IncreaseDisplayNameLimitation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Schedule.cs" />
     <Compile Include="Team.cs" />
@@ -58,6 +67,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201907011310153_InitialCreate.resx">
+      <DependentUpon>201907011310153_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907060801228_IncreaseDisplayNameLimitation.resx">
+      <DependentUpon>201907060801228_IncreaseDisplayNameLimitation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,10 +19,10 @@ namespace WaterPolo.Simple.Core.DataTransfer.SerialDevice
             var data = new SerialPortTotalTimeData
             {
                 Time = $"{ints[0].ToString("X").PadLeft(2, '0')}:{ints[1].ToString("X").PadLeft(2, '0')}",
-                Stopped = ints[2] == 0xFA,
-                ScoreA = ints[3],
-                ScoreB = ints[4],
-                Court = ints[5]
+                //Stopped = ints[2] == 0xFA,
+                //ScoreA = ints[3],
+                //ScoreB = ints[4],
+                //Court = ints[5]
             };
             DisplayData?.Invoke(data);
         }

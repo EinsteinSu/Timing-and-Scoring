@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Windows;
+using Newtonsoft.Json;
 using WaterPolo.Simple.DataAccess;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
@@ -15,10 +13,6 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
             Context.SaveChanges();
         }
 
-        public override void Edit()
-        {
-        }
-
         public override object GetItemSource()
         {
             return Context.Teams.ToList();
@@ -26,9 +20,28 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
 
         public override object NewItem()
         {
-            var team = new Team();
-            team.DisplayName = "CHN";
+            var team = new Team { DisplayName = "CHN" };
             return team;
+        }
+
+        protected override object ConvertDataFromText(string data)
+        {
+            return JsonConvert.DeserializeObject<Team>(data);
+        }
+
+        public override void Copy()
+        {
+            if (CurrentItem is Team item)
+            {
+                var team = new Team
+                {
+                    Name = item.Name,
+                    DisplayName = item.DisplayName,
+                    Flag = item.Flag
+                };
+                var data =JsonConvert.SerializeObject(team);
+                Clipboard.SetText(data);
+            }
         }
 
         public override void Delete()

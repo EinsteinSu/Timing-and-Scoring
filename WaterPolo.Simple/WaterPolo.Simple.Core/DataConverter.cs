@@ -4,8 +4,7 @@
     {
         public static int ToInt(string input)
         {
-            var result = 0;
-            int.TryParse(input, out result);
+            int.TryParse(input, out var result);
             return result;
         }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace WaterPolo.Simple.DataAccess
 {
@@ -15,6 +16,9 @@ namespace WaterPolo.Simple.DataAccess
 
         [Display(AutoGenerateField = false)] public Team Team { get; set; }
 
+        [Display(Name = "Upper case Name")]
+        public string UppercaseName => Name.ToUpper();
+
         [Display(Name = "Team Name")] public string TeamName => Team?.Name;
 
         [ForeignKey("Team")]
@@ -27,6 +31,6 @@ namespace WaterPolo.Simple.DataAccess
 
         [MaxLength(50)] public string Name { get; set; }
 
-        [Required] [MaxLength(12)] public string DisplayName { get; set; }
+        [Required] [MaxLength(20)] public string DisplayName { get; set; }
     }
 }

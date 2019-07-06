@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using WaterPolo.Simple.Core.Control;
 using WaterPolo.Simple.Core.Display.RawData;
 
-namespace WaterPolo.Simple.Core.Display
+namespace WaterPolo.Simple.Core
 {
     public class TransferDataConvert
     {

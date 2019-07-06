@@ -1,50 +1,33 @@
 ﻿using DevExpress.Mvvm;
+using Newtonsoft.Json;
 
 namespace WaterPolo.Simple.DisplayConsole
 {
-    public class DisplaySettings : ViewModelBase
+    public class DisplaySettings
     {
-        private double _x;
-        private double _y;
-        private double _height;
-        private double _width;
-        private int _listeningPort;
-        private int _compacity;
+        public double Left { get; set; }
 
-        public double X
-        {
-            get => _x;
-            set => SetProperty(ref _x, value, () => X);
-        }
+        public double Top { get; set; }
 
-        public double Y
-        {
-            get => _y;
-            set => SetProperty(ref _y, value, () => Y);
-        }
+        public double Height { get; set; }
 
-        public double Height
-        {
-            get => _height;
-            set => SetProperty(ref _height, value, () => Height);
-        }
+        public double Width { get; set; }
 
-        public double Width
-        {
-            get => _width;
-            set => SetProperty(ref _width, value, () => Width);
-        }
+        public int ListeningPort { get; set; }
 
-        public int ListeningPort
-        {
-            get => _listeningPort;
-            set => SetProperty(ref _listeningPort, value, () => ListeningPort);
-        }
+        public int Campacity { get; set; }
 
-        public int Compacity
+        public static DisplaySettings InitialDisplaySettings()
         {
-            get => _compacity;
-            set => SetProperty(ref _compacity, value, () => Compacity);
+            return new DisplaySettings
+            {
+                Left = 0,
+                Top = 0,
+                Width = 1920,
+                Height = 1080,
+                ListeningPort = 1234,
+                Campacity = 50000
+            };
         }
     }
 }

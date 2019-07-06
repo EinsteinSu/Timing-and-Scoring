@@ -1,4 +1,7 @@
-﻿using DevExpress.Mvvm;
+﻿using System.Data.Entity;
+using System.Windows;
+using DevExpress.Mvvm;
+using Newtonsoft.Json;
 using WaterPolo.Simple.DataAccess;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
@@ -9,9 +12,13 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
         protected WaterPoloDataContext Context = new WaterPoloDataContext();
 
 
-        public abstract void Add(object Item);
+        public abstract void Add(object item);
 
-        public abstract void Edit();
+        public virtual void Edit(object item)
+        {
+            Context.Entry(item).State = EntityState.Modified;
+            Context.SaveChanges();
+        }
 
 
         public object CurrentItem
@@ -36,6 +43,25 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
         }
 
         public abstract object NewItem();
+        public virtual void Copy()
+        {
+            if (CurrentItem != null)
+            {
+                var data = JsonConvert.SerializeObject(CurrentItem, Formatting.None, new JsonSerializerSettings
+                {
+                    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                });
+                Clipboard.SetText(data);
+            }
+        }
+
+        public virtual void Paste()
+        {
+            var data = ConvertDataFromText(Clipboard.GetText());
+            Add(data);
+        }
+
+        protected abstract object ConvertDataFromText(string data);
 
         public abstract void Delete();
     }

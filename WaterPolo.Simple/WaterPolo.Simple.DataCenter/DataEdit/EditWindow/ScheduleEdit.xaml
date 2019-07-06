@@ -5,9 +5,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:editWindow="clr-namespace:WaterPolo.Simple.DataCenter.DataEdit.EditWindow"
     x:Class="WaterPolo.Simple.DataCenter.DataEdit.EditWindow.ScheduleEdit"
     mc:Ignorable="d"
     d:DesignHeight="300" d:DesignWidth="500">
+    <UserControl.Resources>
+        <editWindow:PlayerConvert x:Key="PlayerConvert" />
+    </UserControl.Resources>
     <Grid>
 
         <dxlc:LayoutControl>
@@ -26,21 +30,28 @@
                 <dxlc:LayoutGroup>
                     <dxlc:LayoutGroup Orientation="Vertical" Header="White Cap" View="GroupBox">
                         <dxlc:LayoutItem>
-                            <Button Content="Choose" Command="{Binding ChooseTeamCommand}" CommandParameter="White"
-                                    Tag="White" />
+                            <dxe:ComboBoxEdit EditValue="{Binding SelectedTeamA,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMember="Name" ItemsSource="{Binding Teams}"/>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem>
-                            <dxe:ListBoxEdit Height="100" DisplayMember="Name"
-                                             ItemsSource="{Binding TeamA.Players,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                            <dxe:ListBoxEdit Height="200" EditValue="{Binding SelectedTeamAPlayers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource PlayerConvert}}" ItemsSource="{Binding TeamAPlayers}" DisplayMember="Name" >
+                                <dxe:ListBoxEdit.StyleSettings>
+                                    <dxe:CheckedListBoxEditStyleSettings HighlightedTextBackground="Yellow"
+                                                                         HighlightedTextForeground="Black" />
+                                </dxe:ListBoxEdit.StyleSettings>
+                            </dxe:ListBoxEdit>
                         </dxlc:LayoutItem>
                     </dxlc:LayoutGroup>
                     <dxlc:LayoutGroup Orientation="Vertical" Header="Blue Cap" View="GroupBox">
                         <dxlc:LayoutItem>
-                            <Button Content="Choose" Command="{Binding ChooseTeamCommand}" CommandParameter="Blue"
-                                    Tag="Blue" />
+                            <dxe:ComboBoxEdit EditValue="{Binding  SelectedTeamB,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMember="Name" ItemsSource="{Binding Teams}"/>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem>
-                            <dxe:ListBoxEdit Height="100" ItemsSource="{Binding TeamB.Players}" DisplayMember="Name" />
+                            <dxe:ListBoxEdit Height="200" EditValue="{Binding SelectedTeamBPlayers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource PlayerConvert}}" ItemsSource="{Binding TeamBPlayers}" DisplayMember="Name">
+                                <dxe:ListBoxEdit.StyleSettings>
+                                    <dxe:CheckedListBoxEditStyleSettings HighlightedTextBackground="Yellow"
+                                                                         HighlightedTextForeground="Black" />
+                                </dxe:ListBoxEdit.StyleSettings>
+                            </dxe:ListBoxEdit>
                         </dxlc:LayoutItem>
                     </dxlc:LayoutGroup>
                 </dxlc:LayoutGroup>

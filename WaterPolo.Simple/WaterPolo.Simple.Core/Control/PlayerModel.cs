@@ -1,6 +1,7 @@
-﻿using DevExpress.Mvvm;
+﻿using System;
+using DevExpress.Mvvm;
 
-namespace WaterPolo.Simple.Core.Display
+namespace WaterPolo.Simple.Core.Control
 {
     public class PlayerModel : ViewModelBase
     {
@@ -23,14 +24,15 @@ namespace WaterPolo.Simple.Core.Display
             set => SetProperty(ref _name, value, () => Name);
         }
 
+        public Action<int, int> FoulsChanged { get; set; }
+
         public int Fouls
         {
             get => _fouls;
             set
             {
+                FoulsChanged?.Invoke(_fouls, value);
                 SetProperty(ref _fouls, value, () => Fouls);
-                FoulTime = TwSeconds;
-                RaisePropertiesChanged("FoulTime");
             }
         }
 
