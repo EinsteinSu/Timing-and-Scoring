@@ -58,7 +58,9 @@ namespace WaterPolo.Simple.Core
                 Name = model.Name,
                 FoulTime = model.FoulTime,
                 Fouls = model.Fouls,
-                Number = model.Number
+                Number = model.Number,
+                Foul3 = model.Foul3,
+                Goals = model.Goals
             };
         }
 
@@ -90,7 +92,9 @@ namespace WaterPolo.Simple.Core
                 Name = raw.Name,
                 FoulTime = raw.FoulTime,
                 Fouls = raw.Fouls,
-                Number = raw.Number
+                Number = raw.Number,
+                Foul3 = raw.Foul3,
+                Goals = raw.Goals
             };
         }
 

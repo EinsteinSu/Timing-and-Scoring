@@ -24,14 +24,15 @@ namespace WaterPolo.Simple.DataCenter
             EditCommand = new DelegateCommand(OnEdit, () => CurrentFeature?.DataManager != null);
             DeleteCommand = new DelegateCommand(OnDelete, () => CurrentFeature?.DataManager != null);
             SaveCommand = new DelegateCommand(OnSave, () => CurrentFeature?.DataManager != null);
-            ImportCommand = new DelegateCommand(null, () => CurrentFeature?.DataManager != null);
-            ExportCommand = new DelegateCommand(null, () => CurrentFeature?.DataManager != null);
+            ImportCommand = new DelegateCommand(OnImport, () => CurrentFeature?.DataManager != null);
+            ExportCommand = new DelegateCommand(OnExport, () => CurrentFeature?.DataManager != null);
             CopyCommand = new DelegateCommand(OnCopy, () => CurrentFeature?.DataManager != null);
             PasteCommand = new DelegateCommand(OnPaste, () => CurrentFeature?.DataManager != null);
         }
 
         private IDialogService DialogService => GetService<IDialogService>(CurrentFeature.Name);
-
+        private ISaveFileDialogService SaveFileDialogService => GetService<ISaveFileDialogService>();
+        private IOpenFileDialogService OpenFileDialogService => GetService<IOpenFileDialogService>();
         public Feature CurrentFeature
         {
             get => _currentFeature;
@@ -64,6 +65,30 @@ namespace WaterPolo.Simple.DataCenter
         {
             CurrentFeature?.DataManager.Paste();
             OnRefresh();
+        }
+
+        protected void OnImport()
+        {
+            OpenFileDialogService.Filter = "Csv Files (.csv)|*.csv|All Files (*.*)|*.*";
+            OpenFileDialogService.FilterIndex = 1;
+            var dialogResult = OpenFileDialogService.ShowDialog();
+            if (dialogResult)
+            {
+                CurrentFeature?.DataManager?.Import(OpenFileDialogService.GetFullFileName());
+            }
+        }
+
+        protected void OnExport()
+        {
+            SaveFileDialogService.DefaultExt = "csv";
+            SaveFileDialogService.DefaultFileName = CurrentFeature?.Name;
+            SaveFileDialogService.Filter = "Csv Files (.csv)|*.csv|All Files (*.*)|*.*";
+            SaveFileDialogService.FilterIndex = 1;
+            var dialogResult = SaveFileDialogService.ShowDialog();
+            if (dialogResult)
+            {
+                CurrentFeature?.DataManager?.Export(SaveFileDialogService.GetFullFileName());
+            }
         }
 
         protected void OnAdd()

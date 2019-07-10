@@ -1,4 +1,5 @@
-﻿using System.IO.Ports;
+﻿using System;
+using System.IO.Ports;
 using System.Threading.Tasks;
 using log4net;
 
@@ -9,7 +10,7 @@ namespace WaterPolo.Simple.Core.DataTransfer.SerialDevice
         private readonly int _port;
         private readonly SerialPort _serialPort;
 
-        private static readonly ILog Log = LogManager.GetLogger("SerialPortController");
+        protected static readonly ILog Log = LogManager.GetLogger("SerialPortController");
         public SerialPortController(int port, int bitRate = 4800, int dataBits = 8)
         {
             _port = port;

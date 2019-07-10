@@ -16,7 +16,7 @@ namespace WaterPolo.Simple.Core.Control
         {
             Score = 0;
             Timeout = 0;
-            TimingControl = new TimingViewModel(61)
+            TimingControl = new TimingViewModel(60)
             {
                 TimingChanged = time =>
                 {
@@ -83,6 +83,69 @@ namespace WaterPolo.Simple.Core.Control
         {
             foreach (var player in Players)
                 player.DecreaseFoulTime();
+        }
+
+        public void RegisterTwentySeconds()
+        {
+            if (Players != null)
+            {
+                foreach (var player in Players)
+                {
+                    player.FoulsChanged = (oldValue, newValue) =>
+                    {
+                        if (oldValue < newValue) player.FoulTime = 20;
+                    };
+                }
+            }
+        }
+
+        public void RegisterGoalsChanged()
+        {
+            if (Players != null)
+            {
+                foreach (var player in Players)
+                {
+                    player.GoalsChanged = () =>
+                    {
+                        RaisePropertyChanged("TeamGoals");
+                        Score = CalculateScore();
+                    };
+                }
+            }
+        }
+
+        public int CalculateScore()
+        {
+            int score = 0;
+            if (Players != null)
+            {
+                foreach (var player in Players)
+                {
+                    score += player.Goals;
+                }
+            }
+
+            return score;
+        }
+
+        public string TeamGoals
+        {
+            get
+            {
+                var playerGoals = string.Empty;
+                if (Players != null)
+                {
+                    foreach (var player in Players)
+                    {
+                        if (player.Goals > 0)
+                            playerGoals += $"{player.Number}({player.Goals})";
+                    }
+                }
+
+                if (!string.IsNullOrEmpty(playerGoals))
+                    return $"Goals: {playerGoals}";
+                return string.Empty;
+            }
         }
     }
 }

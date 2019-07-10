@@ -11,6 +11,7 @@ namespace WaterPolo.Simple.Socket.Tester
     {
         private static void Main(string[] args)
         {
+            Console.WriteLine("Click S to send a message to client, Click L to start listening the port.");
             XmlConfigurator.Configure();
             while (true)
                 if (Console.KeyAvailable)
@@ -23,12 +24,12 @@ namespace WaterPolo.Simple.Socket.Tester
                             Console.WriteLine("Enter an Ip Address");
                             var ipAddress = Console.ReadLine();
                             Console.WriteLine("Enter a port");
-                            port = int.Parse(Console.ReadLine());
-                            SocketHelper.SendMessage(ipAddress, port, "Testing", 512);
+                            port = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+                            SocketHelper.SendMessage(ipAddress, port, "Testing");
                             break;
                         case ConsoleKey.L:
                             Console.WriteLine("Enter a port");
-                            port = int.Parse(Console.ReadLine());
+                            port = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
                             var controller = new SocketController(1024);
                             controller.StartListening(new DataProcess(), port);
                             break;

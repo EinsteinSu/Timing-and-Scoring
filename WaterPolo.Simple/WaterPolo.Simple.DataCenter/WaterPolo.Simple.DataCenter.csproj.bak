@@ -35,27 +35,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Images.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.CodeView.v19.1" />
-    <Reference Include="DevExpress.Xpf.Core.v19.1" />
-    <Reference Include="DevExpress.Data.v19.1" />
-    <Reference Include="DevExpress.Office.v19.1.Core" />
-    <Reference Include="DevExpress.RichEdit.v19.1.Core" />
-    <Reference Include="DevExpress.RichEdit.v19.1.Export" />
-    <Reference Include="DevExpress.Printing.v19.1.Core" />
-    <Reference Include="DevExpress.Mvvm.v19.1" />
-    <Reference Include="DevExpress.Xpf.Printing.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Grid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Grid.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.LayoutControl.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v19.1" />
+    <Reference Include="DevExpress.Xpf.Core.v17.1" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.Office.v17.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.Mvvm.v17.1" />
+    <Reference Include="DevExpress.Xpf.Printing.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v17.1.Core, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v17.1" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -82,23 +84,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataEdit\DataManagerBase.cs" />
-    <Compile Include="DataEdit\DataManagerBase1.cs" />
     <Compile Include="DataEdit\DataService.cs" />
-    <Compile Include="DataEdit\EditWindow\DialogWindow.xaml.cs">
-      <DependentUpon>DialogWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="DataEdit\EditWindow\EditWindowViewModelBase.cs" />
-    <Compile Include="DataEdit\EditWindow\IDialogWindow.cs" />
     <Compile Include="DataEdit\EditWindow\PlayerConvert.cs" />
     <Compile Include="DataEdit\EditWindow\PlayerEdit.xaml.cs">
       <DependentUpon>PlayerEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataEdit\EditWindow\PlayerEditViewModel.cs" />
-    <Compile Include="DataEdit\EditWindow\PlayerEditWindowViewModel.cs" />
-    <Compile Include="DataEdit\EditWindow\PlayerSelect.xaml.cs">
-      <DependentUpon>PlayerSelect.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="DataEdit\EditWindow\PlayerSelectEditViewModel.cs" />
     <Compile Include="DataEdit\EditWindow\ScheduleEdit.xaml.cs">
       <DependentUpon>ScheduleEdit.xaml</DependentUpon>
     </Compile>
@@ -106,23 +97,13 @@
     <Compile Include="DataEdit\EditWindow\TeamEdit.xaml.cs">
       <DependentUpon>TeamEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataEdit\EditWindow\TeamEditWindowViewModel.cs" />
     <Compile Include="DataEdit\PlayerEdit.cs" />
     <Compile Include="DataEdit\ScheduleEdit.cs" />
     <Compile Include="DataEdit\TeamEdit.cs" />
-    <Compile Include="DataEdit\TeamEdit1.cs" />
     <Compile Include="WindowBackup.xaml.cs">
       <DependentUpon>WindowBackup.xaml</DependentUpon>
     </Compile>
-    <Page Include="DataEdit\EditWindow\DialogWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="DataEdit\EditWindow\PlayerEdit.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="DataEdit\EditWindow\PlayerSelect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

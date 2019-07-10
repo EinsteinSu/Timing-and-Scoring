@@ -4,33 +4,27 @@
         <name>DevExpress.Xpf.DocumentViewer.v17.1.Core</name>
     </assembly>
     <members>
-        <member name="T:DevExpress.Xpf.DocumentViewer.CommandBarStyle">
+        <member name="T:DevExpress.Xpf.DocumentViewer.TextSearchDirection">
 
             <summary>
-                <para>Enumerates values that specify the type of a viewer control's toolbar.
+                <para>Enumerates values that specify the search direction.
 </para>
             </summary>
 
         </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.CommandBarStyle.Bars">
+        <member name="F:DevExpress.Xpf.DocumentViewer.TextSearchDirection.Backward">
             <summary>
-                <para>A viewer control has a standard Bars toolbar.
-</para>
-            </summary>
+                <para>Search will be done backwards.
 
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.CommandBarStyle.None">
-            <summary>
-                <para>A viewer control has no toolbar.
 </para>
             </summary>
 
 
         </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.CommandBarStyle.Ribbon">
+        <member name="F:DevExpress.Xpf.DocumentViewer.TextSearchDirection.Forward">
             <summary>
-                <para>A viewer control has a Ribbon toolbar.
+                <para>Search will be done forwards.
+
 </para>
             </summary>
 
@@ -150,332 +144,6 @@
 
 
         </member>
-        <member name="T:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames">
-
-            <summary>
-                <para>Contains default item captions displayed in the interface elements of document viewers.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.#ctor">
-            <summary>
-                <para>Initializes a new instance of the DefaultBarManagerItemNames class.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Bar">
-            <summary>
-                <para>Returns "bMain".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ClockwiseRotate">
-            <summary>
-                <para>Returns "bClockwiseRotate". Corresponds to the <b>Clockwise rotate</b> command in the document's context menu.
-
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Close">
-            <summary>
-                <para>Returns "bClose". Corresponds to the <b>Close</b> toolbar button.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.CounterClockwiseRotate">
-            <summary>
-                <para>Returns "bCounterClockwiseRotate".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DefaultPageCategory">
-            <summary>
-                <para>Returns "rcMain".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapCollapseTopLevelNode">
-            <summary>
-                <para>Returns "bDocumentMapCollapseTopLevelNode".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapExpandCurrentNode">
-            <summary>
-                <para>Returns "bDocumentMapExpandCurrentNode".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapExpandCurrentNodeButton">
-            <summary>
-                <para>Returns "bDocumentMapExpandCurrentNodeButton".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapExpandTopLevelNode">
-            <summary>
-                <para>Returns "bDocumentMapExpandTopLevelNode".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapGoToBookmark">
-            <summary>
-                <para>Returns "bDocumentMapGoToBookmark".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapHideAfterUseNode">
-            <summary>
-                <para>Returns "bDocumentMapHideAfterUseNode".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapShowOptions">
-            <summary>
-                <para>Returns "bDocumentMapOptions".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.FileRibbonGroup">
-            <summary>
-                <para>Returns "rgFile".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.FindRibbonGroup">
-            <summary>
-                <para>Returns "rgFind".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.MainRibbonPage">
-            <summary>
-                <para>Returns "rpMain".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.NavigationRibbonGroup">
-            <summary>
-                <para>Returns "rgNavigation".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.NextPage">
-            <summary>
-                <para>Returns "bNextPage". Corresponds to the <b>Next Page</b> toolbar button that switches to the next document page.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.NextView">
-            <summary>
-                <para>Returns "bNextView". Corresponds to the <b>Next view</b> command in the document's context menu.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Open">
-            <summary>
-                <para>Returns "bOpen". Corresponds to the <b>Open</b> toolbar button that invokes the <b>Open</b> dialog allowing you to select a document to be loaded.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Pagination">
-            <summary>
-                <para>Returns "bPagination".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.PreviousPage">
-            <summary>
-                <para>Returns "bPreviousPage". Corresponds to the <b>Previous Page</b> toolbar button that switches to the previous document page.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.PreviousView">
-            <summary>
-                <para>Returns "bPreviousView". Corresponds to the <b>Previous view</b> command in the document's context menu.
-
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.RotateRibbonGroup">
-            <summary>
-                <para>Returns "rgRotate".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Search">
-            <summary>
-                <para>Returns "bSearch". Corresponds to the <b>Search</b> toolbar button that invokes the search panel allowing you to find a specified text throughout a document.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchCheckCaseSensitive">
-            <summary>
-                <para>Returns "bCheckCaseSensitive". Corresponds to the <b>Case Sensitive</b> option in the search panel that specifies whether to use case-sensitive search.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchCheckWholeWord">
-            <summary>
-                <para>Returns "bCheckWholeWord". Corresponds to the <b>Whole Words Only</b> option in the search panel that specifies whether to match the whole word during the search.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchClose">
-            <summary>
-                <para>Returns "bSearchClose". Corresponds to the <b>Close</b> button in the search panel.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchNext">
-            <summary>
-                <para>Returns "bSearchNext". Corresponds to the <b>Next</b> button in the search panel that starts searching or searches down again.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchPrevious">
-            <summary>
-                <para>Returns "bSearchPrev". Corresponds to the <b>Previous</b> button in the search panel that searches backwards.
-
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchSettings">
-            <summary>
-                <para>Returns "bSearchSettings". Corresponds to the <b>Settings</b> button in the search panel that provides a submenu with search options.
-
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Zoom">
-            <summary>
-                <para>Returns "bZoom". Corresponds to the <b>Zoom</b> toolbar button that zooms a document to a specific zoom factor.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ZoomIn">
-            <summary>
-                <para>Returns "bZoomIn". Corresponds to the <b>Zoom In</b> toolbar button that increases a document's current zoom factor.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ZoomOut">
-            <summary>
-                <para>Returns "bZoomOut". Corresponds to the <b>Zoom Out</b> toolbar button that decreases a document's current zoom factor.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ZoomRibbonGroup">
-            <summary>
-                <para>Returns "rgZoom".
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
         <member name="T:DevExpress.Xpf.DocumentViewer.PageDisplayMode">
 
             <summary>
@@ -508,450 +176,35 @@
 
 
         </member>
-        <member name="T:DevExpress.Xpf.DocumentViewer.ScrollCommand">
+        <member name="T:DevExpress.Xpf.DocumentViewer.CommandBarStyle">
 
             <summary>
-                <para>Specifies the type of scrolling performed by the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentViewerControl.ScrollCommand"/>.
+                <para>Enumerates values that specify the type of a viewer control's toolbar.
 </para>
             </summary>
 
         </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.End">
+        <member name="F:DevExpress.Xpf.DocumentViewer.CommandBarStyle.Bars">
             <summary>
-                <para>Scroll to the end of a displayed document.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.Home">
-            <summary>
-                <para>Scroll to the beginning of a displayed document.
+                <para>A viewer control has a standard Bars toolbar.
 </para>
             </summary>
 
 
         </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineDown">
+        <member name="F:DevExpress.Xpf.DocumentViewer.CommandBarStyle.None">
             <summary>
-                <para>Scroll a displayed document one line down.
+                <para>A viewer control has no toolbar.
 </para>
             </summary>
 
 
         </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineLeft">
+        <member name="F:DevExpress.Xpf.DocumentViewer.CommandBarStyle.Ribbon">
             <summary>
-                <para>Scroll a displayed document one line left.
+                <para>A viewer control has a Ribbon toolbar.
 </para>
             </summary>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineRight">
-            <summary>
-                <para>Scroll a displayed document one line right.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineUp">
-            <summary>
-                <para>Scroll a displayed document one line up.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.PageDown">
-            <summary>
-                <para>Scroll a displayed document one page down.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.PageUp">
-            <summary>
-                <para>Scroll a displayed document one page up.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="T:DevExpress.Xpf.DocumentViewer.DocumentMapCommands">
-
-            <summary>
-                <para>Provides access to document map commands.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.#ctor">
-            <summary>
-                <para>Initializes a new instance of a DocumentMapCommands class.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CanExecuteCollapseTopLevelNodesCommand(DevExpress.Xpf.Grid.TreeListView,System.Windows.Input.CanExecuteRoutedEventArgs)">
-            <summary>
-                <para>Identifies whether or not it is possible to execute the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CollapseTopLevelNodesCommand"/> command.
-</para>
-            </summary>
-            <param name="d">
-		 
-
-            </param>
-            <param name="e">
-		 
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CanExecuteExpandTopLevelNodesCommand(DevExpress.Xpf.Grid.TreeListView,System.Windows.Input.CanExecuteRoutedEventArgs)">
-            <summary>
-                <para>Identifies whether or not it is possible to execute the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExpandTopLevelNodesCommand"/> command.
-</para>
-            </summary>
-            <param name="d">
-		 
-
-            </param>
-            <param name="e">
-		 
-
-            </param>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CollapseTopLevelNodesCommand">
-            <summary>
-                <para>Returns a command that collapses top-level nodes of the Document Map.
-</para>
-            </summary>
-            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
-</value>
-
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExecuteGoToNodeCommand(System.Windows.FrameworkElement,System.Windows.Input.ExecutedRoutedEventArgs)">
-            <summary>
-                <para>Executes the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.GoToNodeCommand"/> command.
-</para>
-            </summary>
-            <param name="d">
-		 
-
-            </param>
-            <param name="e">
-		 
-
-            </param>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExpandCurrentNodeCommand">
-            <summary>
-                <para>Returns a command that expands the currently selected node of the Document Map.
-</para>
-            </summary>
-            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExpandTopLevelNodesCommand">
-            <summary>
-                <para>Returns a command that expands top-level nodes of the Document Map.
-</para>
-            </summary>
-            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.GoToNodeCommand">
-            <summary>
-                <para>Returns a command that navigates to a document element corresponding to the selected Document Map's node.
-</para>
-            </summary>
-            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
-</value>
-
-
-        </member>
-        <member name="T:DevExpress.Xpf.DocumentViewer.DocumentMapSettings">
-
-            <summary>
-                <para>Provides access to document map settings.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.#ctor">
-            <summary>
-                <para>Initializes a new instance of a DocumentMapSettings class with the default settings.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.ActualHideAfterUse">
-            <summary>
-                <para>Gets the actual value of the Document Map visibility after using it for navigation purposes.
-</para>
-            </summary>
-            <value><b>true</b>, if the Document Map is hidden after using it; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.ActualHideAfterUseProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> 
-</returns>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.GoToCommand">
-            <summary>
-                <para>Returns a command that navigates to a document element corresponding to the selected bookmark.
-</para>
-            </summary>
-            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.HideAfterUse">
-            <summary>
-                <para>Gets or sets a value that specifies whether the Document Map should be hidden after using it for navigation purposes. This is a dependency property.
-</para>
-            </summary>
-            <value>
-<b>true</b>, to hide the Document Map after using it for navigation purposes; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.HideAfterUseProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> 
-</returns>
-
-
-        </member>
-        <member name="E:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.Invalidate">
-            <summary>
-                <para>Fires after any modifications in the Document Map are made by changing Document Map settings.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.Source">
-            <summary>
-                <para>Gets a collection of the Document Map's items. This is a dependency property.
-</para>
-            </summary>
-            <value>A source of objects represented as items in the Document Map.
-</value>
-
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.UpdateProperties">
-            <summary>
-                <para>Updates the properties of the Document Map.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.WrapLongLines">
-            <summary>
-                <para>Gets or sets a value that specifies whether long lines should be wrapped in the Document Map. This is a dependency property.
-</para>
-            </summary>
-            <value>A <see cref="Nullable&lt;Boolean&gt;"/> object that specifies whether to wrap long lines in the Document Map.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.WrapLongLinesProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="T:DevExpress.Xpf.DocumentViewer.DocumentMapControl">
-
-            <summary>
-                <para>Represents the Document Map Control.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapControl.#ctor">
-            <summary>
-                <para>Initializes a new instance of a DocumentMapControl class with the default settings.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSettings">
-            <summary>
-                <para>Provides access to the actual Document Map settings. 
-
-</para>
-            </summary>
-            <value>An object that specifies the actual Document Map settings.
-
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSettingsProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSource">
-            <summary>
-                <para>Gets an actual collection of the DocumentMapControl's items. This is a dependency property.
-</para>
-            </summary>
-            <value>A source of objects represented as items in the Document Map.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSourceProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HideAfterUse">
-            <summary>
-                <para>Gets or sets a value that specifies whether the Document Map should be hidden after using it for navigation purposes.
-</para>
-            </summary>
-            <value><b>true</b>, to hide the Document Map after using it for navigation purposes; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HideAfterUseProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HighlightedItem">
-            <summary>
-                <para>Gets the Document Map's currently highlighted item. This is a dependency property.
-</para>
-            </summary>
-            <value>An object that specifies the currently highlighted item.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HighlightedItemProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapControl.OnApplyTemplate">
-            <summary>
-                <para>Called after the template is completely generated and attached to the visual tree.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.Settings">
-            <summary>
-                <para>Provides access to Document Map settings.
-</para>
-            </summary>
-            <value>An object that specifies Document Map settings.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.SettingsProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.TreeViewStyle">
-            <summary>
-                <para>Gets or sets a style applied to the Document Map's tree view. This is a dependency property.
-</para>
-            </summary>
-            <value>A Style object providing corresponding style settings.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.TreeViewStyleProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
-
-
-        </member>
-        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.WrapLongLines">
-            <summary>
-                <para>Gets or sets a value that specifies whether long lines should be wrapped in the Document Map. This is a dependency property.
-</para>
-            </summary>
-            <value><b>true</b>, to wrap long lines; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.WrapLongLinesProperty">
-            <summary>
-                <para>Identifies the  dependency property.
-</para>
-            </summary>
-            <returns> </returns>
 
 
         </member>
@@ -1802,29 +1055,776 @@
 
 
         </member>
-        <member name="T:DevExpress.Xpf.DocumentViewer.TextSearchDirection">
+        <member name="T:DevExpress.Xpf.DocumentViewer.ScrollCommand">
 
             <summary>
-                <para>Enumerates values that specify the search direction.
+                <para>Specifies the type of scrolling performed by the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentViewerControl.ScrollCommand"/>.
 </para>
             </summary>
 
         </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.TextSearchDirection.Backward">
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.End">
             <summary>
-                <para>Search will be done backwards.
-
+                <para>Scroll to the end of a displayed document.
 </para>
             </summary>
 
 
         </member>
-        <member name="F:DevExpress.Xpf.DocumentViewer.TextSearchDirection.Forward">
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.Home">
             <summary>
-                <para>Search will be done forwards.
+                <para>Scroll to the beginning of a displayed document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineDown">
+            <summary>
+                <para>Scroll a displayed document one line down.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineLeft">
+            <summary>
+                <para>Scroll a displayed document one line left.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineRight">
+            <summary>
+                <para>Scroll a displayed document one line right.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.LineUp">
+            <summary>
+                <para>Scroll a displayed document one line up.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.PageDown">
+            <summary>
+                <para>Scroll a displayed document one page down.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.ScrollCommand.PageUp">
+            <summary>
+                <para>Scroll a displayed document one page up.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.DocumentViewer.DocumentMapSettings">
+
+            <summary>
+                <para>Provides access to document map settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of a DocumentMapSettings class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.ActualHideAfterUse">
+            <summary>
+                <para>Gets the actual value of the Document Map visibility after using it for navigation purposes.
+</para>
+            </summary>
+            <value><b>true</b>, if the Document Map is hidden after using it; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.ActualHideAfterUseProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.GoToCommand">
+            <summary>
+                <para>Returns a command that navigates to a document element corresponding to the selected bookmark.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.HideAfterUse">
+            <summary>
+                <para>Gets or sets a value that specifies whether the Document Map should be hidden after using it for navigation purposes. This is a dependency property.
+</para>
+            </summary>
+            <value>
+<b>true</b>, to hide the Document Map after using it for navigation purposes; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.HideAfterUseProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.Invalidate">
+            <summary>
+                <para>Fires after any modifications in the Document Map are made by changing Document Map settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.Source">
+            <summary>
+                <para>Gets a collection of the Document Map's items. This is a dependency property.
+</para>
+            </summary>
+            <value>A source of objects represented as items in the Document Map.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.UpdateProperties">
+            <summary>
+                <para>Updates the properties of the Document Map.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.WrapLongLines">
+            <summary>
+                <para>Gets or sets a value that specifies whether long lines should be wrapped in the Document Map. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="Nullable&lt;Boolean&gt;"/> object that specifies whether to wrap long lines in the Document Map.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapSettings.WrapLongLinesProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.DocumentViewer.DocumentMapControl">
+
+            <summary>
+                <para>Represents the Document Map Control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of a DocumentMapControl class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSettings">
+            <summary>
+                <para>Provides access to the actual Document Map settings. 
 
 </para>
             </summary>
+            <value>An object that specifies the actual Document Map settings.
+
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSettingsProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSource">
+            <summary>
+                <para>Gets an actual collection of the DocumentMapControl's items. This is a dependency property.
+</para>
+            </summary>
+            <value>A source of objects represented as items in the Document Map.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.ActualSourceProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HideAfterUse">
+            <summary>
+                <para>Gets or sets a value that specifies whether the Document Map should be hidden after using it for navigation purposes.
+</para>
+            </summary>
+            <value><b>true</b>, to hide the Document Map after using it for navigation purposes; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HideAfterUseProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HighlightedItem">
+            <summary>
+                <para>Gets the Document Map's currently highlighted item. This is a dependency property.
+</para>
+            </summary>
+            <value>An object that specifies the currently highlighted item.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.HighlightedItemProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapControl.OnApplyTemplate">
+            <summary>
+                <para>Called after the template is completely generated and attached to the visual tree.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.Settings">
+            <summary>
+                <para>Provides access to Document Map settings.
+</para>
+            </summary>
+            <value>An object that specifies Document Map settings.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.SettingsProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.TreeViewStyle">
+            <summary>
+                <para>Gets or sets a style applied to the Document Map's tree view. This is a dependency property.
+</para>
+            </summary>
+            <value>A Style object providing corresponding style settings.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.TreeViewStyleProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapControl.WrapLongLines">
+            <summary>
+                <para>Gets or sets a value that specifies whether long lines should be wrapped in the Document Map. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, to wrap long lines; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DocumentMapControl.WrapLongLinesProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.DocumentViewer.DocumentMapCommands">
+
+            <summary>
+                <para>Provides access to document map commands.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.#ctor">
+            <summary>
+                <para>Initializes a new instance of a DocumentMapCommands class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CanExecuteCollapseTopLevelNodesCommand(DevExpress.Xpf.Grid.TreeListView,System.Windows.Input.CanExecuteRoutedEventArgs)">
+            <summary>
+                <para>Identifies whether or not it is possible to execute the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CollapseTopLevelNodesCommand"/> command.
+</para>
+            </summary>
+            <param name="d">
+		 
+
+            </param>
+            <param name="e">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CanExecuteExpandTopLevelNodesCommand(DevExpress.Xpf.Grid.TreeListView,System.Windows.Input.CanExecuteRoutedEventArgs)">
+            <summary>
+                <para>Identifies whether or not it is possible to execute the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExpandTopLevelNodesCommand"/> command.
+</para>
+            </summary>
+            <param name="d">
+		 
+
+            </param>
+            <param name="e">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.CollapseTopLevelNodesCommand">
+            <summary>
+                <para>Returns a command that collapses top-level nodes of the Document Map.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExecuteGoToNodeCommand(System.Windows.FrameworkElement,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+                <para>Executes the <see cref="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.GoToNodeCommand"/> command.
+</para>
+            </summary>
+            <param name="d">
+		 
+
+            </param>
+            <param name="e">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExpandCurrentNodeCommand">
+            <summary>
+                <para>Returns a command that expands the currently selected node of the Document Map.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.ExpandTopLevelNodesCommand">
+            <summary>
+                <para>Returns a command that expands top-level nodes of the Document Map.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.DocumentViewer.DocumentMapCommands.GoToNodeCommand">
+            <summary>
+                <para>Returns a command that navigates to a document element corresponding to the selected Document Map's node.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames">
+
+            <summary>
+                <para>Contains default item captions displayed in the interface elements of document viewers.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DefaultBarManagerItemNames class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Bar">
+            <summary>
+                <para>Returns "bMain".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ClockwiseRotate">
+            <summary>
+                <para>Returns "bClockwiseRotate". Corresponds to the <b>Clockwise rotate</b> command in the document's context menu.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Close">
+            <summary>
+                <para>Returns "bClose". Corresponds to the <b>Close</b> toolbar button.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.CounterClockwiseRotate">
+            <summary>
+                <para>Returns "bCounterClockwiseRotate".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DefaultPageCategory">
+            <summary>
+                <para>Returns "rcMain".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapCollapseTopLevelNode">
+            <summary>
+                <para>Returns "bDocumentMapCollapseTopLevelNode".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapExpandCurrentNode">
+            <summary>
+                <para>Returns "bDocumentMapExpandCurrentNode".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapExpandCurrentNodeButton">
+            <summary>
+                <para>Returns "bDocumentMapExpandCurrentNodeButton".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapExpandTopLevelNode">
+            <summary>
+                <para>Returns "bDocumentMapExpandTopLevelNode".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapGoToBookmark">
+            <summary>
+                <para>Returns "bDocumentMapGoToBookmark".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapHideAfterUseNode">
+            <summary>
+                <para>Returns "bDocumentMapHideAfterUseNode".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.DocumentMapShowOptions">
+            <summary>
+                <para>Returns "bDocumentMapOptions".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.FileRibbonGroup">
+            <summary>
+                <para>Returns "rgFile".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.FindRibbonGroup">
+            <summary>
+                <para>Returns "rgFind".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.MainRibbonPage">
+            <summary>
+                <para>Returns "rpMain".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.NavigationRibbonGroup">
+            <summary>
+                <para>Returns "rgNavigation".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.NextPage">
+            <summary>
+                <para>Returns "bNextPage". Corresponds to the <b>Next Page</b> toolbar button that switches to the next document page.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.NextView">
+            <summary>
+                <para>Returns "bNextView". Corresponds to the <b>Next view</b> command in the document's context menu.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Open">
+            <summary>
+                <para>Returns "bOpen". Corresponds to the <b>Open</b> toolbar button that invokes the <b>Open</b> dialog allowing you to select a document to be loaded.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Pagination">
+            <summary>
+                <para>Returns "bPagination".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.PreviousPage">
+            <summary>
+                <para>Returns "bPreviousPage". Corresponds to the <b>Previous Page</b> toolbar button that switches to the previous document page.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.PreviousView">
+            <summary>
+                <para>Returns "bPreviousView". Corresponds to the <b>Previous view</b> command in the document's context menu.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.RotateRibbonGroup">
+            <summary>
+                <para>Returns "rgRotate".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Search">
+            <summary>
+                <para>Returns "bSearch". Corresponds to the <b>Search</b> toolbar button that invokes the search panel allowing you to find a specified text throughout a document.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchCheckCaseSensitive">
+            <summary>
+                <para>Returns "bCheckCaseSensitive". Corresponds to the <b>Case Sensitive</b> option in the search panel that specifies whether to use case-sensitive search.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchCheckWholeWord">
+            <summary>
+                <para>Returns "bCheckWholeWord". Corresponds to the <b>Whole Words Only</b> option in the search panel that specifies whether to match the whole word during the search.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchClose">
+            <summary>
+                <para>Returns "bSearchClose". Corresponds to the <b>Close</b> button in the search panel.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchNext">
+            <summary>
+                <para>Returns "bSearchNext". Corresponds to the <b>Next</b> button in the search panel that starts searching or searches down again.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchPrevious">
+            <summary>
+                <para>Returns "bSearchPrev". Corresponds to the <b>Previous</b> button in the search panel that searches backwards.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.SearchSettings">
+            <summary>
+                <para>Returns "bSearchSettings". Corresponds to the <b>Settings</b> button in the search panel that provides a submenu with search options.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.Zoom">
+            <summary>
+                <para>Returns "bZoom". Corresponds to the <b>Zoom</b> toolbar button that zooms a document to a specific zoom factor.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ZoomIn">
+            <summary>
+                <para>Returns "bZoomIn". Corresponds to the <b>Zoom In</b> toolbar button that increases a document's current zoom factor.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ZoomOut">
+            <summary>
+                <para>Returns "bZoomOut". Corresponds to the <b>Zoom Out</b> toolbar button that decreases a document's current zoom factor.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.DocumentViewer.DefaultBarManagerItemNames.ZoomRibbonGroup">
+            <summary>
+                <para>Returns "rgZoom".
+</para>
+            </summary>
+            <returns> </returns>
 
 
         </member>

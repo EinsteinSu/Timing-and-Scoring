@@ -18,6 +18,7 @@
     </Grid>
 
     <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:OpenFileDialogService Title="{Binding Title}"/>
         <dxmvvm:EventToCommand PassEventArgsToCommand="True" Command="{Binding KeyDownCommand}" EventName="KeyDown">
             <dxmvvm:EventToCommand.EventArgsConverter>
                 <coreConvert:KeyConverter />
@@ -40,6 +41,19 @@
             <dx:DialogService.ViewTemplate>
                 <DataTemplate>
                     <local:ScheduleSelectionView />
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:DXDialogWindow">
+                    <Setter Property="Width" Value="500" />
+                    <Setter Property="Height" Value="800" />
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>
+        <dx:DialogService DialogWindowStartupLocation="CenterOwner" x:Name="reset">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <local:ResetSettingsView />
                 </DataTemplate>
             </dx:DialogService.ViewTemplate>
             <dx:DialogService.DialogStyle>

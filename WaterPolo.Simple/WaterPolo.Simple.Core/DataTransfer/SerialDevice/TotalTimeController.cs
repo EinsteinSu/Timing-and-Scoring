@@ -16,6 +16,7 @@ namespace WaterPolo.Simple.Core.DataTransfer.SerialDevice
 
         protected override void ProcessData(int[] ints)
         {
+            //Console.WriteLine(string.Join(";", ints));
             var data = new SerialPortTotalTimeData
             {
                 Time = $"{ints[0].ToString("X").PadLeft(2, '0')}:{ints[1].ToString("X").PadLeft(2, '0')}",
@@ -24,6 +25,10 @@ namespace WaterPolo.Simple.Core.DataTransfer.SerialDevice
                 //ScoreB = ints[4],
                 //Court = ints[5]
             };
+            if (string.IsNullOrEmpty(data.Time))
+            {
+                Log.Warn($"Didn't get the time data, see the raw data: {string.Join("|", ints)}");
+            }
             DisplayData?.Invoke(data);
         }
     }

@@ -34,7 +34,7 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
             set
             {
                 SetProperty(ref _selectedTeamA, value, () => SelectedTeamA);
-                TeamAPlayers = DataService.GetPlayersByTeamId(_context, value.TeamId);
+                TeamAPlayers = DataService.GetPlayersByTeamId(_context, value.TeamId).OrderBy(o => o.OrderNumber).ToList();
                 Data.TeamA.Team = value;
             }
         }
@@ -52,7 +52,7 @@ namespace WaterPolo.Simple.DataCenter.DataEdit.EditWindow
             set
             {
                 SetProperty(ref _selectedTeamB, value, () => SelectedTeamB);
-                TeamBPlayers = DataService.GetPlayersByTeamId(_context, value.TeamId);
+                TeamBPlayers = DataService.GetPlayersByTeamId(_context, value.TeamId).OrderBy(o => o.OrderNumber).ToList();
                 Data.TeamB.Team = value;
             }
         }

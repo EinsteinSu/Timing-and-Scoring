@@ -21,16 +21,21 @@ namespace WaterPolo.Simple.DataAccess
 
         [Display(Name = "Team Name")] public string TeamName => Team?.Name;
 
+        public virtual ObservableCollection<TeamMatch> TeamMatches { get; set; }
+
         [ForeignKey("Team")]
         [Display(AutoGenerateField = false)]
         public int TeamId { get; set; }
 
         public int OrderNumber { get; set; }
 
-        public virtual ObservableCollection<TeamMatch> TeamMatches { get; set; }
-
         [MaxLength(50)] public string Name { get; set; }
 
         [Required] [MaxLength(20)] public string DisplayName { get; set; }
+
+        public override string ToString()
+        {
+            return $"{DisplayNumber} : {Name}";
+        }
     }
 }

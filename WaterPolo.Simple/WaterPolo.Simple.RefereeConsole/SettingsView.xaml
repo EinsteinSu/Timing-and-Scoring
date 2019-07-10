@@ -36,6 +36,18 @@
                 <dxlc:LayoutItem Label="20s Related to Total time">
                     <dxe:CheckEdit EditValue="{Binding Settings.TwentySecondsRelatedToTotalTime}"/>
                 </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="Auto Increase Pause Count">
+                    <dxe:CheckEdit EditValue="{Binding Settings.AutoIncreasePauseCount}"/>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="Send Message Interval">
+                    <dxe:TextEdit EditValue="{Binding Settings.SendMessageInterval}"></dxe:TextEdit>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="Debug Mode">
+                    <dxe:CheckEdit EditValue="{Binding Settings.DebugMode}"></dxe:CheckEdit>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="Score Related to Goals">
+                    <dxe:CheckEdit EditValue="{Binding Settings.ScoreRelatedGoals}"></dxe:CheckEdit>
+                </dxlc:LayoutItem>
             </dxlc:LayoutGroup>
         </dxlc:LayoutControl>
 

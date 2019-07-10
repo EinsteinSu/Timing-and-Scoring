@@ -19,6 +19,10 @@ namespace WaterPolo.Simple.DataAccess
         public int Score { get; set; }
 
         public virtual List<Player> Players { get; set; }
+
+        public int? CaptainPlayerId { get; set; }
+        //[ForeignKey("CaptainPlayerId")]
+        //public Player Captain { get; set; }
     }
 
     public enum CapColor

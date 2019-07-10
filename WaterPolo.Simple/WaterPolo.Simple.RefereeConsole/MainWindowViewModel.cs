@@ -15,7 +15,7 @@ using WaterPolo.Simple.Core;
 using WaterPolo.Simple.Core.Control;
 using WaterPolo.Simple.Core.DataTransfer;
 using WaterPolo.Simple.Core.DataTransfer.SerialDevice;
-using WaterPolo.Simple.Core.Display;
+using WaterPolo.Simple.Core.Display.RawData;
 using WaterPolo.Simple.DataAccess;
 
 namespace WaterPolo.Simple.RefereeConsole
@@ -23,17 +23,19 @@ namespace WaterPolo.Simple.RefereeConsole
     public class MainWindowViewModel : ViewModelBase
     {
         private static readonly ILog Log = LogManager.GetLogger("Referee Console");
-        private readonly WaterPoloDataContext _context = new WaterPoloDataContext();
+        private WaterPoloDataContext _context = new WaterPoloDataContext();
+
+        private string _currentDialogWindow = "schedule";
         private MatchModel _match;
         private ScheduleSelectionViewModel _selectionViewModel;
 
         private Task _sendMessageTask;
+        private SettingsRaw _settings;
         private bool _showMatchController;
         private bool _stop;
-
-        private string _currentDialogWindow = "schedule";
+        private ThirtySecondsTimeController _thirtySecondsDevice;
+        private TotalTimeController _totalTimeDevice;
         protected string RootPath = AppDomain.CurrentDomain.BaseDirectory;
-        private SettingsRaw _settings;
 
         public MainWindowViewModel()
         {
@@ -42,59 +44,21 @@ namespace WaterPolo.Simple.RefereeConsole
             LoadConfigures();
             if (!DesignerProperties.GetIsInDesignMode(dep))
             {
-                CreateTestData();
+                if (_settings.DebugMode)
+                    CreateTestData();
                 //LoadSchedule(6);
 
                 #region serial port devices
-                if (_settings.TotalTimeDevicePort > 0)
-                {
-                    var totalTimeDevice = new TotalTimeController(_settings.TotalTimeDevicePort)
-                    {
-                        DisplayData = data =>
-                        {
-                            if (Match != null)
-                            {
-                                Match.TotalTime = data.Time;
-                            }
-                        }
-                    };
-                    try
-                    {
-                        totalTimeDevice.StartListening();
-                    }
-                    catch (Exception e)
-                    {
-                        Log.Error("The total time device cannot be found", e);
-                    }
-                }
 
-                if (_settings.ThirtySecondsDevicePort > 0)
-                {
-                    var thirtySecondsDevice = new ThirtySecondsTimeController(_settings.ThirtySecondsDevicePort)
-                    {
-                        DisplayData = data =>
-                        {
-                            if (Match != null)
-                            {
-                                Match.ThirtySeconds = data.Seconds;
-                            }
-                        }
-                    };
-                    try
-                    {
-                        thirtySecondsDevice.StartListening();
-                    }
-                    catch (Exception e)
-                    {
-                        Log.Error("The thirty seconds time device cannot be found", e);
-                    }
-                }
+                InitializeTotalTimeDevice();
+                InitializeThirtySecondsDevice();
+
                 #endregion
-
             }
         }
 
         private IDialogService DialogService => GetService<IDialogService>(_currentDialogWindow);
+        private IOpenFileDialogService OpenFileDialogService => GetService<IOpenFileDialogService>();
 
         public MatchModel Match
         {
@@ -112,6 +76,52 @@ namespace WaterPolo.Simple.RefereeConsole
             set => SetProperty(ref _showMatchController, value, () => ShowMatchController);
         }
 
+        private void InitializeThirtySecondsDevice()
+        {
+            if (_settings.ThirtySecondsDevicePort > 0)
+            {
+                _thirtySecondsDevice?.EndListening();
+                _thirtySecondsDevice = new ThirtySecondsTimeController(_settings.ThirtySecondsDevicePort)
+                {
+                    DisplayData = data =>
+                    {
+                        if (Match != null) Match.ThirtySeconds = data.Seconds;
+                    }
+                };
+                try
+                {
+                    _thirtySecondsDevice.StartListening();
+                }
+                catch (Exception e)
+                {
+                    Log.Error("The thirty seconds time device cannot be found", e);
+                }
+            }
+        }
+
+        private void InitializeTotalTimeDevice()
+        {
+            if (_settings.TotalTimeDevicePort > 0)
+            {
+                _totalTimeDevice?.EndListening();
+                _totalTimeDevice = new TotalTimeController(_settings.TotalTimeDevicePort)
+                {
+                    DisplayData = data =>
+                    {
+                        if (Match != null) Match.TotalTime = data.Time;
+                    }
+                };
+                try
+                {
+                    _totalTimeDevice.StartListening();
+                }
+                catch (Exception e)
+                {
+                    Log.Error("The total time device cannot be found", e);
+                }
+            }
+        }
+
         public void KeyDown(Key key)
         {
             switch (key)
@@ -124,14 +134,110 @@ namespace WaterPolo.Simple.RefereeConsole
                     _currentDialogWindow = "settings";
                     LoadSettings();
                     break;
+                case Key.D:
+                    if (Match != null) Match.TotalTime = string.Empty;
+                    break;
+                case Key.R:
+                    _currentDialogWindow = "reset";
+                    Reset();
+                    break;
+                case Key.B:
+                    Backup();
+                    break;
+                case Key.E:
+                    Restore();
+                    break;
+            }
+        }
+
+        private void Restore()
+        {
+            OpenFileDialogService.Filter = "Backup Files (.bak)|*.bak|All Files (*.*)|*.*";
+            OpenFileDialogService.FilterIndex = 1;
+            var dialogResult = OpenFileDialogService.ShowDialog();
+            if (dialogResult)
+            {
+                var data = JsonConvert.DeserializeObject<MatchRaw>(
+                    File.ReadAllText(OpenFileDialogService.GetFullFileName()));
+                if (data != null)
+                {
+                    Match = TransferDataConvert.ConvertToMatchModel(data);
+                }
+            }
+        }
+
+        private void Backup()
+        {
+            if (Match != null)
+            {
+                var rootFolder = Path.Combine(RootPath, "Data");
+                File.WriteAllText(Path.Combine(rootFolder, "Backup.bak"), ConvertMatchToString());
             }
         }
 
         ~MainWindowViewModel()
         {
             _stop = true;
-
         }
+
+        private void SetTeamTimeoutControl(TeamModel team)
+        {
+            if (_settings.AutoIncreasePauseCount)
+                team.TimingControl.Started = () =>
+                {
+                    if (team.Timeout < 2)
+                        team.Timeout++;
+                };
+        }
+
+        #region Resets
+
+        private void Reset()
+        {
+            var settings = new ResetSettings();
+
+            #region  Create Buttons
+
+            var okCommand = new UICommand
+            {
+                Caption = "Ok",
+                IsCancel = false,
+                IsDefault = true,
+                Command = new DelegateCommand<CancelEventArgs>(
+                    x =>
+                    {
+                        //todo: load schedule by id
+                    }, true)
+            };
+            var cancelCommand = new UICommand
+            {
+                Caption = "Close",
+                IsCancel = true
+            };
+
+            #endregion
+
+            var result = DialogService.ShowDialog(new List<UICommand> { okCommand, cancelCommand },
+                "Reset", settings);
+            if (result == okCommand)
+            {
+                if (settings.ResetTotalTimeDevice)
+                    InitializeTotalTimeDevice();
+                if (settings.ResetThirtySecondsDevice)
+                    InitializeThirtySecondsDevice();
+                if (settings.ResetDataContext)
+                    _context = new WaterPoloDataContext();
+                if (settings.ResetSending)
+                {
+                    _stop = true;
+                    Thread.Sleep(1000);
+                    StartSendMessage();
+                }
+            }
+        }
+
+        #endregion
+
 
         #region Settings
 
@@ -140,7 +246,8 @@ namespace WaterPolo.Simple.RefereeConsole
         private void LoadConfigures()
         {
             var rootFolder = Path.Combine(RootPath, "Data");
-            _settings = SettingsHelper.LoadData<SettingsRaw>(rootFolder, "Configs.config") ?? SettingsRaw.InitialSettings();
+            _settings = SettingsHelper.LoadData<SettingsRaw>(rootFolder, "Configs.config") ??
+                        SettingsRaw.InitialSettings();
         }
 
         protected void LoadSettings()
@@ -217,28 +324,23 @@ namespace WaterPolo.Simple.RefereeConsole
         }
 
 
-
         private void DecreaseTwentySeconds()
         {
             Match.TeamA?.DecreaseFoulTimes();
             Match.TeamB?.DecreaseFoulTimes();
         }
+
         private void LoadSchedule(int scheduleId)
         {
             Match = new MatchModel
             {
                 TotalTime = "8:00",
-                Court = 1,
-
+                Court = 1
             };
             if (_settings.TwentySecondsRelatedToTotalTime)
-            {
                 Match.TotalTimeChanged = DecreaseTwentySeconds;
-            }
             else
-            {
                 Match.ThirtySecondsChanged = i => { DecreaseTwentySeconds(); };
-            }
             var schedule = _context.Schedules.Include(i => i.TeamA).Include(i => i.TeamB)
                 .Include(i => i.TeamA.Team)
                 .Include(i => i.TeamB.Team)
@@ -251,26 +353,45 @@ namespace WaterPolo.Simple.RefereeConsole
                 Match.TeamB = GetTeam(schedule.TeamB);
             }
 
-            if (_sendMessageTask == null && _settings.SendToDisplayConsole)
+            SetTeamTimeoutControl(Match.TeamA);
+            SetTeamTimeoutControl(Match.TeamB);
+            if (_sendMessageTask == null && _settings.SendToDisplayConsole) StartSendMessage();
+        }
+
+        private void StartSendMessage()
+        {
+            _sendMessageTask = new Task(() =>
             {
-                _sendMessageTask = new Task(() =>
+                Log.Info("Sending message thread has started.");
+                Log.Info($"Sending message interval is {_settings.SendMessageInterval}");
+                _stop = false;
+                while (true)
                 {
-                    Log.Info("Sending message thread has started.");
-                    while (true)
+                    if (Match != null)
                     {
-                        var data = JsonConvert.SerializeObject(TransferDataConvert.ConvertToMatchRaw(Match));
-                        Log.Debug($"Send Message: {data}");
-                        SocketHelper.SendMessage(_settings.IpAddress, _settings.Port, data, 50000);
-                        Thread.Sleep(300);
-                        if (_stop)
+                        var data = ConvertMatchToString();
+                        if (data.Length < 1024)
                         {
-                            Log.Info("Sending message thread has stopped.");
-                            break;
+                            Log.Error(data);
                         }
+                        Log.Debug($"Send Message: {data}");
+                        SocketHelper.SendMessage(_settings.IpAddress, _settings.Port, data);
                     }
-                });
-                _sendMessageTask.Start(TaskScheduler.Current);
-            }
+
+                    Thread.Sleep(_settings.SendMessageInterval);
+                    if (_stop)
+                    {
+                        Log.Info("Sending message thread has stopped.");
+                        break;
+                    }
+                }
+            });
+            _sendMessageTask.Start(TaskScheduler.Current);
+        }
+
+        private string ConvertMatchToString()
+        {
+            return JsonConvert.SerializeObject(TransferDataConvert.ConvertToMatchRaw(Match));
         }
 
         #endregion
@@ -279,12 +400,17 @@ namespace WaterPolo.Simple.RefereeConsole
 
         private TeamModel GetTeam(TeamMatch teamMatch)
         {
-            return new TeamModel
+            var team = new TeamModel
             {
                 Name = teamMatch.Team.DisplayName,
                 CapColor = teamMatch.CapColor.ToString(),
                 Players = GetPlayer(teamMatch)
             };
+            if (_settings.ScoreRelatedGoals)
+                team.RegisterGoalsChanged();
+            if (_settings.AutoShowTwentySeconds)
+                team.RegisterTwentySeconds();
+            return team;
         }
 
         private List<PlayerModel> GetPlayer(TeamMatch teamMatch)
@@ -297,16 +423,6 @@ namespace WaterPolo.Simple.RefereeConsole
                     Name = player.DisplayName,
                     Number = player.DisplayNumber
                 };
-                if (_settings.AutoShowTwentySeconds)
-                {
-                    p.FoulsChanged = (oldValue, newValue) =>
-                    {
-                        if (oldValue < newValue)
-                        {
-                            p.FoulTime = 20;
-                        }
-                    };
-                }
                 players.Add(p);
             }
 
@@ -322,40 +438,24 @@ namespace WaterPolo.Simple.RefereeConsole
             Match = new MatchModel();
             Match.TotalTime = "8:00";
             Match.Court = 1;
+            Match.ThirtySeconds = 29;
             Match.TeamA = new TeamModel
             {
                 Name = "CHN",
                 Score = 1,
                 PauseTime = "0:59"
             };
+            SetTeamTimeoutControl(Match.TeamA);
             AddPlayer(Match.TeamA);
             Match.TeamB = new TeamModel
             {
                 Name = "USA",
                 Score = 0
             };
+            SetTeamTimeoutControl(Match.TeamB);
             AddPlayer(Match.TeamB);
 
-            if (_sendMessageTask == null && _settings.SendToDisplayConsole)
-            {
-                _sendMessageTask = new Task(() =>
-                {
-                    Log.Info("Sending message thread has started.");
-                    while (true)
-                    {
-                        var data = JsonConvert.SerializeObject(TransferDataConvert.ConvertToMatchRaw(Match));
-                        Log.Debug($"Send Message: {data}");
-                        SocketHelper.SendMessage("::1", 1234, data, 10000);
-                        Thread.Sleep(300);
-                        if (_stop)
-                        {
-                            Log.Info("Sending message thread has stopped.");
-                            break;
-                        }
-                    }
-                });
-                _sendMessageTask.Start(TaskScheduler.Current);
-            }
+            if (_sendMessageTask == null && _settings.SendToDisplayConsole) StartSendMessage();
         }
 
         private void AddPlayer(TeamModel team)
@@ -367,21 +467,14 @@ namespace WaterPolo.Simple.RefereeConsole
                 var player = new PlayerModel();
                 player.Number = $"{i + 1}";
                 player.Name = $"{team.Name}:Num.{i + 1}";
-                if (_settings.AutoShowTwentySeconds)
-                {
-                    player.FoulsChanged = (oldValue, newValue) =>
-                    {
-                        if (oldValue < newValue)
-                        {
-                            player.FoulTime = 20;
-                        }
-                    };
-                }
-
                 players.Add(player);
             }
 
             team.Players = players;
+            if (_settings.AutoShowTwentySeconds)
+                team.RegisterTwentySeconds();
+            if (_settings.ScoreRelatedGoals)
+                team.RegisterGoalsChanged();
         }
 
         #endregion

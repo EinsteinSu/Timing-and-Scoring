@@ -20,9 +20,13 @@ namespace WaterPolo.Simple.Core.DataTransfer
             Log.Info($"Campacity is {compacity}");
         }
 
+        public string IpAddress { get; set; }
+
         public void StartListening(IRequestProcess process, int port)
         {
             _server = new Server();
+            if (!string.IsNullOrEmpty(IpAddress))
+                _server.IpAddress = IpAddress;
             Task.Factory.StartNew(() => { _server.CreateListener(port, process, _compacity); });
         }
 
@@ -31,14 +35,17 @@ namespace WaterPolo.Simple.Core.DataTransfer
             _server?.QuitListener();
         }
 
+
+
         ~SocketController()
         {
             StopListening();
         }
 
-        public class Server
+        private class Server
         {
             private bool _isQuit;
+            public string IpAddress { get; set; }
 
             /// <summary>
             ///     create a listener to retreive the request
@@ -52,6 +59,8 @@ namespace WaterPolo.Simple.Core.DataTransfer
                 var ipAddress = Dns.GetHostEntry("localhost").AddressList[0];
                 try
                 {
+                    if (!string.IsNullOrEmpty(IpAddress))
+                        ipAddress = IPAddress.Parse(IpAddress);
                     tcpListener = new TcpListener(ipAddress, port);
                     tcpListener.Start();
                     Log.InfoFormat($"Listening {ipAddress}({port})");

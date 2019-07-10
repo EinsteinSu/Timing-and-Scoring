@@ -17,6 +17,12 @@ namespace WaterPolo.Simple.DisplayConsole
 
         public int Campacity { get; set; }
 
+        public bool DebugMode { get; set; }
+
+        public string ListeningAddress { get; set; }
+
+        public int DnsFlushInterval { get; set; }
+
         public static DisplaySettings InitialDisplaySettings()
         {
             return new DisplaySettings
@@ -26,7 +32,10 @@ namespace WaterPolo.Simple.DisplayConsole
                 Width = 1920,
                 Height = 1080,
                 ListeningPort = 1234,
-                Campacity = 50000
+                Campacity = 50000,
+                DebugMode = false,
+                ListeningAddress = "192.168.1.5",
+                DnsFlushInterval = 1800000
             };
         }
     }

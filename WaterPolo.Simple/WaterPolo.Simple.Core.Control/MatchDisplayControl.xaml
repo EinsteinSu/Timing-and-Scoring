@@ -35,7 +35,7 @@
                 <Ellipse Height="35" Width="35" Fill="Red"
                          Visibility="{Binding Foul3, Converter={StaticResource VisibilityConvert}}"
                          HorizontalAlignment="Center" Grid.Column="4" VerticalAlignment="Center" />
-                <TextBlock FontSize="42" Grid.Column="5" Foreground="Red" Text="{Binding FoulTimeDisplay}"
+                <TextBlock FontSize="42" Grid.Column="5" Foreground="White" Text="{Binding GoalsToString}"
                            HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Grid>
         </DataTemplate>
@@ -67,14 +67,14 @@
                 <ColumnDefinition Width="20*" />
                 <ColumnDefinition Width="15*" />
             </Grid.ColumnDefinitions>
-            <Image Grid.Row="0" Grid.Column="0" Source="{Binding TeamA.Image}" />
+            <Image Grid.Row="0" Grid.Column="0" Stretch="Uniform" Source="{Binding TeamA.Image}" />
             <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding TeamA.Name}" VerticalAlignment="Center"
                        HorizontalAlignment="Center" FontSize="100" FontFamily="Segoe UI Black" Foreground="White" />
             <TextBlock Grid.Row="0" Grid.Column="2" Foreground="#FFF5F516" Text="{Binding TotalTime}" FontSize="160"
                        VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe UI Black" />
             <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding TeamB.Name}" VerticalAlignment="Center"
                        HorizontalAlignment="Center" FontSize="100" FontFamily="Segoe UI Black" Foreground="White" />
-            <Image Grid.Row="0" Grid.Column="4" Source="{Binding TeamB.Image}" />
+            <Image Grid.Row="0" Grid.Column="4" Stretch="Uniform"  Source="{Binding TeamB.Image}" />
             <Grid Grid.Row="1" Grid.Column="0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -100,8 +100,8 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBlock Text="{Binding CourtToString}" HorizontalAlignment="Center" VerticalAlignment="Center"
-                           FontSize="75" FontFamily="Segoe UI Black" Foreground="#FF6EEA5A" />
+                <TextBlock Text="{Binding ThirtySeconds}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="75" FontFamily="Segoe UI Black" Foreground="Red" />
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*" />
@@ -110,9 +110,8 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="{Binding TeamA.Timeout}" Foreground="Yellow" VerticalAlignment="Center"
                                HorizontalAlignment="Center" FontFamily="Segoe UI Black" FontSize="80" />
-                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red"
-                               FontFamily="Segoe UI Black" FontSize="50">
-                        <Run Text="TIMEOUT" />
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF6EEA5A"
+                               FontFamily="Segoe UI Black" FontSize="50" Text="{Binding CourtToString}">
                     </TextBlock>
                     <TextBlock Grid.Column="2" Text="{Binding TeamB.Timeout}" VerticalAlignment="Center"
                                Foreground="Yellow"
@@ -147,6 +146,10 @@
                 </Grid.ColumnDefinitions>
                 <Border BorderBrush="White" BorderThickness="0,0,1,0">
                     <Grid>
+                        <!--<Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>-->
                         <ListBox ItemTemplate="{StaticResource PlayerTemplate}" ItemsSource="{Binding TeamA.Players}"
                                  BorderThickness="0" Background="Transparent"
                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
@@ -157,10 +160,15 @@
                                 </Style>
                             </ListBox.ItemContainerStyle>
                         </ListBox>
+                        <!--<TextBlock Grid.Row="1" FontSize ="42" Foreground="White" FontWeight="Bold" Text="{Binding TeamA.TeamGoals}" FontFamily="Segoe UI Black"></TextBlock>-->
                     </Grid>
                 </Border>
                 <Border BorderBrush="White" BorderThickness="1,0,0,0" Grid.Column="1">
                     <Grid>
+                        <!--<Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>-->
                         <ListBox ItemTemplate="{StaticResource PlayerTemplate}" ItemsSource="{Binding TeamB.Players}"
                                  BorderThickness="0" Background="Transparent"
                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
@@ -171,6 +179,7 @@
                                 </Style>
                             </ListBox.ItemContainerStyle>
                         </ListBox>
+                        <!--<TextBlock Grid.Row="1" FontSize ="42" Foreground="White" FontWeight="Bold" Text="{Binding TeamB.TeamGoals}" FontFamily="Segoe UI Black"></TextBlock>-->
                     </Grid>
                 </Border>
             </Grid>

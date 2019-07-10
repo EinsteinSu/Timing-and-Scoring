@@ -9,7 +9,7 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:common="clr-namespace:WaterPolo.Simple.Core.Control.Common;assembly=WaterPolo.Simple.Core.Control"
         mc:Ignorable="d" DataContext="{dxmvvm:ViewModelSource Type={x:Type local:MainWindowViewModel}}"
-        Title="{Binding Settings.Title}" WindowStyle="None" Focusable="False" ResizeMode="NoResize">
+        Title="{Binding Settings.Title}" WindowStyle="None" Focusable="True" ResizeMode="NoResize">
     <dxmvvm:Interaction.Behaviors>
         <dxmvvm:EventToCommand PassEventArgsToCommand="True" Command="{Binding KeyDownCommand}" EventName="KeyDown">
             <dxmvvm:EventToCommand.EventArgsConverter>
@@ -17,7 +17,7 @@
             </dxmvvm:EventToCommand.EventArgsConverter>
         </dxmvvm:EventToCommand>
         <dxmvvm:EventToCommand Command="{Binding LoadCommand}" EventName="Loaded" />
-        
+
         <dx:DialogService DialogWindowStartupLocation="CenterOwner">
             <dx:DialogService.ViewTemplate>
                 <DataTemplate>
@@ -27,7 +27,7 @@
             <dx:DialogService.DialogStyle>
                 <Style TargetType="dx:DXDialogWindow">
                     <Setter Property="Width" Value="500" />
-                    <Setter Property="Height" Value="300" />
+                    <Setter Property="Height" Value="500" />
                 </Style>
             </dx:DialogService.DialogStyle>
         </dx:DialogService>

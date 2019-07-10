@@ -62,10 +62,12 @@ namespace WaterPolo.Simple.Core.Control
 
         public DelegateCommand CleanDisplayCommand { get; set; }
 
+        public Action Started { get; set; }
         public void Start()
         {
             IsStarted = true;
             _timing.Start();
+            Started?.Invoke();
         }
 
         public void CleanDisplay()

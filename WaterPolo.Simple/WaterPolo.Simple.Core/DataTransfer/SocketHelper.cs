@@ -9,7 +9,7 @@ namespace WaterPolo.Simple.Core.DataTransfer
     {
         private static readonly ILog Log = LogManager.GetLogger("SocketHelper");
 
-        public static void SendMessage(string ipAddress, int port, string message, int compacity)
+        public static void SendMessage(string ipAddress, int port, string message)
         {
             try
             {

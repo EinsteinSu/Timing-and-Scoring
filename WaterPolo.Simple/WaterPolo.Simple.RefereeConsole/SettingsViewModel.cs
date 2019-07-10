@@ -26,6 +26,10 @@ namespace WaterPolo.Simple.RefereeConsole
                 _settings.AutoShowTwentySeconds = raw.AutoShowTwentySeconds;
                 _settings.SendToDisplayConsole = raw.SendToDisplayConsole;
                 _settings.TwentySecondsRelatedToTotalTime = raw.TwentySecondsRelatedToTotalTime;
+                _settings.AutoIncreasePauseCount = raw.AutoIncreasePauseCount;
+                _settings.SendMessageInterval = raw.SendMessageInterval;
+                _settings.DebugMode = raw.DebugMode;
+                _settings.ScoreRelatedGoals = raw.ScoreRelatedGoals;
             }
         }
 
@@ -46,6 +50,10 @@ namespace WaterPolo.Simple.RefereeConsole
                 AutoShowTwentySeconds = Settings.AutoShowTwentySeconds,
                 SendToDisplayConsole = Settings.SendToDisplayConsole,
                 TwentySecondsRelatedToTotalTime = Settings.TwentySecondsRelatedToTotalTime,
+                AutoIncreasePauseCount = Settings.AutoIncreasePauseCount,
+                SendMessageInterval = Settings.SendMessageInterval,
+                DebugMode = Settings.DebugMode,
+                ScoreRelatedGoals = Settings.ScoreRelatedGoals,
             };
             raw.SaveData(_rootFolder, "Configs.config");
         }
@@ -66,6 +74,16 @@ namespace WaterPolo.Simple.RefereeConsole
 
         public bool TwentySecondsRelatedToTotalTime { get; set; }
 
+        public bool AutoIncreasePauseCount { get; set; }
+
+        public int SendMessageInterval { get; set; }
+
+        public bool DebugMode { get; set; }
+
+
+        public bool ScoreRelatedGoals { get; set; }
+
+
         public static SettingsRaw InitialSettings()
         {
             return new SettingsRaw
@@ -77,6 +95,10 @@ namespace WaterPolo.Simple.RefereeConsole
                 AutoShowTwentySeconds = true,
                 SendToDisplayConsole = true,
                 TwentySecondsRelatedToTotalTime = false,
+                AutoIncreasePauseCount = true,
+                SendMessageInterval = 300,
+                DebugMode = false,
+                ScoreRelatedGoals = true,
             };
 
         }
@@ -90,6 +112,10 @@ namespace WaterPolo.Simple.RefereeConsole
         private bool _autoShowTwentySeconds;
         private bool _sendToDisplayConsole;
         private bool _twentySecondsRelatedToTotalTime;
+        private bool _autoIncreasePauseCount;
+        private int _sendMessageInterval;
+        private bool _debugMode;
+        private bool _scoreRelatedGoals;
 
         public Settings()
         {
@@ -131,5 +157,30 @@ namespace WaterPolo.Simple.RefereeConsole
             get => _twentySecondsRelatedToTotalTime;
             set { SetProperty(ref _twentySecondsRelatedToTotalTime, value, () => TwentySecondsRelatedToTotalTime); }
         }
+
+        public bool AutoIncreasePauseCount
+        {
+            get => _autoIncreasePauseCount;
+            set { SetProperty(ref _autoIncreasePauseCount, value, () => AutoIncreasePauseCount); }
+        }
+
+        public int SendMessageInterval
+        {
+            get => _sendMessageInterval;
+            set => SetProperty(ref _sendMessageInterval, value, () => SendMessageInterval);
+        }
+
+        public bool DebugMode
+        {
+            get => _debugMode;
+            set => SetProperty(ref _debugMode, value, () => DebugMode);
+        }
+
+        public bool ScoreRelatedGoals
+        {
+            get => _scoreRelatedGoals;
+            set { SetProperty(ref _scoreRelatedGoals, value, () => ScoreRelatedGoals); }
+        }
+        
     }
 }

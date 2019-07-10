@@ -11,6 +11,8 @@ namespace WaterPolo.Simple.Core.Control
         private int _foulTime;
         private string _name;
         private string _number;
+        private bool _foul3;
+        private int _goals;
 
         public string Number
         {
@@ -39,13 +41,43 @@ namespace WaterPolo.Simple.Core.Control
         public int FoulTime
         {
             get => _foulTime;
-            set => SetProperty(ref _foulTime, value, () => FoulTime);
+            set
+            {
+                SetProperty(ref _foulTime, value, () => FoulTime);
+            }
         }
 
         //todo: change it to image and convert to visible or not visible
         public bool Foul1 => Fouls > 0;
         public bool Foul2 => Fouls > 1;
-        public bool Foul3 => Fouls > 2;
+
+        public bool Foul3
+        {
+            get => _foul3;
+            set { SetProperty(ref _foul3, value, () => Foul3); }
+        }
+
+        public Action GoalsChanged { get; set; }
+
+        public int Goals
+        {
+            get => _goals;
+            set
+            {
+                SetProperty(ref _goals, value, () => Goals);
+                GoalsChanged?.Invoke();
+            }
+        }
+
+        public string GoalsToString
+        {
+            get
+            {
+                if (Goals == 0)
+                    return string.Empty;
+                return Goals.ToString();
+            }
+        }
 
         public string FoulTimeDisplay => FoulTime == 0 ? string.Empty : FoulTime.ToString();
 

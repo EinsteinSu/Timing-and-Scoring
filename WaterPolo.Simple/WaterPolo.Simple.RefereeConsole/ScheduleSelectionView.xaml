@@ -20,12 +20,18 @@
                          EditValue="{Binding SelectedSchedule,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
             <dxe:ListBoxEdit.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Name}" />
-                        <TextBlock Text="{Binding StartTime}" />
-                        <TextBlock Text="{Binding TeamA.Name}" />
-                        <TextBlock Text="{Binding TeamB.Name}" />
-                    </StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Name}" Margin="5"/>
+                        <TextBlock Grid.Column="1" Margin="5" Text="{Binding StartTime, StringFormat=Date: {0:yyyy-MM-dd}}" />
+                        <TextBlock Grid.Column="2" Margin="5" Text="{Binding TeamA.Team.Name}" />
+                        <TextBlock Grid.Column="3" Margin="5" Text="{Binding TeamB.Team.Name}" />
+                    </Grid>
                 </DataTemplate>
             </dxe:ListBoxEdit.ItemTemplate>
         </dxe:ListBoxEdit>

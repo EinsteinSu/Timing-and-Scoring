@@ -13,7 +13,6 @@
         <editWindow:PlayerConvert x:Key="PlayerConvert" />
     </UserControl.Resources>
     <Grid>
-
         <dxlc:LayoutControl>
             <dxlc:LayoutGroup Orientation="Vertical">
                 <dxlc:LayoutGroup Orientation="Vertical">
@@ -33,12 +32,18 @@
                             <dxe:ComboBoxEdit EditValue="{Binding SelectedTeamA,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMember="Name" ItemsSource="{Binding Teams}"/>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem>
-                            <dxe:ListBoxEdit Height="200" EditValue="{Binding SelectedTeamAPlayers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource PlayerConvert}}" ItemsSource="{Binding TeamAPlayers}" DisplayMember="Name" >
+                            <dxe:ListBoxEdit Height="200" EditValue="{Binding SelectedTeamAPlayers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource PlayerConvert}}" ItemsSource="{Binding TeamAPlayers}" >
                                 <dxe:ListBoxEdit.StyleSettings>
                                     <dxe:CheckedListBoxEditStyleSettings HighlightedTextBackground="Yellow"
                                                                          HighlightedTextForeground="Black" />
                                 </dxe:ListBoxEdit.StyleSettings>
                             </dxe:ListBoxEdit>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem>
+                            <TextBlock Text="{Binding SelectedTeamAPlayers.Count,StringFormat= Selected:{0}}"></TextBlock>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem Label="Caption">
+                            <dxe:ComboBoxEdit ItemsSource="{Binding TeamAPlayers}" EditValue="{Binding Data.TeamA.CaptainPlayerId}" ValueMember="PlayerId"></dxe:ComboBoxEdit>
                         </dxlc:LayoutItem>
                     </dxlc:LayoutGroup>
                     <dxlc:LayoutGroup Orientation="Vertical" Header="Blue Cap" View="GroupBox">
@@ -46,17 +51,22 @@
                             <dxe:ComboBoxEdit EditValue="{Binding  SelectedTeamB,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" DisplayMember="Name" ItemsSource="{Binding Teams}"/>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem>
-                            <dxe:ListBoxEdit Height="200" EditValue="{Binding SelectedTeamBPlayers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource PlayerConvert}}" ItemsSource="{Binding TeamBPlayers}" DisplayMember="Name">
+                            <dxe:ListBoxEdit Height="200" EditValue="{Binding SelectedTeamBPlayers,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource PlayerConvert}}" ItemsSource="{Binding TeamBPlayers}">
                                 <dxe:ListBoxEdit.StyleSettings>
                                     <dxe:CheckedListBoxEditStyleSettings HighlightedTextBackground="Yellow"
                                                                          HighlightedTextForeground="Black" />
                                 </dxe:ListBoxEdit.StyleSettings>
                             </dxe:ListBoxEdit>
                         </dxlc:LayoutItem>
+                        <dxlc:LayoutItem>
+                            <TextBlock Text="{Binding SelectedTeamBPlayers.Count,StringFormat= Selected:{0}}"></TextBlock>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem Label="Caption">
+                            <dxe:ComboBoxEdit ItemsSource="{Binding TeamBPlayers}" EditValue="{Binding Data.TeamB.CaptainPlayerId}" ValueMember="PlayerId"></dxe:ComboBoxEdit>
+                        </dxlc:LayoutItem>
                     </dxlc:LayoutGroup>
                 </dxlc:LayoutGroup>
             </dxlc:LayoutGroup>
         </dxlc:LayoutControl>
-
     </Grid>
 </UserControl>

@@ -21,6 +21,8 @@
         <local:MainWindowViewModel />
     </dx:ThemedWindow.DataContext>
     <mvvm:Interaction.Behaviors>
+        <mvvm:OpenFileDialogService Title="{Binding Title}"/>
+        <mvvm:SaveFileDialogService Title="{Binding Title}"/>
         <dx:DialogService DialogWindowStartupLocation="CenterOwner" x:Name="Teams">
             <dx:DialogService.ViewTemplate>
                 <DataTemplate>

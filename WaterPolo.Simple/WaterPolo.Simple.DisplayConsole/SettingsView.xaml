@@ -22,11 +22,20 @@
             <dxlc:LayoutItem Label="Width">
                 <dxe:TextEdit EditValue="{Binding Width}"/>
             </dxlc:LayoutItem>
+            <dxlc:LayoutItem Label="Listening Address">
+                <dxe:TextEdit EditValue="{Binding ListeningAddress}"/>
+            </dxlc:LayoutItem>
             <dxlc:LayoutItem Label="Listening Port">
                 <dxe:TextEdit EditValue="{Binding ListeningPort}"/>
             </dxlc:LayoutItem>
             <dxlc:LayoutItem Label="Campacity">
                 <dxe:TextEdit EditValue="{Binding Campacity}"/>
+            </dxlc:LayoutItem>
+            <dxlc:LayoutItem Label="Debug Mode">
+                <dxe:CheckEdit EditValue="{Binding DebugMode}"/>
+            </dxlc:LayoutItem>
+            <dxlc:LayoutItem Label="Dns Flush Interval">
+                <dxe:TextEdit EditValue="{Binding DnsFlushInterval}"/>
             </dxlc:LayoutItem>
         </dxlc:LayoutControl>
 

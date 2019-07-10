@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Windows;
+using CsvHelper;
 using Newtonsoft.Json;
 using WaterPolo.Simple.DataAccess;
+using WaterPolo.Simple.DataCenter.DataEdit.DataImportExport;
 using WaterPolo.Simple.DataCenter.DataEdit.EditWindow;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
@@ -48,6 +52,56 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
         protected override object ConvertDataFromText(string data)
         {
             return JsonConvert.DeserializeObject<Player>(data);
+        }
+
+        public override void Import(string fileName)
+        {
+            using (var reader = new StreamReader(fileName))
+            {
+                using (var csv = new CsvReader(reader))
+                {
+                    var list = csv.GetRecords<PlayerIO>();
+                    foreach (var playerIO in list)
+                    {
+                        var player = new Player
+                        {
+                            Name = playerIO.Name,
+                            DisplayName = playerIO.DisplayName,
+                            OrderNumber = playerIO.OrderId,
+                            DisplayNumber = playerIO.Number
+                        };
+                        var team = Context.Teams.FirstOrDefault(f => f.DisplayName == playerIO.TeamDisplayName);
+                        player.TeamId = team?.TeamId ?? Context.Teams.First().TeamId;
+                        Context.Players.Add(player);
+                    }
+
+                    Context.SaveChanges();
+                }
+            }
+        }
+
+        public override void Export(string fileName)
+        {
+            var list = new List<PlayerIO>();
+            foreach (var player in Context.Players.Include(i => i.Team).ToList())
+            {
+                list.Add(new PlayerIO
+                {
+                    DisplayName = player.DisplayName,
+                    Name = player.Name,
+                    Number = player.DisplayNumber,
+                    OrderId = player.OrderNumber,
+                    TeamDisplayName = player.Team.DisplayName
+                });
+            }
+
+            using (var writer = new StreamWriter(fileName))
+            {
+                using (var csv = new CsvHelper.CsvWriter(writer))
+                {
+                    csv.WriteRecords(list);
+                }
+            }
         }
 
         public override void Delete()

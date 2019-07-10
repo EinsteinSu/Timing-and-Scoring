@@ -8,5 +8,11 @@ namespace WaterPolo.Simple.Core.Control.Control
         {
             Decrease = ActionHelper.DecreaseTwentySeconds;
         }
+
+        protected override void OnClick()
+        {
+            base.OnClick();
+            Content = 0;
+        }
     }
 }

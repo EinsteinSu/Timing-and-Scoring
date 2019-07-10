@@ -56,6 +56,38 @@
     <Compile Include="Migrations\201907060801228_IncreaseDisplayNameLimitation.Designer.cs">
       <DependentUpon>201907060801228_IncreaseDisplayNameLimitation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907100704292_AddCaptionInMatch.cs" />
+    <Compile Include="Migrations\201907100704292_AddCaptionInMatch.Designer.cs">
+      <DependentUpon>201907100704292_AddCaptionInMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907100713473_AddCaptionInMatch1.cs" />
+    <Compile Include="Migrations\201907100713473_AddCaptionInMatch1.Designer.cs">
+      <DependentUpon>201907100713473_AddCaptionInMatch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907100749083_AddCaptionInMatch-2.cs" />
+    <Compile Include="Migrations\201907100749083_AddCaptionInMatch-2.Designer.cs">
+      <DependentUpon>201907100749083_AddCaptionInMatch-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907100755510_AddCaptionInMatch-3.cs" />
+    <Compile Include="Migrations\201907100755510_AddCaptionInMatch-3.Designer.cs">
+      <DependentUpon>201907100755510_AddCaptionInMatch-3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907100757165_AddCaptionInMatch-4.cs" />
+    <Compile Include="Migrations\201907100757165_AddCaptionInMatch-4.Designer.cs">
+      <DependentUpon>201907100757165_AddCaptionInMatch-4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907100759115_AddCaptionInMatch-5.cs" />
+    <Compile Include="Migrations\201907100759115_AddCaptionInMatch-5.Designer.cs">
+      <DependentUpon>201907100759115_AddCaptionInMatch-5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907100802137_AddCaptionInMatch-6.cs" />
+    <Compile Include="Migrations\201907100802137_AddCaptionInMatch-6.Designer.cs">
+      <DependentUpon>201907100802137_AddCaptionInMatch-6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907100806488_AddCaptionInMatch-7.cs" />
+    <Compile Include="Migrations\201907100806488_AddCaptionInMatch-7.Designer.cs">
+      <DependentUpon>201907100806488_AddCaptionInMatch-7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Schedule.cs" />
@@ -74,6 +106,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907060801228_IncreaseDisplayNameLimitation.resx">
       <DependentUpon>201907060801228_IncreaseDisplayNameLimitation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100704292_AddCaptionInMatch.resx">
+      <DependentUpon>201907100704292_AddCaptionInMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100713473_AddCaptionInMatch1.resx">
+      <DependentUpon>201907100713473_AddCaptionInMatch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100749083_AddCaptionInMatch-2.resx">
+      <DependentUpon>201907100749083_AddCaptionInMatch-2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100755510_AddCaptionInMatch-3.resx">
+      <DependentUpon>201907100755510_AddCaptionInMatch-3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100757165_AddCaptionInMatch-4.resx">
+      <DependentUpon>201907100757165_AddCaptionInMatch-4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100759115_AddCaptionInMatch-5.resx">
+      <DependentUpon>201907100759115_AddCaptionInMatch-5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100802137_AddCaptionInMatch-6.resx">
+      <DependentUpon>201907100802137_AddCaptionInMatch-6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907100806488_AddCaptionInMatch-7.resx">
+      <DependentUpon>201907100806488_AddCaptionInMatch-7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

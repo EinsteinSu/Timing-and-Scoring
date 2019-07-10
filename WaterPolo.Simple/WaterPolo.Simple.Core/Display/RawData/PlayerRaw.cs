@@ -8,5 +8,8 @@ namespace WaterPolo.Simple.Core.Display.RawData
         public string Name { get; set; }
         public int Fouls { get; set; }
         public int FoulTime { get; set; }
+        public bool Foul3 { get; set; }
+
+        public int Goals { get; set; }
     }
 }

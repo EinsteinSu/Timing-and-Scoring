@@ -5,27 +5,80 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:WaterPolo.Simple.Core.Control"
              xmlns:controls="clr-namespace:WaterPolo.Simple.Core.Control.Control"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:common="clr-namespace:WaterPolo.Simple.Core.Control.Common"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.Resources>
+        <common:RedFoulConvert x:Key="FoulConvert"/>
         <DataTemplate x:Key="playerTemplate">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="13*" />
+                    <ColumnDefinition Width="10*" />
                     <ColumnDefinition Width="40*" />
+                    <ColumnDefinition Width="10*"/>
                     <ColumnDefinition Width="10*" />
                     <ColumnDefinition Width="10*" />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="{Binding Number}" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"
-                           FontSize="25" FontWeight="Bold" Foreground="Green"/>
-                <TextBlock Text="{Binding Name}" Foreground="DarkOrange" Margin="5" Grid.Column="1" VerticalAlignment="Center" FontSize="20"
+                <TextBlock  Text="{Binding Number}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="20" FontWeight="Bold" Foreground="Green"/>
+                <TextBlock Text="{Binding Name}" Foreground="DarkOrange" Grid.Column="1" VerticalAlignment="Center" FontSize="20"
                            FontWeight="Bold" />
-                <controls:NumericEditableButton Margin="5" MaxValue="3" Grid.Column="2"
+                <controls:NumericEditableButton MaxValue="100" Grid.Column="2" Width="35" Height="35"
+                                                Content="{Binding Goals,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                FontSize="20" FontWeight="Bold" >
+                    <controls:NumericEditableButton.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Ellipse>
+                                    <Ellipse.Fill>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFCAC8C1" Offset="0"/>
+                                            <GradientStop Color="#FFF4F3E8" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </controls:NumericEditableButton.Template>
+                </controls:NumericEditableButton>
+                <controls:NumericEditableButton MaxValue="3" Grid.Column="3" Width="35" Height="35"
                                                 Content="{Binding Fouls,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                                                FontSize="20" FontWeight="Bold" />
-                <controls:TwentySecondsEditableButton Margin="5" Grid.Column="3" MaxValue="20"
-                                                      Content="{Binding FoulTime,Mode=TwoWay}" FontSize="20"
-                                                      FontWeight="Bold" />
+                                                FontSize="20" FontWeight="Bold">
+                    <controls:NumericEditableButton.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Ellipse>
+                                    <Ellipse.Fill>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFE7DEA6" Offset="0"/>
+                                            <GradientStop Color="#FFE0C625" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </controls:NumericEditableButton.Template>
+                </controls:NumericEditableButton>
+                <controls:RedFoulButton Grid.Column="4" FontSize="20" Foreground="White" Width="35" Height="35" FontWeight="Bold" Content="{Binding Foul3,Converter={StaticResource FoulConvert},Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontFamily="Showcard Gothic" >
+                    <controls:RedFoulButton.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Ellipse>
+                                    <Ellipse.Fill>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFF19A7C" Offset="0"/>
+                                            <GradientStop Color="#FFE04025" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </controls:RedFoulButton.Template>
+                </controls:RedFoulButton>
             </Grid>
         </DataTemplate>
     </UserControl.Resources>
@@ -102,13 +155,13 @@
                         <ColumnDefinition Width="64*" />
                         <ColumnDefinition Width="18*" />
                     </Grid.ColumnDefinitions>
-                    <controls:NumericEditableButton Foreground="Yellow" FontSize="30" FontFamily="Comic Sans MS"
+                    <controls:NumericEditableButton Foreground="DarkOrange" FontSize="30" FontFamily="Comic Sans MS"
                                                     MaxValue="2" Content="{Binding TeamA.Timeout,Mode=TwoWay}" />
                     <TextBlock Foreground="OrangeRed" Grid.Column="1" VerticalAlignment="Center" TextAlignment="Center"
                                FontSize="36" FontFamily="Comic Sans MS">
                         TIMEOUT
                     </TextBlock>
-                    <controls:NumericEditableButton Foreground="Yellow" Grid.Column="2" MaxValue="2" FontSize="30"
+                    <controls:NumericEditableButton Foreground="DarkOrange" Grid.Column="2" MaxValue="2" FontSize="30"
                                                     FontFamily="Comic Sans MS"
                                                     Content="{Binding TeamB.Timeout,Mode=TwoWay}" />
                 </Grid>

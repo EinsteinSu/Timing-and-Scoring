@@ -6,6 +6,61 @@ using WaterPolo.Simple.DataAccess;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
 {
+    public abstract class DataManager<T, TV, TI> : IDataManager
+    {
+        public object CurrentItem { get; set; }
+        public void Add(object item)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Edit(object item)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public object GetItemSource()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Save()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Import(string path)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Export(string fileName)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public object NewItem()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Copy()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Paste()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
+    //data model, data edit view model, import export model
     public abstract class DataManagerBase : ViewModelBase, IDataManager
     {
         private object _currentItem;
@@ -38,7 +93,7 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
         {
         }
 
-        public void Export(string fileName)
+        public virtual void Export(string fileName)
         {
         }
 
