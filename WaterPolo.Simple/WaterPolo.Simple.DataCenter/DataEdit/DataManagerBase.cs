@@ -6,13 +6,22 @@ using WaterPolo.Simple.DataAccess;
 
 namespace WaterPolo.Simple.DataCenter.DataEdit
 {
-    public abstract class DataManager<T, TV, TI> : IDataManager
+    public abstract class DataManager<T, TV, TI> : IDataManager where T : class
     {
+        private readonly WaterPoloDataContext _context;
+
+        public DataManager(WaterPoloDataContext context)
+        {
+            _context = context;
+        }
+
         public object CurrentItem { get; set; }
         public void Add(object item)
         {
-            throw new System.NotImplementedException();
+            _context.Set<T>().Add(InitializeItem());
         }
+
+        protected abstract void AddItem(T item);
 
         public void Edit(object item)
         {
@@ -46,8 +55,10 @@ namespace WaterPolo.Simple.DataCenter.DataEdit
 
         public object NewItem()
         {
-            throw new System.NotImplementedException();
+            return InitializeItem();
         }
+
+        protected abstract T InitializeItem();
 
         public void Copy()
         {

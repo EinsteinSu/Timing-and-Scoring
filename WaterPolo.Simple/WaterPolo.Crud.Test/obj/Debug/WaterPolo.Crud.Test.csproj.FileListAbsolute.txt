@@ -1,0 +1,59 @@
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\HamburgerMenu MVVM Template Project.exe.config
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\HamburgerMenu MVVM Template Project.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\HamburgerMenu MVVM Template Project.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Mvvm.v19.1.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Xpf.Controls.v19.1.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Xpf.Core.v19.1.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Data.v19.1.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Printing.v19.1.Core.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Pdf.v19.1.Core.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Images.v19.1.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Mvvm.v19.1.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Xpf.Controls.v19.1.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Xpf.Core.v19.1.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Data.v19.1.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Printing.v19.1.Core.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\DevExpress.Pdf.v19.1.Core.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\de\DevExpress.Xpf.Controls.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\es\DevExpress.Xpf.Controls.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ja\DevExpress.Xpf.Controls.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ru\DevExpress.Xpf.Controls.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\de\DevExpress.Xpf.Core.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\es\DevExpress.Xpf.Core.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ja\DevExpress.Xpf.Core.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ru\DevExpress.Xpf.Core.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\de\DevExpress.Data.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\es\DevExpress.Data.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ja\DevExpress.Data.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ru\DevExpress.Data.v19.1.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\de\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\es\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ja\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ru\DevExpress.Printing.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\de\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\es\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ja\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\bin\Debug\ru\DevExpress.Pdf.v19.1.Core.resources.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\WaterPolo.Crud.Test.csprojResolveAssemblyReference.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\Home.baml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\About.baml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\SettingsView.baml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\Home.g.cs
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\About.g.cs
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\MainWindow.g.cs
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\SettingsView.g.cs
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\App.g.cs
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\HamburgerMenu MVVM Template Project_MarkupCompile.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\HamburgerMenu MVVM Template Project_MarkupCompile.lref
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\ItemTemplates.baml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\MainWindow.baml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\HamburgerMenu MVVM Template Project.g.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\WaterPolo.Crud.Test.Properties.Resources.resources
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\WaterPolo.Crud.Test.csproj.GenerateResource.Cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\WaterPolo.Crud.Test.csproj.CoreCompileInputs.cache
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\HamburgerMenu MVVM Template Project.exe
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\HamburgerMenu MVVM Template Project.pdb
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\EditTestView.g.cs
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\EditTestView.baml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Crud.Test\obj\Debug\HamburgerMenu MVVM Template Project.exe.licenses

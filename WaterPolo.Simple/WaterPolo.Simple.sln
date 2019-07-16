@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Socket.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.Core.Test", "WaterPolo.Simple.Core.Test\WaterPolo.Simple.Core.Test.csproj", "{00D67C00-C28A-4922-A5B2-72102EDFEC47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Crud.Test", "WaterPolo.Crud.Test\WaterPolo.Crud.Test.csproj", "{A9AE8492-430A-443E-AD8A-E0FE111A602E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterPolo.Simple.DataCenter.New", "WaterPolo.Simple.DataCenter.New\WaterPolo.Simple.DataCenter.New.csproj", "{78E70720-AFCD-41D0-89DA-407126F02AD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,14 @@ Global
 		{00D67C00-C28A-4922-A5B2-72102EDFEC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00D67C00-C28A-4922-A5B2-72102EDFEC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00D67C00-C28A-4922-A5B2-72102EDFEC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AE8492-430A-443E-AD8A-E0FE111A602E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AE8492-430A-443E-AD8A-E0FE111A602E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AE8492-430A-443E-AD8A-E0FE111A602E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AE8492-430A-443E-AD8A-E0FE111A602E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E70720-AFCD-41D0-89DA-407126F02AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E70720-AFCD-41D0-89DA-407126F02AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E70720-AFCD-41D0-89DA-407126F02AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E70720-AFCD-41D0-89DA-407126F02AD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

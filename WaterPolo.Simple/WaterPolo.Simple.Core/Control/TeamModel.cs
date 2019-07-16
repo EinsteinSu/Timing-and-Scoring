@@ -127,25 +127,5 @@ namespace WaterPolo.Simple.Core.Control
 
             return score;
         }
-
-        public string TeamGoals
-        {
-            get
-            {
-                var playerGoals = string.Empty;
-                if (Players != null)
-                {
-                    foreach (var player in Players)
-                    {
-                        if (player.Goals > 0)
-                            playerGoals += $"{player.Number}({player.Goals})";
-                    }
-                }
-
-                if (!string.IsNullOrEmpty(playerGoals))
-                    return $"Goals: {playerGoals}";
-                return string.Empty;
-            }
-        }
     }
 }

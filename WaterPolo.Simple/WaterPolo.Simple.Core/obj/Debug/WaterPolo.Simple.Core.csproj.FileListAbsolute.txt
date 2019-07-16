@@ -12,14 +12,15 @@ C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Si
 C:\Users\einst\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.csprojResolveAssemblyReference.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\WaterPolo.Simple.Core.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\WaterPolo.Simple.Core.pdb
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\DevExpress.Mvvm.v17.1.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\DevExpress.Mvvm.v19.1.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\log4net.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\Newtonsoft.Json.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\System.ValueTuple.dll
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\DevExpress.Mvvm.v17.1.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\DevExpress.Mvvm.v19.1.xml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\log4net.xml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\bin\Debug\System.ValueTuple.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.csprojResolveAssemblyReference.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.csproj.CoreCompileInputs.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.Core\obj\Debug\WaterPolo.Simple.Core.pdb

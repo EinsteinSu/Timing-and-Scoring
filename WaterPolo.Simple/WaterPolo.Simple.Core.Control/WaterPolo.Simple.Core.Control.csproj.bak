@@ -31,9 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Mvvm.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.CodeView.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Core.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.CodeView.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Core.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,6 +55,11 @@
     <Compile Include="Common\VisibilityConverter.cs" />
     <Compile Include="Control\NumericEditableButton.cs" />
     <Compile Include="Control\NumericEditableTextBlock.cs" />
+    <Compile Include="Control\RedFoulButton.cs" />
+    <Compile Include="Common\RedFoulConvert.cs" />
+    <Compile Include="MatchDisplayControlMedium.xaml.cs">
+      <DependentUpon>MatchDisplayControlMedium.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TimingView.xaml.cs">
       <DependentUpon>TimingView.xaml</DependentUpon>
     </Compile>
@@ -98,6 +103,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MatchDisplayControlMedium.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TimingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,11 +118,14 @@
       <Name>WaterPolo.Simple.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\NoneColorCircle.png" />
+    <Resource Include="Images\RedCircle.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Flags\CAN.png" />
     <Resource Include="Flags\CHN.png" />
-    <Resource Include="Flags\MTG.png" />
+    <Resource Include="Flags\MNE.png" />
     <Resource Include="Flags\RUS.png" />
     <Resource Include="Flags\USA.png" />
   </ItemGroup>
