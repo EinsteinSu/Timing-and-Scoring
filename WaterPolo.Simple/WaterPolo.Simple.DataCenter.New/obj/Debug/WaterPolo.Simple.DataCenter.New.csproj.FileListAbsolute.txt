@@ -94,3 +94,7 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Sim
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\obj\Debug\Views\ScheduleEditViews\ScheduleEditView.baml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\obj\Debug\Views\ScheduleEditViews\ScheduleTeamEditView.baml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\obj\Debug\Views\PlayerEditViews\TeamCollectionView.baml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\bin\Debug\CsvHelper.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\bin\Debug\System.ValueTuple.dll
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\bin\Debug\CsvHelper.xml
+C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\bin\Debug\System.ValueTuple.xml

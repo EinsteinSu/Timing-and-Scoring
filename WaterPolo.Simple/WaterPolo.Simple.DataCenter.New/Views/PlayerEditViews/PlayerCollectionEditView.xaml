@@ -9,6 +9,10 @@
              xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" xmlns:ViewModels="clr-namespace:WaterPolo.Simple.DataCenter.New.ViewModels" x:Class="WaterPolo.Simple.DataCenter.New.Views.PlayerCollectionEditView"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" DataContext="{dxmvvm:ViewModelSource Type={x:Type ViewModels:PlayerCollectionEditViewModel}}">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:OpenFileDialogService Title="{Binding Title}"/>
+        <dxmvvm:SaveFileDialogService Title="{Binding Title}"/>
+    </dxmvvm:Interaction.Behaviors>
     <Grid>
         <dxg:GridControl AutoGenerateColumns="AddNew" CurrentItem="{Binding CurrentItem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Items, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
             <dxg:GridControl.View>
@@ -20,6 +24,9 @@
             <dxwui:AppBarSeparator />
             <dxwui:AppBarButton Label="New" Command="{Binding AddCommand}"/>
             <dxwui:AppBarButton Label="Remove" Command="{Binding RemoveCommand}"/>
+            <dxwui:AppBarSeparator />
+            <dxwui:AppBarButton Label="Import" Command="{Binding ImportCommand}"/>
+            <dxwui:AppBarButton Label="Export" Command="{Binding ExportCommand}"/>
             <dxwui:AppBarSeparator />
             <dxwui:AppBarButton Label="Save" Command="{Binding SaveCommand}"/>
         </dxwui:AppBar>

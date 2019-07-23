@@ -13,6 +13,10 @@
              x:Class="WaterPolo.Simple.DataCenter.New.Views.PlayerEditViews.TeamCollectionEditView"
              mc:Ignorable="d"  DataContext="{dxmvvm:ViewModelSource Type=ViewModels:TeamCollectionEditViewModel}"
              d:DesignHeight="300" d:DesignWidth="300">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:OpenFileDialogService Title="{Binding Title}"/>
+        <dxmvvm:SaveFileDialogService Title="{Binding Title}"/>
+    </dxmvvm:Interaction.Behaviors>
     <Grid>
         <dxg:GridControl AutoGenerateColumns="AddNew" CurrentItem="{Binding CurrentItem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Items, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
             <dxg:GridControl.Columns>
@@ -40,6 +44,9 @@
             <dxwui:AppBarSeparator />
             <dxwui:AppBarButton Label="New" Command="{Binding AddCommand}"/>
             <dxwui:AppBarButton Label="Remove" Command="{Binding RemoveCommand}"/>
+            <dxwui:AppBarSeparator />
+            <dxwui:AppBarButton Label="Import" Command="{Binding ImportCommand}"/>
+            <dxwui:AppBarButton Label="Export" Command="{Binding ExportCommand}"/>
             <dxwui:AppBarSeparator />
             <dxwui:AppBarButton Label="Save" Command="{Binding SaveCommand}"/>
         </dxwui:AppBar>

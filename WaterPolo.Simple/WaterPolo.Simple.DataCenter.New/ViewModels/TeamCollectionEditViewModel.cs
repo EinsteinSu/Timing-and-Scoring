@@ -4,11 +4,12 @@ using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Mvvm.POCO;
 using WaterPolo.Simple.DataAccess;
+using WaterPolo.Simple.DataCenter.New.ViewModels.Models;
 
 namespace WaterPolo.Simple.DataCenter.New.ViewModels
 {
     [POCOViewModel]
-    public class TeamCollectionEditViewModel : EditViewModelBase<Team>
+    public class TeamCollectionEditViewModel : EditViewModelBase<Team, TeamIE>
     {
         public override Team CurrentItem { get; set; }
 
@@ -22,9 +23,32 @@ namespace WaterPolo.Simple.DataCenter.New.ViewModels
             CurrentItem = team;
         }
 
+        protected override void AddItem(Team item)
+        {
+            Context.Teams.Add(item);
+        }
+
         protected override void RemoveItem()
         {
             Context.Teams.Remove(CurrentItem);
+        }
+
+        protected override Team ConvertFromImportData(TeamIE importData)
+        {
+            return new Team
+            {
+                DisplayName = importData.DisplayName,
+                Name = importData.Name
+            };
+        }
+
+        protected override TeamIE ConvertToExportData(Team data)
+        {
+            return new TeamIE
+            {
+                DisplayName = data.DisplayName,
+                Name = data.Name
+            };
         }
 
         protected override void RefreshItems()

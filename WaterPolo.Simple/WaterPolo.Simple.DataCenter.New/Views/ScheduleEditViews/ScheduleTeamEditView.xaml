@@ -27,6 +27,9 @@
             </dxe:ListBoxEdit.StyleSettings>
         </dxe:ListBoxEdit>
         <TextBlock Grid.Row="2" Text="{Binding SelectedPlayers.Count,StringFormat= Selected Players:{0}}"></TextBlock>
-        <dxe:ComboBoxEdit Grid.Row="3" IsTextEditable="False" ItemsSource="{Binding Players}" EditValue="{Binding CaptainPlayerId}" ValueMember="PlayerId"></dxe:ComboBoxEdit>
+        <StackPanel Grid.Row="3">
+            <TextBlock>Captain:</TextBlock>
+            <dxe:ComboBoxEdit Margin="5" IsTextEditable="False" ItemsSource="{Binding Players}" EditValue="{Binding CaptainPlayerId}" ValueMember="PlayerId"></dxe:ComboBoxEdit>
+        </StackPanel>
     </Grid>
 </UserControl>

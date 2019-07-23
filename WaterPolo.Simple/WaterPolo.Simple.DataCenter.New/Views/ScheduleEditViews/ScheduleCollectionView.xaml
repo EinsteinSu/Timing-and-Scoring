@@ -11,6 +11,10 @@
              xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
              xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
              DataContext="{mvvm:ViewModelSource Type=ViewModels:ScheduleCollectionViewModel}">
+    <mvvm:Interaction.Behaviors>
+        <mvvm:OpenFileDialogService Title="{Binding Title}"/>
+        <mvvm:SaveFileDialogService Title="{Binding Title}"/>
+    </mvvm:Interaction.Behaviors>
     <Grid>
         <dxg:GridControl AutoGenerateColumns="AddNew" CurrentItem="{Binding CurrentItem, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Items,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" >
             <mvvm:Interaction.Behaviors>
@@ -21,7 +25,7 @@
                 </mvvm:EventToCommand>
             </mvvm:Interaction.Behaviors>
             <dxg:GridControl.View>
-                <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" />
+                <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" AllowEditing="False"/>
             </dxg:GridControl.View>
         </dxg:GridControl>
         <dxwui:AppBar HideMode="AlwaysVisible">
@@ -29,6 +33,9 @@
             <dxwui:AppBarSeparator />
             <dxwui:AppBarButton Label="New" Command="{Binding AddCommand}"/>
             <dxwui:AppBarButton Label="Remove" Command="{Binding RemoveCommand}"/>
+            <dxwui:AppBarSeparator />
+            <dxwui:AppBarButton Label="Import" Command="{Binding ImportCommand}"/>
+            <dxwui:AppBarButton Label="Export" Command="{Binding ExportCommand}"/>
             <dxwui:AppBarSeparator />
             <dxwui:AppBarButton Label="Save" Command="{Binding SaveCommand}"/>
         </dxwui:AppBar>

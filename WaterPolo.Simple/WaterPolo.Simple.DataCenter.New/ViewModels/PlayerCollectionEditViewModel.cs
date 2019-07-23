@@ -3,11 +3,12 @@ using System.Linq;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
 using WaterPolo.Simple.DataAccess;
+using WaterPolo.Simple.DataCenter.New.ViewModels.Models;
 
 namespace WaterPolo.Simple.DataCenter.New.ViewModels
 {
     [POCOViewModel]
-    public class PlayerCollectionEditViewModel : EditViewModelBase<Player>, ISupportParameter
+    public class PlayerCollectionEditViewModel : EditViewModelBase<Player, PlayerIE>, ISupportParameter
     {
         private object _parameter;
         private Team _currentTeam;
@@ -23,13 +24,41 @@ namespace WaterPolo.Simple.DataCenter.New.ViewModels
             {
                 var player = new Player { TeamId = _currentTeam.TeamId };
                 player.DisplayName = player.Name = "New Player";
-                Context.Players.Add(player);
+                AddItem(player);
             }
+        }
+
+        protected override void AddItem(Player item)
+        {
+            Context.Players.Add(item);
         }
 
         protected override void RemoveItem()
         {
             Context.Players.Remove(CurrentItem);
+        }
+
+        protected override Player ConvertFromImportData(PlayerIE importData)
+        {
+            return new Player
+            {
+                Name = importData.Name,
+                DisplayName = importData.DisplayName,
+                OrderNumber = importData.OrderId,
+                DisplayNumber = importData.Number,
+                TeamId = _currentTeam.TeamId
+            };
+        }
+
+        protected override PlayerIE ConvertToExportData(Player data)
+        {
+            return new PlayerIE
+            {
+                DisplayName = data.DisplayName,
+                Name = data.Name,
+                Number = data.DisplayNumber,
+                OrderId = data.OrderNumber
+            };
         }
 
         protected override void RefreshItems()
