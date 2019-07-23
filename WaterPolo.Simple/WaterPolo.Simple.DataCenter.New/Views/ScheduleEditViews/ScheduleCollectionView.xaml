@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="WaterPolo.Simple.DataCenter.New.Views.ScheduleCollectionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WaterPolo.Simple.DataCenter.New.Views"
+             mc:Ignorable="d" xmlns:mvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:ViewModels="clr-namespace:WaterPolo.Simple.DataCenter.New.ViewModels"
+             d:DesignHeight="300" d:DesignWidth="300"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+             DataContext="{mvvm:ViewModelSource Type=ViewModels:ScheduleCollectionViewModel}">
+    <Grid>
+        <dxg:GridControl AutoGenerateColumns="AddNew" CurrentItem="{Binding CurrentItem, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Items,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" >
+            <mvvm:Interaction.Behaviors>
+                <mvvm:EventToCommand EventName="MouseDoubleClick" Command="{Binding EditCommand}">
+                    <mvvm:EventToCommand.EventArgsConverter>
+                        <dx:EventArgsToDataRowConverter/>
+                    </mvvm:EventToCommand.EventArgsConverter>
+                </mvvm:EventToCommand>
+            </mvvm:Interaction.Behaviors>
+            <dxg:GridControl.View>
+                <dxg:TableView AllowPerPixelScrolling="True" ShowTotalSummary="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+        <dxwui:AppBar HideMode="AlwaysVisible">
+            <dxwui:AppBarButton Label="Refresh" Command="{Binding RefreshCommand}"/>
+            <dxwui:AppBarSeparator />
+            <dxwui:AppBarButton Label="New" Command="{Binding AddCommand}"/>
+            <dxwui:AppBarButton Label="Remove" Command="{Binding RemoveCommand}"/>
+            <dxwui:AppBarSeparator />
+            <dxwui:AppBarButton Label="Save" Command="{Binding SaveCommand}"/>
+        </dxwui:AppBar>
+    </Grid>
+</UserControl>

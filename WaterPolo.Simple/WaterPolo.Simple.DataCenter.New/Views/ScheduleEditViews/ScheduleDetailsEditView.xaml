@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="WaterPolo.Simple.DataCenter.New.Views.ScheduleDetailsEditView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WaterPolo.Simple.DataCenter.New.Views"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             mc:Ignorable="d" xmlns:mvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:viewModels="clr-namespace:WaterPolo.Simple.DataCenter.New.ViewModels"
+             d:DesignHeight="300" d:DesignWidth="300"
+             DataContext="{mvvm:ViewModelSource Type=viewModels:ScheduleDetailsEditViewModel}">
+    <mvvm:Interaction.Behaviors>
+        <mvvm:EventToCommand Command="{Binding LoadCommand}" EventName="Loaded"></mvvm:EventToCommand>
+    </mvvm:Interaction.Behaviors>
+    <Grid>
+        <dxlc:LayoutControl>
+            <dxlc:LayoutGroup Orientation="Vertical">
+
+                <dxlc:LayoutGroup Orientation="Vertical">
+                    <dxlc:LayoutGroup>
+                        <dxlc:LayoutItem>
+                            <Button Command="{Binding OkCommand}">Ok</Button>
+                        </dxlc:LayoutItem>
+                        <dxlc:LayoutItem >
+                            <Button Command="{Binding CancelCommand}">Cancel</Button>
+                        </dxlc:LayoutItem>
+                    </dxlc:LayoutGroup>
+                    <dxlc:LayoutItem Label="Name">
+                        <dxe:TextEdit EditValue="{Binding Schedule.Name}" />
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="Display Name">
+                        <dxe:TextEdit EditValue="{Binding Schedule.DisplayName}" />
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="Start Time">
+                        <dxe:DateEdit EditValue="{Binding Schedule.StartTime}" />
+                    </dxlc:LayoutItem>
+                </dxlc:LayoutGroup>
+                <dxlc:LayoutGroup>
+                    <dxlc:LayoutGroup Orientation="Vertical" Header="White Cap" View="GroupBox">
+                        <local:ScheduleTeamEditView DataContext="{Binding TeamA, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></local:ScheduleTeamEditView>
+                    </dxlc:LayoutGroup>
+                    <dxlc:LayoutGroup Orientation="Vertical" Header="Blue Cap" View="GroupBox">
+                        <local:ScheduleTeamEditView DataContext="{Binding TeamB, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></local:ScheduleTeamEditView>
+                    </dxlc:LayoutGroup>
+                </dxlc:LayoutGroup>
+            </dxlc:LayoutGroup>
+        </dxlc:LayoutControl>
+    </Grid>
+</UserControl>

@@ -19,7 +19,6 @@ C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Sim
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\EntityFramework.xml
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.Migrations.InitialCreate.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.Migrations.IncreaseDisplayNameLimitation.resources
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataAccess\obj\Debug\WaterPolo.Simple.DataAccess.Migrations.AddCaptionInMatch.resources

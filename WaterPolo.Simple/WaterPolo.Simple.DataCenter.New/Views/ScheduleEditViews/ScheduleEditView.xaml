@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WaterPolo.Simple.DataCenter.New.Views.ScheduleEditView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WaterPolo.Simple.DataCenter.New.Views"
+             mc:Ignorable="d" xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+             xmlns:mvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <dxwui:NavigationFrame AnimationType="SlideHorizontal">
+            <dxwui:NavigationFrame.Source>
+                <local:ScheduleCollectionView>
+                    <mvvm:Interaction.Behaviors>
+                        <dxwuin:FrameDocumentUIService ShowSplashScreen="True"/>
+                    </mvvm:Interaction.Behaviors>
+                </local:ScheduleCollectionView>
+            </dxwui:NavigationFrame.Source>
+        </dxwui:NavigationFrame>
+    </Grid>
+</UserControl>

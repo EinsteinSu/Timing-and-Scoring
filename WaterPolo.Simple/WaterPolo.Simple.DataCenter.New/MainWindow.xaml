@@ -23,14 +23,14 @@
     <dxwui:HamburgerMenu ItemsSource="{Binding HamburgerMenuItems}"
                          BottomBarItemsSource="{Binding HamburgerMenuBottomBarItems}"
                          OpenPaneWidth="200"
-                         SelectedItem="{Binding HamburgerMenuSelectedItem, Mode=TwoWay}"
+                         SelectedItem="{Binding HamburgerMenuSelectedItem, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                          NavigationTarget="{Binding ElementName=service}">
         <dxwui:HamburgerMenu.Content>
             <dxwui:NavigationFrame Source="{x:Type local:Home}">
                 <dxmvvm:Interaction.Behaviors>
-                    <dxwuin:FrameNavigationService x:Name="service"/>
+                    <dxwuin:FrameNavigationService ShowSplashScreen="True" x:Name="service"/>
                 </dxmvvm:Interaction.Behaviors>
             </dxwui:NavigationFrame>
-        </dxwui:HamburgerMenu.Content>        
+        </dxwui:HamburgerMenu.Content>
     </dxwui:HamburgerMenu>
 </dx:ThemedWindow>

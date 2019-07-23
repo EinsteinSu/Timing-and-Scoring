@@ -34,11 +34,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Mvvm.v19.1" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Controls.v19.1" />
     <Reference Include="DevExpress.Xpf.Core.v19.1" />
+    <Reference Include="DevExpress.Xpf.Grid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -48,6 +65,8 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -57,6 +76,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commons\PlayerConvert.cs" />
+    <Compile Include="Commons\DataService.cs" />
+    <Compile Include="ViewModels\EditViewModelBase.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\PlayerCollectionEditViewModel.cs" />
+    <Compile Include="ViewModels\ScheduleCollectionViewModel.cs" />
+    <Compile Include="ViewModels\ScheduleDetailsEditViewModel.cs" />
+    <Compile Include="ViewModels\ScheduleTeamEditViewModel.cs" />
+    <Compile Include="ViewModels\TeamCollectionEditViewModel.cs" />
     <Compile Include="Views\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -64,8 +92,32 @@
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ItemViewModels.cs" />
+    <Compile Include="Views\PlayerEditViews\PlayerCollectionEditView.xaml.cs">
+      <DependentUpon>PlayerCollectionEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlayerEditViews\PlayerEditView.xaml.cs">
+      <DependentUpon>PlayerEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlayerEditViews\TeamCollectionEditView.xaml.cs">
+      <DependentUpon>TeamCollectionEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScheduleEditViews\ScheduleCollectionView.xaml.cs">
+      <DependentUpon>ScheduleCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScheduleEditViews\ScheduleDetailsEditView.xaml.cs">
+      <DependentUpon>ScheduleDetailsEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScheduleEditViews\ScheduleEditView.xaml.cs">
+      <DependentUpon>ScheduleEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScheduleEditViews\ScheduleTeamEditView.xaml.cs">
+      <DependentUpon>ScheduleTeamEditView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlayerEditViews\TeamCollectionView.xaml.cs">
+      <DependentUpon>TeamCollectionView.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Home.xaml">
       <SubType>Designer</SubType>
@@ -92,7 +144,39 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\PlayerEditViews\PlayerCollectionEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlayerEditViews\PlayerEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlayerEditViews\TeamCollectionEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ScheduleEditViews\ScheduleCollectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ScheduleEditViews\ScheduleDetailsEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ScheduleEditViews\ScheduleEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ScheduleEditViews\ScheduleTeamEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlayerEditViews\TeamCollectionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,10 +195,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,8 +222,12 @@
   <ItemGroup>
     <Resource Include="Icons\Menu.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Commons\" />
+    <ProjectReference Include="..\WaterPolo.Simple.DataAccess\WaterPolo.Simple.DataAccess.csproj">
+      <Project>{f9677219-9da4-4f5c-8b92-5b01fcbf8ffc}</Project>
+      <Name>WaterPolo.Simple.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

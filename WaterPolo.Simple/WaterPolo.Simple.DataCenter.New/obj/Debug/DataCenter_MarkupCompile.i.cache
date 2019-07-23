@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ssu2\Documents\GitHub\Timing-and-Scoring\WaterPolo.Simple\WaterPolo.Simple.DataCenter.New\App.xaml
-51971399803
+13-1236165472
 
-14-62763273
-16-1820922883
-Views\Home.xaml;Views\About.xaml;ItemTemplates.xaml;MainWindow.xaml;Views\SettingsView.xaml;
+3114023409
+301906143292
+Views\Home.xaml;Views\About.xaml;ItemTemplates.xaml;MainWindow.xaml;Views\PlayerEditViews\PlayerCollectionEditView.xaml;Views\PlayerEditViews\PlayerEditView.xaml;Views\PlayerEditViews\TeamCollectionEditView.xaml;Views\ScheduleEditViews\ScheduleCollectionView.xaml;Views\ScheduleEditViews\ScheduleDetailsEditView.xaml;Views\ScheduleEditViews\ScheduleEditView.xaml;Views\ScheduleEditViews\ScheduleTeamEditView.xaml;Views\SettingsView.xaml;Views\PlayerEditViews\TeamCollectionView.xaml;
 
 False
 

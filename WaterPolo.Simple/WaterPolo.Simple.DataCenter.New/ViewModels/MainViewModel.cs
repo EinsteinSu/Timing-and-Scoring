@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using WaterPolo.Simple.DataCenter.New.Views;
 
 namespace WaterPolo.Simple.DataCenter.New
 {
@@ -13,7 +14,10 @@ namespace WaterPolo.Simple.DataCenter.New
         public object HamburgerMenuSelectedItem
         {
             get { return GetProperty(() => HamburgerMenuSelectedItem); }
-            set { SetProperty(() => HamburgerMenuSelectedItem, value); }
+            set
+            {
+                SetProperty(() => HamburgerMenuSelectedItem, value);
+            }
         }
 
         public MainViewModel()
@@ -27,12 +31,15 @@ namespace WaterPolo.Simple.DataCenter.New
             var result = new List<IHamburgerMenuItemViewModel>();
             result.Add(new NavigationItemModel("Home") { NavigationTarget = typeof(Home), Glyph = "Icons/Home.png" });
             result.Add(new SeparatorItem());
-            var subMenu = new SubMenuItemModel("Menu") { Glyph = "Icons/Menu.png" };
-            subMenu.Items.Add(new SubMenuNavigationItemModel("MenuSubItem 1", "PreviewItem 1") { RightContent = "RC", ShowInPreview = true, SelectOnClick = false });
-            subMenu.Items.Add(new SubMenuNavigationItemModel("MenuSubItem 2", "PreviewItem 2") { ShowInPreview = true, SelectOnClick = false });
-            subMenu.Items.Add(new SubMenuNavigationItemModel("MenuSubItem 3", null) { IsSelected = true });
-            subMenu.Items.Add(new SubMenuNavigationItemModel("MenuSubItem 4", null) { RightContent = "RC", ShowMark = true });
-            result.Add(subMenu);
+            result.Add(new NavigationItemModel("Members") { NavigationTarget = typeof(PlayerEditView), Glyph = "Icons/Menu.png" });
+            result.Add(new NavigationItemModel("Schedules") { NavigationTarget = typeof(ScheduleEditView), Glyph = "Icons/Menu.png" });
+            //var subMenu = new SubMenuItemModel("Members") { Glyph = "Icons/Menu.png" };
+            //subMenu.Items.Add(new SubMenuNavigationItemModel("Teams", null) { NavigationTarget = typeof(TeamEditView), ShowInPreview = true, SelectOnClick = false });
+            //subMenu.Items.Add(new SubMenuNavigationItemModel("Players", null) { NavigationTarget = typeof(PlayerEditView), ShowInPreview = true, SelectOnClick = false });
+            //var scheduleMenu = new SubMenuItemModel("Schedules") { Glyph = "Icons/Menu.png" };
+            //scheduleMenu.Items.Add(new SubMenuNavigationItemModel("Schedule Edit", null) { NavigationTarget = typeof(ScheduleEditView), ShowInPreview = true, SelectOnClick = false });
+            //result.Add(subMenu);
+            //result.Add(scheduleMenu);
             result.Add(new HyperlinkItemModel("More information...", new Uri("https://www.devexpress.com/")) { IsAlternatePlacementItem = true, });
             result.Add(new NavigationItemModel("About") { NavigationTarget = typeof(About), IsAlternatePlacementItem = true, Glyph = "Icons/About.png" });
             return result;
