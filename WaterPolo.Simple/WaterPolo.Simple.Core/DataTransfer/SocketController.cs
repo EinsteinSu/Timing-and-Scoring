@@ -75,7 +75,7 @@ namespace WaterPolo.Simple.Core.DataTransfer
                 {
                     if (_isQuit)
                         break;
-                    Thread.Sleep(10);
+                    Thread.Sleep(100);
                     var tcpClient = tcpListener.AcceptTcpClient();
                     var bytes = new byte[campacity];
                     var stream = tcpClient.GetStream();

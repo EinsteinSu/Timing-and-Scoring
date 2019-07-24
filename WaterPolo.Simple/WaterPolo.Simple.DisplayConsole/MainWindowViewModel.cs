@@ -156,10 +156,40 @@ namespace WaterPolo.Simple.DisplayConsole
         private class DataProcess : IRequestProcess
         {
             private readonly Action<string> _acton;
-
+            private bool _quit;
+            private Queue<string> queue;
             public DataProcess(Action<string> acton)
             {
                 _acton = acton;
+                queue = new Queue<string>();
+                var processTask = new Task(ProcesMessage);
+                processTask.Start();
+            }
+
+            void ProcesMessage()
+            {
+
+                while (true)
+                {
+                    if (_quit)
+                        break;
+                    if (queue.Count > 0)
+                    {
+                        var item = queue.Dequeue();
+                        if (item != null)
+                        {
+                            try
+                            {
+                                _acton?.Invoke(item);
+                            }
+                            catch (Exception e)
+                            {
+                                Log.Error(e);
+                            }
+                        }
+                    }
+                    Thread.Sleep(100);
+                }
             }
 
             public void Process(TcpClient client, NetworkStream stream, byte[] bytesReceived)
@@ -167,7 +197,8 @@ namespace WaterPolo.Simple.DisplayConsole
                 try
                 {
                     var message = Encoding.Unicode.GetString(bytesReceived).Trim();
-                    _acton?.Invoke(message);
+                    queue.Enqueue(message);
+                    //_acton?.Invoke(message);
                 }
                 catch (Exception e)
                 {
@@ -176,16 +207,9 @@ namespace WaterPolo.Simple.DisplayConsole
                 }
             }
 
-            private static bool IsValidJson(string strInput)
+            ~DataProcess()
             {
-                var result = strInput.EndsWith("}");
-                if ((strInput.StartsWith("{") && strInput.EndsWith("}")) || //For object
-                    (strInput.StartsWith("[") && strInput.EndsWith("]"))) //For array
-                {
-                    return true;
-                }
-
-                return false;
+                _quit = true;
             }
         }
 
